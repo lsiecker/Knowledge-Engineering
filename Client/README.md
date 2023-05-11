@@ -1,0 +1,3 @@
+We as a client represent a collaboration between environment and planning government departments of the Europe. We are open to build new train lanes connections to reduce the air pollution of Europe in the best way possible. We are thinking to create new train lanes in countries or between countries for transportation of people (you could also look at transportation of goods if that is more polluting). We are interested in whether these new train connections are less polluting than transportation by car or plane for example.
+
+If you identified the sector of transportation that is most polluting, can you then recommend where potenial new train lanes can be created in Europe to reduce pollution of people/goods transport in the best way possible?
