@@ -12,8 +12,6 @@ from typing import Any
 import pandas as pd
 from tqdm import tqdm, trange
 
-
-
 class DataWrapper():
     def __init__(self, data_source: Path):
         self.data = self.set_data(data_source)

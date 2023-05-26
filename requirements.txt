@@ -1,3 +1,8 @@
+neo4j==5.9.0
+pandas==2.0.1
+flask==2.3.2
+gunicorn==20.1.0
+python-decouple==3.8
 -i https://pypi.org/simple
 fuzzywuzzy==0.18.0
 isodate==0.6.1
