@@ -1,5 +1,5 @@
 from pathlib import Path
-from data import DataWrapper
+from data_wrapper import DataWrapper
 
 IMDB_top_250 = DataWrapper(Path('Consultant\Datasets\IMDB Top 250 Movies.csv'))
 IMDB_top_250.set_headers('name', 'year', 'rating', 'genre', 'directors', 'writers')

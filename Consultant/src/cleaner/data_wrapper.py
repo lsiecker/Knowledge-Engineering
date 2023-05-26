@@ -9,8 +9,6 @@
 from pathlib import Path
 import pandas as pd
 
-
-
 class DataWrapper():
     def __init__(self, data_source: Path):
         self.data = self.set_data(data_source)

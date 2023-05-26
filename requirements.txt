@@ -1,1 +1,4 @@
-rdflib
+neo4j==5.9.0
+pandas==2.0.1
+flask==2.3.2
+gunicorn==20.1.0
