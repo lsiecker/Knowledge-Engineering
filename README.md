@@ -1,4 +1,6 @@
 # Set-up
+
+## Installation
 Create a new virtual environment (venv) for the project:
 
 Open a terminal, navigate to your project's directory, and run the following command:
@@ -25,6 +27,27 @@ You will know that you have the virtual environment activated when you see its n
 While your virtual environment is activated, you can install the packages listed in your requirements.txt by running:
 ```
 pip install -r requirements.txt
+```
+
+## Environment variables
+Connection details like usernames or passwords should never be pushed to a Github Repo. 
+Instead, secrets like the above should be stored in environment variables (or by using a secret manager).
+In order to use the neo4j database, you need to set the following environment variables:
+
+In windows:
+```bash
+setx NEO4J_USER "<username>"
+setx NEO4J_PASSWORD "<password>"
+setx NEO4J_URI "<uri>"
+setx NEO4J_PORT "<port>"
+```
+
+In mac/linux:
+```bash
+export NEO4J_USER=<username>
+export NEO4J_PASSWORD=<password>
+export NEO4J_URI=<uri>
+export NEO4J_PORT=<port>
 ```
 
 # Knowledge-Engineering
