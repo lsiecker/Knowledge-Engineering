@@ -27,6 +27,8 @@ class Neo4jClient:
     def execute_query(self, query, parameters={}):
         with self.driver.session() as session:
             result = session.run(query, parameters)
+            if result.peek() == None:
+                return []
             return result.single()[0]
 
     def print_greeting(self, message):
