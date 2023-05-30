@@ -26,15 +26,4 @@ class Neo4jClient:
 
     def execute_query(self, query, parameters={}):
         with self.driver.session() as session:
-            result = session.run(query, parameters)
-            return result.single()[0]
-
-    def print_greeting(self, message):
-        query = """
-        CREATE (a:Greeting) 
-        SET a.message = $message 
-        RETURN a.message + ', from node ' + id(a)
-        """
-        parameters = {"message": message}
-        greeting_message = self.execute_query(query, parameters)
-        print(greeting_message)
+            return list(session.run(query, parameters))
