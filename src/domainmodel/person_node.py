@@ -1,14 +1,14 @@
+from dataclasses import dataclass
+from src.domainmodel.neo4j_node import Node
 
-class Person():
+@dataclass
+class Person(Node):
+    name: str
 
-    def __init__(self, name):
+    def __init__(self, name: str):
+        self.id = None
+        self.label = 'Person'
         self.name = name
 
-    def get_dict(self):
-        dict = {
-            'name': self.name
-        }
-        return dict
-    
-    def __str__(self):
-        return f"<Person {self.name}>"
+    def natural_keys(self) -> dict:
+        return {'name': self.name}
