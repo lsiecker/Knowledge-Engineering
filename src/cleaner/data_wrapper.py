@@ -9,18 +9,23 @@
 from pathlib import Path
 import re
 from typing import Any
+from numpy import dtype
 import pandas as pd
 from tqdm import tqdm, trange
 
 class DataWrapper():
-    def __init__(self, data_source: Path):
+    def __init__(self, data_source: Path, name: str = None) -> None:
         self.data = self.set_data(data_source)
         self.header_order = ['movie_name', 'movie_date', 'movie_rating', 'movie_genre', 'director', 'writer', 'actor', 'award_year']
-
-    def get_data(self) -> pd.DataFrame:
-        return self.data
+        self.name = name
 
     def __call__(self) -> Any:
+        return self.data
+
+    def get_name(self) -> str:
+        return self.name
+
+    def get_data(self) -> pd.DataFrame:
         return self.data
     
     def set_data(self, data) -> None:
@@ -145,6 +150,28 @@ class DataWrapper():
         
         return
     
+    def make_string(self, column_name):
+        """
+        A function that makes a string from a column that includes integers or floats.
+
+        Parameters
+        ----------
+        column_name : str
+            The name of the column to be converted to a string.
+
+        Returns
+        -------
+        None
+        """
+        # for items in the row, if it is a number, convert it to a string
+        items = [item for item in self.data[column_name]]
+        self.data[column_name].update(pd.Series(items))
+
+        # Convert all data to utf-8
+        # self.data[column_name] = self.data[column_name].str.encode('utf-8').str.decode('utf-8')
+        
+        return
+    
     def make_bool(self, column_name, true, false):
         """
         A function that makes a boolean column from a column with true and false values.
@@ -167,6 +194,24 @@ class DataWrapper():
         self.data[column_name] = self.data[column_name].map({true: True, false: False})
         
         return
+    
+    def drop_nan(self, column_name):
+        """
+        A function that drops the rows with NaN values in a column.
+
+        Parameters
+        ----------
+        column_name : str
+            The name of the column to be dropped.
+
+        Returns
+        -------
+        None
+        """
+        # Drop the rows with NaN values in the column
+        self.data.dropna(subset=[column_name])
+
+        return
 
     def convert_numbers(self, column_name):
         """
@@ -183,33 +228,97 @@ class DataWrapper():
         None
         """
 
-        # Convert the roman numerals into numbers
-        # Check if part of the string is a roman numeral (until 10)
-        for i, roman_numeral in enumerate([' I', ' II', ' III', ' IV', ' V', ' VI', ' VII', ' VIII', ' IX', ' X']):
-            print("found roman numerals")
-            self.data[column_name] = self.data[column_name].replace(roman_numeral, ' ' + str(i))
+        # replace all roman numerals with their number equivalent
+
+        # list of roman numberals and their number equivalent until 10
+        # TODO: Fix words starting with V
+        numerals = {' X': 10, ' IX': 9, ' VIII': 8, ' VII': 7, ' VI': 6, ' V': 5, ' IV': 4, ' III': 3, ' II': 2, ' I': 1}
+
+        # replace all roman numerals with their number equivalent
+        for numeral in numerals:
+            for i, items in enumerate(self.data[column_name]):
+                # check if item is float or NaN
+                try:
+                    if items[0].endswith(numeral):
+                        self.update_data(column_name, i, items[0].replace(items, str(numerals[numeral])))
+                except TypeError:
+                    self.data.drop(i, inplace=True)
+
+    def update_data(self, data):
+        """
+        A function that updates the data in a specific row and column.
         
+        Parameters
+        ----------
+        column_name : str
+            The name of the column to be updated.
+        row : int
+            The row of the data to be updated.
+        data : str
+            The data to be updated.
+        
+        Returns
+        -------
+        None
+        """
+        
+        self.data = data
+        
+        return    
+        
+    def export_cleaned_data(self, name: str, format: str = 'csv', destination: Path = Path('data\cleaned_data')):
+        """
+        A function that exports the cleaned data to a csv file.
+
+        Parameters
+        ----------
+        format : str
+            The format of the file to be exported.
+        path : Path
+            The path of the file to be exported.
+
+        Returns
+        -------
+        None
+        """
+
+        # Check if the path exists
+        if not destination.is_dir():
+            raise ValueError('The path does not exist.')
+        
+        # Check if the format is valid
+        if format not in ['csv', 'xlsx']:
+            raise ValueError('The format must be either csv or xlsx.')
+        
+        # Export the data
+        if format == 'csv':
+            self.data.to_csv(destination / f'{name}.csv', index=False)
+        elif format == 'xlsx':
+            self.data.to_excel(destination / f'{name}.xlsx', index=False)
+        
+        return
+
 
 
 import fuzzywuzzy
 from fuzzywuzzy import fuzz
+from itertools import combinations
 
 class DataMatcher():
     def __init__(self, *datsets) -> None:
-        self.datasets = [dataset() for dataset in datsets]
-        print(self.datasets)
+        self.datasets = [dataset for dataset in datsets]
 
     def get_datasets(self):
         return self.datasets
 
     def preprocess_text(self, text):
-        # Remove numbers from the text
-        text_without_numbers = re.sub(r'\d+', '', text)
-        # Perform other preprocessing steps as needed
-        cleaned_text = text_without_numbers.lower().strip()
+        cleaned_text = []
+        for item in text:
+            # Perform other preprocessing steps as needed
+            cleaned_text.append(item.lower().strip())
         return cleaned_text
     
-    def match(self, column_name, similarity_threshold, replace_option):
+    def match(self, column_name, similarity_threshold: int = 0.93, replace_option: str = 'keep_longest_value'):
         """
         Function that matches the values of a column in one dataset to the values of a column in another dataset.
         If the values are similar enough, the value is replaced based on the specified replace option.
@@ -228,38 +337,61 @@ class DataMatcher():
         None
         """
         matched_items = []  # List to store the matched items
-        
-        for i in trange(len(self.datasets)):
-            dataset1 = self.datasets[i]
-            column1 = dataset1[column_name]
-            
-            for j in trange(i + 1, len(self.datasets), leave=False):
-                dataset2 = self.datasets[j]
-                column2 = dataset2[column_name]
+
+        for pair in tqdm(combinations(self.datasets, 2), desc='Datasets', leave=True, position=0):
+            # check if the column is in both datasets
+            if column_name not in pair[0].get_headers() or column_name not in pair[1].get_headers():
+                continue
+
+            data1 = pair[0].get_data()
+            data2 = pair[1].get_data()
                 
-                for k, item1 in enumerate(column1):
-                    cleaned_items1 = [self.preprocess_text(item) for item in item1]
-                    
-                    for l, item2 in enumerate(column2):
-                        cleaned_items2 = [self.preprocess_text(item) for item in item2]
-                        
-                        if len(cleaned_items1) == 1 and len(cleaned_items2) == 1:
-                            ratio = fuzz.token_sort_ratio(cleaned_items1[0], cleaned_items2[0])
-                            if ratio >= similarity_threshold and ratio < 100 and not re.search(r'\d', cleaned_items1[0]):
-                                print(f"Matched {cleaned_items1[0]} with {cleaned_items2[0]} with a similarity of {ratio}%")
-                                # Replace the item in the shortest list with the item in the longest list
-                                if replace_option == 'keep_longest_value':
-                                    if len(cleaned_items1[0]) > len(cleaned_items2[0]):
-                                        dataset2.loc[l, column_name] = column1[k]
-                                    elif len(cleaned_items1[0]) < len(cleaned_items2[0]):
-                                        dataset1.loc[k, column_name] = column2[l]
-                                elif replace_option == 'keep_shortest_value':
-                                    column2.loc[l] = column1[k]
+            for k, item1 in enumerate(data1.loc[:, column_name]):
+                try:
+                    cleaned_items1 = self.preprocess_text(item1)
+                except TypeError:
+                    # Drop the row if the item is not a string
+                    # column1.drop(k, inplace=False)
+                    break
+                
+                for l, item2 in enumerate(data2.loc[:, column_name]):
+                    try:
+                        cleaned_items2 = self.preprocess_text(item2)
+                    except TypeError:
+                        # Drop the row if the item is not a string
+                        # column2.drop(l, inplace=False)
+                        break
+
+                    if len(cleaned_items1) == 1 and len(cleaned_items2) == 1:
+                        ratio = fuzz.token_sort_ratio(cleaned_items1[0], cleaned_items2[0])
+                        if ratio >= similarity_threshold and ratio < 100:
+                            #Exclude if last part of the string is number
+                            if cleaned_items1[0][-1].isdigit() or cleaned_items2[0][-1].isdigit() and ratio > 95:
+                                print(f"Not matching {cleaned_items1[0]} with {cleaned_items2[0]} with a similarity of {ratio}%")
+                                break
+                            print(f"Matched {cleaned_items1[0]} with {cleaned_items2[0]} with a similarity of {ratio}%")
+                            print(f"Replacing {item2, l} with {item1, k}")
+                            # Replace the item in the shortest list with the item in the longest list
+                            if replace_option == 'keep_longest_value':
+                                if len(cleaned_items1[0]) > len(cleaned_items2[0]):
+                                    # update the data
+                                    print(f"replacing {l, data2.loc[l, column_name]} with {k, data1.loc[k, column_name]}")
+                                    data2.loc[l, column_name] = cleaned_items1[0]
+                                    print(f"Replaced {cleaned_items2[0]} with {cleaned_items1[0]}")
+                                    matched_items.append((cleaned_items1[0], cleaned_items2[0], ratio))
                                 else:
-                                    raise ValueError(f'The replace option {replace_option} is not valid.')
-                                matched_items.append((column1[k], column2[l], ratio))
+                                    # update the data
+                                    print(f"replacing {data1.loc[k, column_name]} with {data2.loc[l, column_name]}")
+                                    data1.loc[k, column_name] = cleaned_items2[0]
+                                    matched_items.append((cleaned_items2[0], cleaned_items1[0], ratio))
+                            else:
+                                raise ValueError(f'The replace option {replace_option} is not valid.')
+                            
+            pair[0].update_data(data1)
+            pair[1].update_data(data2)
 
         # Print the overview of matched items
-        print("Matched Items:")
-        for item in matched_items:
-            print(f"{item[0]} --> {item[1]} with a similarity of {item[2]}%")
+        if len(matched_items) > 0:
+            print("Matched Items:")
+            for item in matched_items:
+                    print(f"{item[0]} --> {item[1]} with a similarity of {item[2]}%")
