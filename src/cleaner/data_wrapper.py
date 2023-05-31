@@ -13,6 +13,113 @@ from numpy import dtype
 import pandas as pd
 from tqdm import tqdm, trange
 
+
+class DataSet():
+    def __init__(self, name: str) -> None:
+        self.name = name
+        self.data = None
+        self.headers = None
+        self.header_order = ['movie_name', 'movie_date', 'movie_rating', 'movie_genre', 'director', 'writer', 'actor', 'award_year']
+
+    def __call__(self) -> Any:
+        return self.data
+    
+    def get_name(self) -> str:
+        return self.name
+    
+    def get_data(self) -> pd.DataFrame:
+        return self.data
+    
+    def get_headers(self) -> list:
+        return self.headers
+    
+    def set_data(self, data: pd.DataFrame) -> None:
+        self.data = data
+
+    def set_headers(self, *headers) -> None:
+        self.headers = headers
+        self.order_headers(self.headers)
+
+    def update_data(self, data: pd.DataFrame) -> None:
+        self.data = data
+
+    def add_data(self, data: pd.DataFrame) -> None:
+        self.data = pd.concat([self.data, data], ignore_index=True)
+
+    def order_headers(self, headers: list) -> list:
+        """
+        Function that orders the header based on a preferred predetermined order.
+
+        Parameters
+        ----------
+        headers : list
+            The list of headers to be ordered.
+
+        Returns
+        -------
+        None
+        """
+        # Create a dictionary to store the order of each string in the preferred_order list
+        order_dict = {name: i for i, name in enumerate(self.header_order)}
+        
+        # Sort the names list based on the order_dict values, using a lambda function as the key
+        sorted_names = sorted(headers, key=lambda x: order_dict.get(x, float('inf')))
+        
+        return sorted_names
+    
+    def export_cleaned_data(self, format: str = 'csv', destination: Path = Path('data\cleaned_data')):
+        """
+        A function that exports the cleaned data to a csv file.
+
+        Parameters
+        ----------
+        format : str
+            The format of the file to be exported.
+        path : Path
+            The path of the file to be exported.
+
+        Returns
+        -------
+        None
+        """
+
+        # Check if the path exists
+        if not destination.is_dir():
+            raise ValueError('The path does not exist.')
+        
+        # Check if the format is valid
+        if format not in ['csv', 'xlsx']:
+            raise ValueError('The format must be either csv or xlsx.')
+        
+        # Order the columns
+        self.data = self.data[self.order_headers(self.get_headers())]
+
+        # Export the data
+        if format == 'csv':
+            self.data.to_csv(destination / f'{self.name}.csv', index=False)
+        elif format == 'xlsx':
+            self.data.to_excel(destination / f'{self.name}.csv', index=False)
+        
+        return
+    
+    def explode_data(self):
+        # For all the objects in the data, if it is a list, explode the list into multiple rows
+        for header in self.data.columns:
+            if self.data[header].dtype == 'object':
+                # print(f'Exploding {header}')
+                # Explode the list into multiple rows
+                self.data = self.data.explode(header)
+
+        return
+    
+    def drop_unknown(self, *columns):
+        # Drop the rows with unknown values, nan values, empty strings, empty lists, empty rows if any of the columns are empty
+        # Drop the empty values if any of the columns are empty
+        self.data.dropna(how='any', subset=columns, inplace=True)
+
+        return
+
+
 class DataWrapper():
     def __init__(self, data_source: Path, name: str = None) -> None:
         self.data = self.set_data(data_source)
@@ -86,11 +193,12 @@ class DataWrapper():
         # If column includes items in a string with a comma, split the string into a list
         for header in self.data.columns:
             if self.data[header].dtype == 'object':
-                self.data[header] = self.data[header].str.split(', ')
-
+                # Split on both comma and semi-colon
+                self.data[header] = self.data[header].str.split(',|;')
+                
+          
         # Order the headers
         self.data = self.data[self.order_headers(self.get_headers())]
-
 
         return
     
@@ -150,50 +258,50 @@ class DataWrapper():
         
         return
     
-    def make_string(self, column_name):
-        """
-        A function that makes a string from a column that includes integers or floats.
+    # def make_string(self, column_name):
+    #     """
+    #     A function that makes a string from a column that includes integers or floats.
 
-        Parameters
-        ----------
-        column_name : str
-            The name of the column to be converted to a string.
+    #     Parameters
+    #     ----------
+    #     column_name : str
+    #         The name of the column to be converted to a string.
 
-        Returns
-        -------
-        None
-        """
-        # for items in the row, if it is a number, convert it to a string
-        items = [item for item in self.data[column_name]]
-        self.data[column_name].update(pd.Series(items))
+    #     Returns
+    #     -------
+    #     None
+    #     """
+    #     # for items in the row, if it is a number, convert it to a string
+    #     items = [item for item in self.data[column_name]]
+    #     self.data[column_name].update(pd.Series(items))
 
-        # Convert all data to utf-8
-        # self.data[column_name] = self.data[column_name].str.encode('utf-8').str.decode('utf-8')
+    #     # Convert all data to utf-8
+    #     # self.data[column_name] = self.data[column_name].str.encode('utf-8').str.decode('utf-8')
         
-        return
+    #     return
     
-    def make_bool(self, column_name, true, false):
-        """
-        A function that makes a boolean column from a column with true and false values.
+    # def make_bool(self, column_name, true, false):
+    #     """
+    #     A function that makes a boolean column from a column with true and false values.
 
-        Parameters
-        ----------
-        column_name : str
-            The name of the column to be converted to a boolean.
-        true : str
-            The string that represents a true value.
-        false : str
-            The string that represents a false value.
+    #     Parameters
+    #     ----------
+    #     column_name : str
+    #         The name of the column to be converted to a boolean.
+    #     true : str
+    #         The string that represents a true value.
+    #     false : str
+    #         The string that represents a false value.
         
-        Returns
-        -------
-        None
-        """
+    #     Returns
+    #     -------
+    #     None
+    #     """
         
-        # Make the column a boolean column
-        self.data[column_name] = self.data[column_name].map({true: True, false: False})
+    #     # Make the column a boolean column
+    #     self.data[column_name] = self.data[column_name].map({true: True, false: False})
         
-        return
+    #     return
     
     def drop_nan(self, column_name):
         """
@@ -213,58 +321,58 @@ class DataWrapper():
 
         return
 
-    def convert_numbers(self, column_name):
-        """
-        A function that converts the text numbers into numbers
-        e.g. iii -> 3 or 1,000 -> 1000 or 1.000 -> 1000 or III -> 3
+    # def convert_numbers(self, column_name):
+    #     """
+    #     A function that converts the text numbers into numbers
+    #     e.g. iii -> 3 or 1,000 -> 1000 or 1.000 -> 1000 or III -> 3
 
-        Parameters
-        ----------
-        column_name : str
-            The name of the column to be converted to numbers.
+    #     Parameters
+    #     ----------
+    #     column_name : str
+    #         The name of the column to be converted to numbers.
 
-        Returns
-        -------
-        None
-        """
+    #     Returns
+    #     -------
+    #     None
+    #     """
 
-        # replace all roman numerals with their number equivalent
+    #     # replace all roman numerals with their number equivalent
 
-        # list of roman numberals and their number equivalent until 10
-        # TODO: Fix words starting with V
-        numerals = {' X': 10, ' IX': 9, ' VIII': 8, ' VII': 7, ' VI': 6, ' V': 5, ' IV': 4, ' III': 3, ' II': 2, ' I': 1}
+    #     # list of roman numberals and their number equivalent until 10
+    #     # TODO: Fix words starting with V
+    #     numerals = {' X': 10, ' IX': 9, ' VIII': 8, ' VII': 7, ' VI': 6, ' V': 5, ' IV': 4, ' III': 3, ' II': 2, ' I': 1}
 
-        # replace all roman numerals with their number equivalent
-        for numeral in numerals:
-            for i, items in enumerate(self.data[column_name]):
-                # check if item is float or NaN
-                try:
-                    if items[0].endswith(numeral):
-                        self.update_data(column_name, i, items[0].replace(items, str(numerals[numeral])))
-                except TypeError:
-                    self.data.drop(i, inplace=True)
+    #     # replace all roman numerals with their number equivalent
+    #     for numeral in numerals:
+    #         for i, items in enumerate(self.data[column_name]):
+    #             # check if item is float or NaN
+    #             try:
+    #                 if items[0].endswith(numeral):
+    #                     self.update_data(column_name, i, items[0].replace(items, str(numerals[numeral])))
+    #             except TypeError:
+    #                 self.data.drop(i, inplace=True)
 
-    def update_data(self, data):
-        """
-        A function that updates the data in a specific row and column.
+    # def update_data(self, data):
+    #     """
+    #     A function that updates the data in a specific row and column.
         
-        Parameters
-        ----------
-        column_name : str
-            The name of the column to be updated.
-        row : int
-            The row of the data to be updated.
-        data : str
-            The data to be updated.
+    #     Parameters
+    #     ----------
+    #     column_name : str
+    #         The name of the column to be updated.
+    #     row : int
+    #         The row of the data to be updated.
+    #     data : str
+    #         The data to be updated.
         
-        Returns
-        -------
-        None
-        """
+    #     Returns
+    #     -------
+    #     None
+    #     """
         
-        self.data = data
+    #     self.data = data
         
-        return    
+    #     return    
         
     def export_cleaned_data(self, name: str, format: str = 'csv', destination: Path = Path('data\cleaned_data')):
         """
@@ -300,98 +408,75 @@ class DataWrapper():
 
 
 
-import fuzzywuzzy
-from fuzzywuzzy import fuzz
-from itertools import combinations
+# import fuzzywuzzy
+# from fuzzywuzzy import fuzz
+# from itertools import combinations
+
 
 class DataMatcher():
-    def __init__(self, *datsets) -> None:
-        self.datasets = [dataset for dataset in datsets]
+    def __init__(self) -> None:
+        pass
 
-    def get_datasets(self):
-        return self.datasets
-
-    def preprocess_text(self, text):
-        cleaned_text = []
-        for item in text:
-            # Perform other preprocessing steps as needed
-            cleaned_text.append(item.lower().strip())
-        return cleaned_text
-    
-    def match(self, column_name, similarity_threshold: int = 0.93, replace_option: str = 'keep_longest_value'):
+    def aggregate(self, dataframe: pd.DataFrame, *columns):
         """
-        Function that matches the values of a column in one dataset to the values of a column in another dataset.
-        If the values are similar enough, the value is replaced based on the specified replace option.
+        A function that looks for duplicate rows in a dataframe and aggregates them.
+        It is possible that have different columns filled in for the same given header.
+        It will be matched on the columns that are given.
+        If there are conflicts it will print these conflicts and ask for user input.
 
         Parameters
         ----------
-        column_name : str
-            The name of the column to be matched.
-        similarity_threshold : int
-            The threshold for the similarity of the two values.
-        replace_option : str
-            The option for replacing the values.
+        dataframe : pd.DataFrame
+            The dataframe to be aggregated.
+        *columns : list
+            The columns to be matched on.
 
         Returns
         -------
-        None
+        pd.DataFrame
+            The aggregated dataframe.
         """
-        matched_items = []  # List to store the matched items
 
-        for pair in tqdm(combinations(self.datasets, 2), desc='Datasets', leave=True, position=0):
-            # check if the column is in both datasets
-            if column_name not in pair[0].get_headers() or column_name not in pair[1].get_headers():
-                continue
+        # Check if there are duplicate rows
+        if dataframe.duplicated(subset=columns).any():
+            # Get the duplicated rows
+            duplicated_rows = dataframe[dataframe.duplicated(subset=columns)]
+            # Get the unique rows
+            unique_rows = dataframe[~dataframe.duplicated(subset=columns)]
+            print(f'There are {len(duplicated_rows)} duplicate rows.'
+                    f'\nThese rows will be aggregated.')
+            print(f'There are {len(unique_rows)} unique rows.'
+                    f'\nThese rows will be kept.')
 
-            data1 = pair[0].get_data()
-            data2 = pair[1].get_data()
-                
-            for k, item1 in enumerate(data1.loc[:, column_name]):
-                try:
-                    cleaned_items1 = self.preprocess_text(item1)
-                except TypeError:
-                    # Drop the row if the item is not a string
-                    # column1.drop(k, inplace=False)
-                    break
-                
-                for l, item2 in enumerate(data2.loc[:, column_name]):
-                    try:
-                        cleaned_items2 = self.preprocess_text(item2)
-                    except TypeError:
-                        # Drop the row if the item is not a string
-                        # column2.drop(l, inplace=False)
-                        break
+            # Iterate over the duplicated rows
+            for i, row in tqdm(duplicated_rows.iterrows(), total=len(duplicated_rows)):
+                # Get the rows with the same values in the columns
+                same_rows = dataframe
+                for col in columns:
+                    if col in same_rows.columns:
+                        same_rows = same_rows[same_rows[col] == row[col]]
 
-                    if len(cleaned_items1) == 1 and len(cleaned_items2) == 1:
-                        ratio = fuzz.token_sort_ratio(cleaned_items1[0], cleaned_items2[0])
-                        if ratio >= similarity_threshold and ratio < 100:
-                            #Exclude if last part of the string is number
-                            if cleaned_items1[0][-1].isdigit() or cleaned_items2[0][-1].isdigit() and ratio > 95:
-                                print(f"Not matching {cleaned_items1[0]} with {cleaned_items2[0]} with a similarity of {ratio}%")
-                                break
-                            print(f"Matched {cleaned_items1[0]} with {cleaned_items2[0]} with a similarity of {ratio}%")
-                            print(f"Replacing {item2, l} with {item1, k}")
-                            # Replace the item in the shortest list with the item in the longest list
-                            if replace_option == 'keep_longest_value':
-                                if len(cleaned_items1[0]) > len(cleaned_items2[0]):
-                                    # update the data
-                                    print(f"replacing {l, data2.loc[l, column_name]} with {k, data1.loc[k, column_name]}")
-                                    data2.loc[l, column_name] = cleaned_items1[0]
-                                    print(f"Replaced {cleaned_items2[0]} with {cleaned_items1[0]}")
-                                    matched_items.append((cleaned_items1[0], cleaned_items2[0], ratio))
-                                else:
-                                    # update the data
-                                    print(f"replacing {data1.loc[k, column_name]} with {data2.loc[l, column_name]}")
-                                    data1.loc[k, column_name] = cleaned_items2[0]
-                                    matched_items.append((cleaned_items2[0], cleaned_items1[0], ratio))
-                            else:
-                                raise ValueError(f'The replace option {replace_option} is not valid.')
-                            
-            pair[0].update_data(data1)
-            pair[1].update_data(data2)
+                # Get the columns that have conflicts
+                other_columns = [col for col in dataframe.columns if col not in columns]
+                unique_values = same_rows[other_columns].nunique()
 
-        # Print the overview of matched items
-        if len(matched_items) > 0:
-            print("Matched Items:")
-            for item in matched_items:
-                    print(f"{item[0]} --> {item[1]} with a similarity of {item[2]}%")
+                # If there are conflicts in the other columns
+                if unique_values.any() > 1:
+                    # Print the rows
+                    print(same_rows)
+                    # Ask the user for the correct values
+                    correct_values = {}
+                    for col in other_columns:
+                        correct_value = input(f'What is the correct value for {col}? ')
+                        correct_values[col] = correct_value
+
+                    # Update the dataframe
+                    for col, value in correct_values.items():
+                        dataframe.loc[same_rows.index, col] = value
+
+            # Drop the duplicate rows
+            dataframe.drop_duplicates(subset=columns, inplace=True)
+            # Concatenate the unique rows and the updated dataframe
+            dataframe = pd.concat([unique_rows, dataframe], ignore_index=True)
+
+        return dataframe
