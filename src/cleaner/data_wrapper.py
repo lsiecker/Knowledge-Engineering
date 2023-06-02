@@ -13,6 +13,7 @@ from typing import Any
 import numpy as np
 import pandas as pd
 from tqdm import tqdm, trange
+from fuzzywuzzy import fuzz
 
 
 class DataSet():
@@ -455,11 +456,37 @@ class DataMatcher():
             # Compare the duplicate rows
             # Create a dictionary to store row combinations based on the column values
             row_combinations = {}
+            pattern_roman = re.compile(r"\b(I|II|III|IV|V|VI|VII|VIII|IX|X)\b")  # Regex pattern for matching Roman numerals
+            pattern_last = re.compile(r"(\D+)\d+$")  # Regex pattern for matching the non-numeric part of the string at the end
+
             for row_index, row_values in tqdm(duplicated_rows.iterrows(), total=duplicated_rows.shape[0], desc="Decreasing the row combinations"):
                 key = tuple(row_values[list(columns)].values)
-                if key in row_combinations:
-                    row_combinations[key].append(row_index)
-                else:
+                fuzzy_match = False
+                for existing_key in row_combinations.keys():
+                    # Calculate the similarity score between the keys using fuzzy matching
+                    similarity_score = fuzz.ratio(key, existing_key)
+                    try:
+                        if similarity_score == 100:
+                            # If the similarity score is 100, consider them the same keys
+                            row_combinations[existing_key].append(row_index)
+                            fuzzy_match = True
+                            break
+                        elif pattern_roman.search(key[0]) or pattern_roman.search(existing_key[0]):
+                            fuzzy_match = False
+                        elif pattern_last.search(key[0]) or pattern_last.search(existing_key[0]):
+                            fuzzy_match = False
+                        elif similarity_score >= 98:  # Set a threshold for similarity
+                            # If the similarity score is above the threshold, consider them similar keys
+                            row_combinations[existing_key].append(row_index)
+
+                            if similarity_score < 100:
+                                print(f'\nSimilar keys: {key} and {existing_key} with a similarity score of {similarity_score}.')
+
+                            fuzzy_match = True
+                            break
+                    except:
+                        print(f'Error: {key} and {existing_key}')
+                if not fuzzy_match:
                     row_combinations[key] = [row_index]
 
             columns = list(columns)
