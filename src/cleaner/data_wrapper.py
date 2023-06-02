@@ -10,7 +10,7 @@ from itertools import combinations
 from pathlib import Path
 import re
 from typing import Any
-from numpy import dtype
+import numpy as np
 import pandas as pd
 from tqdm import tqdm, trange
 
@@ -421,9 +421,9 @@ class DataMatcher():
     def aggregate(self, dataframe: pd.DataFrame, *columns, automatic: bool = True):
         """
         A function that looks for duplicate rows in a dataframe and aggregates them.
-        It is possible that have different columns filled in for the same given header.
+        It is possible to have different columns filled in for the same given header.
         It will be matched on the columns that are given.
-        If there are conflicts it will print these conflicts and ask for user input.
+        If there are conflicts, it will print these conflicts and ask for user input.
 
         Parameters
         ----------
@@ -444,73 +444,83 @@ class DataMatcher():
             duplicated_rows = dataframe[dataframe.duplicated(subset=columns)]
             # Get the unique rows
             unique_rows = dataframe[~dataframe.duplicated(subset=columns)]
-            print(f'There are {len(duplicated_rows)} duplicate rows.'
-                    f'\nThese rows will be aggregated.')
-            print(f'There are {len(unique_rows)} unique rows.'
-                    f'\nThese rows will be kept.')
 
-            # Compare the duplicate rows, if the columns on which the subset was made, are the same, aggregate all the known data to one row
-            # If the other columns, that are not given in the parameters, have different values, print the values and ask for user input
-
-            # Get the columns that are not in the subset
             other_columns = [column for column in dataframe.columns if column not in columns]
+
+            print(f'There are {len(duplicated_rows)} duplicate rows.'
+                f'\nThese rows will be aggregated.')
+            print(f'There are {len(unique_rows)} unique rows.'
+                f'\nThese rows will be kept.')
+
+            # Compare the duplicate rows
+            # Create a dictionary to store row combinations based on the column values
+            row_combinations = {}
+            for row_index, row_values in tqdm(duplicated_rows.iterrows(), total=duplicated_rows.shape[0], desc="Decreasing the row combinations"):
+                key = tuple(row_values[list(columns)].values)
+                if key in row_combinations:
+                    row_combinations[key].append(row_index)
+                else:
+                    row_combinations[key] = [row_index]
+
             columns = list(columns)
 
-            # For each combination of the duplicated rows, compare the values of the other columns
-            total_length = len(duplicated_rows) * (len(duplicated_rows) - 1)
-            for row1, row2 in tqdm(combinations(duplicated_rows.index, 2), total=total_length):
-                if str(dataframe.loc[row1, columns].values) != str(dataframe.loc[row2, columns].values):
-                    continue
+            # Iterate over the row combinations and handle conflicts
+            for key, rows in tqdm(row_combinations.items(), desc="Handeling conflicts between rows"):
+                try:
+                    row1 = rows[0]
+                    row2 = rows[1]
 
-                # Get the values of the other columns
-                row1_values = dataframe.loc[row1, other_columns].values
-                row2_values = dataframe.loc[row2, other_columns].values
+                    # Get the values of the other columns
+                    row1_values = dataframe.loc[row1, ~dataframe.columns.isin(columns)].values
+                    row2_values = dataframe.loc[row2, ~dataframe.columns.isin(columns)].values
 
-                # If the values are not the same, print the values and ask for user input
-                if not all(row1_values == row2_values):
-                    # Print the information of the columns that are the same
-                    tqdm.write(f'\nThere is a conflict for the following information:')
-                    tqdm.write(f'\n{columns}\n{dataframe.loc[row1, columns].values}')
-                    tqdm.write(f'\nWhich row do you want to keep?\n1: {row1_values}\n2: {row2_values}')
-                    # Ask for user input
-                    if automatic:
-                        for i, col in enumerate(other_columns):
-                            if dataframe.loc[row1, col] is str:
-                                dataframe.loc[row1, col] = row1_values[i] + row2_values[i]
-                            elif dataframe.loc[row1, col] is list:
-                                dataframe.loc[row1, col] = row1_values[i].concat(row2_values[i])
-                            elif dataframe.loc[row1, col] is float:
-                                dataframe.loc[row1, col] = max(row1_values[i], row2_values[i])
-                            else:
-                                dataframe.loc[row1, col] = row1_values[i]
-                        dataframe.drop(row2, inplace=False)
-                        tqdm.write(f"New data: {dataframe.loc[row1].values}")
-                    else:
-                        user_input = input('Which value do you want to keep? (1/2/3(Both)): ')
-                        # If the user input is 1, keep the first row, else keep the second row
-                        if user_input == '1':
-                            dataframe.loc[row2, other_columns] = row1_values
-                            dataframe.drop(row1, inplace=False)
-                        elif user_input == '2':
-                            dataframe.loc[row1, other_columns] = row2_values
-                            dataframe.drop(row2, inplace=False)
-                        elif user_input == '3':
-                            # If the user input is 3, keep both values but in one row
+                    # If the values are not the same, print the values and ask for user input
+                    if not np.array_equal(row1_values, row2_values):
+                        # Ask for user input
+                        if automatic:
                             for i, col in enumerate(other_columns):
                                 if dataframe.loc[row1, col] is str:
                                     dataframe.loc[row1, col] = row1_values[i] + row2_values[i]
-                                if dataframe.loc[row1, col] is list:
-                                    dataframe.loc[row1, col] = row1_values[i].concat(row2_values[i])
-                                if dataframe.loc[row1, col] is float:
+                                elif dataframe.loc[row1, col] is list:
+                                    dataframe.loc[row1, col] = row1_values[i] + row2_values[i]
+                                elif dataframe.loc[row1, col] is float:
                                     dataframe.loc[row1, col] = max(row1_values[i], row2_values[i])
-                                if dataframe.loc[row1, col] is object:
+                                else:
                                     dataframe.loc[row1, col] = row1_values[i]
                             dataframe.drop(row2, inplace=False)
+                        else:
+                            tqdm.write(f'\nThere is a conflict for the following information:')
+                            tqdm.write(f'\n{columns}\n{dataframe.loc[row1, columns].values}')
+                            tqdm.write(f'\nWhich row do you want to keep?\n1: {row1_values}\n2: {row2_values}')
 
+                            user_input = input('Which value do you want to keep? (1/2/3(Both)): ')
+                            # If the user input is 1, keep the first row, else keep the second row
+                            if user_input == '1':
+                                dataframe.loc[row2, ~dataframe.columns.isin(columns)] = row1_values
+                                dataframe.drop(row1, inplace=False)
+                            elif user_input == '2':
+                                dataframe.loc[row1, ~dataframe.columns.isin(columns)] = row2_values
+                                dataframe.drop(row2, inplace=False)
+                            elif user_input == '3':
+                                # If the user input is 3, keep both values but in one row
+                                for i, col in enumerate(other_columns):
+                                    if dataframe.loc[row1, col] is str:
+                                        dataframe.loc[row1, col] = row1_values[i] + row2_values[i]
+                                    if dataframe.loc[row1, col] is list:
+                                        dataframe.loc[row1, col] = row1_values[i] + row2_values[i]
+                                    if dataframe.loc[row1, col] is float:
+                                        dataframe.loc[row1, col] = max(row1_values[i], row2_values[i])
+                                    if dataframe.loc[row1, col] is object:
+                                        dataframe.loc[row1, col] = row1_values[i]
+                                dataframe.drop(row2, inplace=False)
+                            tqdm.write(f"New data: {dataframe.loc[row1].values}")
+                except:
+                    continue
 
-            # Drop the duplicate rows
-            dataframe.drop_duplicates(subset=columns, inplace=True)
             # Concatenate the unique rows and the updated dataframe
             dataframe = pd.concat([unique_rows, dataframe], ignore_index=True)
 
+            # Drop the duplicate rows
+            dataframe.drop_duplicates(subset=columns, inplace=True)
         return dataframe
+
