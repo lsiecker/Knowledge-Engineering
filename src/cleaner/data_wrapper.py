@@ -162,7 +162,7 @@ class DataWrapper():
         return self.data.columns.tolist()
 
     
-    def set_headers(self, *args):
+    def set_headers(self, *args, split_string = ['movie_name']):
         """
         Function for setting the headers of the data.
 
@@ -195,8 +195,9 @@ class DataWrapper():
         # If column includes items in a string with a comma, split the string into a list
         for header in self.data.columns:
             if self.data[header].dtype == 'object':
-                # Split on both comma and semi-colon
-                self.data[header] = self.data[header].str.split(',|;')
+                if header in split_string:
+                    # Split on both comma and semi-colon
+                    self.data[header] = self.data[header].str.split(',|;')
                 
           
         # Order the headers
