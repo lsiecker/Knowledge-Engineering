@@ -195,9 +195,11 @@ class DataWrapper():
         # If column includes items in a string with a comma, split the string into a list
         for header in self.data.columns:
             if self.data[header].dtype == 'object':
-                if header in split_string:
+                if header not in split_string:
                     # Split on both comma and semi-colon
                     self.data[header] = self.data[header].str.split(',|;')
+                else:
+                    print(self.data[header])
                 
           
         # Order the headers
