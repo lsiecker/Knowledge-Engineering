@@ -146,6 +146,8 @@ class DataWrapper():
             return pd.read_csv(data, encoding_errors='ignore')
         elif str(data).endswith('.xlsx'):
             return pd.read_excel(data)
+        elif str(data).endswith('.tsv'):
+            return pd.read_csv(data, sep='\t', header=0)
         else:
             raise ValueError('The data must be a csv/xlsx file.')
         
@@ -261,6 +263,39 @@ class DataWrapper():
             raise ValueError(f'The column {column_name} is neither an integer nor a string.')
         
         return
+    
+    def birthday(self, column_name):
+        """
+        A function that makes a birthday from the years and from the specific dates in the data.
+
+        Parameters
+        ----------
+        column_name : str
+            The name of the column to be converted to a date.
+        
+        Returns
+        -------
+        None
+        """
+        
+        # convert the column such that all different formats are converted to datetime
+        # convert the following formats: 23-Feb-1883 01/Jul/02 24-Dec-1886 11/Oct/18 22/Jun/06 07/Sep/09 18-Aug-1936 [1] 1972
+
+        # check which format the data is currently in as a string
+        if self.data[column_name].dtype == 'object':
+            # convert the column to datetime
+            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%d-%b-%Y', errors='coerce')
+            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%d/%b/%y', errors='coerce')
+            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%d/%b/%Y', errors='coerce')
+            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%d/%b/%y', errors='coerce')
+            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%d/%b/%Y', errors='coerce')
+            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%d/%b/%Y', errors='coerce')
+            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%d-%b-%Y [1]', errors='coerce')
+            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%Y', errors='coerce')
+        return
+
+
+        
     
     # def make_bool(self, column_name, true, false):
     #     """

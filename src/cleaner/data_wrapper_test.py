@@ -25,9 +25,12 @@ oscar_demographics.set_headers('movie_id', 'award_winner', '_', 'movie_rating', 
 oscar_award = DataWrapper(Path('data\\the_oscar_award.csv'), 'Oscar award')
 oscar_award.set_headers('movie_date', 'award_year', '_award_ceremony_number', 'award_category', 'award_person', 'movie_name', 
                         'award_winner')
+character_meta = DataWrapper(Path('data\character.metadata.tsv'), 'Character metadata')
+character_meta.set_headers('_', '_', 'movie_date', 'character_name', 'person_dateofbirth', 'person_gender', '_person_height', '_person_ethnicity', 'person_name', 'person_age_movie', '_', '_', "_")
+movie_meta = DataWrapper(Path('data\movie.metadata.tsv'), 'Movie metadata')
+movie_meta.set_headers('_', '_', 'movie_name', 'movie_date', 'movie_revenue', 'movie_runtime', 'movie_language', 'movie_country', 'movie_genre')
 
-
-datasets = [IMDB_top_250, IMDB_all_genres, movies, mymovies, oscar_demographics, oscar_award]
+datasets = [IMDB_top_250, IMDB_all_genres, movies, mymovies, oscar_demographics, oscar_award, character_meta, movie_meta]
 
 cleaned_movies  = DataSet('Movie')
 cleaned_movies.set_headers('movie_name', 'movie_date', 'movie_censor', 'movie_genre', 'movie_rating')
