@@ -198,8 +198,6 @@ class DataWrapper():
                 if header not in split_string:
                     # Split on both comma and semi-colon
                     self.data[header] = self.data[header].str.split(',|;')
-                else:
-                    print(self.data[header])
                 
           
         # Order the headers
@@ -468,27 +466,27 @@ class DataMatcher():
                 for existing_key in row_combinations.keys():
                     # Calculate the similarity score between the keys using fuzzy matching
                     similarity_score = fuzz.ratio(key, existing_key)
-                    try:
-                        if similarity_score == 100:
-                            # If the similarity score is 100, consider them the same keys
-                            row_combinations[existing_key].append(row_index)
-                            fuzzy_match = True
-                            break
-                        elif pattern_roman.search(key[0]) or pattern_roman.search(existing_key[0]):
-                            fuzzy_match = False
-                        elif pattern_last.search(key[0]) or pattern_last.search(existing_key[0]):
-                            fuzzy_match = False
-                        elif similarity_score >= 98:  # Set a threshold for similarity
-                            # If the similarity score is above the threshold, consider them similar keys
-                            row_combinations[existing_key].append(row_index)
+                    # If key or existing key are nat or nan, skip
+                    if any([pd.isnull(key_value) for key_value in key]) or any([pd.isnull(existing_key_value) for existing_key_value in existing_key]):
+                        continue
+                    if similarity_score == 100:
+                        # If the similarity score is 100, consider them the same keys
+                        row_combinations[existing_key].append(row_index)
+                        fuzzy_match = True
+                        break
+                    elif pattern_roman.search(key[0]) or pattern_roman.search(existing_key[0]):
+                        fuzzy_match = False
+                    elif pattern_last.search(key[0]) or pattern_last.search(existing_key[0]):
+                        fuzzy_match = False
+                    elif similarity_score >= 98:  # Set a threshold for similarity
+                        # If the similarity score is above the threshold, consider them similar keys
+                        row_combinations[existing_key].append(row_index)
 
-                            if similarity_score < 100:
-                                print(f'\nSimilar keys: {key} and {existing_key} with a similarity score of {similarity_score}.')
+                        if similarity_score < 100:
+                            print(f'\nSimilar keys: {key} and {existing_key} with a similarity score of {similarity_score}.')
 
-                            fuzzy_match = True
-                            break
-                    except:
-                        print(f'Error: {key} and {existing_key}')
+                        fuzzy_match = True
+                        break
                 if not fuzzy_match:
                     row_combinations[key] = [row_index]
 
