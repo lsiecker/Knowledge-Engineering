@@ -2,10 +2,10 @@ from pathlib import Path
 from data_wrapper import DataWrapper, DataSet, DataMatcher
 
 IMDB_top_250 = DataWrapper(Path('data\IMDB Top 250 Movies.csv'), 'IMDB Top 250 Movies')
-IMDB_top_250.set_headers('_', 'movie_name', 'movie_date', '_movie_rating', 'movie_genre', 'movie_censor', 'movie_runtime', 
+IMDB_top_250.set_headers('_', 'movie_name', 'movie_date', 'movie_rating', 'movie_genre', 'movie_censor', 'movie_runtime', 
                          'movie_overview', 'movie_budget', 'movie_box_office', 'actors', 'directors', 'writers')
 IMDB_all_genres = DataWrapper(Path('data\IMDb_All_Genres_etf_clean1.csv'), 'IMDb All Genres')
-IMDB_all_genres.set_headers('movie_name', 'movie_date', 'director', 'actors', '_movie_rating', 'movie_runtime', 
+IMDB_all_genres.set_headers('movie_name', 'movie_date', 'director', 'actors', 'movie_rating', 'movie_runtime', 
                             'movie_censor', 'movie_gross', 'movie_genre', 'movie_side_genre')
 movies = DataWrapper(Path('data\movies.csv'), 'movies')
 movies.set_headers('movie_name', 'movie_censor', 'movie_genre', 'movie_date', 'movie_date', '_movie_rating', 
@@ -36,30 +36,30 @@ cleaned_persons.set_headers('person_name', 'person_dateofbirth')
 cleaned_awards  = DataSet('Award')
 cleaned_awards.set_headers('award_category', 'award_year')
 cleaned_genres  = DataSet('Genre')
-cleaned_genres.set_headers('movie_genre', 'movie_side_genre')
+cleaned_genres.set_headers('movie_genre')
 
 cleaned_acted_in = DataSet('Acted in')
-cleaned_acted_in.set_headers('movie_name', 'movie_date', 'actor', 'person_dateofbirth')
+cleaned_acted_in.set_headers('movie_name', 'movie_date', 'actor')
 cleaned_directed = DataSet('Directed')
-cleaned_directed.set_headers('movie_name', 'movie_date', 'director', 'person_dateofbirth')
+cleaned_directed.set_headers('movie_name', 'movie_date', 'director')
 cleaned_wrote = DataSet('Wrote')
-cleaned_wrote.set_headers('movie_name', 'movie_date', 'writer', 'person_dateofbirth')
+cleaned_wrote.set_headers('movie_name', 'movie_date', 'writer')
 
 cleaned_nominated_for = DataSet('Nominated for (Movie)')
-cleaned_nominated_for.set_headers('movie_name', 'movie_date', 'award_category', 'award_year', 'award_person', 'person_dateofbirth')
+cleaned_nominated_for.set_headers('movie_name', 'movie_date', 'award_category', 'award_year', 'award_person')
 cleaned_won = DataSet('Won (Movie)')
-cleaned_won.set_headers('movie_name', 'movie_date', 'award_category', 'award_year', 'award_person', 'person_dateofbirth')
+cleaned_won.set_headers('movie_name', 'movie_date', 'award_category', 'award_year', 'award_person')
 cleaned_nominated_for_person = DataSet('Nominated for (Person)')
-cleaned_nominated_for_person.set_headers('person_name', 'award_category', 'award_year', 'award_person', 'person_dateofbirth')
+cleaned_nominated_for_person.set_headers('person_name', 'award_category', 'award_year', 'person_dateofbirth')
 cleaned_won_person = DataSet('Won (Person)')
-cleaned_won_person.set_headers('person_name', 'award_category', 'award_year', 'award_person', 'person_dateofbirth') 
+cleaned_won_person.set_headers('person_name', 'award_category', 'award_year', 'person_dateofbirth') 
 
 cleaned_has_genre = DataSet('Has genre')
-cleaned_has_genre.set_headers('movie_name', 'movie_date', 'movie_genre', 'movie_side_genre')
+cleaned_has_genre.set_headers('movie_name', 'movie_date', 'movie_genre',)
 
 for data in datasets:
     # Cleaning of the datasets
-    for col in ['movie_date', 'movie_rating_time', 'person_dateofbirth', 'award_year']:
+    for col in ['movie_date', 'movie_rating_time', 'award_year']:
         if col in data.get_headers():
             # For the given columns, make it datetime
             data.make_date(col)
@@ -68,7 +68,7 @@ for data in datasets:
     # For actors, writers, directors, we need to split the data into multiple rows
 
     for cleaned_data in [cleaned_movies, cleaned_persons, cleaned_awards, cleaned_genres, \
-                         cleaned_acted_in, cleaned_directed, cleaned_wrote, cleaned_produced, \
+                         cleaned_acted_in, cleaned_directed, cleaned_wrote, \
                          cleaned_nominated_for, cleaned_won, cleaned_nominated_for_person, \
                          cleaned_won_person, cleaned_has_genre]:
         # For the columns that needs to be in the cleaned dataset
@@ -84,7 +84,7 @@ for data in datasets:
         cleaned_data.explode_data()
 
 datamatcher = DataMatcher()
-cleaned_movies.update_data(datamatcher.aggregate(cleaned_movies.get_data(), "movie_name", "movie_date"))
+cleaned_movies.update_data(datamatcher.aggregate(cleaned_movies.get_data(), "movie_name", "movie_date", dif_timestamps=True))
 cleaned_movies.drop_unknown('movie_name', "movie_date")
 cleaned_movies.export_cleaned_data()
 cleaned_persons.update_data(datamatcher.aggregate(cleaned_persons.get_data(), "person_name"))
@@ -107,10 +107,10 @@ cleaned_wrote.update_data(datamatcher.aggregate(cleaned_wrote.get_data(), "movie
 cleaned_wrote.drop_unknown('movie_name', "movie_date", "writer")
 cleaned_wrote.export_cleaned_data()
 
-cleaned_nominated_for.update_data(datamatcher.aggregate(cleaned_nominated_for.get_data(), "movie_name", "movie_date", "award_category", "award_year"))
+cleaned_nominated_for.update_data(datamatcher.aggregate(cleaned_nominated_for.get_data(), "movie_name", "movie_date", "award_category", "award_person", "award_year"))
 cleaned_nominated_for.drop_unknown('movie_name', "movie_date", "award_category", "award_year")
 cleaned_nominated_for.export_cleaned_data()
-cleaned_won.update_data(datamatcher.aggregate(cleaned_won.get_data(), "movie_name", "movie_date", "award_category", "award_year"))
+cleaned_won.update_data(datamatcher.aggregate(cleaned_won.get_data(), "movie_name", "movie_date", "award_category", "award_year", "award_person"))
 cleaned_won.drop_unknown('movie_name', "movie_date", "award_category", "award_year")
 cleaned_won.export_cleaned_data()
 cleaned_nominated_for_person.update_data(datamatcher.aggregate(cleaned_nominated_for_person.get_data(), "person_name", "award_category", "award_year"))

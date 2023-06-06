@@ -197,9 +197,9 @@ class DataWrapper():
             if self.data[header].dtype == 'object':
                 if header not in split_string:
                     # Split on both comma and semi-colon
-                    self.data[header] = self.data[header].str.split(', |; ')
-                    # TODO: Fix comma separation
-                
+                    self.data[header] = self.data[header].str.split(',|;')
+                    # Make column a list
+                    self.data[header] = self.data[header].apply(lambda x: x if isinstance(x, list) else [x])
           
         # Order the headers
         self.data = self.data[self.order_headers(self.get_headers())]
@@ -261,28 +261,6 @@ class DataWrapper():
             raise ValueError(f'The column {column_name} is neither an integer nor a string.')
         
         return
-    
-    # def make_string(self, column_name):
-    #     """
-    #     A function that makes a string from a column that includes integers or floats.
-
-    #     Parameters
-    #     ----------
-    #     column_name : str
-    #         The name of the column to be converted to a string.
-
-    #     Returns
-    #     -------
-    #     None
-    #     """
-    #     # for items in the row, if it is a number, convert it to a string
-    #     items = [item for item in self.data[column_name]]
-    #     self.data[column_name].update(pd.Series(items))
-
-    #     # Convert all data to utf-8
-    #     # self.data[column_name] = self.data[column_name].str.encode('utf-8').str.decode('utf-8')
-        
-    #     return
     
     # def make_bool(self, column_name, true, false):
     #     """
@@ -421,7 +399,7 @@ class DataMatcher():
     def __init__(self) -> None:
         pass
 
-    def aggregate(self, dataframe: pd.DataFrame, *columns, automatic: bool = True, drop_nan_keys: bool = True):
+    def aggregate(self, dataframe: pd.DataFrame, *columns, automatic: bool = True, drop_nan_keys: bool = True, dif_timestamps= False):
         """
         A function that looks for duplicate rows in a dataframe and aggregates them.
         It is possible to have different columns filled in for the same given header.
@@ -440,6 +418,11 @@ class DataMatcher():
         pd.DataFrame
             The aggregated dataframe.
         """
+
+        # If the column consists of strings, strip the strings from the leading spaces
+        for column in columns:
+            if dataframe[column].dtype == 'object':
+                dataframe[column] = dataframe[column].str.strip()
 
         # Check if there are duplicate rows
         if dataframe.duplicated(subset=columns).any():
@@ -476,16 +459,29 @@ class DataMatcher():
                     # If key or existing key are nat or nan, skip
                     if any([pd.isnull(key_value) for key_value in key]) or any([pd.isnull(existing_key_value) for existing_key_value in existing_key]):
                         continue
+                    # If key or existing key contain a TimeStamp, only match if 100% similar
+                    elif dif_timestamps and key[0] == existing_key[0] and any([isinstance(key_value, pd.Timestamp) for key_value in key]) and any([isinstance(existing_key_value, pd.Timestamp) for existing_key_value in existing_key]):
+
+                        if similarity_score == 100:
+                            row_combinations[existing_key].append(row_index)
+                            fuzzy_match = True
+                            continue
+                        else:
+                            fuzzy_match = False
+                            print('\nDifferent timestamps: ', key, existing_key)
+                            continue
+
                     if similarity_score == 100:
                         # If the similarity score is 100, consider them the same keys
                         row_combinations[existing_key].append(row_index)
                         fuzzy_match = True
-                        break
+                        continue
                     elif pattern_roman.search(key[0]) or pattern_roman.search(existing_key[0]):
                         fuzzy_match = False
+                        continue
                     elif pattern_last.search(key[0]) or pattern_last.search(existing_key[0]):
                         fuzzy_match = False
-                    # TODO: elif timestamps verschillend do not match
+                        continue
                     elif similarity_score >= 98:  # Set a threshold for similarity
                         # If the similarity score is above the threshold, consider them similar keys
                         row_combinations[existing_key].append(row_index)
@@ -494,7 +490,7 @@ class DataMatcher():
                             print(f'\nSimilar keys: {key} and {existing_key} with a similarity score of {similarity_score}.')
 
                         fuzzy_match = True
-                        break
+                        continue
                 if not fuzzy_match:
                     row_combinations[key] = [row_index]
 

@@ -1,44 +1,25 @@
-movie_genre,movie_side_genre
-Drama,
-Crime,
-Action,
-Biography,
-History,
-Adventure,
-Western,
-Romance,
-Sci-Fi,
-Fantasy,
-Mystery,
-Family,
-Thriller,
-War,
-Comedy,
-Animation,
-Music,
-Horror,
-Film-Noir,
-Musical,
-Sport,
- Adventure,
- Science Fiction,
- Mystery,
- Thriller,
- Comedy,
- Family,
- Fantasy,
- War,
- Crime,
-Science Fiction,
- Action,
- Drama,
- Music,
- Romance,
- Western,
- History,
- Horror,
- Animation,
-TV Movie,
-Documentary,
- TV Movie,
- Documentary,
+movie_genre
+Drama
+Crime
+Action
+Biography
+History
+Adventure
+Western
+Romance
+Sci-Fi
+Fantasy
+Mystery
+Family
+Thriller
+War
+Comedy
+Animation
+Music
+Horror
+Film-Noir
+Musical
+Sport
+Science Fiction
+TV Movie
+Documentary
