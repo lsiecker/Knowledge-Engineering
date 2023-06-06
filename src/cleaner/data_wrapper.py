@@ -197,7 +197,8 @@ class DataWrapper():
             if self.data[header].dtype == 'object':
                 if header not in split_string:
                     # Split on both comma and semi-colon
-                    self.data[header] = self.data[header].str.split(',|;')
+                    self.data[header] = self.data[header].str.split(', |; ')
+                    # TODO: Fix comma separation
                 
           
         # Order the headers
@@ -420,7 +421,7 @@ class DataMatcher():
     def __init__(self) -> None:
         pass
 
-    def aggregate(self, dataframe: pd.DataFrame, *columns, automatic: bool = True):
+    def aggregate(self, dataframe: pd.DataFrame, *columns, automatic: bool = True, drop_nan_keys: bool = True):
         """
         A function that looks for duplicate rows in a dataframe and aggregates them.
         It is possible to have different columns filled in for the same given header.
@@ -454,6 +455,12 @@ class DataMatcher():
             print(f'There are {len(unique_rows)} unique rows.'
                 f'\nThese rows will be kept.')
 
+            # Check if in the duplicated rows there are nan or nat values and filter out those rows
+            if drop_nan_keys:
+                duplicated_rows = duplicated_rows.dropna(subset=columns, how='any')
+
+            print(f'There are {len(duplicated_rows)} duplicate rows without nan or nat values.')
+
             # Compare the duplicate rows
             # Create a dictionary to store row combinations based on the column values
             row_combinations = {}
@@ -478,6 +485,7 @@ class DataMatcher():
                         fuzzy_match = False
                     elif pattern_last.search(key[0]) or pattern_last.search(existing_key[0]):
                         fuzzy_match = False
+                    # TODO: elif timestamps verschillend do not match
                     elif similarity_score >= 98:  # Set a threshold for similarity
                         # If the similarity score is above the threshold, consider them similar keys
                         row_combinations[existing_key].append(row_index)
@@ -493,7 +501,7 @@ class DataMatcher():
             columns = list(columns)
 
             # Iterate over the row combinations and handle conflicts
-            for key, rows in tqdm(row_combinations.items(), desc="Handeling conflicts between rows"):
+            for key, rows in tqdm(row_combinations.items(), desc="Handeling conflicts between rows", position=0, smoothing=0.4, leave=False):
                 try:
                     row1 = rows[0]
                     row2 = rows[1]
