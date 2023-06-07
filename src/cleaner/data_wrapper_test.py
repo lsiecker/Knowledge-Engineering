@@ -30,7 +30,9 @@ character_meta.set_headers('_', '_', 'movie_date', 'character_name', 'person_dat
 movie_meta = DataWrapper(Path('data\movie.metadata.tsv'), 'Movie metadata')
 movie_meta.set_headers('_', '_', 'movie_name', 'movie_date', 'movie_revenue', 'movie_runtime', 'movie_language', 'movie_country', 'movie_genre')
 
-datasets = [IMDB_top_250, IMDB_all_genres, movies, mymovies, oscar_demographics, oscar_award, character_meta, movie_meta]
+
+# Excluded character_meta since it is very large and takes 12 hours to run
+datasets = [IMDB_top_250, IMDB_all_genres, movies, mymovies, oscar_demographics, oscar_award]
 
 cleaned_movies  = DataSet('Movie')
 cleaned_movies.set_headers('movie_name', 'movie_date', 'movie_censor', 'movie_genre', 'movie_rating')
