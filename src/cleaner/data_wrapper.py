@@ -1,19 +1,297 @@
-
-# rank,name,year,rating,genre,certificate,run_time,tagline,budget,box_office,casts,directors,writers
-# Movie_Title,Year,Director,Actors,Rating,Runtime(Mins),Censor,Total_Gross,main_genre,side_genre
-# name,rating,genre,year,released,score,votes,director,writer,star,country,budget,gross,company,runtime
-# Release_Date,Title,Overview,Popularity,Vote_Count,Vote_Average,Original_Language,Genre,Poster_Url
-# _unit_id,_golden,_unit_state,_trusted_judgments,_last_judgment_at,birthplace,birthplace:confidence,date_of_birth,date_of_birth:confidence,race_ethnicity,race_ethnicity:confidence,religion,religion:confidence,sexual_orientation,sexual_orientation:confidence,year_of_award,year_of_award:confidence,award,biourl,birthplace_gold,date_of_birth_gold,movie,person,race_ethnicity_gold,religion_gold,sexual_orientation_gold,year_of_award_gold
-# year_film,year_ceremony,ceremony,category,name,film,winner
-
-from itertools import combinations
 from pathlib import Path
 import re
-from typing import Any
 import numpy as np
 import pandas as pd
-from tqdm import tqdm, trange
+from tqdm import tqdm
 from fuzzywuzzy import fuzz
+
+
+class DataWrapper():
+    """
+    A class used to represent a data wrapper.
+
+    Attributes
+    ----------
+    data : pd.DataFrame
+        The data to be cleaned.
+    header_order : list
+        The order of the headers in the data.
+    name : str
+        The name of the data.
+        
+    Methods
+    -------
+    get_name()
+        Returns the name of the data.
+    get_data()
+        Returns the data.
+    set_data(data) 
+        Sets the data.
+    get_headers()
+        Returns the headers of the data.
+    set_headers(*args, split_string = ['movie_name'])
+        Sets the headers of the data.
+    order_headers(headers)  
+        Orders the headers of the data.
+    format_headers(headers)
+        Formats the headers of the data.
+    make_date(column_name)
+        Makes a date from the years and from the specific dates in the data.
+    birthday(column_name)
+        Makes a birthday from the years and from the specific dates in the data.
+    """
+
+    def __init__(self, data_source: Path, name: str = None) -> None:
+        self.data = self.set_data(data_source)
+        # The preferred order of the headers
+        self.header_order = ['movie_name', 'movie_date', 'movie_rating', 'movie_genre', 'director', 'writer', 'actor', 'award_year']
+        self.name = name
+
+    def __call__(self):
+        return self.data
+
+    def get_name(self) -> str:
+        """
+        Function for getting the name of the data.
+        
+        Returns
+        -------
+        str
+            The name of the data.
+        """
+        return self.name
+
+    def get_data(self) -> pd.DataFrame:
+        """
+        Function for getting the data.
+
+        Returns
+        -------
+        pd.DataFrame
+            The data.
+        """
+        return self.data
+    
+    def set_data(self, data) -> None:
+        """
+        Function for setting the data.
+
+        Parameters
+        ----------
+        data : Path
+            The path to the data.
+
+        Returns
+        -------
+        None
+        """
+        if not data.is_file():
+            raise ValueError('This file does not exist.')
+        
+        # Check if is a csv file
+        if str(data).endswith('.csv'):
+            return pd.read_csv(data, encoding_errors='ignore')
+        elif str(data).endswith('.xlsx'):
+            return pd.read_excel(data)
+        elif str(data).endswith('.tsv'):
+            return pd.read_csv(data, sep='\t', header=0)
+        else:
+            raise ValueError('The data must be a csv/xlsx file.')
+        
+    def get_headers(self) -> list:
+        """
+        Function for getting the headers of the data.
+
+        Returns
+        -------
+        list
+            The headers of the data.
+        """
+        return self.data.columns.tolist()
+
+    
+    def set_headers(self, *args, split_string = ['movie_name']):
+        """
+        Function for setting the headers of the data.
+
+        Parameters
+        ----------
+        *args : list of the headers in the data and their new names
+        
+        Returns
+        -------
+        None
+        """
+        # Check if the number of headers is the same as the number of arguments
+        if len(self.get_headers()) != len(args):
+            raise ValueError(f'The number of headers must be the same as the number of arguments. There are {len(self.get_headers())} headers and {len(args)} arguments.')
+        
+        # Rename the headers of the data
+        for header in args:
+            self.data.rename(columns={self.get_headers()[args.index(header)]: header}, inplace=True)
+
+        # Drop if header starts with '_'
+        self.data.drop(columns=[header for header in self.get_headers() if header.startswith('_')], inplace=True)
+        
+        # Make the headers have first letter uppercase and the rest lowercase
+        self.data.columns = self.data.columns.str.lower()
+        
+        # Clean the headers e.g. writers -> writer
+        self.data.columns = self.format_headers(self.data.columns.tolist())
+
+        # If column includes items in a string with a comma, split the string into a list
+        for header in self.data.columns:
+            if self.data[header].dtype == 'object':
+                if header not in split_string:
+                    # Split on both comma and semi-colon
+                    self.data[header] = self.data[header].str.split(',|;')
+                    # Make column a list
+                    self.data[header] = self.data[header].apply(lambda x: x if isinstance(x, list) else [x])
+          
+        # Order the headers
+        self.data = self.data[self.order_headers(self.get_headers())]
+
+        return
+    
+    def order_headers(self, headers):
+        """
+        Function that orders the header based on a preferred predetermined order.
+
+        Parameters
+        ----------
+        headers : list
+            The list of headers to be ordered.
+
+        Returns
+        -------
+        None
+        """
+        # Create a dictionary to store the order of each string in the preferred_order list
+        order_dict = {name: i for i, name in enumerate(self.header_order)}
+        
+        # Sort the names list based on the order_dict values, using a lambda function as the key
+        sorted_names = sorted(headers, key=lambda x: order_dict.get(x, float('inf')))
+        
+        return sorted_names
+
+    def format_headers(self, headers):
+        formatted_headers = []
+        
+        for header in headers:
+            # If header ends with 's' or any other letter at the end, remove it
+            if header[:-1].lower() in self.header_order:
+                header = header[:-1]
+            formatted_headers.append(header)
+        
+        return formatted_headers
+
+    def make_date(self, column_name):
+        """
+        A function that makes a date from the years and from the specific dates in the data.
+
+        Parameters
+        ----------
+        column_name : str
+            The name of the column to be converted to a date.
+        
+        Returns
+        -------
+        None
+        """
+        
+        # If the column is a year, make it a date
+        if self.data[column_name].dtype == 'int64':
+            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%Y')
+        # If the column is a date, make it a date
+        elif self.data[column_name].dtype == 'object':
+            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%Y-%m-%d', errors='coerce')
+        else:
+            raise ValueError(f'The column {column_name} is neither an integer nor a string.')
+        
+        return
+    
+    def birthday(self, column_name):
+        """
+        A function that makes a birthday from the years and from the specific dates in the data.
+
+        Parameters
+        ----------
+        column_name : str
+            The name of the column to be converted to a date.
+        
+        Returns
+        -------
+        None
+        """
+        
+        # convert the column such that all different formats are converted to datetime
+        # convert the following formats: 23-Feb-1883 01/Jul/02 24-Dec-1886 11/Oct/18 22/Jun/06 07/Sep/09 18-Aug-1936 [1] 1972
+
+        # check which format the data is currently in as a string
+        if self.data[column_name].dtype == 'object':
+            # convert the column to datetime
+            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%d-%b-%Y', errors='coerce')
+            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%d/%b/%y', errors='coerce')
+            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%d/%b/%Y', errors='coerce')
+            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%d/%b/%y', errors='coerce')
+            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%d/%b/%Y', errors='coerce')
+            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%d/%b/%Y', errors='coerce')
+            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%d-%b-%Y [1]', errors='coerce')
+            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%Y', errors='coerce')
+        return
+
+    
+    def drop_nan(self, column_name):
+        """
+        A function that drops the rows with NaN values in a column.
+
+        Parameters
+        ----------
+        column_name : str
+            The name of the column to be dropped.
+
+        Returns
+        -------
+        None
+        """
+        # Drop the rows with NaN values in the column
+        self.data.dropna(subset=[column_name])
+
+        return
+   
+        
+    def export_cleaned_data(self, name: str, format: str = 'csv', destination: Path = Path('data\cleaned_data')):
+        """
+        A function that exports the cleaned data to a csv file.
+
+        Parameters
+        ----------
+        format : str
+            The format of the file to be exported.
+        path : Path
+            The path of the file to be exported.
+
+        Returns
+        -------
+        None
+        """
+
+        # Check if the path exists
+        if not destination.is_dir():
+            raise ValueError('The path does not exist.')
+        
+        # Check if the format is valid
+        if format not in ['csv', 'xlsx']:
+            raise ValueError('The format must be either csv or xlsx.')
+        
+        # Export the data
+        if format == 'csv':
+            self.data.to_csv(destination / f'{name}.csv', index=False)
+        elif format == 'xlsx':
+            self.data.to_excel(destination / f'{name}.xlsx', index=False)
+        
+        return
+
 
 
 class DataSet():
@@ -23,7 +301,7 @@ class DataSet():
         self.headers = None
         self.header_order = ['movie_name', 'movie_date', 'movie_rating', 'movie_genre', 'director', 'writer', 'actor', 'award_year']
 
-    def __call__(self) -> Any:
+    def __call__(self):
         return self.data
     
     def get_name(self) -> str:
@@ -120,314 +398,6 @@ class DataSet():
         self.data.dropna(how='any', subset=columns, inplace=True)
 
         return
-
-
-class DataWrapper():
-    def __init__(self, data_source: Path, name: str = None) -> None:
-        self.data = self.set_data(data_source)
-        self.header_order = ['movie_name', 'movie_date', 'movie_rating', 'movie_genre', 'director', 'writer', 'actor', 'award_year']
-        self.name = name
-
-    def __call__(self) -> Any:
-        return self.data
-
-    def get_name(self) -> str:
-        return self.name
-
-    def get_data(self) -> pd.DataFrame:
-        return self.data
-    
-    def set_data(self, data) -> None:
-        if not data.is_file():
-            raise ValueError('This file does not exist.')
-        
-        # Check if is a csv file
-        if str(data).endswith('.csv'):
-            return pd.read_csv(data, encoding_errors='ignore')
-        elif str(data).endswith('.xlsx'):
-            return pd.read_excel(data)
-        elif str(data).endswith('.tsv'):
-            return pd.read_csv(data, sep='\t', header=0)
-        else:
-            raise ValueError('The data must be a csv/xlsx file.')
-        
-    def get_headers(self) -> list:
-        """
-        Function for getting the headers of the data.
-
-        Returns
-        -------
-        list
-            The headers of the data.
-        """
-
-        return self.data.columns.tolist()
-
-    
-    def set_headers(self, *args, split_string = ['movie_name']):
-        """
-        Function for setting the headers of the data.
-
-        Parameters
-        ----------
-        *args : list of the headers in the data and their new names
-        
-        Returns
-        -------
-        None
-        """
-
-        # Check if the number of headers is the same as the number of arguments
-        if len(self.get_headers()) != len(args):
-            raise ValueError(f'The number of headers must be the same as the number of arguments. There are {len(self.get_headers())} headers and {len(args)} arguments.')
-        
-        # Rename the headers of the data
-        for header in args:
-            self.data.rename(columns={self.get_headers()[args.index(header)]: header}, inplace=True)
-
-        # Drop if header starts with '_'
-        self.data.drop(columns=[header for header in self.get_headers() if header.startswith('_')], inplace=True)
-        
-        # Make the headers have first letter uppercase and the rest lowercase
-        self.data.columns = self.data.columns.str.lower()
-        
-        # Clean the headers e.g. writers -> writer
-        self.data.columns = self.format_headers(self.data.columns.tolist())
-
-        # If column includes items in a string with a comma, split the string into a list
-        for header in self.data.columns:
-            if self.data[header].dtype == 'object':
-                if header not in split_string:
-                    # Split on both comma and semi-colon
-                    self.data[header] = self.data[header].str.split(',|;')
-                    # Make column a list
-                    self.data[header] = self.data[header].apply(lambda x: x if isinstance(x, list) else [x])
-          
-        # Order the headers
-        self.data = self.data[self.order_headers(self.get_headers())]
-
-        return
-    
-    def order_headers(self, headers):
-        """
-        Function that orders the header based on a preferred predetermined order.
-
-        Parameters
-        ----------
-        headers : list
-            The list of headers to be ordered.
-
-        Returns
-        -------
-        None
-        """
-        # Create a dictionary to store the order of each string in the preferred_order list
-        order_dict = {name: i for i, name in enumerate(self.header_order)}
-        
-        # Sort the names list based on the order_dict values, using a lambda function as the key
-        sorted_names = sorted(headers, key=lambda x: order_dict.get(x, float('inf')))
-        
-        return sorted_names
-
-    def format_headers(self, headers):
-        formatted_headers = []
-        
-        for header in headers:
-            if header[:-1].lower() in self.header_order:
-                header = header[:-1]
-            formatted_headers.append(header)
-        
-        return formatted_headers
-
-    def make_date(self, column_name):
-        """
-        A function that makes a date from the years and from the specific dates in the data.
-
-        Parameters
-        ----------
-        column_name : str
-            The name of the column to be converted to a date.
-        
-        Returns
-        -------
-        None
-        """
-        
-        # If the column is a year, make it a date
-        if self.data[column_name].dtype == 'int64':
-            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%Y')
-        # If the column is a date, make it a date
-        elif self.data[column_name].dtype == 'object':
-            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%Y-%m-%d', errors='coerce')
-        else:
-            raise ValueError(f'The column {column_name} is neither an integer nor a string.')
-        
-        return
-    
-    def birthday(self, column_name):
-        """
-        A function that makes a birthday from the years and from the specific dates in the data.
-
-        Parameters
-        ----------
-        column_name : str
-            The name of the column to be converted to a date.
-        
-        Returns
-        -------
-        None
-        """
-        
-        # convert the column such that all different formats are converted to datetime
-        # convert the following formats: 23-Feb-1883 01/Jul/02 24-Dec-1886 11/Oct/18 22/Jun/06 07/Sep/09 18-Aug-1936 [1] 1972
-
-        # check which format the data is currently in as a string
-        if self.data[column_name].dtype == 'object':
-            # convert the column to datetime
-            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%d-%b-%Y', errors='coerce')
-            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%d/%b/%y', errors='coerce')
-            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%d/%b/%Y', errors='coerce')
-            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%d/%b/%y', errors='coerce')
-            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%d/%b/%Y', errors='coerce')
-            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%d/%b/%Y', errors='coerce')
-            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%d-%b-%Y [1]', errors='coerce')
-            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%Y', errors='coerce')
-        return
-
-
-        
-    
-    # def make_bool(self, column_name, true, false):
-    #     """
-    #     A function that makes a boolean column from a column with true and false values.
-
-    #     Parameters
-    #     ----------
-    #     column_name : str
-    #         The name of the column to be converted to a boolean.
-    #     true : str
-    #         The string that represents a true value.
-    #     false : str
-    #         The string that represents a false value.
-        
-    #     Returns
-    #     -------
-    #     None
-    #     """
-        
-    #     # Make the column a boolean column
-    #     self.data[column_name] = self.data[column_name].map({true: True, false: False})
-        
-    #     return
-    
-    def drop_nan(self, column_name):
-        """
-        A function that drops the rows with NaN values in a column.
-
-        Parameters
-        ----------
-        column_name : str
-            The name of the column to be dropped.
-
-        Returns
-        -------
-        None
-        """
-        # Drop the rows with NaN values in the column
-        self.data.dropna(subset=[column_name])
-
-        return
-
-    # def convert_numbers(self, column_name):
-    #     """
-    #     A function that converts the text numbers into numbers
-    #     e.g. iii -> 3 or 1,000 -> 1000 or 1.000 -> 1000 or III -> 3
-
-    #     Parameters
-    #     ----------
-    #     column_name : str
-    #         The name of the column to be converted to numbers.
-
-    #     Returns
-    #     -------
-    #     None
-    #     """
-
-    #     # replace all roman numerals with their number equivalent
-
-    #     # list of roman numberals and their number equivalent until 10
-    #     # TODO: Fix words starting with V
-    #     numerals = {' X': 10, ' IX': 9, ' VIII': 8, ' VII': 7, ' VI': 6, ' V': 5, ' IV': 4, ' III': 3, ' II': 2, ' I': 1}
-
-    #     # replace all roman numerals with their number equivalent
-    #     for numeral in numerals:
-    #         for i, items in enumerate(self.data[column_name]):
-    #             # check if item is float or NaN
-    #             try:
-    #                 if items[0].endswith(numeral):
-    #                     self.update_data(column_name, i, items[0].replace(items, str(numerals[numeral])))
-    #             except TypeError:
-    #                 self.data.drop(i, inplace=True)
-
-    # def update_data(self, data):
-    #     """
-    #     A function that updates the data in a specific row and column.
-        
-    #     Parameters
-    #     ----------
-    #     column_name : str
-    #         The name of the column to be updated.
-    #     row : int
-    #         The row of the data to be updated.
-    #     data : str
-    #         The data to be updated.
-        
-    #     Returns
-    #     -------
-    #     None
-    #     """
-        
-    #     self.data = data
-        
-    #     return    
-        
-    def export_cleaned_data(self, name: str, format: str = 'csv', destination: Path = Path('data\cleaned_data')):
-        """
-        A function that exports the cleaned data to a csv file.
-
-        Parameters
-        ----------
-        format : str
-            The format of the file to be exported.
-        path : Path
-            The path of the file to be exported.
-
-        Returns
-        -------
-        None
-        """
-
-        # Check if the path exists
-        if not destination.is_dir():
-            raise ValueError('The path does not exist.')
-        
-        # Check if the format is valid
-        if format not in ['csv', 'xlsx']:
-            raise ValueError('The format must be either csv or xlsx.')
-        
-        # Export the data
-        if format == 'csv':
-            self.data.to_csv(destination / f'{name}.csv', index=False)
-        elif format == 'xlsx':
-            self.data.to_excel(destination / f'{name}.xlsx', index=False)
-        
-        return
-
-
-
-# import fuzzywuzzy
-# from fuzzywuzzy import fuzz
-# from itertools import combinations
 
 
 class DataMatcher():
