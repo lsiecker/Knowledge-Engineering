@@ -1,29 +1,90 @@
-
-# rank,name,year,rating,genre,certificate,run_time,tagline,budget,box_office,casts,directors,writers
-# Movie_Title,Year,Director,Actors,Rating,Runtime(Mins),Censor,Total_Gross,main_genre,side_genre
-# name,rating,genre,year,released,score,votes,director,writer,star,country,budget,gross,company,runtime
-# Release_Date,Title,Overview,Popularity,Vote_Count,Vote_Average,Original_Language,Genre,Poster_Url
-# _unit_id,_golden,_unit_state,_trusted_judgments,_last_judgment_at,birthplace,birthplace:confidence,date_of_birth,date_of_birth:confidence,race_ethnicity,race_ethnicity:confidence,religion,religion:confidence,sexual_orientation,sexual_orientation:confidence,year_of_award,year_of_award:confidence,award,biourl,birthplace_gold,date_of_birth_gold,movie,person,race_ethnicity_gold,religion_gold,sexual_orientation_gold,year_of_award_gold
-# year_film,year_ceremony,ceremony,category,name,film,winner
-
 from pathlib import Path
 import re
-from typing import Any
+import numpy as np
 import pandas as pd
-from tqdm import tqdm, trange
+from tqdm import tqdm
+from fuzzywuzzy import fuzz
+
 
 class DataWrapper():
-    def __init__(self, data_source: Path):
-        self.data = self.set_data(data_source)
-        self.header_order = ['movie_name', 'movie_date', 'movie_rating', 'movie_genre', 'director', 'writer', 'actor', 'award_year']
+    """
+    A class used to represent a data wrapper.
 
-    def get_data(self) -> pd.DataFrame:
+    Attributes
+    ----------
+    data : pd.DataFrame
+        The data to be cleaned.
+    header_order : list
+        The order of the headers in the data.
+    name : str
+        The name of the data.
+        
+    Methods
+    -------
+    get_name()
+        Returns the name of the data.
+    get_data()
+        Returns the data.
+    set_data(data) 
+        Sets the data.
+    get_headers()
+        Returns the headers of the data.
+    set_headers(*args, split_string = ['movie_name'])
+        Sets the headers of the data.
+    order_headers(headers)  
+        Orders the headers of the data.
+    format_headers(headers)
+        Formats the headers of the data.
+    make_date(column_name)
+        Makes a date from the years and from the specific dates in the data.
+    birthday(column_name)
+        Makes a birthday from the years and from the specific dates in the data.
+    """
+
+    def __init__(self, data_source: Path, name: str = None) -> None:
+        self.data = self.set_data(data_source)
+        # The preferred order of the headers
+        self.header_order = ['movie_name', 'movie_date', 'movie_rating', 'movie_genre', 'director', 'writer', 'actor', 'award_year']
+        self.name = name
+
+    def __call__(self):
         return self.data
 
-    def __call__(self) -> Any:
+    def get_name(self) -> str:
+        """
+        Function for getting the name of the data.
+        
+        Returns
+        -------
+        str
+            The name of the data.
+        """
+        return self.name
+
+    def get_data(self) -> pd.DataFrame:
+        """
+        Function for getting the data.
+
+        Returns
+        -------
+        pd.DataFrame
+            The data.
+        """
         return self.data
     
     def set_data(self, data) -> None:
+        """
+        Function for setting the data.
+
+        Parameters
+        ----------
+        data : Path
+            The path to the data.
+
+        Returns
+        -------
+        None
+        """
         if not data.is_file():
             raise ValueError('This file does not exist.')
         
@@ -32,6 +93,8 @@ class DataWrapper():
             return pd.read_csv(data, encoding_errors='ignore')
         elif str(data).endswith('.xlsx'):
             return pd.read_excel(data)
+        elif str(data).endswith('.tsv'):
+            return pd.read_csv(data, sep='\t', header=0)
         else:
             raise ValueError('The data must be a csv/xlsx file.')
         
@@ -44,11 +107,10 @@ class DataWrapper():
         list
             The headers of the data.
         """
-
         return self.data.columns.tolist()
 
     
-    def set_headers(self, *args):
+    def set_headers(self, *args, split_string = ['movie_name']):
         """
         Function for setting the headers of the data.
 
@@ -60,7 +122,6 @@ class DataWrapper():
         -------
         None
         """
-
         # Check if the number of headers is the same as the number of arguments
         if len(self.get_headers()) != len(args):
             raise ValueError(f'The number of headers must be the same as the number of arguments. There are {len(self.get_headers())} headers and {len(args)} arguments.')
@@ -81,11 +142,14 @@ class DataWrapper():
         # If column includes items in a string with a comma, split the string into a list
         for header in self.data.columns:
             if self.data[header].dtype == 'object':
-                self.data[header] = self.data[header].str.split(', ')
-
+                if header not in split_string:
+                    # Split on both comma and semi-colon
+                    self.data[header] = self.data[header].str.split(',|;')
+                    # Make column a list
+                    self.data[header] = self.data[header].apply(lambda x: x if isinstance(x, list) else [x])
+          
         # Order the headers
         self.data = self.data[self.order_headers(self.get_headers())]
-
 
         return
     
@@ -114,6 +178,7 @@ class DataWrapper():
         formatted_headers = []
         
         for header in headers:
+            # If header ends with 's' or any other letter at the end, remove it
             if header[:-1].lower() in self.header_order:
                 header = header[:-1]
             formatted_headers.append(header)
@@ -145,121 +210,354 @@ class DataWrapper():
         
         return
     
-    def make_bool(self, column_name, true, false):
+    def birthday(self, column_name):
         """
-        A function that makes a boolean column from a column with true and false values.
+        A function that makes a birthday from the years and from the specific dates in the data.
 
         Parameters
         ----------
         column_name : str
-            The name of the column to be converted to a boolean.
-        true : str
-            The string that represents a true value.
-        false : str
-            The string that represents a false value.
+            The name of the column to be converted to a date.
         
         Returns
         -------
         None
         """
         
-        # Make the column a boolean column
-        self.data[column_name] = self.data[column_name].map({true: True, false: False})
+        # convert the column such that all different formats are converted to datetime
+        # convert the following formats: 23-Feb-1883 01/Jul/02 24-Dec-1886 11/Oct/18 22/Jun/06 07/Sep/09 18-Aug-1936 [1] 1972
+
+        # check which format the data is currently in as a string
+        if self.data[column_name].dtype == 'object':
+            # convert the column to datetime
+            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%d-%b-%Y', errors='coerce')
+            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%d/%b/%y', errors='coerce')
+            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%d/%b/%Y', errors='coerce')
+            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%d/%b/%y', errors='coerce')
+            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%d/%b/%Y', errors='coerce')
+            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%d/%b/%Y', errors='coerce')
+            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%d-%b-%Y [1]', errors='coerce')
+            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%Y', errors='coerce')
+        return
+
+    
+    def drop_nan(self, column_name):
+        """
+        A function that drops the rows with NaN values in a column.
+
+        Parameters
+        ----------
+        column_name : str
+            The name of the column to be dropped.
+
+        Returns
+        -------
+        None
+        """
+        # Drop the rows with NaN values in the column
+        self.data.dropna(subset=[column_name])
+
+        return
+   
+        
+    def export_cleaned_data(self, name: str, format: str = 'csv', destination: Path = Path('data\cleaned_data')):
+        """
+        A function that exports the cleaned data to a csv file.
+
+        Parameters
+        ----------
+        format : str
+            The format of the file to be exported.
+        path : Path
+            The path of the file to be exported.
+
+        Returns
+        -------
+        None
+        """
+
+        # Check if the path exists
+        if not destination.is_dir():
+            raise ValueError('The path does not exist.')
+        
+        # Check if the format is valid
+        if format not in ['csv', 'xlsx']:
+            raise ValueError('The format must be either csv or xlsx.')
+        
+        # Export the data
+        if format == 'csv':
+            self.data.to_csv(destination / f'{name}.csv', index=False)
+        elif format == 'xlsx':
+            self.data.to_excel(destination / f'{name}.xlsx', index=False)
         
         return
 
-    def convert_numbers(self, column_name):
+
+
+class DataSet():
+    def __init__(self, name: str) -> None:
+        self.name = name
+        self.data = None
+        self.headers = None
+        self.header_order = ['movie_name', 'movie_date', 'movie_rating', 'movie_genre', 'director', 'writer', 'actor', 'award_year']
+
+    def __call__(self):
+        return self.data
+    
+    def get_name(self) -> str:
+        return self.name
+    
+    def get_data(self) -> pd.DataFrame:
+        return self.data
+    
+    def get_headers(self) -> list:
+        return self.headers
+    
+    def set_data(self, data: pd.DataFrame) -> None:
+        self.data = data
+
+    def set_headers(self, *headers) -> None:
+        self.headers = headers
+        self.order_headers(self.headers)
+
+    def update_data(self, data: pd.DataFrame) -> None:
+        self.data = data
+
+    def add_data(self, data: pd.DataFrame) -> None:
+        self.data = pd.concat([self.data, data], ignore_index=True)
+
+    def order_headers(self, headers: list) -> list:
         """
-        A function that converts the text numbers into numbers
-        e.g. iii -> 3 or 1,000 -> 1000 or 1.000 -> 1000 or III -> 3
+        Function that orders the header based on a preferred predetermined order.
 
         Parameters
         ----------
-        column_name : str
-            The name of the column to be converted to numbers.
+        headers : list
+            The list of headers to be ordered.
+
+        Returns
+        -------
+        None
+        """
+        # Create a dictionary to store the order of each string in the preferred_order list
+        order_dict = {name: i for i, name in enumerate(self.header_order)}
+        
+        # Sort the names list based on the order_dict values, using a lambda function as the key
+        sorted_names = sorted(headers, key=lambda x: order_dict.get(x, float('inf')))
+        
+        return sorted_names
+    
+    def export_cleaned_data(self, format: str = 'csv', destination: Path = Path('data\cleaned_data')):
+        """
+        A function that exports the cleaned data to a csv file.
+
+        Parameters
+        ----------
+        format : str
+            The format of the file to be exported.
+        path : Path
+            The path of the file to be exported.
 
         Returns
         -------
         None
         """
 
-        # Convert the roman numerals into numbers
-        # Check if part of the string is a roman numeral (until 10)
-        for i, roman_numeral in enumerate([' I', ' II', ' III', ' IV', ' V', ' VI', ' VII', ' VIII', ' IX', ' X']):
-            print("found roman numerals")
-            self.data[column_name] = self.data[column_name].replace(roman_numeral, ' ' + str(i))
+        # Check if the path exists
+        if not destination.is_dir():
+            raise ValueError('The path does not exist.')
         
+        # Check if the format is valid
+        if format not in ['csv', 'xlsx']:
+            raise ValueError('The format must be either csv or xlsx.')
+        
+        # Order the columns
+        self.data = self.data[self.order_headers(self.get_headers())]
 
+        # Export the data
+        if format == 'csv':
+            self.data.to_csv(destination / f'{self.name}.csv', index=False)
+        elif format == 'xlsx':
+            self.data.to_excel(destination / f'{self.name}.csv', index=False)
+        
+        return
+    
+    def explode_data(self):
+        # For all the objects in the data, if it is a list, explode the list into multiple rows
+        for header in self.data.columns:
+            if self.data[header].dtype == 'object':
+                # print(f'Exploding {header}')
+                # Explode the list into multiple rows
+                self.data = self.data.explode(header)
 
-import fuzzywuzzy
-from fuzzywuzzy import fuzz
+        return
+    
+    def drop_unknown(self, *columns):
+        # Drop the rows with unknown values, nan values, empty strings, empty lists, empty rows if any of the columns are empty
+        # Drop the empty values if any of the columns are empty
+        self.data.dropna(how='any', subset=columns, inplace=True)
+
+        return
+
 
 class DataMatcher():
-    def __init__(self, *datsets) -> None:
-        self.datasets = [dataset() for dataset in datsets]
-        print(self.datasets)
+    def __init__(self) -> None:
+        pass
 
-    def get_datasets(self):
-        return self.datasets
-
-    def preprocess_text(self, text):
-        # Remove numbers from the text
-        text_without_numbers = re.sub(r'\d+', '', text)
-        # Perform other preprocessing steps as needed
-        cleaned_text = text_without_numbers.lower().strip()
-        return cleaned_text
-    
-    def match(self, column_name, similarity_threshold, replace_option):
+    def aggregate(self, dataframe: pd.DataFrame, *columns, automatic: bool = True, drop_nan_keys: bool = True, dif_timestamps= False):
         """
-        Function that matches the values of a column in one dataset to the values of a column in another dataset.
-        If the values are similar enough, the value is replaced based on the specified replace option.
+        A function that looks for duplicate rows in a dataframe and aggregates them.
+        It is possible to have different columns filled in for the same given header.
+        It will be matched on the columns that are given.
+        If there are conflicts, it will print these conflicts and ask for user input.
 
         Parameters
         ----------
-        column_name : str
-            The name of the column to be matched.
-        similarity_threshold : int
-            The threshold for the similarity of the two values.
-        replace_option : str
-            The option for replacing the values.
+        dataframe : pd.DataFrame
+            The dataframe to be aggregated.
+        *columns : list
+            The columns to be matched on.
 
         Returns
         -------
-        None
+        pd.DataFrame
+            The aggregated dataframe.
         """
-        matched_items = []  # List to store the matched items
-        
-        for i in trange(len(self.datasets)):
-            dataset1 = self.datasets[i]
-            column1 = dataset1[column_name]
-            
-            for j in trange(i + 1, len(self.datasets), leave=False):
-                dataset2 = self.datasets[j]
-                column2 = dataset2[column_name]
-                
-                for k, item1 in enumerate(column1):
-                    cleaned_items1 = [self.preprocess_text(item) for item in item1]
-                    
-                    for l, item2 in enumerate(column2):
-                        cleaned_items2 = [self.preprocess_text(item) for item in item2]
-                        
-                        if len(cleaned_items1) == 1 and len(cleaned_items2) == 1:
-                            ratio = fuzz.token_sort_ratio(cleaned_items1[0], cleaned_items2[0])
-                            if ratio >= similarity_threshold and ratio < 100 and not re.search(r'\d', cleaned_items1[0]):
-                                print(f"Matched {cleaned_items1[0]} with {cleaned_items2[0]} with a similarity of {ratio}%")
-                                # Replace the item in the shortest list with the item in the longest list
-                                if replace_option == 'keep_longest_value':
-                                    if len(cleaned_items1[0]) > len(cleaned_items2[0]):
-                                        dataset2.loc[l, column_name] = column1[k]
-                                    elif len(cleaned_items1[0]) < len(cleaned_items2[0]):
-                                        dataset1.loc[k, column_name] = column2[l]
-                                elif replace_option == 'keep_shortest_value':
-                                    column2.loc[l] = column1[k]
-                                else:
-                                    raise ValueError(f'The replace option {replace_option} is not valid.')
-                                matched_items.append((column1[k], column2[l], ratio))
 
-        # Print the overview of matched items
-        print("Matched Items:")
-        for item in matched_items:
-            print(f"{item[0]} --> {item[1]} with a similarity of {item[2]}%")
+        # If the column consists of strings, strip the strings from the leading spaces
+        for column in columns:
+            if dataframe[column].dtype == 'object':
+                dataframe[column] = dataframe[column].str.strip()
+
+        # Check if there are duplicate rows
+        if dataframe.duplicated(subset=columns).any():
+            # Get the duplicated rows
+            duplicated_rows = dataframe[dataframe.duplicated(subset=columns)]
+            # Get the unique rows
+            unique_rows = dataframe[~dataframe.duplicated(subset=columns)]
+
+            other_columns = [column for column in dataframe.columns if column not in columns]
+
+            print(f'There are {len(duplicated_rows)} duplicate rows.'
+                f'\nThese rows will be aggregated.')
+            print(f'There are {len(unique_rows)} unique rows.'
+                f'\nThese rows will be kept.')
+
+            # Check if in the duplicated rows there are nan or nat values and filter out those rows
+            if drop_nan_keys:
+                duplicated_rows = duplicated_rows.dropna(subset=columns, how='any')
+
+            print(f'There are {len(duplicated_rows)} duplicate rows without nan or nat values.')
+
+            # Compare the duplicate rows
+            # Create a dictionary to store row combinations based on the column values
+            row_combinations = {}
+            pattern_roman = re.compile(r"\b(I|II|III|IV|V|VI|VII|VIII|IX|X)\b")  # Regex pattern for matching Roman numerals
+            pattern_last = re.compile(r"(\D+)\d+$")  # Regex pattern for matching the non-numeric part of the string at the end
+
+            for row_index, row_values in tqdm(duplicated_rows.iterrows(), total=duplicated_rows.shape[0], desc="Decreasing the row combinations"):
+                key = tuple(row_values[list(columns)].values)
+                fuzzy_match = False
+                for existing_key in row_combinations.keys():
+                    # Calculate the similarity score between the keys using fuzzy matching
+                    similarity_score = fuzz.ratio(key, existing_key)
+                    # If key or existing key are nat or nan, skip
+                    if any([pd.isnull(key_value) for key_value in key]) or any([pd.isnull(existing_key_value) for existing_key_value in existing_key]):
+                        continue
+                    # If key or existing key contain a TimeStamp, only match if 100% similar
+                    elif dif_timestamps and key[0] == existing_key[0] and any([isinstance(key_value, pd.Timestamp) for key_value in key]) and any([isinstance(existing_key_value, pd.Timestamp) for existing_key_value in existing_key]):
+
+                        if similarity_score == 100:
+                            row_combinations[existing_key].append(row_index)
+                            fuzzy_match = True
+                            continue
+                        else:
+                            fuzzy_match = False
+                            print('\nDifferent timestamps: ', key, existing_key)
+                            continue
+
+                    if similarity_score == 100:
+                        # If the similarity score is 100, consider them the same keys
+                        row_combinations[existing_key].append(row_index)
+                        fuzzy_match = True
+                        continue
+                    elif pattern_roman.search(key[0]) or pattern_roman.search(existing_key[0]):
+                        fuzzy_match = False
+                        continue
+                    elif pattern_last.search(key[0]) or pattern_last.search(existing_key[0]):
+                        fuzzy_match = False
+                        continue
+                    elif similarity_score >= 98:  # Set a threshold for similarity
+                        # If the similarity score is above the threshold, consider them similar keys
+                        row_combinations[existing_key].append(row_index)
+
+                        if similarity_score < 100:
+                            print(f'\nSimilar keys: {key} and {existing_key} with a similarity score of {similarity_score}.')
+
+                        fuzzy_match = True
+                        continue
+                if not fuzzy_match:
+                    row_combinations[key] = [row_index]
+
+            columns = list(columns)
+
+            # Iterate over the row combinations and handle conflicts
+            for key, rows in tqdm(row_combinations.items(), desc="Handeling conflicts between rows", position=0, smoothing=0.4, leave=False):
+                try:
+                    row1 = rows[0]
+                    row2 = rows[1]
+
+                    # Get the values of the other columns
+                    row1_values = dataframe.loc[row1, ~dataframe.columns.isin(columns)].values
+                    row2_values = dataframe.loc[row2, ~dataframe.columns.isin(columns)].values
+
+                    # If the values are not the same, print the values and ask for user input
+                    if not np.array_equal(row1_values, row2_values):
+                        # Ask for user input
+                        if automatic:
+                            for i, col in enumerate(other_columns):
+                                if dataframe.loc[row1, col] is str:
+                                    dataframe.loc[row1, col] = row1_values[i] + row2_values[i]
+                                elif dataframe.loc[row1, col] is list:
+                                    dataframe.loc[row1, col] = row1_values[i] + row2_values[i]
+                                elif dataframe.loc[row1, col] is float:
+                                    dataframe.loc[row1, col] = max(row1_values[i], row2_values[i])
+                                else:
+                                    dataframe.loc[row1, col] = row1_values[i]
+                            dataframe.drop(row2, inplace=False)
+                        else:
+                            tqdm.write(f'\nThere is a conflict for the following information:')
+                            tqdm.write(f'\n{columns}\n{dataframe.loc[row1, columns].values}')
+                            tqdm.write(f'\nWhich row do you want to keep?\n1: {row1_values}\n2: {row2_values}')
+
+                            user_input = input('Which value do you want to keep? (1/2/3(Both)): ')
+                            # If the user input is 1, keep the first row, else keep the second row
+                            if user_input == '1':
+                                dataframe.loc[row2, ~dataframe.columns.isin(columns)] = row1_values
+                                dataframe.drop(row1, inplace=False)
+                            elif user_input == '2':
+                                dataframe.loc[row1, ~dataframe.columns.isin(columns)] = row2_values
+                                dataframe.drop(row2, inplace=False)
+                            elif user_input == '3':
+                                # If the user input is 3, keep both values but in one row
+                                for i, col in enumerate(other_columns):
+                                    if dataframe.loc[row1, col] is str:
+                                        dataframe.loc[row1, col] = row1_values[i] + row2_values[i]
+                                    if dataframe.loc[row1, col] is list:
+                                        dataframe.loc[row1, col] = row1_values[i] + row2_values[i]
+                                    if dataframe.loc[row1, col] is float:
+                                        dataframe.loc[row1, col] = max(row1_values[i], row2_values[i])
+                                    if dataframe.loc[row1, col] is object:
+                                        dataframe.loc[row1, col] = row1_values[i]
+                                dataframe.drop(row2, inplace=False)
+                            tqdm.write(f"New data: {dataframe.loc[row1].values}")
+                except:
+                    continue
+
+            # Concatenate the unique rows and the updated dataframe
+            dataframe = pd.concat([unique_rows, dataframe], ignore_index=True)
+
+            # Drop the duplicate rows
+            dataframe.drop_duplicates(subset=columns, inplace=True)
+        return dataframe
+
