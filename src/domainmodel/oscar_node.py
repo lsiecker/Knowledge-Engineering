@@ -11,6 +11,7 @@ class Oscar(Node):
         self.label = 'Oscar'
         self.category = category
         self.year: year
+        super().__init__()
 
     def natural_keys(self) -> dict:
         return {'category': self.category, 'year': self.year}

@@ -9,6 +9,7 @@ class Genre(Node):
         self.id = None
         self.label = 'Genre'
         self.name = genre
+        super().__init__()
 
     def natural_keys(self) -> dict:
         return {'genre': self.genre}

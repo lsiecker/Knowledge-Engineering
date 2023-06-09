@@ -16,7 +16,7 @@ if __name__ == "__main__":
         rating = row['movie_rating']
         budget = row['budget']
         if not (budget > 0):
-            budget = 0
+            print(budget)
         movie = Movie(title, year, rating, budget)
         movie.create()
 
