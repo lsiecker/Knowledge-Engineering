@@ -72,14 +72,13 @@ for movie_name in tqdm(df['movie_name']):
 # Create a new DataFrame from the movie_data list
 movie_df = pd.DataFrame(movie_data)
 
-print('We did not find budget for ', no_budget, ' movies. The movie names we did not find budget for are: ')
-for movie in names_nobudget:
-    print(movie)
-
 # Save the DataFrame to a CSV file
+movie_df.to_csv('Movie_extended.csv', index=False)
 movie_df.to_csv('data/cleaned_data/Movie_extended.csv', index=False)
 
-
+print('We did not find budget for ', no_nobudget, ' movies. The movie names we did not find budget for are: ')
+for movie in names_nobudget:
+    print(movie)
 
 
 # EXAMPLE: Schindler's List -> [("Schindler's List", 100, 5), ('Shine', 80, 1820), ('Lisa', 75, 6823), ('Wind', 75, 7262), ('Eros', 75, 8499)]
@@ -103,3 +102,7 @@ movie_df.to_csv('data/cleaned_data/Movie_extended.csv', index=False)
     #     print("Matched movie names are:", matched_movie_names)
     #     if matched_movie_names:
     #         print("Budget was not found for these matched movie names.")
+
+
+
+ 
