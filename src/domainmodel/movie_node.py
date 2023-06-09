@@ -5,16 +5,16 @@ from src.domainmodel.neo4j_node import Node
 class Movie(Node):
     title: str
     year: int
-    runtime: int
-    total_gross: str
+    rating: float
+    budget: int
 
-    def __init__(self, title: str, year: int, runtime: int, total_gross: str):
+    def __init__(self, title: str, year: int, rating: float, budget: int):
         self.id = None
         self.label = 'Movie'
         self.title = title
         self.year = year
-        self.runtime = runtime
-        self.total_gross = total_gross
+        self.rating = rating
+        self.budget = budget
 
     def natural_keys(self) -> dict:
         return {'title': self.title, 'year': self.year}
