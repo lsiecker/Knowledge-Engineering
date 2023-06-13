@@ -398,6 +398,13 @@ class DataSet():
         self.data.dropna(how='any', subset=columns, inplace=True)
 
         return
+    
+    def flatten_data(self, target_column: str, *columns):
+        # Flatten the data and append it to the target column
+        self.data[target_column] = self.data[columns].apply(lambda x: list(x), axis=1)
+        self.data.drop(columns=columns, inplace=True)
+        
+        return
 
 
 class DataMatcher():
@@ -417,6 +424,12 @@ class DataMatcher():
             The dataframe to be aggregated.
         *columns : list
             The columns to be matched on.
+        automatic : bool
+            Whether to automatically aggregate the rows or not.
+        drop_nan_keys : bool
+            Whether to drop the rows with nan values in the columns that are matched on.
+        dif_timestamps : bool
+            Whether to check if the timestamps are different.
 
         Returns
         -------

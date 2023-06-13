@@ -1,6 +1,11 @@
 from pathlib import Path
 from data_wrapper import DataWrapper, DataSet, DataMatcher
 
+
+# TODO: Fix datetime for birthdays and generalizing the date format
+# TODO: Fix that all persons are in the person dataset
+# TODO: 
+
 # Making DataWrappers for all the datasets
 # Design choice: Drop all columns that are not used by prefixing a '_' to the column name
 IMDB_top_250 = DataWrapper(Path('data\IMDB Top 250 Movies.csv'), 'IMDB Top 250 Movies')
@@ -41,7 +46,7 @@ datasets = [IMDB_top_250, IMDB_all_genres, movies, mymovies, oscar_demographics,
 cleaned_movies  = DataSet('Movie')
 cleaned_movies.set_headers('movie_name', 'movie_date', 'movie_censor', 'movie_genre', 'movie_rating')
 cleaned_persons = DataSet('Person')
-cleaned_persons.set_headers('person_name', 'person_dateofbirth')
+cleaned_persons.set_headers('person_name', 'person_dateofbirth', 'actor', 'director', 'writer')
 cleaned_awards  = DataSet('Award')
 cleaned_awards.set_headers('award_category', 'award_year')
 cleaned_genres  = DataSet('Genre')
@@ -87,10 +92,13 @@ for data in datasets:
         df = data.get_data()[common_cols]
 
         # Add the data to the cleaned dataset
-        cleaned_data.add_data(df)
+        cleaned_data.add_data(df.head(200))
 
         # For the data with multiple values in one cell, explode the data (e.g. multiple actors for one movie)
         cleaned_data.explode_data()
+
+# Flatten the columns of person, actor, writer and director in just one column
+cleaned_persons.flatten_data('person_name', 'actor', 'director', 'writer')
 
 # Use the DataMatcher to match the data from the different datasets
 # The data is matched on the specified columns in the dataset and the cleaned datasets are updated accordingly
