@@ -1,11 +1,6 @@
 from pathlib import Path
 from data_wrapper import DataWrapper, DataSet, DataMatcher
 
-
-# TODO: Fix datetime for birthdays and generalizing the date format
-# TODO: Fix that all persons are in the person dataset
-# TODO: 
-
 # Making DataWrappers for all the datasets
 # Design choice: Drop all columns that are not used by prefixing a '_' to the column name
 IMDB_top_250 = DataWrapper(Path('data\IMDB Top 250 Movies.csv'), 'IMDB Top 250 Movies')
