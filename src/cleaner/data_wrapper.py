@@ -90,11 +90,11 @@ class DataWrapper():
         
         # Check if is a csv file
         if str(data).endswith('.csv'):
-            return pd.read_csv(data, encoding_errors='ignore')
+            return pd.read_csv(data, encoding_errors='ignore').head(20)
         elif str(data).endswith('.xlsx'):
-            return pd.read_excel(data)
+            return pd.read_excel(data).head(20)
         elif str(data).endswith('.tsv'):
-            return pd.read_csv(data, sep='\t', header=0)
+            return pd.read_csv(data, sep='\t', header=0).head(20)
         else:
             raise ValueError('The data must be a csv/xlsx file.')
         
@@ -185,61 +185,35 @@ class DataWrapper():
         
         return formatted_headers
 
-    def make_date(self, column_name):
+    def make_date(self, column_name, target_format='%Y'):
         """
-        A function that makes a date from the years and from the specific dates in the data.
+        A function that infers the date format in a column and converts it to the target format.
 
         Parameters
         ----------
         column_name : str
             The name of the column to be converted to a date.
-        
+        target_format : str, optional
+            The desired format to convert the column to. Default is '%Y'.
+
         Returns
         -------
         None
         """
-        
-        # If the column is a year, make it a date
-        if self.data[column_name].dtype == 'int64':
-            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%Y')
-        # If the column is a date, make it a date
-        elif self.data[column_name].dtype == 'object':
-            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%Y-%m-%d', errors='coerce')
-        else:
-            raise ValueError(f'The column {column_name} is neither an integer nor a string.')
-        
+
+        inferred_formats = []
+
+        for i, value in enumerate(self.data[column_name]):
+            inferred_format = pd.to_datetime(value, errors='coerce')
+            if not pd.isnull(inferred_format):
+                inferred_formats.append(inferred_format.strftime(target_format))
+            else:
+                inferred_formats.append(None)
+
+        # Update the column with the inferred formats converted to the target format
+        self.data[column_name] = inferred_formats
+
         return
-    
-    def birthday(self, column_name):
-        """
-        A function that makes a birthday from the years and from the specific dates in the data.
-
-        Parameters
-        ----------
-        column_name : str
-            The name of the column to be converted to a date.
-        
-        Returns
-        -------
-        None
-        """
-        
-        # convert the column such that all different formats are converted to datetime
-        # convert the following formats: 23-Feb-1883 01/Jul/02 24-Dec-1886 11/Oct/18 22/Jun/06 07/Sep/09 18-Aug-1936 [1] 1972
-
-        # check which format the data is currently in as a string
-        if self.data[column_name].dtype == 'object':
-            # convert the column to datetime
-            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%d-%b-%Y', errors='coerce')
-            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%d/%b/%y', errors='coerce')
-            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%d/%b/%Y', errors='coerce')
-            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%d/%b/%y', errors='coerce')
-            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%d/%b/%Y', errors='coerce')
-            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%d/%b/%Y', errors='coerce')
-            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%d-%b-%Y [1]', errors='coerce')
-            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%Y', errors='coerce')
-        return
-
     
     def drop_nan(self, column_name):
         """
@@ -299,7 +273,7 @@ class DataSet():
         self.name = name
         self.data = None
         self.headers = None
-        self.header_order = ['movie_name', 'movie_date', 'movie_rating', 'movie_genre', 'director', 'writer', 'actor', 'award_year']
+        self.header_order = ['movie_name', 'movie_date', 'movie_rating', 'movie_genre', 'director', 'writer', 'actor', 'award_year', 'person_name', 'person_dateofbirth']
 
     def __call__(self):
         return self.data
@@ -399,12 +373,34 @@ class DataSet():
 
         return
     
-    def flatten_data(self, target_column: str, *columns):
-        # Flatten the data and append it to the target column
-        self.data[target_column] = self.data[columns].apply(lambda x: list(x), axis=1)
-        self.data.drop(columns=columns, inplace=True)
+    def melt_data(self, *columns):
+        # Melt the columns into a single column
+        # Create a new DataFrame with the 'writer', 'director', and 'actor' columns melted into separate rows
+        melted_data = self.data.melt(id_vars=['person_dateofbirth', 'person_name'], value_vars=['person_name', 'actor', 'director', 'writer'], value_name="person_names")
+
+        # Remove rows with missing names
+        melted_data.dropna(subset=["person_names"], inplace=True)
+
+        # Drop the 'variable' column
+        melted_data.drop("variable", axis=1, inplace=True)
+
+        # Drop the 'person_name' column and rename person_names to person_name
+        melted_data.drop("person_name", axis=1, inplace=True)
         
-        return
+        # Set the header names
+        melted_data.columns = ['person_dateofbirth', 'person_name']
+
+        # reorder the columns following preferred order
+        melted_data = melted_data[self.order_headers(melted_data.columns)]
+
+        # Sort the DataFrame by 'person_name'
+        melted_data.sort_values(by="person_name", inplace=True)
+
+        # Reset the index
+        melted_data.reset_index(drop=True, inplace=True)
+        
+        self.data = melted_data
+        self.headers = self.data.columns
 
 
 class DataMatcher():

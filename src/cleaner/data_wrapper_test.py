@@ -74,10 +74,14 @@ cleaned_has_genre.set_headers('movie_name', 'movie_date', 'movie_genre',)
 # For each dataset, add data to the cleaned datasets, but only for the columns that are in the cleaned datasets
 for data in datasets:
     # Making date columns datetime
+    for col in ['person_dateofbirth']:
+        if col in data.get_headers():
+            # For the given columns, make it datetime
+            data.make_date(col, '%Y-%m-%d')
     for col in ['movie_date', 'movie_rating_time', 'award_year']:
         if col in data.get_headers():
             # For the given columns, make it datetime
-            data.make_date(col)
+            data.make_date(col, '%Y')
 
     # For each dataset, add data to the cleaned datasets, but only for the columns that are in the cleaned datasets
     for cleaned_data in [cleaned_movies, cleaned_persons, cleaned_awards, cleaned_genres, \
@@ -92,13 +96,13 @@ for data in datasets:
         df = data.get_data()[common_cols]
 
         # Add the data to the cleaned dataset
-        cleaned_data.add_data(df.head(200))
+        cleaned_data.add_data(df)
 
         # For the data with multiple values in one cell, explode the data (e.g. multiple actors for one movie)
         cleaned_data.explode_data()
 
-# Flatten the columns of person, actor, writer and director in just one column
-cleaned_persons.flatten_data('person_name', 'actor', 'director', 'writer')
+# melt the columns of person, actor, writer and director in just one column
+cleaned_persons.melt_data('person_name', 'actor', 'director', 'writer')
 
 # Use the DataMatcher to match the data from the different datasets
 # The data is matched on the specified columns in the dataset and the cleaned datasets are updated accordingly
