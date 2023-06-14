@@ -69,10 +69,10 @@ cleaned_has_genre.set_headers('movie_name', 'movie_date', 'movie_genre',)
 # For each dataset, add data to the cleaned datasets, but only for the columns that are in the cleaned datasets
 for data in datasets:
     # Making date columns datetime
-    # for col in ['person_dateofbirth', 'movie_date', 'movie_rating_time', 'award_year']:
-    #     if col in data.get_headers():
-    #         # For the given columns, make it datetime
-    #         data.make_date(col)
+    for col in ['person_dateofbirth', 'movie_date', 'movie_rating_time', 'award_year']:
+        if col in data.get_headers():
+            # For the given columns, make it datetime
+            data.make_date(col)
     for col in ['award_winner']:
         if col in data.get_headers():
             # For the given columns, make it boolean
