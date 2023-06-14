@@ -55,13 +55,13 @@ cleaned_wrote = DataSet('Wrote')
 cleaned_wrote.set_headers('movie_name', 'movie_date', 'writer')
 
 cleaned_nominated_for = DataSet('Nominated for (Movie)')
-cleaned_nominated_for.set_headers('movie_name', 'movie_date', 'award_category', 'award_year', 'award_person')
+cleaned_nominated_for.set_headers('movie_name', 'movie_date', 'award_category', 'award_year', 'award_person', 'award_winner')
 cleaned_won = DataSet('Won (Movie)')
-cleaned_won.set_headers('movie_name', 'movie_date', 'award_category', 'award_year', 'award_person')
+cleaned_won.set_headers('movie_name', 'movie_date', 'award_category', 'award_year', 'award_person', 'award_winner')
 cleaned_nominated_for_person = DataSet('Nominated for (Person)')
-cleaned_nominated_for_person.set_headers('person_name', 'award_category', 'award_year', 'person_dateofbirth')
+cleaned_nominated_for_person.set_headers('person_name', 'award_category', 'award_year', 'person_dateofbirth', 'award_winner')
 cleaned_won_person = DataSet('Won (Person)')
-cleaned_won_person.set_headers('person_name', 'award_category', 'award_year', 'person_dateofbirth') 
+cleaned_won_person.set_headers('person_name', 'award_category', 'award_year', 'person_dateofbirth', 'award_winner') 
 
 cleaned_has_genre = DataSet('Has genre')
 cleaned_has_genre.set_headers('movie_name', 'movie_date', 'movie_genre',)
@@ -69,14 +69,17 @@ cleaned_has_genre.set_headers('movie_name', 'movie_date', 'movie_genre',)
 # For each dataset, add data to the cleaned datasets, but only for the columns that are in the cleaned datasets
 for data in datasets:
     # Making date columns datetime
-    for col in ['person_dateofbirth']:
+    # for col in ['person_dateofbirth', 'movie_date', 'movie_rating_time', 'award_year']:
+    #     if col in data.get_headers():
+    #         # For the given columns, make it datetime
+    #         data.make_date(col)
+    for col in ['award_winner']:
         if col in data.get_headers():
-            # For the given columns, make it datetime
-            data.make_date(col, '%Y-%m-%d')
-    for col in ['movie_date', 'movie_rating_time', 'award_year']:
-        if col in data.get_headers():
-            # For the given columns, make it datetime
-            data.make_date(col, '%Y')
+            # For the given columns, make it boolean
+            data.make_boolean(col, 'True', 'False')
+            data.make_boolean(col, '1', '0')
+            data.make_boolean(col, 'TRUE', 'FALSE')
+            data.make_boolean(col, 'golden', 'finalized')
 
     # For each dataset, add data to the cleaned datasets, but only for the columns that are in the cleaned datasets
     for cleaned_data in [cleaned_movies, cleaned_persons, cleaned_awards, cleaned_genres, \
@@ -91,7 +94,7 @@ for data in datasets:
         df = data.get_data()[common_cols]
 
         # Add the data to the cleaned dataset
-        cleaned_data.add_data(df)
+        cleaned_data.add_data(df.head(500))
 
         # For the data with multiple values in one cell, explode the data (e.g. multiple actors for one movie)
         cleaned_data.explode_data()
@@ -104,41 +107,43 @@ cleaned_persons.melt_data('person_name', 'actor', 'director', 'writer')
 # The DataMatcher also drops the unknown values from the cleaned datasets for the specified columns
 # The DataMatcher also exports the cleaned datasets to csv files such that they can be used in the next step of the knowledge graph.
 datamatcher = DataMatcher()
-cleaned_movies.update_data(datamatcher.aggregate(cleaned_movies.get_data(), "movie_name", "movie_date", dif_timestamps=True))
-cleaned_movies.drop_unknown('movie_name', "movie_date")
-cleaned_movies.export_cleaned_data()
-cleaned_persons.update_data(datamatcher.aggregate(cleaned_persons.get_data(), "person_name"))
-cleaned_persons.drop_unknown('person_name')
-cleaned_persons.export_cleaned_data()
-cleaned_awards.update_data(datamatcher.aggregate(cleaned_awards.get_data(), "award_category", "award_year"))
-cleaned_awards.drop_unknown('award_category', "award_year")
-cleaned_awards.export_cleaned_data()
-cleaned_genres.update_data(datamatcher.aggregate(cleaned_genres.get_data(), "movie_genre"))
-cleaned_genres.drop_unknown('movie_genre')
-cleaned_genres.export_cleaned_data()
+# cleaned_movies.update_data(datamatcher.aggregate(cleaned_movies.get_data(), "movie_name", "movie_date", dif_timestamps=True))
+# cleaned_movies.drop_unknown('movie_name', "movie_date")
+# cleaned_movies.export_cleaned_data()
+# cleaned_persons.update_data(datamatcher.aggregate(cleaned_persons.get_data(), "person_name"))
+# cleaned_persons.drop_unknown('person_name')
+# cleaned_persons.export_cleaned_data()
+# cleaned_awards.update_data(datamatcher.aggregate(cleaned_awards.get_data(), "award_category", "award_year"))
+# cleaned_awards.drop_unknown('award_category', "award_year")
+# cleaned_awards.export_cleaned_data()
+# cleaned_genres.update_data(datamatcher.aggregate(cleaned_genres.get_data(), "movie_genre"))
+# cleaned_genres.drop_unknown('movie_genre')
+# cleaned_genres.export_cleaned_data()
 
-cleaned_acted_in.update_data(datamatcher.aggregate(cleaned_acted_in.get_data(), "movie_name", "movie_date", "actor"))
-cleaned_acted_in.drop_unknown('movie_name', "movie_date", "actor")
-cleaned_acted_in.export_cleaned_data() 
-cleaned_directed.update_data(datamatcher.aggregate(cleaned_directed.get_data(), "movie_name", "movie_date", "director"))
-cleaned_directed.drop_unknown('movie_name', "movie_date", "director")
-cleaned_directed.export_cleaned_data()
-cleaned_wrote.update_data(datamatcher.aggregate(cleaned_wrote.get_data(), "movie_name", "movie_date", "writer"))
-cleaned_wrote.drop_unknown('movie_name', "movie_date", "writer")
-cleaned_wrote.export_cleaned_data()
+# cleaned_acted_in.update_data(datamatcher.aggregate(cleaned_acted_in.get_data(), "movie_name", "movie_date", "actor"))
+# cleaned_acted_in.drop_unknown('movie_name', "movie_date", "actor")
+# cleaned_acted_in.export_cleaned_data() 
+# cleaned_directed.update_data(datamatcher.aggregate(cleaned_directed.get_data(), "movie_name", "movie_date", "director"))
+# cleaned_directed.drop_unknown('movie_name', "movie_date", "director")
+# cleaned_directed.export_cleaned_data()
+# cleaned_wrote.update_data(datamatcher.aggregate(cleaned_wrote.get_data(), "movie_name", "movie_date", "writer"))
+# cleaned_wrote.drop_unknown('movie_name', "movie_date", "writer")
+# cleaned_wrote.export_cleaned_data()
 
-cleaned_nominated_for.update_data(datamatcher.aggregate(cleaned_nominated_for.get_data(), "movie_name", "movie_date", "award_category", "award_person", "award_year"))
-cleaned_nominated_for.drop_unknown('movie_name', "movie_date", "award_category", "award_year")
-cleaned_nominated_for.export_cleaned_data()
-cleaned_won.update_data(datamatcher.aggregate(cleaned_won.get_data(), "movie_name", "movie_date", "award_category", "award_year", "award_person"))
-cleaned_won.drop_unknown('movie_name', "movie_date", "award_category", "award_year")
-cleaned_won.export_cleaned_data()
+# cleaned_nominated_for.update_data(datamatcher.aggregate(cleaned_nominated_for.get_data(), "movie_name", "movie_date", "award_category", "award_person", "award_year"))
+# cleaned_nominated_for.drop_unknown('movie_name', "movie_date", "award_category", "award_year")
+# cleaned_nominated_for.export_cleaned_data()
+# cleaned_won.update_data(datamatcher.aggregate(cleaned_won.get_data(), "movie_name", "movie_date", "award_category", "award_year", "award_person"))
+# cleaned_won.drop_unknown('movie_name', "movie_date", "award_category", "award_year")
+# cleaned_won.export_cleaned_data()
 cleaned_nominated_for_person.update_data(datamatcher.aggregate(cleaned_nominated_for_person.get_data(), "person_name", "award_category", "award_year"))
 cleaned_nominated_for_person.drop_unknown('person_name', "award_category", "award_year")
+cleaned_nominated_for_person.drop_winner('award_winner', inverse=True)
 cleaned_nominated_for_person.export_cleaned_data()
 cleaned_won_person.update_data(datamatcher.aggregate(cleaned_won_person.get_data(), "person_name", "award_category", "award_year"))
 cleaned_won_person.drop_unknown('person_name', "award_category", "award_year")
+cleaned_won_person.drop_winner('award_winner')
 cleaned_won_person.export_cleaned_data()
-cleaned_has_genre.update_data(datamatcher.aggregate(cleaned_has_genre.get_data(), "movie_name", "movie_date", "movie_genre"))
-cleaned_has_genre.drop_unknown('movie_name', "movie_date", "movie_genre")
-cleaned_has_genre.export_cleaned_data()
+# cleaned_has_genre.update_data(datamatcher.aggregate(cleaned_has_genre.get_data(), "movie_name", "movie_date", "movie_genre"))
+# cleaned_has_genre.drop_unknown('movie_name', "movie_date", "movie_genre")
+# cleaned_has_genre.export_cleaned_data()

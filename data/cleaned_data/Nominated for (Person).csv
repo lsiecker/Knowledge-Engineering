@@ -1,363 +1,395 @@
-award_year,person_name,person_dateofbirth,award_category
-1970,Lewis Milestone,1895-09-30,Best Director
-1970,Frank Lloyd,1886-02-02,Best Director
-1970,Norman Taurog,1899-02-23,Best Director
-1970,Frank Borzage,1894-04-23,Best Director
-1970,Frank Capra,1897-05-18,Best Director
-1970,John Ford,1894-02-01,Best Director
-1970,Leo McCarey,1898-10-03,Best Director
-1970,Victor Fleming,1883-02-23,Best Director
-1970,William Wyler,2002-07-01,Best Director
-1970,Michael Curtiz,1886-12-24,Best Director
-1970,Jerome Robbins,2018-10-11,Best Director
-1970,Billy Wilder,2006-06-22,Best Director
-1970,Elia Kazan,2009-09-07,Best Director
-1970,John Huston,2006-08-05,Best Director
-1970,Joseph L. Mankiewicz,2009-02-11,Best Director
-1970,George Stevens,2004-12-18,Best Director
-1970,Fred Zinnemann,2007-04-29,Best Director
-1970,Delbert Mann,2020-01-30,Best Director
-1970,David Lean,2008-03-25,Best Director
-1970,Vincente Minnelli,2003-02-28,Best Director
-1970,Robert Wise,2014-09-10,Best Director
-1970,Tony Richardson,2028-06-05,Best Director
-1970,George Cukor,1899-07-07,Best Director
-1970,Mike Nichols,2031-11-06,Best Director
-1970,Joel Coen,2054-11-29,Best Director
-1970,Carol Reed,2006-12-30,Best Director
-1970,John Schlesinger,2026-02-16,Best Director
-1970,Franklin J. Schaffner,2020-05-30,Best Director
-1970,William Friedkin,2035-08-29,Best Director
-1970,Bob Fosse,2027-06-23,Best Director
-1970,George Roy Hill,2021-12-20,Best Director
-1970,Francis Ford Coppola,2039-04-07,Best Director
-1970,Milos Forman,2032-02-18,Best Director
-1970,John G. Avildsen,2035-12-21,Best Director
-1970,Woody Allen,2035-12-01,Best Director
-1970,Michael Cimino,2039-02-03,Best Director
-1970,Robert Benton,2032-09-29,Best Director
-1970,Robert Redford,,Best Director
-1970,Warren Beatty,2037-03-30,Best Director
-1970,Richard Attenborough,2023-08-29,Best Director
-1970,James L. Brooks,2040-05-09,Best Director
-1970,Sydney Pollack,2034-07-01,Best Director
-1970,Oliver Stone,2046-09-15,Best Director
-1970,Bernardo Bertolucci,2041-03-16,Best Director
-1970,Barry Levinson,2042-04-06,Best Director
-1970,Kevin Costner,2055-01-18,Best Director
-1970,Jonathan Demme,2044-02-22,Best Director
-1970,Clint Eastwood,2030-05-31,Best Director
-1970,Steven Spielberg,2046-12-18,Best Director
-1970,Robert Zemeckis,2052-05-14,Best Director
-1970,Mel Gibson,2056-01-03,Best Director
-1970,Anthony Minghella,2054-01-06,Best Director
-1970,James Cameron,2054-08-16,Best Director
-1970,Sam Mendes,2065-08-01,Best Director
-1970,Steven Soderbergh,2063-01-14,Best Director
-1970,Ron Howard,2054-03-01,Best Director
-1970,Roman Polanski,2033-08-18,Best Director
-1970,Peter Jackson,2061-10-31,Best Director
-1970,Ang Lee,2054-10-23,Best Director
-1970,Martin Scorsese,2042-11-17,Best Director
-1970,Ethan Coen,2057-09-21,Best Director
-1970,Danny Boyle,2056-10-20,Best Director
-1970,Kathryn Bigelow,2051-11-27,Best Director
-1970,Tom Hooper,1972-01-01,Best Director
-1970,Michel Hazanavicius,2067-03-29,Best Director
-1970,Emil Jannings,1884-07-23,Best Actor
-1970,Warner Baxter,1889-03-29,Best Actor
-1970,George Arliss,1868-04-10,Best Actor
-1970,Lionel Barrymore,1878-04-28,Best Actor
-1970,Wallace Beery,1885-04-01,Best Actor
-1970,Charles Laughton,1899-07-01,Best Actor
-1970,Clark Gable,2001-02-01,Best Actor
-1970,Victor McLaglen,1883-12-11,Best Actor
-1970,Paul Muni,1895-09-22,Best Actor
-1970,Spencer Tracy,2000-04-05,Best Actor
-1970,Robert Donat,2005-03-18,Best Actor
-1970,Jimmy Stewart,2008-05-20,Best Actor
-1970,Gary Cooper,2001-05-07,Best Actor
-1970,James Cagney,1899-07-17,Best Actor
-1970,Paul Lukas,1887-05-26,Best Actor
-1970,Bing Crosby,2003-05-03,Best Actor
-1970,Ray Milland,2007-01-03,Best Actor
-1970,Fredric March,1897-08-31,Best Actor
-1970,Ronald Colman,1891-02-09,Best Actor
-1970,Laurence Olivier,2007-05-22,Best Actor
-1970,Broderick Crawford,2011-12-09,Best Actor
-1970,Jose Ferrer,2009-01-08,Best Actor
-1970,Humphrey Bogart,1899-12-25,Best Actor
-1970,William Holden,2018-04-17,Best Actor
-1970,Marlon Brando,2024-04-03,Best Actor
-1970,Ernest Borgnine,2017-01-24,Best Actor
-1970,Yul Brynner,2020-07-11,Best Actor
-1970,Alec Guinness,2014-04-02,Best Actor
-1970,David Niven,2009-03-01,Best Actor
-1970,Charlton Heston,2023-10-04,Best Actor
-1970,Burt Lancaster,2013-11-02,Best Actor
-1970,Maximilian Schell,2030-12-08,Best Actor
-1970,Gregory Peck,2016-04-05,Best Actor
-1970,Sidney Poitier,2027-02-20,Best Actor
-1970,Rex Harrison,2008-03-05,Best Actor
-1970,Lee Marvin,2024-02-19,Best Actor
-1970,Paul Scofield,2022-01-21,Best Actor
-1970,Rod Steiger,2025-04-14,Best Actor
-1970,Cliff Robertson,2023-09-09,Best Actor
-1970,John Wayne,2007-05-26,Best Actor
-1970,George C. Scott,2027-10-18,Best Actor
-1970,Gene Hackman,2030-01-30,Best Actor
-1970,Jack Lemmon,2025-02-08,Best Actor
-1970,Art Carney,2018-11-04,Best Actor
-1970,Jack Nicholson,2037-04-22,Best Actor
-1970,Peter Finch,2016-09-28,Best Actor
-1970,Richard Dreyfuss,2047-10-29,Best Actor
-1970,Jon Voight,2038-12-29,Best Actor
-1970,Dustin Hoffman,2037-08-08,Best Actor
-1970,Robert De Niro,2043-08-17,Best Actor
-1970,Henry Fonda,2005-05-16,Best Actor
-1970,Ben Kingsley,2043-12-31,Best Actor
-1970,Robert Duvall,2031-01-05,Best Actor
-1970,F. Murray Abraham,2039-10-24,Best Actor
-1970,William Hurt,2050-03-20,Best Actor
-1970,Paul Newman,2025-01-26,Best Actor
-1970,Michael Douglas,2044-09-25,Best Actor
-1970,Daniel Day-Lewis,2057-04-29,Best Actor
-1970,Jeremy Irons,2048-09-19,Best Actor
-1970,Anthony Hopkins,2037-12-31,Best Actor
-1970,Al Pacino,2040-04-25,Best Actor
-1970,Tom Hanks,2056-07-09,Best Actor
-1970,Nicolas Cage,2064-01-07,Best Actor
-1970,Geoffrey Rush,2051-07-06,Best Actor
-1970,Roberto Benigni,2052-10-27,Best Actor
-1970,Kevin Spacey,2059-07-26,Best Actor
-1970,Russell Crowe,2064-04-07,Best Actor
-1970,Denzel Washington,2054-12-28,Best Actor
-1970,Adrien Brody,1973-04-14,Best Actor
-1970,Sean Penn,2060-08-17,Best Actor
-1970,Jamie Foxx,2067-12-13,Best Actor
-1970,Philip Seymour Hoffman,2067-07-23,Best Actor
-1970,Forest Whitaker,2061-07-15,Best Actor
-1970,Jeff Bridges,2049-12-04,Best Actor
-1970,Colin Firth,2060-09-10,Best Actor
-1970,Jean Dujardin,2072-06-19,Best Actor
-1970,Matthew McConaughey,2069-11-04,Best Actor
-1970,Walter Brennan,1894-07-25,Best Supporting Actor
-1970,Joseph Schildkraut,1896-03-22,Best Supporting Actor
-1970,Thomas Mitchell,1892-07-11,Best Supporting Actor
-1970,Donald Crisp,1880-07-27,Best Supporting Actor
-1970,Van Heflin,2010-12-13,Best Supporting Actor
-1970,Charles Coburn,1877-06-17,Best Supporting Actor
-1970,Barry Fitzgerald,1888-03-10,Best Supporting Actor
-1970,James Dunn,2001-11-02,Best Supporting Actor
-1970,Harold Russell,2014-01-14,Best Supporting Actor
-1970,Edmund Gwenn,1875-09-26,Best Supporting Actor
-1970,Walter Huston,1884-04-06,Best Supporting Actor
-1970,Dean Jagger,2003-11-07,Best Supporting Actor
-1970,George Sanders,2006-07-03,Best Supporting Actor
-1970,Karl Malden,2012-03-22,Best Supporting Actor
-1970,Anthony Quinn,2015-04-21,Best Supporting Actor
-1970,Frank Sinatra,2015-12-12,Best Supporting Actor
-1970,Edmond O'Brien,2015-09-10,Best Supporting Actor
-1970,Jack Lemmon,2025-02-08,Best Supporting Actor
-1970,Red Buttons,2019-02-05,Best Supporting Actor
-1970,Burl Ives,2009-06-14,Best Supporting Actor
-1970,Hugh Griffith,2012-05-30,Best Supporting Actor
-1970,Peter Ustinov,2021-04-16,Best Supporting Actor
-1970,George Chakiris,2034-09-16,Best Supporting Actor
-1970,Ed Begley,2001-03-25,Best Supporting Actor
-1970,Sr.,2001-03-25,Best Supporting Actor
-1970,Melvyn Douglas,2001-04-05,Best Supporting Actor
-1970,Martin Balsam,2019-11-04,Best Supporting Actor
-1970,Walter Matthau,2020-10-01,Best Supporting Actor
-1970,George Kennedy,2025-02-18,Best Supporting Actor
-1970,Jack Albertson,2007-06-16,Best Supporting Actor
-1970,Gig Young,2013-11-04,Best Supporting Actor
-1970,John Mills,2008-02-22,Best Supporting Actor
-1970,Ben Johnson,2018-06-13,Best Supporting Actor
-1970,Joel Grey,2032-04-11,Best Supporting Actor
-1970,John Houseman,2002-09-22,Best Supporting Actor
-1970,Robert De Niro,2043-08-17,Best Supporting Actor
-1970,George Burns,1896-01-20,Best Supporting Actor
-1970,Jason Robards,2022-07-26,Best Supporting Actor
-1970,Christopher Walken,2043-03-31,Best Supporting Actor
-1970,Timothy Hutton,2060-08-16,Best Supporting Actor
-1970,John Gielgud,2004-04-14,Best Supporting Actor
-1970,Lou Gossett,2036-05-27,Best Supporting Actor
-1970,Jr.,2036-05-27,Best Supporting Actor
-1970,Jack Nicholson,2037-04-22,Best Supporting Actor
-1970,Haing S. Ngor,2040-03-22,Best Supporting Actor
-1970,Don Ameche,2004-05-31,Best Supporting Actor
-1970,Michael Caine,2033-03-14,Best Supporting Actor
-1970,Sean Connery,2030-08-25,Best Supporting Actor
-1970,Kevin Kline,2047-10-24,Best Supporting Actor
-1970,Denzel Washington,2054-12-28,Best Supporting Actor
-1970,Joe Pesci,2043-02-09,Best Supporting Actor
-1970,Jack Palance,2019-02-18,Best Supporting Actor
-1970,Gene Hackman,2030-01-30,Best Supporting Actor
-1970,Tommy Lee Jones,2046-09-15,Best Supporting Actor
-1970,Martin Landau,2031-06-20,Best Supporting Actor
-1970,Kevin Spacey,2059-07-26,Best Supporting Actor
-1970,Cuba Gooding,2068-01-02,Best Supporting Actor
-1970,Robin Williams,2051-07-21,Best Supporting Actor
-1970,James Coburn,2028-08-31,Best Supporting Actor
-1970,Benicio Del Toro,2067-02-19,Best Supporting Actor
-1970,Jim Broadbent,2049-05-24,Best Supporting Actor
-1970,Chris Cooper,2051-07-09,Best Supporting Actor
-1970,Tim Robbins,2058-10-16,Best Supporting Actor
-1970,Morgan Freeman,2037-06-01,Best Supporting Actor
-1970,George Clooney,2061-05-06,Best Supporting Actor
-1970,Alan Arkin,2034-03-26,Best Supporting Actor
-1970,Javier Bardem,2069-03-01,Best Supporting Actor
-1970,Heath Ledger,1979-04-04,Best Supporting Actor
-1970,Christoph Waltz,2056-10-04,Best Supporting Actor
-1970,Christian Bale,1974-01-30,Best Supporting Actor
-1970,Christopher Plummer,2029-12-13,Best Supporting Actor
-1970,Jared Leto,2071-12-26,Best Supporting Actor
-1970,Janet Gaynor,2006-10-06,Best Actress
-1970,Mary Pickford,1892-04-08,Best Actress
-1970,Norma Shearer,2002-08-10,Best Actress
-1970,Marie Dressler,1868-11-02,Best Actress
-1970,Helen Hayes,2000-10-10,Best Actress
-1970,Katharine Hepburn,2007-05-12,Best Actress
-1970,Claudette Colbert,2003-09-13,Best Actress
-1970,Bette Davis,2008-04-05,Best Actress
-1970,Luise Rainer,2010-01-12,Best Actress
-1970,Vivien Leigh,2013-11-05,Best Actress
-1970,Ginger Rogers,2011-07-16,Best Actress
-1970,Joan Fontaine,2017-10-22,Best Actress
-1970,Greer Garson,2004-09-29,Best Actress
-1970,Jennifer Jones,2019-03-02,Best Actress
-1970,Ingrid Bergman,2015-08-29,Best Actress
-1970,Joan Crawford,2005-03-23,Best Actress
-1970,Olivia de Havilland,2016-07-01,Best Actress
-1970,Loretta Young,2013-01-06,Best Actress
-1970,Jane Wyman,2017-01-05,Best Actress
-1970,Judy Holliday,2021-06-21,Best Actress
-1970,Shirley Booth,1898-08-30,Best Actress
-1970,Audrey Hepburn,2029-05-04,Best Actress
-1970,Grace Kelly,2029-11-12,Best Actress
-1970,Anna Magnani,2008-03-07,Best Actress
-1970,Joanne Woodward,2030-02-27,Best Actress
-1970,Susan Hayward,2018-06-30,Best Actress
-1970,Simone Signoret,2021-03-25,Best Actress
-1970,Elizabeth Taylor,2032-02-27,Best Actress
-1970,Sophia Loren,2034-09-20,Best Actress
-1970,Anne Bancroft,2031-09-17,Best Actress
-1970,Patricia Neal,2026-01-20,Best Actress
-1970,Julie Andrews,2035-10-01,Best Actress
-1970,Julie Christie,2041-04-14,Best Actress
-1970,Barbra Streisand,2042-04-24,Best Actress
-1970,Maggie Smith,2034-12-28,Best Actress
-1970,Glenda Jackson,2036-05-09,Best Actress
-1970,Jane Fonda,2037-12-21,Best Actress
-1970,Liza Minnelli,2046-03-12,Best Actress
-1970,Ellen Burstyn,2032-12-07,Best Actress
-1970,Louise Fletcher,2034-07-22,Best Actress
-1970,Faye Dunaway,2041-01-14,Best Actress
-1970,Diane Keaton,2046-01-05,Best Actress
-1970,Sally Field,2046-11-06,Best Actress
-1970,Sissy Spacek,2049-12-25,Best Actress
-1970,Meryl Streep,2049-06-22,Best Actress
-1970,Shirley MacLaine,2034-04-24,Best Actress
-1970,Geraldine Page,2024-11-22,Best Actress
-1970,Marlee Matlin,2065-08-24,Best Actress
-1970,Cher,2046-05-20,Best Actress
-1970,Jodie Foster,2062-11-19,Best Actress
-1970,Jessica Tandy,2009-06-07,Best Actress
-1970,Kathy Bates,2048-06-28,Best Actress
-1970,Emma Thompson,2059-04-15,Best Actress
-1970,Holly Hunter,2058-03-20,Best Actress
-1970,Jessica Lange,2049-04-20,Best Actress
-1970,Susan Sarandon,2046-10-04,Best Actress
-1970,Frances McDormand,2057-06-23,Best Actress
-1970,Helen Hunt,2063-06-15,Best Actress
-1970,Gwyneth Paltrow,2072-09-27,Best Actress
-1970,Hilary Swank,1974-07-30,Best Actress
-1970,Julia Roberts,2067-10-28,Best Actress
-1970,Halle Berry,2066-08-14,Best Actress
-1970,Nicole Kidman,2067-06-20,Best Actress
-1970,Charlize Theron,1975-08-07,Best Actress
-1970,Reese Witherspoon,1976-03-22,Best Actress
-1970,Helen Mirren,2045-07-26,Best Actress
-1970,Marion Cotillard,1975-09-30,Best Actress
-1970,Kate Winslet,1975-10-05,Best Actress
-1970,Sandra Bullock,2064-07-26,Best Actress
-1970,Natalie Portman,1981-06-09,Best Actress
-1970,Jennifer Lawrence,1990-08-15,Best Actress
-1970,Cate Blanchett,2069-05-14,Best Actress
-1970,Gale Sondergaard,1899-02-15,Best Supporting Actress
-1970,Alice Brady,1892-11-02,Best Supporting Actress
-1970,Fay Bainter,1891-12-07,Best Supporting Actress
-1970,Hattie McDaniel,1893-06-10,Best Supporting Actress
-1970,Jane Darwell,1879-10-15,Best Supporting Actress
-1970,Mary Astor,2006-05-03,Best Supporting Actress
-1970,Teresa Wright,2018-10-27,Best Supporting Actress
-1970,Katina Paxinou,2000-12-17,Best Supporting Actress
-1970,Ethel Barrymore,1879-08-15,Best Supporting Actress
-1970,Anne Revere,2003-06-25,Best Supporting Actress
-1970,Anne Baxter,2023-05-07,Best Supporting Actress
-1970,Celeste Holm,2017-04-29,Best Supporting Actress
-1970,Claire Trevor,2010-03-08,Best Supporting Actress
-1970,Mercedes McCambridge,2016-03-17,Best Supporting Actress
-1970,Josephine Hull,1886-01-03,Best Supporting Actress
-1970,Kim Hunter,2022-11-12,Best Supporting Actress
-1970,Gloria Grahame,2023-11-28,Best Supporting Actress
-1970,Donna Reed,2021-01-27,Best Supporting Actress
-1970,Eva Marie Saint,2024-07-04,Best Supporting Actress
-1970,Jo Van Fleet,2014-12-30,Best Supporting Actress
-1970,Dorothy Malone,2025-01-30,Best Supporting Actress
-1970,Miyoshi Umeki,2029-04-03,Best Supporting Actress
-1970,Wendy Hiller,2012-08-15,Best Supporting Actress
-1970,Shelley Winters,2020-08-18,Best Supporting Actress
-1970,Shirley Jones,2034-03-31,Best Supporting Actress
-1970,Rita Moreno,2031-12-11,Best Supporting Actress
-1970,Patty Duke,2046-12-14,Best Supporting Actress
-1970,Margaret Rutherford,1892-05-11,Best Supporting Actress
-1970,Lila Kedrova,2018-10-09,Best Supporting Actress
-1970,Sandy Dennis,2037-04-27,Best Supporting Actress
-1970,Estelle Parsons,2027-11-20,Best Supporting Actress
-1970,Ruth Gordon,1896-10-30,Best Supporting Actress
-1970,Goldie Hawn,2045-11-21,Best Supporting Actress
-1970,Helen Hayes,2000-10-10,Best Supporting Actress
-1970,Cloris Leachman,2026-04-30,Best Supporting Actress
-1970,Eileen Heckart,2019-03-29,Best Supporting Actress
-1970,Tatum O'Neal,2063-11-05,Best Supporting Actress
-1970,Ingrid Bergman,2015-08-29,Best Supporting Actress
-1970,Lee Grant,2027-10-31,Best Supporting Actress
-1970,Beatrice Straight,2014-08-02,Best Supporting Actress
-1970,Vanessa Redgrave,2037-01-30,Best Supporting Actress
-1970,Maggie Smith,2034-12-28,Best Supporting Actress
-1970,Meryl Streep,2049-06-22,Best Supporting Actress
-1970,Mary Steenburgen,2053-02-08,Best Supporting Actress
-1970,Maureen Stapleton,2025-06-21,Best Supporting Actress
-1970,Jessica Lange,2049-04-20,Best Supporting Actress
-1970,Linda Hunt,2045-04-02,Best Supporting Actress
-1970,Peggy Ashcroft,2007-12-22,Best Supporting Actress
-1970,Anjelica Huston,2051-07-08,Best Supporting Actress
-1970,Dianne Wiest,2048-03-28,Best Supporting Actress
-1970,Olympia Dukakis,2031-06-20,Best Supporting Actress
-1970,Geena Davis,2056-01-21,Best Supporting Actress
-1970,Brenda Fricker,2045-02-17,Best Supporting Actress
-1970,Whoopi Goldberg,2055-11-13,Best Supporting Actress
-1970,Mercedes Ruehl,2048-02-28,Best Supporting Actress
-1970,Marisa Tomei,2064-12-04,Best Supporting Actress
-1970,Anna Paquin,1982-07-24,Best Supporting Actress
-1970,Mira Sorvino,2067-09-28,Best Supporting Actress
-1970,Juliette Binoche,2064-03-09,Best Supporting Actress
-1970,Kim Basinger,2053-12-08,Best Supporting Actress
-1970,Judi Dench,2034-12-09,Best Supporting Actress
-1970,Angelina Jolie,1975-06-04,Best Supporting Actress
-1970,Marcia Gay Harden,2059-08-14,Best Supporting Actress
-1970,Jennifer Connelly,2070-12-12,Best Supporting Actress
-1970,Catherine Zeta-Jones,2069-09-25,Best Supporting Actress
-1970,Ren̩e Zellweger,2069-04-25,Best Supporting Actress
-1970,Cate Blanchett,2069-05-14,Best Supporting Actress
-1970,Rachel Weisz,2071-03-07,Best Supporting Actress
-1970,Jennifer Hudson,1981-09-12,Best Supporting Actress
-1970,Tilda Swinton,2060-11-05,Best Supporting Actress
-1970,Penelope Cruz,1974-04-28,Best Supporting Actress
-1970,Mo'Nique,2067-12-11,Best Supporting Actress
-1970,Melissa Leo,2060-09-14,Best Supporting Actress
-1970,Octavia Spencer,2072-05-25,Best Supporting Actress
-1970,Anne Hathaway,1982-11-12,Best Supporting Actress
-1970,Lupita Nyong'o,1983-03-01,Best Supporting Actress
+award_year,person_name,person_dateofbirth,award_category,award_winner
+1927.0,Lewis Milestone,30-Sep-1895,Best Director,False
+1930.0,Frank Lloyd,2-Feb-1886,Best Director,False
+1931.0,Lewis Milestone,30-Sep-1895,Best Director,False
+1932.0,Norman Taurog,23-Feb-1899,Best Director,False
+1933.0,Frank Borzage,23-Apr-1894,Best Director,False
+1934.0,Frank Lloyd,2-Feb-1886,Best Director,False
+1935.0,Frank Capra,18-May-1897,Best Director,False
+1936.0,John Ford,1-Feb-1894,Best Director,False
+1937.0,Frank Capra,18-May-1897,Best Director,False
+1938.0,Leo McCarey,3-Oct-1898,Best Director,False
+1939.0,Frank Capra,18-May-1897,Best Director,False
+1940.0,Victor Fleming,23-Feb-1883,Best Director,False
+1941.0,John Ford,1-Feb-1894,Best Director,False
+1942.0,John Ford,1-Feb-1894,Best Director,False
+1943.0,William Wyler,01/Jul/02,Best Director,False
+1944.0,Michael Curtiz,24-Dec-1886,Best Director,False
+1945.0,Leo McCarey,3-Oct-1898,Best Director,False
+1962.0,Jerome Robbins,11/Oct/18,Best Director,False
+1946.0,Billy Wilder,22/Jun/06,Best Director,False
+1947.0,William Wyler,01/Jul/02,Best Director,False
+1948.0,Elia Kazan,07/Sep/09,Best Director,False
+1950.0,Joseph L. Mankiewicz,11/Feb/09,Best Director,False
+1951.0,Joseph L. Mankiewicz,11/Feb/09,Best Director,False
+1952.0,George Stevens,18/Dec/04,Best Director,False
+1953.0,John Ford,1-Feb-1894,Best Director,False
+1954.0,Fred Zinnemann,29/Apr/07,Best Director,False
+1955.0,Elia Kazan,07/Sep/09,Best Director,False
+1956.0,Delbert Mann,30/Jan/20,Best Director,False
+1957.0,George Stevens,18/Dec/04,Best Director,False
+1958.0,David Lean,25/Mar/08,Best Director,False
+1959.0,Vincente Minnelli,28/Feb/03,Best Director,False
+1960.0,William Wyler,01/Jul/02,Best Director,False
+1961.0,Robert Wise,10/Sep/14,Best Director,False
+1963.0,David Lean,25/Mar/08,Best Director,False
+1964.0,Tony Richardson,05/Jun/28,Best Director,False
+1965.0,George Cukor,7-Jul-1899,Best Director,False
+1966.0,Robert Wise,10/Sep/14,Best Director,False
+1967.0,Fred Zinnemann,29/Apr/07,Best Director,False
+1968.0,Mike Nichols,06/Nov/31,Best Director,False
+2008.0,Joel Coen,29/Nov/54,Best Director,False
+1969.0,Carol Reed,30/Dec/06,Best Director,False
+1969.0,John Schlesinger,16/Feb/26,Best Director,False
+1970.0,Franklin J. Schaffner,30/May/20,Best Director,False
+1972.0,William Friedkin,29/Aug/35,Best Director,False
+1973.0,Bob Fosse,23/Jun/27,Best Director,False
+1973.0,George Roy Hill,20/Dec/21,Best Director,False
+1975.0,Francis Ford Coppola,07/Apr/39,Best Director,False
+1976.0,Milos Forman,18/Feb/32,Best Director,False
+1976.0,John G. Avildsen,21/Dec/35,Best Director,False
+1978.0,Woody Allen,01/Dec/35,Best Director,False
+1980.0,Robert Benton,29/Sep/32,Best Director,False
+1980.0,Robert Redford,18-Aug-1936 [1],Best Director,False
+1981.0,Warren Beatty,30/Mar/37,Best Director,False
+1982.0,Richard Attenborough,29/Aug/23,Best Director,False
+1983.0,James L. Brooks,09/May/40,Best Director,False
+1985.0,Milos Forman,18/Feb/32,Best Director,False
+1986.0,Sydney Pollack,01/Jul/34,Best Director,False
+1990.0,Oliver Stone,15/Sep/46,Best Director,False
+1988.0,Bernardo Bertolucci,16/Mar/41,Best Director,False
+1989.0,Barry Levinson,06/Apr/42,Best Director,False
+1991.0,Kevin Costner,18/Jan/55,Best Director,False
+1992.0,Jonathan Demme,22/Feb/44,Best Director,False
+1993.0,Clint Eastwood,31/May/30,Best Director,False
+1994.0,Steven Spielberg,18/Dec/46,Best Director,False
+1995.0,Robert Zemeckis,14/May/52,Best Director,False
+1996.0,Mel Gibson,03/Jan/56,Best Director,False
+1997.0,Anthony Minghella,06/Jan/54,Best Director,False
+1998.0,James Cameron,16/Aug/54,Best Director,False
+1999.0,Steven Spielberg,18/Dec/46,Best Director,False
+2000.0,Sam Mendes,01/Aug/65,Best Director,False
+2001.0,Steven Soderbergh,14/Jan/63,Best Director,False
+2002.0,Ron Howard,01/Mar/54,Best Director,False
+2003.0,Roman Polanski,18/Aug/33,Best Director,False
+2004.0,Peter Jackson,31/Oct/61,Best Director,False
+2005.0,Clint Eastwood,31/May/30,Best Director,False
+2006.0,Ang Lee,23/Oct/54,Best Director,False
+2007.0,Martin Scorsese,17/Nov/42,Best Director,False
+2008.0,Ethan Coen,21/Sep/57,Best Director,False
+2009.0,Kathryn Bigelow,27/Nov/51,Best Director,False
+2011.0,Tom Hooper,1972,Best Director,False
+2012.0,Michel Hazanavicius,29/Mar/67,Best Director,False
+2013.0,Ang Lee,23/Oct/54,Best Director,False
+1929.0,Emil Jannings,23-Jul-1884,Best Actor,False
+1930.0,Warner Baxter,29-Mar-1889,Best Actor,False
+1930.0,George Arliss,10-Apr-1868,Best Actor,False
+1931.0,Lionel Barrymore,28-Apr-1878,Best Actor,False
+1932.0,Wallace Beery,1-Apr-1885,Best Actor,False
+1934.0,Charles Laughton,1-Jul-1899,Best Actor,False
+1935.0,Clark Gable,01/Feb/01,Best Actor,False
+1936.0,Victor McLaglen,11-Dec-1883,Best Actor,False
+1937.0,Paul Muni,22-Sep-1895,Best Actor,False
+1938.0,Spencer Tracy,05/Apr/00,Best Actor,False
+1939.0,Spencer Tracy,05/Apr/00,Best Actor,False
+1940.0,Robert Donat,18/Mar/05,Best Actor,False
+1941.0,Jimmy Stewart,20/May/08,Best Actor,False
+1942.0,Gary Cooper,07/May/01,Best Actor,False
+1943.0,James Cagney,17-Jul-1899,Best Actor,False
+1944.0,Paul Lukas,26-May-1887,Best Actor,False
+1945.0,Bing Crosby,03/May/03,Best Actor,False
+1946.0,Ray Milland,03/Jan/07,Best Actor,False
+1947.0,Fredric March,31-Aug-1897,Best Actor,False
+1948.0,Ronald Colman,9-Feb-1891,Best Actor,False
+1949.0,Laurence Olivier,22/May/07,Best Actor,False
+1950.0,Broderick Crawford,09/Dec/11,Best Actor,False
+1951.0,Jose Ferrer,08/Jan/09,Best Actor,False
+1952.0,Humphrey Bogart,25-Dec-1899,Best Actor,False
+1954.0,William Holden,17/Apr/18,Best Actor,False
+1955.0,Marlon Brando,03/Apr/24,Best Actor,False
+1956.0,Ernest Borgnine,24/Jan/17,Best Actor,False
+1957.0,Yul Brynner,11/Jul/20,Best Actor,False
+1958.0,Alec Guinness,02/Apr/14,Best Actor,False
+1959.0,David Niven,01/Mar/09,Best Actor,False
+1960.0,Charlton Heston,04/Oct/23,Best Actor,False
+1961.0,Burt Lancaster,02/Nov/13,Best Actor,False
+1962.0,Maximilian Schell,08/Dec/30,Best Actor,False
+1963.0,Gregory Peck,05/Apr/16,Best Actor,False
+1964.0,Sidney Poitier,20/Feb/27,Best Actor,False
+1965.0,Rex Harrison,05/Mar/08,Best Actor,False
+1966.0,Lee Marvin,19/Feb/24,Best Actor,False
+1967.0,Paul Scofield,21/Jan/22,Best Actor,False
+1968.0,Rod Steiger,14/Apr/25,Best Actor,False
+1969.0,Cliff Robertson,09/Sep/23,Best Actor,False
+1970.0,John Wayne,26/May/07,Best Actor,False
+1971.0,George C. Scott,18/Oct/27,Best Actor,False
+1972.0,Gene Hackman,30/Jan/30,Best Actor,False
+1973.0,Marlon Brando,03/Apr/24,Best Actor,False
+1974.0,Jack Lemmon,08/Feb/25,Best Actor,False
+1975.0,Art Carney,04/Nov/18,Best Actor,False
+1976.0,Jack Nicholson,22/Apr/37,Best Actor,False
+1977.0,Peter Finch,28/Sep/16,Best Actor,False
+1978.0,Richard Dreyfuss,29/Oct/47,Best Actor,False
+1979.0,Jon Voight,29/Dec/38,Best Actor,False
+1980.0,Dustin Hoffman,08/Aug/37,Best Actor,False
+1981.0,Robert De Niro,17/Aug/43,Best Actor,False
+1982.0,Henry Fonda,16/May/05,Best Actor,False
+1983.0,Ben Kingsley,31/Dec/43,Best Actor,False
+1984.0,Robert Duvall,05/Jan/31,Best Actor,False
+1985.0,F. Murray Abraham,24/Oct/39,Best Actor,False
+1986.0,William Hurt,20/Mar/50,Best Actor,False
+1987.0,Paul Newman,26/Jan/25,Best Actor,False
+1988.0,Michael Douglas,25/Sep/44,Best Actor,False
+1989.0,Dustin Hoffman,08/Aug/37,Best Actor,False
+1990.0,Daniel Day-Lewis,29/Apr/57,Best Actor,False
+1991.0,Jeremy Irons,19/Sep/48,Best Actor,False
+1992.0,Anthony Hopkins,31/Dec/37,Best Actor,False
+1993.0,Al Pacino,25/Apr/40,Best Actor,False
+1995.0,Tom Hanks,09/Jul/56,Best Actor,False
+1996.0,Nicolas Cage,07/Jan/64,Best Actor,False
+1997.0,Geoffrey Rush,06/Jul/51,Best Actor,False
+1997.0,Jack Nicholson,22/Apr/37,Best Actor,False
+1999.0,Roberto Benigni,27/Oct/52,Best Actor,False
+2000.0,Kevin Spacey,26/Jul/59,Best Actor,False
+2001.0,Russell Crowe,07/Apr/64,Best Actor,False
+2002.0,Denzel Washington,28/Dec/54,Best Actor,False
+2003.0,Adrien Brody,14/Apr/73,Best Actor,False
+2003.0,Sean Penn,17/Aug/60,Best Actor,False
+2005.0,Jamie Foxx,13/Dec/67,Best Actor,False
+2006.0,Philip Seymour Hoffman,23/Jul/67,Best Actor,False
+2007.0,Forest Whitaker,15/Jul/61,Best Actor,False
+2008.0,Daniel Day-Lewis,29/Apr/57,Best Actor,False
+2009.0,Sean Penn,17/Aug/60,Best Actor,False
+2010.0,Jeff Bridges,04/Dec/49,Best Actor,False
+2011.0,Colin Firth,10/Sep/60,Best Actor,False
+2012.0,Jean Dujardin,19/Jun/72,Best Actor,False
+2013.0,Daniel Day-Lewis,29/Apr/57,Best Actor,False
+2014.0,Matthew McConaughey,04/Nov/69,Best Actor,False
+1938.0,Walter Brennan,25-Jul-1894,Best Supporting Actor,False
+1938.0,Joseph Schildkraut,22-Mar-1896,Best Supporting Actor,False
+1939.0,Walter Brennan,25-Jul-1894,Best Supporting Actor,False
+1940.0,Thomas Mitchell,11-Jul-1892,Best Supporting Actor,False
+1941.0,Walter Brennan,25-Jul-1894,Best Supporting Actor,False
+1942.0,Donald Crisp,27-Jul-1880,Best Supporting Actor,False
+1944.0,Charles Coburn,17-Jun-1877,Best Supporting Actor,False
+1945.0,Barry Fitzgerald,10-Mar-1888,Best Supporting Actor,False
+1946.0,James Dunn,02/Nov/01,Best Supporting Actor,False
+1947.0,Harold Russell,14/Jan/14,Best Supporting Actor,False
+1948.0,Edmund Gwenn,26-Sep-1875,Best Supporting Actor,False
+1949.0,Walter Huston,6-Apr-1884,Best Supporting Actor,False
+1950.0,Dean Jagger,07/Nov/03,Best Supporting Actor,False
+1951.0,George Sanders,03/Jul/06,Best Supporting Actor,False
+1952.0,Karl Malden,22/Mar/12,Best Supporting Actor,False
+1953.0,Anthony Quinn,21/Apr/15,Best Supporting Actor,False
+1954.0,Frank Sinatra,12/Dec/15,Best Supporting Actor,False
+1955.0,Edmond O'Brien,10/Sep/15,Best Supporting Actor,False
+1956.0,Jack Lemmon,08/Feb/25,Best Supporting Actor,False
+1957.0,Anthony Quinn,21/Apr/15,Best Supporting Actor,False
+1958.0,Red Buttons,05/Feb/19,Best Supporting Actor,False
+1959.0,Burl Ives,14/Jun/09,Best Supporting Actor,False
+1960.0,Hugh Griffith,30/May/12,Best Supporting Actor,False
+1961.0,Peter Ustinov,16/Apr/21,Best Supporting Actor,False
+1962.0,George Chakiris,16/Sep/34,Best Supporting Actor,False
+1963.0,Ed Begley,25/Mar/01,Best Supporting Actor,False
+1963.0,Sr.,25/Mar/01,Best Supporting Actor,False
+1964.0,Melvyn Douglas,05/Apr/01,Best Supporting Actor,False
+1965.0,Peter Ustinov,16/Apr/21,Best Supporting Actor,False
+1966.0,Martin Balsam,04/Nov/19,Best Supporting Actor,False
+1967.0,Walter Matthau,01/Oct/20,Best Supporting Actor,False
+1968.0,George Kennedy,18/Feb/25,Best Supporting Actor,False
+1970.0,Gig Young,04/Nov/13,Best Supporting Actor,False
+1971.0,John Mills,22/Feb/08,Best Supporting Actor,False
+1972.0,Ben Johnson,13/Jun/18,Best Supporting Actor,False
+1973.0,Joel Grey,11/Apr/32,Best Supporting Actor,False
+1974.0,John Houseman,22/Sep/02,Best Supporting Actor,False
+1975.0,Robert De Niro,17/Aug/43,Best Supporting Actor,False
+1976.0,George Burns,20-Jan-1896,Best Supporting Actor,False
+1978.0,Jason Robards,26/Jul/22,Best Supporting Actor,False
+1979.0,Christopher Walken,31/Mar/43,Best Supporting Actor,False
+1980.0,Melvyn Douglas,05/Apr/01,Best Supporting Actor,False
+1981.0,Timothy Hutton,16/Aug/60,Best Supporting Actor,False
+1982.0,John Gielgud,14/Apr/04,Best Supporting Actor,False
+1983.0,Lou Gossett,27/May/36,Best Supporting Actor,False
+1983.0,Jr.,27/May/36,Best Supporting Actor,False
+1984.0,Jack Nicholson,22/Apr/37,Best Supporting Actor,False
+1985.0,Haing S. Ngor,22/Mar/40,Best Supporting Actor,False
+1986.0,Don Ameche,31/May/04,Best Supporting Actor,False
+1987.0,Michael Caine,14/Mar/33,Best Supporting Actor,False
+1988.0,Sean Connery,25/Aug/30,Best Supporting Actor,False
+1989.0,Kevin Kline,24/Oct/47,Best Supporting Actor,False
+1990.0,Denzel Washington,28/Dec/54,Best Supporting Actor,False
+1991.0,Joe Pesci,09/Feb/43,Best Supporting Actor,False
+1992.0,Jack Palance,18/Feb/19,Best Supporting Actor,False
+1993.0,Gene Hackman,30/Jan/30,Best Supporting Actor,False
+1994.0,Tommy Lee Jones,15/Sep/46,Best Supporting Actor,False
+1995.0,Martin Landau,20/Jun/31,Best Supporting Actor,False
+1996.0,Kevin Spacey,26/Jul/59,Best Supporting Actor,False
+1997.0,Cuba Gooding,02/Jan/68,Best Supporting Actor,False
+1997.0,Jr.,02/Jan/68,Best Supporting Actor,False
+1998.0,Robin Williams,21/Jul/51,Best Supporting Actor,False
+2000.0,Michael Caine,14/Mar/33,Best Supporting Actor,False
+2001.0,Benicio Del Toro,19/Feb/67,Best Supporting Actor,False
+2002.0,Jim Broadbent,24/May/49,Best Supporting Actor,False
+2003.0,Chris Cooper,09/Jul/51,Best Supporting Actor,False
+2004.0,Tim Robbins,16/Oct/58,Best Supporting Actor,False
+2005.0,Morgan Freeman,01/Jun/37,Best Supporting Actor,False
+2006.0,George Clooney,06/May/61,Best Supporting Actor,False
+2007.0,Alan Arkin,26/Mar/34,Best Supporting Actor,False
+2008.0,Javier Bardem,01/Mar/69,Best Supporting Actor,False
+2009.0,Heath Ledger,04/Apr/79,Best Supporting Actor,False
+2010.0,Christoph Waltz,04/Oct/56,Best Supporting Actor,False
+2011.0,Christian Bale,30/Jan/74,Best Supporting Actor,False
+2012.0,Christopher Plummer,13/Dec/29,Best Supporting Actor,False
+2013.0,Christoph Waltz,04/Oct/56,Best Supporting Actor,False
+2014.0,Jared Leto,26/Dec/71,Best Supporting Actor,False
+1929.0,Janet Gaynor,06/Oct/06,Best Actress,False
+1930.0,Mary Pickford,8-Apr-1892,Best Actress,False
+1930.0,Norma Shearer,10/Aug/02,Best Actress,False
+1931.0,Marie Dressler,2-Nov-1868,Best Actress,False
+1932.0,Helen Hayes,10/Oct/00,Best Actress,False
+1934.0,Katharine Hepburn,12/May/07,Best Actress,False
+1935.0,Claudette Colbert,13/Sep/03,Best Actress,False
+1936.0,Bette Davis,05/Apr/08,Best Actress,False
+1937.0,Luise Rainer,12/Jan/10,Best Actress,False
+1938.0,Luise Rainer,12/Jan/10,Best Actress,False
+1939.0,Bette Davis,05/Apr/08,Best Actress,False
+1940.0,Vivien Leigh,05/Nov/13,Best Actress,False
+1940.0,Joan Fontaine,22/Oct/17,Best Actress,False
+1942.0,Greer Garson,29/Sep/04,Best Actress,False
+1944.0,Jennifer Jones,02/Mar/19,Best Actress,False
+1945.0,Ingrid Bergman,29/Aug/15,Best Actress,False
+1946.0,Joan Crawford,23/Mar/05,Best Actress,False
+1947.0,Olivia de Havilland,01/Jul/16,Best Actress,False
+1948.0,Loretta Young,06/Jan/13,Best Actress,False
+1949.0,Jane Wyman,05/Jan/17,Best Actress,False
+1950.0,Olivia de Havilland,01/Jul/16,Best Actress,False
+1951.0,Judy Holliday,21/Jun/21,Best Actress,False
+1952.0,Vivien Leigh,05/Nov/13,Best Actress,False
+1953.0,Shirley Booth,30-Aug-1898,Best Actress,False
+1954.0,Audrey Hepburn,04/May/29,Best Actress,False
+1955.0,Grace Kelly,12/Nov/29,Best Actress,False
+1956.0,Anna Magnani,07/Mar/08,Best Actress,False
+1957.0,Ingrid Bergman,29/Aug/15,Best Actress,False
+1959.0,Susan Hayward,30/Jun/18,Best Actress,False
+1960.0,Simone Signoret,25/Mar/21,Best Actress,False
+1961.0,Elizabeth Taylor,27/Feb/32,Best Actress,False
+1962.0,Sophia Loren,20/Sep/34,Best Actress,False
+1963.0,Anne Bancroft,17/Sep/31,Best Actress,False
+1964.0,Patricia Neal,20/Jan/26,Best Actress,False
+1965.0,Julie Andrews,01/Oct/35,Best Actress,False
+1966.0,Julie Christie,14/Apr/41,Best Actress,False
+1968.0,Katharine Hepburn,12/May/07,Best Actress,False
+1969.0,Barbra Streisand,24/Apr/42,Best Actress,False
+1969.0,Katharine Hepburn,12/May/07,Best Actress,False
+1971.0,Glenda Jackson,09/May/36,Best Actress,False
+1972.0,Jane Fonda,21/Dec/37,Best Actress,False
+1973.0,Liza Minnelli,12/Mar/46,Best Actress,False
+1974.0,Glenda Jackson,09/May/36,Best Actress,False
+1975.0,Ellen Burstyn,07/Dec/32,Best Actress,False
+1976.0,Louise Fletcher,22/Jul/34,Best Actress,False
+1978.0,Diane Keaton,05/Jan/46,Best Actress,False
+1979.0,Jane Fonda,21/Dec/37,Best Actress,False
+1980.0,Sally Field,06/Nov/46,Best Actress,False
+1981.0,Sissy Spacek,25/Dec/49,Best Actress,False
+1982.0,Katharine Hepburn,12/May/07,Best Actress,False
+1983.0,Meryl Streep,22/Jun/49,Best Actress,False
+1984.0,Shirley MacLaine,24/Apr/34,Best Actress,False
+1985.0,Sally Field,06/Nov/46,Best Actress,False
+1986.0,Geraldine Page,22/Nov/24,Best Actress,False
+1987.0,Marlee Matlin,24/Aug/65,Best Actress,False
+1988.0,Cher,20/May/46,Best Actress,False
+1989.0,Jodie Foster,19/Nov/62,Best Actress,False
+1990.0,Jessica Tandy,07/Jun/09,Best Actress,False
+1991.0,Kathy Bates,28/Jun/48,Best Actress,False
+1992.0,Jodie Foster,19/Nov/62,Best Actress,False
+1993.0,Emma Thompson,15/Apr/59,Best Actress,False
+1994.0,Holly Hunter,20/Mar/58,Best Actress,False
+1995.0,Jessica Lange,20/Apr/49,Best Actress,False
+1996.0,Susan Sarandon,04/Oct/46,Best Actress,False
+1997.0,Frances McDormand,23/Jun/57,Best Actress,False
+1998.0,Helen Hunt,15/Jun/63,Best Actress,False
+2000.0,Hilary Swank,30/Jul/74,Best Actress,False
+2001.0,Julia Roberts,28/Oct/67,Best Actress,False
+2002.0,Halle Berry,14/Aug/66,Best Actress,False
+2003.0,Nicole Kidman,20/Jun/67,Best Actress,False
+2004.0,Charlize Theron,07/Aug/75,Best Actress,False
+2006.0,Reese Witherspoon,22/Mar/76,Best Actress,False
+2007.0,Helen Mirren,26/Jul/45,Best Actress,False
+2008.0,Marion Cotillard,30/Sep/75,Best Actress,False
+2009.0,Kate Winslet,05/Oct/75,Best Actress,False
+2010.0,Sandra Bullock,26/Jul/64,Best Actress,False
+2011.0,Natalie Portman,09/Jun/81,Best Actress,False
+2012.0,Meryl Streep,22/Jun/49,Best Actress,False
+2013.0,Jennifer Lawrence,15/Aug/90,Best Actress,False
+2014.0,Cate Blanchett,14/May/69,Best Actress,False
+1937.0,Gale Sondergaard,15-Feb-1899,Best Supporting Actress,False
+1938.0,Alice Brady,2-Nov-1892,Best Supporting Actress,False
+1939.0,Fay Bainter,7-Dec-1891,Best Supporting Actress,False
+1940.0,Hattie McDaniel,10-Jun-1893,Best Supporting Actress,False
+1941.0,Jane Darwell,15-Oct-1879,Best Supporting Actress,False
+1943.0,Teresa Wright,27/Oct/18,Best Supporting Actress,False
+1944.0,Katina Paxinou,17/Dec/00,Best Supporting Actress,False
+1945.0,Ethel Barrymore,15-Aug-1879,Best Supporting Actress,False
+1947.0,Anne Baxter,07/May/23,Best Supporting Actress,False
+1948.0,Celeste Holm,29/Apr/17,Best Supporting Actress,False
+1949.0,Claire Trevor,08/Mar/10,Best Supporting Actress,False
+1950.0,Mercedes McCambridge,17/Mar/16,Best Supporting Actress,False
+1951.0,Josephine Hull,3-Jan-1886,Best Supporting Actress,False
+1952.0,Kim Hunter,12/Nov/22,Best Supporting Actress,False
+1953.0,Gloria Grahame,28/Nov/23,Best Supporting Actress,False
+1954.0,Donna Reed,27/Jan/21,Best Supporting Actress,False
+1955.0,Eva Marie Saint,04/Jul/24,Best Supporting Actress,False
+1956.0,Jo Van Fleet,30/Dec/14,Best Supporting Actress,False
+1957.0,Dorothy Malone,30/Jan/25,Best Supporting Actress,False
+1958.0,Miyoshi Umeki,03/Apr/29,Best Supporting Actress,False
+1959.0,Wendy Hiller,15/Aug/12,Best Supporting Actress,False
+1960.0,Shelley Winters,18/Aug/20,Best Supporting Actress,False
+1961.0,Shirley Jones,31/Mar/34,Best Supporting Actress,False
+1962.0,Rita Moreno,11/Dec/31,Best Supporting Actress,False
+1963.0,Patty Duke,14/Dec/46,Best Supporting Actress,False
+1964.0,Margaret Rutherford,11-May-1892,Best Supporting Actress,False
+1965.0,Lila Kedrova,09/Oct/18,Best Supporting Actress,False
+1966.0,Shelley Winters,18/Aug/20,Best Supporting Actress,False
+1967.0,Sandy Dennis,27/Apr/37,Best Supporting Actress,False
+1968.0,Estelle Parsons,20/Nov/27,Best Supporting Actress,False
+1969.0,Ruth Gordon,30-Oct-1896,Best Supporting Actress,False
+1970.0,Goldie Hawn,21/Nov/45,Best Supporting Actress,False
+1971.0,Helen Hayes,10/Oct/00,Best Supporting Actress,False
+1972.0,Cloris Leachman,30/Apr/26,Best Supporting Actress,False
+1973.0,Eileen Heckart,29/Mar/19,Best Supporting Actress,False
+1974.0,Tatum O'Neal,05/Nov/63,Best Supporting Actress,False
+1975.0,Ingrid Bergman,29/Aug/15,Best Supporting Actress,False
+1977.0,Beatrice Straight,02/Aug/14,Best Supporting Actress,False
+1978.0,Vanessa Redgrave,30/Jan/37,Best Supporting Actress,False
+1979.0,Maggie Smith,28/Dec/34,Best Supporting Actress,False
+1980.0,Meryl Streep,22/Jun/49,Best Supporting Actress,False
+1981.0,Mary Steenburgen,08/Feb/53,Best Supporting Actress,False
+1982.0,Maureen Stapleton,21/Jun/25,Best Supporting Actress,False
+1983.0,Jessica Lange,20/Apr/49,Best Supporting Actress,False
+1984.0,Linda Hunt,02/Apr/45,Best Supporting Actress,False
+1985.0,Peggy Ashcroft,22/Dec/07,Best Supporting Actress,False
+1986.0,Anjelica Huston,08/Jul/51,Best Supporting Actress,False
+1987.0,Dianne Wiest,28/Mar/48,Best Supporting Actress,False
+1988.0,Olympia Dukakis,20/Jun/31,Best Supporting Actress,False
+1989.0,Geena Davis,21/Jan/56,Best Supporting Actress,False
+1990.0,Brenda Fricker,17/Feb/45,Best Supporting Actress,False
+1991.0,Whoopi Goldberg,13/Nov/55,Best Supporting Actress,False
+1992.0,Mercedes Ruehl,28/Feb/48,Best Supporting Actress,False
+1993.0,Marisa Tomei,04/Dec/64,Best Supporting Actress,False
+1994.0,Anna Paquin,24/Jul/82,Best Supporting Actress,False
+1995.0,Dianne Wiest,28/Mar/48,Best Supporting Actress,False
+1996.0,Mira Sorvino,28/Sep/67,Best Supporting Actress,False
+1997.0,Juliette Binoche,09/Mar/64,Best Supporting Actress,False
+1998.0,Kim Basinger,08/Dec/53,Best Supporting Actress,False
+1999.0,Judi Dench,09/Dec/34,Best Supporting Actress,False
+2002.0,Jennifer Connelly,12/Dec/70,Best Supporting Actress,False
+2003.0,Catherine Zeta-Jones,25/Sep/69,Best Supporting Actress,False
+2004.0,Ren̩e Zellweger,25/Apr/69,Best Supporting Actress,False
+2005.0,Cate Blanchett,14/May/69,Best Supporting Actress,False
+2007.0,Jennifer Hudson,12/Sep/81,Best Supporting Actress,False
+2007.0,Tilda Swinton,05/Nov/60,Best Supporting Actress,False
+2009.0,Penelope Cruz,28/Apr/74,Best Supporting Actress,False
+2011.0,Melissa Leo,14/Sep/60,Best Supporting Actress,False
+2012.0,Octavia Spencer,25/May/72,Best Supporting Actress,False
+2013.0,Anne Hathaway,12/Nov/82,Best Supporting Actress,False
+2014.0,Lupita Nyong'o,01/Mar/83,Best Supporting Actress,False

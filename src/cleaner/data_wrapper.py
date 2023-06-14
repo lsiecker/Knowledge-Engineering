@@ -200,18 +200,41 @@ class DataWrapper():
         -------
         None
         """
+        # Check the format of the string in the column
+        # If the format is '%Y-%m-%d', convert it to '%Y'
+        if self.data[column_name].str.contains(r'\d{4}-\d{2}-\d{2}').any():
+            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%Y-%m-%d').dt.strftime(target_format)
+        # If the format is '%Y-%m', convert it to '%Y'
+        elif self.data[column_name].str.contains(r'\d{4}-\d{2}').any():
+            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%Y-%m').dt.strftime(target_format)
+        # If the format is '%Y', convert it to '%Y'
+        elif self.data[column_name].str.contains(r'\d{4}').any():
+            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%Y').dt.strftime(target_format)
+        # If the format is %d/%m/%Y
+        elif self.data[column_name].str.contains(r'\d{2}/\d{2}/\d{4}').any():
+            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%d/%m/%Y').dt.strftime(target_format)
+        return
+    
+    def make_boolean(self, column_name, true_value, false_value):
+        """
+        A function that converts the values in a column to boolean values.
 
-        inferred_formats = []
+        Parameters
+        ----------
+        column_name : str
+            The name of the column to be converted to boolean values.
+        true_value : str
+            The value to be converted to True.
+        false_value : str
+            The value to be converted to False.
 
-        for i, value in enumerate(self.data[column_name]):
-            inferred_format = pd.to_datetime(value, errors='coerce', dayfirst=True)
-            if not pd.isnull(inferred_format):
-                inferred_formats.append(inferred_format.strftime(target_format))
-            else:
-                inferred_formats.append(None)
-
-        # Update the column with the inferred formats converted to the target format
-        self.data[column_name] = inferred_formats
+        Returns
+        -------
+        None
+        """
+        # Convert the data in the column to boolean values
+        
+        self.data[column_name] = self.data[column_name].apply(lambda x: True if x == true_value else False if x == false_value else x)
 
         return
     
@@ -372,6 +395,13 @@ class DataSet():
         self.data.dropna(how='any', subset=columns, inplace=True)
 
         return
+    
+    def drop_winner(self, column_name, inverse = False):
+        # Function that drops the row if the value in the column_name is True
+        if inverse:
+            self.data = self.data[self.data[column_name] == False]
+        else:
+            self.data = self.data[self.data[column_name] == True]
     
     def melt_data(self, *columns):
         # Melt the columns into a single column
