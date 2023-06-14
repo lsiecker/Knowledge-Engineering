@@ -4,6 +4,7 @@ import numpy as np
 import pandas as pd
 from tqdm import tqdm
 from fuzzywuzzy import fuzz
+from dateutil import parser
 
 
 class DataWrapper():
@@ -200,19 +201,15 @@ class DataWrapper():
         -------
         None
         """
-        # Check the format of the string in the column
-        # If the format is '%Y-%m-%d', convert it to '%Y'
-        if self.data[column_name].str.contains(r'\d{4}-\d{2}-\d{2}').any():
-            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%Y-%m-%d').dt.strftime(target_format)
-        # If the format is '%Y-%m', convert it to '%Y'
-        elif self.data[column_name].str.contains(r'\d{4}-\d{2}').any():
-            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%Y-%m').dt.strftime(target_format)
-        # If the format is '%Y', convert it to '%Y'
-        elif self.data[column_name].str.contains(r'\d{4}').any():
-            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%Y').dt.strftime(target_format)
-        # If the format is %d/%m/%Y
-        elif self.data[column_name].str.contains(r'\d{2}/\d{2}/\d{4}').any():
-            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%d/%m/%Y').dt.strftime(target_format)
+        # If the values are lists, extract the strings from the lists
+        self.data[column_name] = self.data[column_name].apply(lambda x: x[0] if isinstance(x, list) else x)
+        
+        # # Replace everything that's not a digit, slash, dash, or space
+        # self.data[column_name] = self.data[column_name].replace(r"[^0-9\-/ ]", "", regex=True)
+        
+        # Apply the date parsing and formatting
+        self.data[column_name] = self.data[column_name].apply(lambda x: parser.parse(str(x)).strftime(target_format) if pd.notnull(x) else x)
+        
         return
     
     def make_boolean(self, column_name, true_value, false_value):
