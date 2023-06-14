@@ -90,11 +90,11 @@ class DataWrapper():
         
         # Check if is a csv file
         if str(data).endswith('.csv'):
-            return pd.read_csv(data, encoding_errors='ignore').head(20)
+            return pd.read_csv(data, encoding_errors='ignore')
         elif str(data).endswith('.xlsx'):
-            return pd.read_excel(data).head(20)
+            return pd.read_excel(data)
         elif str(data).endswith('.tsv'):
-            return pd.read_csv(data, sep='\t', header=0).head(20)
+            return pd.read_csv(data, sep='\t', header=0)
         else:
             raise ValueError('The data must be a csv/xlsx file.')
         
@@ -204,7 +204,7 @@ class DataWrapper():
         inferred_formats = []
 
         for i, value in enumerate(self.data[column_name]):
-            inferred_format = pd.to_datetime(value, errors='coerce')
+            inferred_format = pd.to_datetime(value, errors='coerce', dayfirst=True)
             if not pd.isnull(inferred_format):
                 inferred_formats.append(inferred_format.strftime(target_format))
             else:
