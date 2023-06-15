@@ -3,12 +3,12 @@ from src.domainmodel.neo4j_node import Node
 from src.domainmodel.neo4j_relation import Relation
 
 @dataclass
-class MovieNominatedForRelation(Relation):
+class PersonNominatedForRelation(Relation):
 
-    def __init__(self, movie: Node, oscar: Node):
-        self.subject = movie
+    def __init__(self, person: Node, oscar: Node):
+        self.subject = person
         self.object = oscar
         self.label = 'NOMINATED_FOR'
 
     def natural_keys(self) -> dict:
-        return NotImplementedError("MovieNominatedForRelation.natural_keys() not implemented")
+        return NotImplementedError("PersonNominatedRelation.natural_keys() not implemented")
