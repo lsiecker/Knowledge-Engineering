@@ -1,25 +1,25 @@
 award_year,person_name,person_dateofbirth,award_category,award_winner
-1949.0,John Huston,05/Aug/06,Best Director,True
-1961.0,Billy Wilder,22/Jun/06,Best Director,True
-1979.0,Michael Cimino,03/Feb/39,Best Director,True
-2009.0,Danny Boyle,20/Oct/56,Best Director,True
-1953.0,Gary Cooper,07/May/01,Best Actor,True
-1994.0,Tom Hanks,09/Jul/56,Best Actor,True
-1943.0,Van Heflin,13/Dec/10,Best Supporting Actor,True
-1969.0,Jack Albertson,16/Jun/07,Best Supporting Actor,True
-1977.0,Jason Robards,26/Jul/22,Best Supporting Actor,True
-1999.0,James Coburn,31/Aug/28,Best Supporting Actor,True
-1941.0,Ginger Rogers,16/Jul/11,Best Actress,True
-1958.0,Joanne Woodward,27/Feb/30,Best Actress,True
-1967.0,Elizabeth Taylor,27/Feb/32,Best Actress,True
-1970.0,Maggie Smith,28/Dec/34,Best Actress,True
-1977.0,Faye Dunaway,14/Jan/41,Best Actress,True
-1999.0,Gwyneth Paltrow,27/Sep/72,Best Actress,True
-2005.0,Hilary Swank,30/Jul/74,Best Actress,True
-1942.0,Mary Astor,03/May/06,Best Supporting Actress,True
-1946.0,Anne Revere,25/Jun/03,Best Supporting Actress,True
-1976.0,Lee Grant,31/Oct/27,Best Supporting Actress,True
-2000.0,Angelina Jolie,04/Jun/75,Best Supporting Actress,True
-2001.0,Marcia Gay Harden,14/Aug/59,Best Supporting Actress,True
-2006.0,Rachel Weisz,07/Mar/71,Best Supporting Actress,True
-2010.0,Mo'Nique,11/Dec/67,Best Supporting Actress,True
+1949,John Huston,2006,Best Director,True
+1961,Billy Wilder,2006,Best Director,True
+1979,Michael Cimino,2039,Best Director,True
+2009,Danny Boyle,2056,Best Director,True
+1953,Gary Cooper,2001,Best Actor,True
+1994,Tom Hanks,2056,Best Actor,True
+1943,Van Heflin,2010,Best Supporting Actor,True
+1969,Jack Albertson,2007,Best Supporting Actor,True
+1977,Jason Robards,2022,Best Supporting Actor,True
+1999,James Coburn,2028,Best Supporting Actor,True
+1941,Ginger Rogers,2011,Best Actress,True
+1958,Joanne Woodward,2030,Best Actress,True
+1967,Elizabeth Taylor,2032,Best Actress,True
+1970,Maggie Smith,2034,Best Actress,True
+1977,Faye Dunaway,2041,Best Actress,True
+1999,Gwyneth Paltrow,2072,Best Actress,True
+2005,Hilary Swank,1974,Best Actress,True
+1942,Mary Astor,2006,Best Supporting Actress,True
+1946,Anne Revere,2003,Best Supporting Actress,True
+1976,Lee Grant,2027,Best Supporting Actress,True
+2000,Angelina Jolie,1975,Best Supporting Actress,True
+2001,Marcia Gay Harden,2059,Best Supporting Actress,True
+2006,Rachel Weisz,2071,Best Supporting Actress,True
+2010,Mo'Nique,2067,Best Supporting Actress,True
