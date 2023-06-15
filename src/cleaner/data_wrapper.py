@@ -403,7 +403,7 @@ class DataSet():
     def melt_data(self, *columns):
         # Melt the columns into a single column
         # Create a new DataFrame with the 'writer', 'director', and 'actor' columns melted into separate rows
-        melted_data = self.data.melt(id_vars=['person_dateofbirth', 'person_name'], value_vars=['person_name', 'actor', 'director', 'writer'], value_name="person_names")
+        melted_data = self.data.melt(id_vars=columns, value_vars=['person_name', 'actor', 'director', 'writer'], value_name="person_names")
 
         # Remove rows with missing names
         melted_data.dropna(subset=["person_names"], inplace=True)
@@ -415,7 +415,7 @@ class DataSet():
         melted_data.drop("person_name", axis=1, inplace=True)
         
         # Set the header names
-        melted_data.columns = ['person_dateofbirth', 'person_name']
+        melted_data.columns = columns
 
         # reorder the columns following preferred order
         melted_data = melted_data[self.order_headers(melted_data.columns)]

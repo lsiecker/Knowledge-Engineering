@@ -1,25 +1,3419 @@
-award_year,person_name,person_dateofbirth,award_category,award_winner
-1949,John Huston,2006,Best Director,True
-1961,Billy Wilder,2006,Best Director,True
-1979,Michael Cimino,2039,Best Director,True
-2009,Danny Boyle,2056,Best Director,True
-1953,Gary Cooper,2001,Best Actor,True
-1994,Tom Hanks,2056,Best Actor,True
-1943,Van Heflin,2010,Best Supporting Actor,True
-1969,Jack Albertson,2007,Best Supporting Actor,True
-1977,Jason Robards,2022,Best Supporting Actor,True
-1999,James Coburn,2028,Best Supporting Actor,True
-1941,Ginger Rogers,2011,Best Actress,True
-1958,Joanne Woodward,2030,Best Actress,True
-1967,Elizabeth Taylor,2032,Best Actress,True
-1970,Maggie Smith,2034,Best Actress,True
-1977,Faye Dunaway,2041,Best Actress,True
-1999,Gwyneth Paltrow,2072,Best Actress,True
-2005,Hilary Swank,1974,Best Actress,True
-1942,Mary Astor,2006,Best Supporting Actress,True
-1946,Anne Revere,2003,Best Supporting Actress,True
-1976,Lee Grant,2027,Best Supporting Actress,True
-2000,Angelina Jolie,1975,Best Supporting Actress,True
-2001,Marcia Gay Harden,2059,Best Supporting Actress,True
-2006,Rachel Weisz,2071,Best Supporting Actress,True
-2010,Mo'Nique,2067,Best Supporting Actress,True
+award_year,person_name,award_category,award_winner
+1949,John Huston,Best Director,True
+1961,Billy Wilder,Best Director,True
+1979,Michael Cimino,Best Director,True
+2009,Danny Boyle,Best Director,True
+1953,Gary Cooper,Best Actor,True
+1994,Tom Hanks,Best Actor,True
+1943,Van Heflin,Best Supporting Actor,True
+1969,Jack Albertson,Best Supporting Actor,True
+1977,Jason Robards,Best Supporting Actor,True
+1999,James Coburn,Best Supporting Actor,True
+1941,Ginger Rogers,Best Actress,True
+1958,Joanne Woodward,Best Actress,True
+1967,Elizabeth Taylor,Best Actress,True
+1970,Maggie Smith,Best Actress,True
+1977,Faye Dunaway,Best Actress,True
+1999,Gwyneth Paltrow,Best Actress,True
+2005,Hilary Swank,Best Actress,True
+1942,Mary Astor,Best Supporting Actress,True
+1946,Anne Revere,Best Supporting Actress,True
+1976,Lee Grant,Best Supporting Actress,True
+2000,Angelina Jolie,Best Supporting Actress,True
+2001,Marcia Gay Harden,Best Supporting Actress,True
+2006,Rachel Weisz,Best Supporting Actress,True
+2010,Mo'Nique,Best Supporting Actress,True
+1928,Emil Jannings,ACTOR,True
+1928,Janet Gaynor,ACTRESS,True
+1928,William Cameron Menzies,ART DIRECTION,True
+1928,Charles Rosher,CINEMATOGRAPHY,True
+1928,Karl Struss,CINEMATOGRAPHY,True
+1928,Lewis Milestone,DIRECTING (Comedy Picture),True
+1928,Frank Borzage,DIRECTING (Dramatic Picture),True
+1928,Roy Pomeroy,ENGINEERING EFFECTS,True
+1928,Paramount Famous Lasky,OUTSTANDING PICTURE,True
+1928,Fox,UNIQUE AND ARTISTIC PICTURE,True
+1928,Benjamin Glazer,WRITING (Adaptation),True
+1928,Ben Hecht,WRITING (Original Story),True
+1928,Joseph Farnham,WRITING (Title Writing),True
+1928,Warner Bros.,SPECIAL AWARD,True
+1928,Charles Chaplin,SPECIAL AWARD,True
+1929,Warner Baxter,ACTOR,True
+1929,Mary Pickford,ACTRESS,True
+1929,Cedric Gibbons,ART DIRECTION,True
+1929,Clyde De Vinna,CINEMATOGRAPHY,True
+1929,Frank Lloyd,DIRECTING,True
+1929,Metro-Goldwyn-Mayer,OUTSTANDING PICTURE,True
+1930,George Arliss,ACTOR,True
+1930,Norma Shearer,ACTRESS,True
+1930,Herman Rosse,ART DIRECTION,True
+1930,Joseph T. Rucker,CINEMATOGRAPHY,True
+1930,Willard Van Der Veer,CINEMATOGRAPHY,True
+1930,Lewis Milestone,DIRECTING,True
+1930,Universal,OUTSTANDING PRODUCTION,True
+1930,Metro-Goldwyn-Mayer Studio Sound Department,SOUND RECORDING,True
+1930,Douglas Shearer,SOUND RECORDING,True
+1930,Sound Director,SOUND RECORDING,True
+1930,Frances Marion,WRITING,True
+1931,Lionel Barrymore,ACTOR,True
+1931,Marie Dressler,ACTRESS,True
+1931,Max Rée,ART DIRECTION,True
+1931,Floyd Crosby,CINEMATOGRAPHY,True
+1931,Norman Taurog,DIRECTING,True
+1931,RKO Radio,OUTSTANDING PRODUCTION,True
+1931,Paramount Publix Studio Sound Department,SOUND RECORDING,True
+1931,Howard Estabrook,WRITING (Adaptation),True
+1931,John Monk Saunders,WRITING (Original Story),True
+1932,Wallace Beery,ACTOR,True
+1932,Fredric March,ACTOR,True
+1932,Helen Hayes,ACTRESS,True
+1932,Gordon Wiles,ART DIRECTION,True
+1932,Lee Garmes,CINEMATOGRAPHY,True
+1932,Frank Borzage,DIRECTING,True
+1932,Walt Disney,SHORT SUBJECT (Cartoon),True
+1932,Producer,SHORT SUBJECT (Cartoon),True
+1932,Hal Roach,SHORT SUBJECT (Comedy),True
+1932,Mack Sennett,SHORT SUBJECT (Novelty),True
+1932,Producer,SHORT SUBJECT (Novelty),True
+1932,Paramount Publix Studio Sound Department,SOUND RECORDING,True
+1932,Edwin Burke,WRITING (Adaptation),True
+1932,Frances Marion,WRITING (Original Story),True
+1932,"Walt Disney for the creation of ""Mickey Mouse.""",SPECIAL AWARD,True
+1933,Charles Laughton,ACTOR,True
+1933,Katharine Hepburn,ACTRESS,True
+1933,William S. Darling,ART DIRECTION,True
+1933,William Tummel (Fox),ASSISTANT DIRECTOR,True
+1933,Charles Dorian (Metro-Goldwyn-Mayer),ASSISTANT DIRECTOR,True
+1933,Charles Barton (Paramount),ASSISTANT DIRECTOR,True
+1933,Dewey Starkey (RKO Radio),ASSISTANT DIRECTOR,True
+1933,Fred Fox (United Artists),ASSISTANT DIRECTOR,True
+1933,Scott Beal (Universal),ASSISTANT DIRECTOR,True
+1933,Gordon Hollingshead (Warner Bros.),ASSISTANT DIRECTOR,True
+1933,Charles Bryant Lang,CINEMATOGRAPHY,True
+1933,Jr.,CINEMATOGRAPHY,True
+1933,Frank Lloyd,DIRECTING,True
+1933,Fox,OUTSTANDING PRODUCTION,True
+1933,Joe Rock,SHORT SUBJECT (Novelty),True
+1933,Producer,SHORT SUBJECT (Novelty),True
+1933,Paramount Studio Sound Department,SOUND RECORDING,True
+1933,Franklin B. Hansen,SOUND RECORDING,True
+1933,Sound Director,SOUND RECORDING,True
+1933,Victor Heerman,WRITING (Adaptation),True
+1933,Sarah Y. Mason,WRITING (Adaptation),True
+1933,Robert Lord,WRITING (Original Story),True
+1935,Clark Gable,ACTOR,True
+1935,Claudette Colbert,ACTRESS,True
+1935,Cedric Gibbons,ART DIRECTION,True
+1935,Fredric Hope,ART DIRECTION,True
+1935,John Waters,ASSISTANT DIRECTOR,True
+1935,Victor Milner,CINEMATOGRAPHY,True
+1935,Frank Capra,DIRECTING,True
+1935,Conrad Nervig,FILM EDITING,True
+1935,Columbia Studio Music Department,MUSIC (Scoring),True
+1935,Louis Silvers,MUSIC (Scoring),True
+1935,head of department  (Thematic Music by Victor Schertzinger and Gus Kahn),MUSIC (Scoring),True
+1935,Music by Con Conrad,MUSIC (Song),True
+1935,Lyrics by Herb Magidson,MUSIC (Song),True
+1935,Columbia,OUTSTANDING PRODUCTION,True
+1935,Walt Disney,SHORT SUBJECT (Cartoon),True
+1935,Kenneth Macgowan,SHORT SUBJECT (Comedy),True
+1935,Producer,SHORT SUBJECT (Comedy),True
+1935,Stacy Woodard and Horace Woodard,SHORT SUBJECT (Novelty),True
+1935,Producers,SHORT SUBJECT (Novelty),True
+1935,Columbia Studio Sound Department,SOUND RECORDING,True
+1935,John Livadary,SOUND RECORDING,True
+1935,Robert Riskin,WRITING (Adaptation),True
+1935,Arthur Caesar,WRITING (Original Story),True
+1935,Shirley Temple,SPECIAL AWARD,True
+1936,Victor McLaglen,ACTOR,True
+1936,Bette Davis,ACTRESS,True
+1936,Richard Day,ART DIRECTION,True
+1936,Clem Beauchamp,ASSISTANT DIRECTOR,True
+1936,Paul Wing,ASSISTANT DIRECTOR,True
+1936,Hal Mohr,CINEMATOGRAPHY,True
+1936,Dave Gould,DANCE DIRECTION,True
+1936,John Ford,DIRECTING,True
+1936,Ralph Dawson,FILM EDITING,True
+1936,RKO Radio Studio Music Department,MUSIC (Scoring),True
+1936,Max Steiner,MUSIC (Scoring),True
+1936,head of department  (Score by Max Steiner),MUSIC (Scoring),True
+1936,Music by Harry Warren,MUSIC (Song),True
+1936,Lyrics by Al Dubin,MUSIC (Song),True
+1936,Walt Disney,SHORT SUBJECT (Cartoon),True
+1936,Producer,SHORT SUBJECT (Cartoon),True
+1936,Jack Chertok,SHORT SUBJECT (Comedy),True
+1936,Producer,SHORT SUBJECT (Comedy),True
+1936,Gaumont British and Skibo Productions,SHORT SUBJECT (Novelty),True
+1936,Metro-Goldwyn-Mayer Studio Sound Department,SOUND RECORDING,True
+1936,Douglas Shearer,SOUND RECORDING,True
+1936,Ben Hecht,WRITING (Original Story),True
+1936,Charles MacArthur,WRITING (Original Story),True
+1936,Dudley Nichols,WRITING (Screenplay),True
+1936,David Wark Griffith,SPECIAL AWARD,True
+1937,Paul Muni,ACTOR,True
+1937,Walter Brennan,ACTOR IN A SUPPORTING ROLE,True
+1937,Luise Rainer,ACTRESS,True
+1937,Gale Sondergaard,ACTRESS IN A SUPPORTING ROLE,True
+1937,Richard Day,ART DIRECTION,True
+1937,Jack Sullivan,ASSISTANT DIRECTOR,True
+1937,Gaetano Gaudio,CINEMATOGRAPHY,True
+1937,Seymour Felix,DANCE DIRECTION,True
+1937,Frank Capra,DIRECTING,True
+1937,Ralph Dawson,FILM EDITING,True
+1937,Warner Bros. Studio Music Department,MUSIC (Scoring),True
+1937,Leo Forbstein,MUSIC (Scoring),True
+1937,head of department  (Score by Erich Wolfgang Korngold),MUSIC (Scoring),True
+1937,Music by Jerome Kern,MUSIC (Song),True
+1937,Lyrics by Dorothy Fields,MUSIC (Song),True
+1937,Metro-Goldwyn-Mayer,OUTSTANDING PRODUCTION,True
+1937,Walt Disney,SHORT SUBJECT (Cartoon),True
+1937,Producer,SHORT SUBJECT (Cartoon),True
+1937,Warner Bros.,SHORT SUBJECT (Color),True
+1937,Hal Roach,SHORT SUBJECT (One-reel),True
+1937,Producer,SHORT SUBJECT (One-reel),True
+1937,Metro-Goldwyn-Mayer,SHORT SUBJECT (Two-reel),True
+1937,Metro-Goldwyn-Mayer Studio Sound Department,SOUND RECORDING,True
+1937,Douglas Shearer,SOUND RECORDING,True
+1937,Pierre Collings,WRITING (Original Story),True
+1937,Sheridan Gibney,WRITING (Original Story),True
+1937,Pierre Collings,WRITING (Screenplay),True
+1937,Sheridan Gibney,WRITING (Screenplay),True
+1937,The March of Time for its significance to motion pictures and for having revolutionized one of the most important branches of the industry - the newsreel.,SPECIAL AWARD,True
+1937,W. Howard Greene and Harold Rosson for the color cinematography of the Selznick International Production,SPECIAL AWARD,True
+1938,Spencer Tracy,ACTOR,True
+1938,Joseph Schildkraut,ACTOR IN A SUPPORTING ROLE,True
+1938,Luise Rainer,ACTRESS,True
+1938,Alice Brady,ACTRESS IN A SUPPORTING ROLE,True
+1938,Stephen Goosson,ART DIRECTION,True
+1938,Robert Webb,ASSISTANT DIRECTOR,True
+1938,Karl Freund,CINEMATOGRAPHY,True
+1938,Hermes Pan,DANCE DIRECTION,True
+1938,Leo McCarey,DIRECTING,True
+1938,Gene Havlick,FILM EDITING,True
+1938,Gene Milford,FILM EDITING,True
+1938,Universal Studio Music Department,MUSIC (Scoring),True
+1938,Charles Previn,MUSIC (Scoring),True
+1938,Music and Lyrics by Harry Owens,MUSIC (Song),True
+1938,Warner Bros.,OUTSTANDING PRODUCTION,True
+1938,Walt Disney,SHORT SUBJECT (Cartoon),True
+1938,Pete Smith,SHORT SUBJECT (Color),True
+1938,Producer,SHORT SUBJECT (Color),True
+1938,Skibo Productions,SHORT SUBJECT (One-reel),True
+1938,Metro-Goldwyn-Mayer,SHORT SUBJECT (Two-reel),True
+1938,United Artists Studio Sound Department,SOUND RECORDING,True
+1938,Thomas T. Moulton,SOUND RECORDING,True
+1938,William A. Wellman,WRITING (Original Story),True
+1938,Robert Carson,WRITING (Original Story),True
+1938,Norman Reilly Raine,WRITING (Screenplay),True
+1938,Heinz Herald,WRITING (Screenplay),True
+1938,Geza Herczeg,WRITING (Screenplay),True
+1938,Mack Sennett,SPECIAL AWARD,True
+1938,Edgar Bergen for his outstanding comedy creation,SPECIAL AWARD,True
+1938,The Museum of Modern Art Film Library for its significant work in collecting films dating from 1895 to the present and for the first time making available to the public the means of studying the historical and aesthetic development of the motion picture as one of the major arts.,SPECIAL AWARD,True
+1938,W. Howard Greene for the color photography of A Star Is Born.  (This Award was recommended by a committee of leading cinematographers after viewing all the color pictures made during the year.),SPECIAL AWARD,True
+1938,Darryl F. Zanuck,IRVING G. THALBERG MEMORIAL AWARD,True
+1939,Spencer Tracy,ACTOR,True
+1939,Walter Brennan,ACTOR IN A SUPPORTING ROLE,True
+1939,Bette Davis,ACTRESS,True
+1939,Fay Bainter,ACTRESS IN A SUPPORTING ROLE,True
+1939,Carl J. Weyl,ART DIRECTION,True
+1939,Joseph Ruttenberg,CINEMATOGRAPHY,True
+1939,Frank Capra,DIRECTING,True
+1939,Ralph Dawson,FILM EDITING,True
+1939,Erich Wolfgang Korngold,MUSIC (Original Score),True
+1939,Alfred Newman,MUSIC (Scoring),True
+1939,Music by Ralph Rainger,MUSIC (Song),True
+1939,Lyrics by Leo Robin,MUSIC (Song),True
+1939,Columbia,OUTSTANDING PRODUCTION,True
+1939,Warner Bros.,SHORT SUBJECT (Two-reel),True
+1939,United Artists Studio Sound Department,SOUND RECORDING,True
+1939,Thomas T. Moulton,SOUND RECORDING,True
+1939,Dore Schary,WRITING (Original Story),True
+1939,Eleanore Griffin,WRITING (Original Story),True
+1939,Screenplay and Dialogue by George Bernard Shaw,WRITING (Screenplay),True
+1939,Adaptation by W. P. Lipscomb,WRITING (Screenplay),True
+1939,Cecil Lewis,WRITING (Screenplay),True
+1939,Deanna Durbin and Mickey Rooney for their significant contribution in bringing to the screen the spirit and personification of youth,SPECIAL AWARD,True
+1939,Harry M. Warner in recognition of patriotic service in the production of historical short subjects presenting significant episodes in the early struggle of the American people for liberty.,SPECIAL AWARD,True
+1939,Walt Disney for Snow White and the Seven Dwarfs,SPECIAL AWARD,True
+1939,Oliver Marsh and Allen Davey for the color cinematography of the Metro-Goldwyn-Mayer production,SPECIAL AWARD,True
+1939,For outstanding achievement in creating Special Photographic and Sound Effects in the Paramount production,SPECIAL AWARD,True
+1939,J. Arthur Ball for his outstanding contributions to the advancement of color in Motion Picture Photography.,SPECIAL AWARD,True
+1939,Hal B. Wallis,IRVING G. THALBERG MEMORIAL AWARD,True
+1940,Robert Donat,ACTOR,True
+1940,Thomas Mitchell,ACTOR IN A SUPPORTING ROLE,True
+1940,Vivien Leigh,ACTRESS,True
+1940,Hattie McDaniel,ACTRESS IN A SUPPORTING ROLE,True
+1940,Lyle Wheeler,ART DIRECTION,True
+1940,Ernest Haller,CINEMATOGRAPHY (Color),True
+1940,Victor Fleming,DIRECTING,True
+1940,Hal C. Kern,FILM EDITING,True
+1940,James E. Newcom,FILM EDITING,True
+1940,Herbert Stothart,MUSIC (Original Score),True
+1940,Richard Hageman,MUSIC (Scoring),True
+1940,Frank Harling,MUSIC (Scoring),True
+1940,John Leipold,MUSIC (Scoring),True
+1940,Leo Shuken,MUSIC (Scoring),True
+1940,Music by Harold Arlen,MUSIC (Song),True
+1940,Lyrics by E. Y. Harburg,MUSIC (Song),True
+1940,Selznick International Pictures,OUTSTANDING PRODUCTION,True
+1940,Paramount,SHORT SUBJECT (One-reel),True
+1940,Warner Bros.,SHORT SUBJECT (Two-reel),True
+1940,Universal Studio Sound Department,SOUND RECORDING,True
+1940,Bernard B. Brown,SOUND RECORDING,True
+1940,Fred Sersen,SPECIAL EFFECTS,True
+1940,E. H. Hansen,SPECIAL EFFECTS,True
+1940,Lewis R. Foster,WRITING (Original Story),True
+1940,Sidney Howard,WRITING (Screenplay),True
+1940,Douglas Fairbanks (Commemorative Award) - recognizing the unique and outstanding contribution of Douglas Fairbanks,SPECIAL AWARD,True
+1940,The Motion Picture Relief Fund - acknowledging the outstanding services to the industry during the past year of the Motion Picture Relief Fund and its progressive leadership.  Presented to Jean Hersholt,SPECIAL AWARD,True
+1940,Judy Garland for her outstanding performance as a screen juvenile during the past year.,SPECIAL AWARD,True
+1940,William Cameron Menzies for outstanding achievement in the use of color for the enhancement of dramatic mood in the production of Gone with the Wind.,SPECIAL AWARD,True
+1940,the Technicolor Company for its contributions in successfully bringing three-color feature production to the screen.,SPECIAL AWARD,True
+1940,David O. Selznick,IRVING G. THALBERG MEMORIAL AWARD,True
+1941,James Stewart,ACTOR,True
+1941,Walter Brennan,ACTOR IN A SUPPORTING ROLE,True
+1941,Ginger Rogers,ACTRESS,True
+1941,Jane Darwell,ACTRESS IN A SUPPORTING ROLE,True
+1941,Cedric Gibbons,ART DIRECTION (Black-and-White),True
+1941,Paul Groesse,ART DIRECTION (Black-and-White),True
+1941,Vincent Korda,ART DIRECTION (Color),True
+1941,George Barnes,CINEMATOGRAPHY (Black-and-White),True
+1941,Georges Périnal,CINEMATOGRAPHY (Color),True
+1941,John Ford,DIRECTING,True
+1941,Anne Bauchens,FILM EDITING,True
+1941,Leigh Harline,MUSIC (Original Score),True
+1941,Paul J. Smith,MUSIC (Original Score),True
+1941,Ned Washington,MUSIC (Original Score),True
+1941,Alfred Newman,MUSIC (Scoring),True
+1941,Music by Leigh Harline,MUSIC (Song),True
+1941,Lyrics by Ned Washington,MUSIC (Song),True
+1941,Selznick International Pictures,OUTSTANDING PRODUCTION,True
+1941,Metro-Goldwyn-Mayer,SHORT SUBJECT (Cartoon),True
+1941,Pete Smith,SHORT SUBJECT (One-reel),True
+1941,Producer,SHORT SUBJECT (One-reel),True
+1941,Metro-Goldwyn-Mayer Studio Sound Department,SOUND RECORDING,True
+1941,Douglas Shearer,SOUND RECORDING,True
+1941,Photographic Effects by Lawrence Butler,SPECIAL EFFECTS,True
+1941,Sound Effects by Jack Whitney,SPECIAL EFFECTS,True
+1941,Preston Sturges,WRITING (Original Screenplay),True
+1941,Benjamin Glazer,WRITING (Original Story),True
+1941,John S. Toldy,WRITING (Original Story),True
+1941,Donald Ogden Stewart,WRITING (Screenplay),True
+1941,Bob Hope,SPECIAL AWARD,True
+1941,Colonel Nathan Levinson for his outstanding service to the industry and the Army during the past nine years,SPECIAL AWARD,True
+1942,Gary Cooper,ACTOR,True
+1942,Donald Crisp,ACTOR IN A SUPPORTING ROLE,True
+1942,Joan Fontaine,ACTRESS,True
+1942,Mary Astor,ACTRESS IN A SUPPORTING ROLE,True
+1942,Art Direction:  Richard Day,ART DIRECTION (Black-and-White),True
+1942,Nathan Juran,ART DIRECTION (Black-and-White),True
+1942,Interior Decoration:  Thomas Little,ART DIRECTION (Black-and-White),True
+1942,Art Direction:  Cedric Gibbons,ART DIRECTION (Color),True
+1942,Urie McCleary,ART DIRECTION (Color),True
+1942,Interior Decoration:  Edwin B. Willis,ART DIRECTION (Color),True
+1942,Arthur Miller,CINEMATOGRAPHY (Black-and-White),True
+1942,Ernest Palmer,CINEMATOGRAPHY (Color),True
+1942,Ray Rennahan,CINEMATOGRAPHY (Color),True
+1942,John Ford,DIRECTING,True
+1942,National Film Board of Canada,DOCUMENTARY (Short Subject),True
+1942,William Holmes,FILM EDITING,True
+1942,Bernard Herrmann,MUSIC (Music Score of a Dramatic Picture),True
+1942,Frank Churchill,MUSIC (Scoring of a Musical Picture),True
+1942,Oliver Wallace,MUSIC (Scoring of a Musical Picture),True
+1942,Music by Jerome Kern,MUSIC (Song),True
+1942,Lyrics by Oscar Hammerstein II,MUSIC (Song),True
+1942,20th Century-Fox,OUTSTANDING MOTION PICTURE,True
+1942,Walt Disney,SHORT SUBJECT (Cartoon),True
+1942,Metro-Goldwyn-Mayer,SHORT SUBJECT (One-reel),True
+1942,General Service Sound Department,SOUND RECORDING,True
+1942,Jack Whitney,SOUND RECORDING,True
+1942,Herman J. Mankiewicz,WRITING (Original Screenplay),True
+1942,Orson Welles,WRITING (Original Screenplay),True
+1942,Harry Segall,WRITING (Original Story),True
+1942,Sidney Buchman,WRITING (Screenplay),True
+1942,Seton I. Miller,WRITING (Screenplay),True
+1942,Rey Scott for his extraordinary achievement in producing Kukan,SPECIAL AWARD,True
+1942,The British Ministry of Information for its vivid and dramatic presentation of the heroism of the RAF in the documentary film,SPECIAL AWARD,True
+1942,Leopold Stokowski and his associates for their unique achievement in the creation of a new form of visualized music in Walt Disney's production,SPECIAL AWARD,True
+1942,Walt Disney,SPECIAL AWARD,True
+1942,Walt Disney,IRVING G. THALBERG MEMORIAL AWARD,True
+1943,James Cagney,ACTOR,True
+1943,Van Heflin,ACTOR IN A SUPPORTING ROLE,True
+1943,Greer Garson,ACTRESS,True
+1943,Teresa Wright,ACTRESS IN A SUPPORTING ROLE,True
+1943,Art Direction:  Richard Day,ART DIRECTION (Black-and-White),True
+1943,Joseph Wright,ART DIRECTION (Black-and-White),True
+1943,Interior Decoration:  Thomas Little,ART DIRECTION (Black-and-White),True
+1943,Art Direction:  Richard Day,ART DIRECTION (Color),True
+1943,Joseph Wright,ART DIRECTION (Color),True
+1943,Interior Decoration:  Thomas Little,ART DIRECTION (Color),True
+1943,Joseph Ruttenberg,CINEMATOGRAPHY (Black-and-White),True
+1943,Leon Shamroy,CINEMATOGRAPHY (Color),True
+1943,William Wyler,DIRECTING,True
+1943,United States Navy,DOCUMENTARY,True
+1943,Australian News & Information Bureau,DOCUMENTARY,True
+1943,Artkino,DOCUMENTARY,True
+1943,United States Army Special Services,DOCUMENTARY,True
+1943,Daniel Mandell,FILM EDITING,True
+1943,Max Steiner,MUSIC (Music Score of a Dramatic or Comedy Picture),True
+1943,Ray Heindorf,MUSIC (Scoring of a Musical Picture),True
+1943,Heinz Roemheld,MUSIC (Scoring of a Musical Picture),True
+1943,Music and Lyrics by Irving Berlin,MUSIC (Song),True
+1943,Metro-Goldwyn-Mayer,OUTSTANDING MOTION PICTURE,True
+1943,Walt Disney,SHORT SUBJECT (Cartoon),True
+1943,Producer,SHORT SUBJECT (Cartoon),True
+1943,Paramount,SHORT SUBJECT (One-reel),True
+1943,Warner Bros.,SHORT SUBJECT (Two-reel),True
+1943,Warner Bros. Studio Sound Department,SOUND RECORDING,True
+1943,Nathan Levinson,SOUND RECORDING,True
+1943,Photographic Effects by Gordon Jennings,SPECIAL EFFECTS,True
+1943,Farciot Edouart,SPECIAL EFFECTS,True
+1943,William L. Pereira,SPECIAL EFFECTS,True
+1943,Sound Effects by Louis Mesenkop,SPECIAL EFFECTS,True
+1943,Emeric Pressburger,WRITING (Original Motion Picture Story),True
+1943,Ring Lardner,WRITING (Original Screenplay),True
+1943,Jr.,WRITING (Original Screenplay),True
+1943,Michael Kanin,WRITING (Original Screenplay),True
+1943,Arthur Wimperis,WRITING (Screenplay),True
+1943,George Froeschel,WRITING (Screenplay),True
+1943,James Hilton,WRITING (Screenplay),True
+1943,Claudine West,WRITING (Screenplay),True
+1943,Charles Boyer for his progressive cultural achievement in establishing the French Research Foundation in Los Angeles as a source of reference for the Hollywood Motion Picture Industry.,SPECIAL AWARD,True
+1943,Noel Coward for his outstanding production achievement in In Which We Serve.,SPECIAL AWARD,True
+1943,"Metro-Goldwyn-Mayer for its achievement in representing the American Way of Life in the production of the ""Andy Hardy"" series of films.",SPECIAL AWARD,True
+1943,Sidney Franklin,IRVING G. THALBERG MEMORIAL AWARD,True
+1944,Paul Lukas,ACTOR,True
+1944,Charles Coburn,ACTOR IN A SUPPORTING ROLE,True
+1944,Jennifer Jones,ACTRESS,True
+1944,Katina Paxinou,ACTRESS IN A SUPPORTING ROLE,True
+1944,Art Direction:  James Basevi,ART DIRECTION (Black-and-White),True
+1944,William Darling,ART DIRECTION (Black-and-White),True
+1944,Interior Decoration:  Thomas Little,ART DIRECTION (Black-and-White),True
+1944,Art Direction:  John B. Goodman,ART DIRECTION (Color),True
+1944,Alexander Golitzen,ART DIRECTION (Color),True
+1944,Interior Decoration:  Russell A. Gausman,ART DIRECTION (Color),True
+1944,Ira S. Webb,ART DIRECTION (Color),True
+1944,Arthur Miller,CINEMATOGRAPHY (Black-and-White),True
+1944,Hal Mohr,CINEMATOGRAPHY (Color),True
+1944,W. Howard Greene,CINEMATOGRAPHY (Color),True
+1944,Michael Curtiz,DIRECTING,True
+1944,British Ministry of Information,DOCUMENTARY (Feature),True
+1944,United States Navy,DOCUMENTARY (Short Subject),True
+1944,George Amy,FILM EDITING,True
+1944,Alfred Newman,MUSIC (Music Score of a Dramatic or Comedy Picture),True
+1944,Ray Heindorf,MUSIC (Scoring of a Musical Picture),True
+1944,Music by Harry Warren,MUSIC (Song),True
+1944,Lyrics by Mack Gordon,MUSIC (Song),True
+1944,Warner Bros.,OUTSTANDING MOTION PICTURE,True
+1944,Frederick Quimby,SHORT SUBJECT (Cartoon),True
+1944,Grantland Rice,SHORT SUBJECT (One-reel),True
+1944,Producer,SHORT SUBJECT (One-reel),True
+1944,Jerry Bresler and Sam Coslow,SHORT SUBJECT (Two-reel),True
+1944,Producers,SHORT SUBJECT (Two-reel),True
+1944,RKO Radio Studio Sound Department,SOUND RECORDING,True
+1944,Stephen Dunn,SOUND RECORDING,True
+1944,Photographic Effects by Fred Sersen,SPECIAL EFFECTS,True
+1944,Sound Effects by Roger Heman,SPECIAL EFFECTS,True
+1944,William Saroyan,WRITING (Original Motion Picture Story),True
+1944,Norman Krasna,WRITING (Original Screenplay),True
+1944,Julius J. Epstein,WRITING (Screenplay),True
+1944,Philip G. Epstein,WRITING (Screenplay),True
+1944,Howard Koch,WRITING (Screenplay),True
+1944,George Pal for the development of novel methods and techniques in the production of short subjects known as Puppetoons.,SPECIAL AWARD,True
+1944,Hal B. Wallis,IRVING G. THALBERG MEMORIAL AWARD,True
+1945,Bing Crosby,ACTOR,True
+1945,Barry Fitzgerald,ACTOR IN A SUPPORTING ROLE,True
+1945,Ingrid Bergman,ACTRESS,True
+1945,Ethel Barrymore,ACTRESS IN A SUPPORTING ROLE,True
+1945,Art Direction:  Cedric Gibbons,ART DIRECTION (Black-and-White),True
+1945,William Ferrari,ART DIRECTION (Black-and-White),True
+1945,Interior Decoration:  Edwin B. Willis,ART DIRECTION (Black-and-White),True
+1945,Paul Huldschinsky,ART DIRECTION (Black-and-White),True
+1945,Art Direction:  Wiard Ihnen,ART DIRECTION (Color),True
+1945,Interior Decoration:  Thomas Little,ART DIRECTION (Color),True
+1945,Joseph LaShelle,CINEMATOGRAPHY (Black-and-White),True
+1945,Leon Shamroy,CINEMATOGRAPHY (Color),True
+1945,Leo McCarey,DIRECTING,True
+1945,United States Navy,DOCUMENTARY (Feature),True
+1945,United States Marine Corps,DOCUMENTARY (Short Subject),True
+1945,Barbara McLean,FILM EDITING,True
+1945,Morris Stoloff,MUSIC (Scoring of a Musical Picture),True
+1945,Carmen Dragon,MUSIC (Scoring of a Musical Picture),True
+1945,Music by James Van Heusen,MUSIC (Song),True
+1945,Lyrics by Johnny Burke,MUSIC (Song),True
+1945,Frederick C. Quimby,SHORT SUBJECT (Cartoon),True
+1945,Jerry Fairbanks,SHORT SUBJECT (One-reel),True
+1945,Gordon Hollingshead,SHORT SUBJECT (Two-reel),True
+1945,20th Century-Fox Studio Sound Department,SOUND RECORDING,True
+1945,E. H. Hansen,SOUND RECORDING,True
+1945,Photographic Effects by A. Arnold Gillespie,SPECIAL EFFECTS,True
+1945,Donald Jahraus,SPECIAL EFFECTS,True
+1945,Warren Newcombe,SPECIAL EFFECTS,True
+1945,Sound Effects by Douglas Shearer,SPECIAL EFFECTS,True
+1945,Leo McCarey,WRITING (Original Motion Picture Story),True
+1945,Lamar Trotti,WRITING (Original Screenplay),True
+1945,Frank Butler,WRITING (Screenplay),True
+1945,Frank Cavett,WRITING (Screenplay),True
+1945,Margaret O'Brien,SPECIAL AWARD,True
+1945,Bob Hope for his many services to the Academy.,SPECIAL AWARD,True
+1945,Darryl F. Zanuck,IRVING G. THALBERG MEMORIAL AWARD,True
+1946,Ray Milland,ACTOR,True
+1946,James Dunn,ACTOR IN A SUPPORTING ROLE,True
+1946,Joan Crawford,ACTRESS,True
+1946,Anne Revere,ACTRESS IN A SUPPORTING ROLE,True
+1946,Art Direction:  Wiard Ihnen,ART DIRECTION (Black-and-White),True
+1946,Interior Decoration:  A. Roland Fields,ART DIRECTION (Black-and-White),True
+1946,Art Direction:  Hans Dreier,ART DIRECTION (Color),True
+1946,Ernst Fegte,ART DIRECTION (Color),True
+1946,Interior Decoration:  Sam Comer,ART DIRECTION (Color),True
+1946,Harry Stradling,CINEMATOGRAPHY (Black-and-White),True
+1946,Leon Shamroy,CINEMATOGRAPHY (Color),True
+1946,Billy Wilder,DIRECTING,True
+1946,The Governments of Great Britain and the United States of America,DOCUMENTARY (Feature),True
+1946,Gordon Hollingshead,DOCUMENTARY (Short Subject),True
+1946,Producer,DOCUMENTARY (Short Subject),True
+1946,Robert J. Kern,FILM EDITING,True
+1946,Georgie Stoll,MUSIC (Scoring of a Musical Picture),True
+1946,Music by Richard Rodgers,MUSIC (Song),True
+1946,Lyrics by Oscar Hammerstein II,MUSIC (Song),True
+1946,Paramount,BEST MOTION PICTURE,True
+1946,Frederick Quimby,SHORT SUBJECT (Cartoon),True
+1946,Herbert Moulton,SHORT SUBJECT (One-reel),True
+1946,Jerry Bresler,SHORT SUBJECT (One-reel),True
+1946,Executive Producer,SHORT SUBJECT (One-reel),True
+1946,Gordon Hollingshead,SHORT SUBJECT (Two-reel),True
+1946,RKO Radio Studio Sound Department,SOUND RECORDING,True
+1946,Stephen Dunn,SOUND RECORDING,True
+1946,Sound Director,SOUND RECORDING,True
+1946,Photographic Effects by John Fulton,SPECIAL EFFECTS,True
+1946,Sound Effects by Arthur W. Johns,SPECIAL EFFECTS,True
+1946,Charles G. Booth,WRITING (Original Motion Picture Story),True
+1946,Richard Schweizer,WRITING (Original Screenplay),True
+1946,Charles Brackett,WRITING (Screenplay),True
+1946,Billy Wilder,WRITING (Screenplay),True
+1946,Walter Wanger for his six years service as President of the Academy of Motion Picture Arts and Sciences.,SPECIAL AWARD,True
+1946,Peggy Ann Garner,SPECIAL AWARD,True
+1946,The House I Live In,SPECIAL AWARD,True
+1946,Republic Studio,SPECIAL AWARD,True
+1947,Fredric March,ACTOR,True
+1947,Harold Russell,ACTOR IN A SUPPORTING ROLE,True
+1947,Olivia de Havilland,ACTRESS,True
+1947,Anne Baxter,ACTRESS IN A SUPPORTING ROLE,True
+1947,Art Direction:  Lyle Wheeler,ART DIRECTION (Black-and-White),True
+1947,William Darling,ART DIRECTION (Black-and-White),True
+1947,Interior Decoration:  Thomas Little,ART DIRECTION (Black-and-White),True
+1947,Frank E. Hughes,ART DIRECTION (Black-and-White),True
+1947,Art Direction:  Cedric Gibbons,ART DIRECTION (Color),True
+1947,Paul Groesse,ART DIRECTION (Color),True
+1947,Interior Decoration:  Edwin B. Willis,ART DIRECTION (Color),True
+1947,Arthur Miller,CINEMATOGRAPHY (Black-and-White),True
+1947,Charles Rosher,CINEMATOGRAPHY (Color),True
+1947,Leonard Smith,CINEMATOGRAPHY (Color),True
+1947,Arthur Arling,CINEMATOGRAPHY (Color),True
+1947,William Wyler,DIRECTING,True
+1947,United States Department of War,DOCUMENTARY (Short Subject),True
+1947,Daniel Mandell,FILM EDITING,True
+1947,Hugo Friedhofer,MUSIC (Music Score of a Dramatic or Comedy Picture),True
+1947,Morris Stoloff,MUSIC (Scoring of a Musical Picture),True
+1947,Music by Harry Warren,MUSIC (Song),True
+1947,Lyrics by Johnny Mercer,MUSIC (Song),True
+1947,Samuel Goldwyn Productions,BEST MOTION PICTURE,True
+1947,Frederick Quimby,SHORT SUBJECT (Cartoon),True
+1947,Producer,SHORT SUBJECT (Cartoon),True
+1947,Gordon Hollingshead,SHORT SUBJECT (One-reel),True
+1947,Gordon Hollingshead,SHORT SUBJECT (Two-reel),True
+1947,Producer,SHORT SUBJECT (Two-reel),True
+1947,Columbia Studio Sound Department,SOUND RECORDING,True
+1947,John Livadary,SOUND RECORDING,True
+1947,Special Visual Effects by Thomas Howard,SPECIAL EFFECTS,True
+1947,Clemence Dane,WRITING (Original Motion Picture Story),True
+1947,Muriel Box,WRITING (Original Screenplay),True
+1947,Sydney Box,WRITING (Original Screenplay),True
+1947,Robert E. Sherwood,WRITING (Screenplay),True
+1947,Laurence Olivier for his outstanding achievement as actor,SPECIAL AWARD,True
+1947,Harold Russell for bringing hope and courage to his fellow veterans through his appearance in The Best Years of Our Lives.,SPECIAL AWARD,True
+1947,Ernst Lubitsch for his distinguished contributions to the art of the motion picture.,SPECIAL AWARD,True
+1947,Claude Jarman,SPECIAL AWARD,True
+1947,Samuel Goldwyn,IRVING G. THALBERG MEMORIAL AWARD,True
+1948,Ronald Colman,ACTOR,True
+1948,Edmund Gwenn,ACTOR IN A SUPPORTING ROLE,True
+1948,Loretta Young,ACTRESS,True
+1948,Celeste Holm,ACTRESS IN A SUPPORTING ROLE,True
+1948,Art Direction:  John Bryan,ART DIRECTION (Black-and-White),True
+1948,Set Decoration:  Wilfred Shingleton,ART DIRECTION (Black-and-White),True
+1948,Art Direction:  Alfred Junge,ART DIRECTION (Color),True
+1948,Set Decoration:  Alfred Junge,ART DIRECTION (Color),True
+1948,Guy Green,CINEMATOGRAPHY (Black-and-White),True
+1948,Jack Cardiff,CINEMATOGRAPHY (Color),True
+1948,Elia Kazan,DIRECTING,True
+1948,Sid Rogell,DOCUMENTARY (Feature),True
+1948,Executive Producer,DOCUMENTARY (Feature),True
+1948,Theron Warth and Richard O. Fleischer,DOCUMENTARY (Feature),True
+1948,Producers,DOCUMENTARY (Feature),True
+1948,United Nations Division of Films and Visual Information,DOCUMENTARY (Short Subject),True
+1948,Francis Lyon,FILM EDITING,True
+1948,Robert Parrish,FILM EDITING,True
+1948,Dr. Miklos Rozsa,MUSIC (Music Score of a Dramatic or Comedy Picture),True
+1948,Alfred Newman,MUSIC (Scoring of a Musical Picture),True
+1948,Music by Allie Wrubel,MUSIC (Song),True
+1948,Lyrics by Ray Gilbert,MUSIC (Song),True
+1948,20th Century-Fox,BEST MOTION PICTURE,True
+1948,Edward Selzer,SHORT SUBJECT (Cartoon),True
+1948,Herbert Moulton,SHORT SUBJECT (One-reel),True
+1948,Irving Allen,SHORT SUBJECT (Two-reel),True
+1948,Samuel Goldwyn Studio Sound Department,SOUND RECORDING,True
+1948,Gordon Sawyer,SOUND RECORDING,True
+1948,Sound Director,SOUND RECORDING,True
+1948,Special Visual Effects by A. Arnold Gillespie,SPECIAL EFFECTS,True
+1948,Warren Newcombe,SPECIAL EFFECTS,True
+1948,Special Audible Effects by Douglas Shearer,SPECIAL EFFECTS,True
+1948,Michael Steinore,SPECIAL EFFECTS,True
+1948,Valentine Davies,WRITING (Motion Picture Story),True
+1948,Sidney Sheldon,WRITING (Original Screenplay),True
+1948,George Seaton,WRITING (Screenplay),True
+1948,James Baskett for his able and heart-warming characterization of Uncle Remus,SPECIAL AWARD,True
+1948,Bill and Coo,SPECIAL AWARD,True
+1948,Shoe-Shine - the high quality of this motion picture,SPECIAL AWARD,True
+1948,Colonel William N. Selig,SPECIAL AWARD,True
+1949,Laurence Olivier,ACTOR,True
+1949,Walter Huston,ACTOR IN A SUPPORTING ROLE,True
+1949,Jane Wyman,ACTRESS,True
+1949,Claire Trevor,ACTRESS IN A SUPPORTING ROLE,True
+1949,Art Direction:  Roger K. Furse,ART DIRECTION (Black-and-White),True
+1949,Set Decoration:  Carmen Dillon,ART DIRECTION (Black-and-White),True
+1949,Art Direction:  Hein Heckroth,ART DIRECTION (Color),True
+1949,Set Decoration:  Arthur Lawson,ART DIRECTION (Color),True
+1949,William Daniels,CINEMATOGRAPHY (Black-and-White),True
+1949,Joseph Valentine,CINEMATOGRAPHY (Color),True
+1949,William V. Skall,CINEMATOGRAPHY (Color),True
+1949,Winton Hoch,CINEMATOGRAPHY (Color),True
+1949,Roger K. Furse,COSTUME DESIGN (Black-and-White),True
+1949,Dorothy Jeakins,COSTUME DESIGN (Color),True
+1949,Karinska,COSTUME DESIGN (Color),True
+1949,John Huston,DIRECTING,True
+1949,Orville O. Dull,DOCUMENTARY (Feature),True
+1949,United States Army,DOCUMENTARY (Short Subject),True
+1949,Paul Weatherwax,FILM EDITING,True
+1949,Brian Easdale,MUSIC (Music Score of a Dramatic or Comedy Picture),True
+1949,Johnny Green,MUSIC (Scoring of a Musical Picture),True
+1949,Roger Edens,MUSIC (Scoring of a Musical Picture),True
+1949,Music and Lyrics by Jay Livingston and Ray Evans,MUSIC (Song),True
+1949,J. Arthur Rank-Two Cities Films,BEST MOTION PICTURE,True
+1949,Fred Quimby,SHORT SUBJECT (Cartoon),True
+1949,Producer,SHORT SUBJECT (Cartoon),True
+1949,Edmund H. Reek,SHORT SUBJECT (One-reel),True
+1949,Walt Disney,SHORT SUBJECT (Two-reel),True
+1949,20th Century-Fox Studio Sound Department,SOUND RECORDING,True
+1949,Thomas T. Moulton,SOUND RECORDING,True
+1949,Special Visual Effects by Paul Eagler,SPECIAL EFFECTS,True
+1949,J. McMillan Johnson,SPECIAL EFFECTS,True
+1949,Russell Shearman,SPECIAL EFFECTS,True
+1949,Clarence Slifer,SPECIAL EFFECTS,True
+1949,Special Audible Effects by Charles Freeman,SPECIAL EFFECTS,True
+1949,James G. Stewart,SPECIAL EFFECTS,True
+1949,Richard Schweizer,WRITING (Motion Picture Story),True
+1949,David Wechsler,WRITING (Motion Picture Story),True
+1949,John Huston,WRITING (Screenplay),True
+1949,Monsieur Vincent - voted by the Academy Board of Governors as the most outstanding foreign language film released in the United States during 1948.,SPECIAL FOREIGN LANGUAGE FILM AWARD,True
+1949,Ivan Jandl,SPECIAL AWARD,True
+1949,Sid Grauman,SPECIAL AWARD,True
+1949,Adolph Zukor,SPECIAL AWARD,True
+1949,Walter Wanger for distinguished service to the industry in adding to its moral stature in the world community by his production of the picture Joan of Arc.,SPECIAL AWARD,True
+1949,Jean Hersholt - in recognition of his service to the Academy during four terms as president.,SPECIAL AWARD,True
+1949,Jerry Wald,IRVING G. THALBERG MEMORIAL AWARD,True
+1950,Broderick Crawford,ACTOR,True
+1950,Dean Jagger,ACTOR IN A SUPPORTING ROLE,True
+1950,Olivia de Havilland,ACTRESS,True
+1950,Mercedes McCambridge,ACTRESS IN A SUPPORTING ROLE,True
+1950,Art Direction:  Harry Horner,ART DIRECTION (Black-and-White),True
+1950,John Meehan,ART DIRECTION (Black-and-White),True
+1950,Set Decoration:  Emile Kuri,ART DIRECTION (Black-and-White),True
+1950,Art Direction:  Cedric Gibbons,ART DIRECTION (Color),True
+1950,Paul Groesse,ART DIRECTION (Color),True
+1950,Set Decoration:  Edwin B. Willis,ART DIRECTION (Color),True
+1950,Jack D. Moore,ART DIRECTION (Color),True
+1950,Paul C. Vogel,CINEMATOGRAPHY (Black-and-White),True
+1950,Winton Hoch,CINEMATOGRAPHY (Color),True
+1950,Edith Head,COSTUME DESIGN (Black-and-White),True
+1950,Gile Steele,COSTUME DESIGN (Black-and-White),True
+1950,Leah Rhodes,COSTUME DESIGN (Color),True
+1950,Travilla,COSTUME DESIGN (Color),True
+1950,Marjorie Best,COSTUME DESIGN (Color),True
+1950,Joseph L. Mankiewicz,DIRECTING,True
+1950,Crown Film Unit,DOCUMENTARY (Feature),True
+1950,Richard de Rochemont,DOCUMENTARY (Short Subject),True
+1950,Producer,DOCUMENTARY (Short Subject),True
+1950,Edward Selzer,DOCUMENTARY (Short Subject),True
+1950,Harry Gerstad,FILM EDITING,True
+1950,Aaron Copland,MUSIC (Music Score of a Dramatic or Comedy Picture),True
+1950,Roger Edens,MUSIC (Scoring of a Musical Picture),True
+1950,Lennie Hayton,MUSIC (Scoring of a Musical Picture),True
+1950,Music and Lyrics by Frank Loesser,MUSIC (Song),True
+1950,Robert Rossen Productions,BEST MOTION PICTURE,True
+1950,Jack Eaton,SHORT SUBJECT (One-reel),True
+1950,Producer,SHORT SUBJECT (One-reel),True
+1950,Gaston Diehl and Robert Haessens,SHORT SUBJECT (Two-reel),True
+1950,Producers,SHORT SUBJECT (Two-reel),True
+1950,20th Century-Fox Studio Sound Department,SOUND RECORDING,True
+1950,Thomas T. Moulton,SOUND RECORDING,True
+1950,ARKO Productions,SPECIAL EFFECTS,True
+1950,Douglas Morrow,WRITING (Motion Picture Story),True
+1950,Joseph L. Mankiewicz,WRITING (Screenplay),True
+1950,Robert Pirosh,WRITING (Story and Screenplay),True
+1950,The Bicycle Thief - voted by the Academy Board of Governors as the most outstanding foreign language film released in the United States during 1949.,SPECIAL FOREIGN LANGUAGE FILM AWARD,True
+1950,Bobby Driscoll,SPECIAL AWARD,True
+1950,Fred Astaire for his unique artistry and his contributions to the technique of musical pictures.,SPECIAL AWARD,True
+1950,Cecil B. DeMille,SPECIAL AWARD,True
+1950,Jean Hersholt,SPECIAL AWARD,True
+1951,José Ferrer,ACTOR,True
+1951,George Sanders,ACTOR IN A SUPPORTING ROLE,True
+1951,Judy Holliday,ACTRESS,True
+1951,Josephine Hull,ACTRESS IN A SUPPORTING ROLE,True
+1951,Art Direction:  Hans Dreier,ART DIRECTION (Black-and-White),True
+1951,John Meehan,ART DIRECTION (Black-and-White),True
+1951,Set Decoration:  Sam Comer,ART DIRECTION (Black-and-White),True
+1951,Ray Moyer,ART DIRECTION (Black-and-White),True
+1951,Art Direction:  Hans Dreier,ART DIRECTION (Color),True
+1951,Walter Tyler,ART DIRECTION (Color),True
+1951,Set Decoration:  Sam Comer,ART DIRECTION (Color),True
+1951,Ray Moyer,ART DIRECTION (Color),True
+1951,Robert Krasker,CINEMATOGRAPHY (Black-and-White),True
+1951,Robert Surtees,CINEMATOGRAPHY (Color),True
+1951,Edith Head,COSTUME DESIGN (Black-and-White),True
+1951,Charles LeMaire,COSTUME DESIGN (Black-and-White),True
+1951,Edith Head,COSTUME DESIGN (Color),True
+1951,Dorothy Jeakins,COSTUME DESIGN (Color),True
+1951,Elois Jenssen,COSTUME DESIGN (Color),True
+1951,Gile Steele,COSTUME DESIGN (Color),True
+1951,Gwen Wakeling,COSTUME DESIGN (Color),True
+1951,Joseph L. Mankiewicz,DIRECTING,True
+1951,Robert Snyder,DOCUMENTARY (Feature),True
+1951,Producer,DOCUMENTARY (Feature),True
+1951,Edmund Reek,DOCUMENTARY (Short Subject),True
+1951,Ralph E. Winters,FILM EDITING,True
+1951,Conrad A. Nervig,FILM EDITING,True
+1951,Franz Waxman,MUSIC (Music Score of a Dramatic or Comedy Picture),True
+1951,Adolph Deutsch,MUSIC (Scoring of a Musical Picture),True
+1951,Roger Edens,MUSIC (Scoring of a Musical Picture),True
+1951,Music and Lyrics by Ray Evans and Jay Livingston,MUSIC (Song),True
+1951,20th Century-Fox,BEST MOTION PICTURE,True
+1951,Stephen Bosustow,SHORT SUBJECT (Cartoon),True
+1951,Producer,SHORT SUBJECT (Cartoon),True
+1951,Gordon Hollingshead,SHORT SUBJECT (One-reel),True
+1951,Walt Disney,SHORT SUBJECT (Two-reel),True
+1951,Producer,SHORT SUBJECT (Two-reel),True
+1951,20th Century-Fox Studio Sound Department,SOUND RECORDING,True
+1951,Thomas T. Moulton,SOUND RECORDING,True
+1951,Sound Director,SOUND RECORDING,True
+1951,George Pal Productions,SPECIAL EFFECTS,True
+1951,Edna Anhalt,WRITING (Motion Picture Story),True
+1951,Edward Anhalt,WRITING (Motion Picture Story),True
+1951,Joseph L. Mankiewicz,WRITING (Screenplay),True
+1951,Charles Brackett,WRITING (Story and Screenplay),True
+1951,Billy Wilder,WRITING (Story and Screenplay),True
+1951,D. M. Marshman,WRITING (Story and Screenplay),True
+1951,Jr.,WRITING (Story and Screenplay),True
+1951,The Walls of Malapaga - voted by the Board of Governors as the most outstanding foreign language film released in the United States in 1950.,HONORARY FOREIGN LANGUAGE FILM AWARD,True
+1951,George Murphy for his services in interpreting the film industry to the country at large.,HONORARY AWARD,True
+1951,Louis B. Mayer for distinguished service to the motion picture industry.,HONORARY AWARD,True
+1951,Darryl F. Zanuck,IRVING G. THALBERG MEMORIAL AWARD,True
+1952,Humphrey Bogart,ACTOR,True
+1952,Karl Malden,ACTOR IN A SUPPORTING ROLE,True
+1952,Vivien Leigh,ACTRESS,True
+1952,Kim Hunter,ACTRESS IN A SUPPORTING ROLE,True
+1952,Art Direction:  Richard Day,ART DIRECTION (Black-and-White),True
+1952,Set Decoration:  George James Hopkins,ART DIRECTION (Black-and-White),True
+1952,Art Direction:  Cedric Gibbons,ART DIRECTION (Color),True
+1952,Preston Ames,ART DIRECTION (Color),True
+1952,Set Decoration:  Edwin B. Willis,ART DIRECTION (Color),True
+1952,Keogh Gleason,ART DIRECTION (Color),True
+1952,William C. Mellor,CINEMATOGRAPHY (Black-and-White),True
+1952,Alfred Gilks,CINEMATOGRAPHY (Color),True
+1952,Ballet Photography by John Alton,CINEMATOGRAPHY (Color),True
+1952,Edith Head,COSTUME DESIGN (Black-and-White),True
+1952,Orry-Kelly,COSTUME DESIGN (Color),True
+1952,Walter Plunkett,COSTUME DESIGN (Color),True
+1952,Irene Sharaff,COSTUME DESIGN (Color),True
+1952,George Stevens,DIRECTING,True
+1952,Olle Nordemar,DOCUMENTARY (Feature),True
+1952,'Made by Fred Zinnemann with the cooperation of Paramount Pictures Corporation for the Los Angeles Orthopaedic Hospital',DOCUMENTARY (Short Subject),True
+1952,William Hornbeck,FILM EDITING,True
+1952,Franz Waxman,MUSIC (Music Score of a Dramatic or Comedy Picture),True
+1952,Johnny Green,MUSIC (Scoring of a Musical Picture),True
+1952,Saul Chaplin,MUSIC (Scoring of a Musical Picture),True
+1952,Music by Hoagy Carmichael,MUSIC (Song),True
+1952,Lyrics by Johnny Mercer,MUSIC (Song),True
+1952,Arthur Freed,BEST MOTION PICTURE,True
+1952,Producer,BEST MOTION PICTURE,True
+1952,Fred Quimby,SHORT SUBJECT (Cartoon),True
+1952,Robert Youngson,SHORT SUBJECT (One-reel),True
+1952,Walt Disney,SHORT SUBJECT (Two-reel),True
+1952,Metro-Goldwyn-Mayer Studio Sound Department,SOUND RECORDING,True
+1952,Douglas Shearer,SOUND RECORDING,True
+1952,Paramount,SPECIAL EFFECTS,True
+1952,Paul Dehn,WRITING (Motion Picture Story),True
+1952,James Bernard,WRITING (Motion Picture Story),True
+1952,Michael Wilson,WRITING (Screenplay),True
+1952,Harry Brown,WRITING (Screenplay),True
+1952,Alan Jay Lerner,WRITING (Story and Screenplay),True
+1952,Rashomon - voted by the Board of Governors as the most outstanding foreign language film released in the United States during 1951.,HONORARY FOREIGN LANGUAGE FILM AWARD,True
+1952,Gene Kelly in appreciation of his versatility as an actor,HONORARY AWARD,True
+1952,Arthur Freed,IRVING G. THALBERG MEMORIAL AWARD,True
+1953,Gary Cooper,ACTOR,True
+1953,Anthony Quinn,ACTOR IN A SUPPORTING ROLE,True
+1953,Shirley Booth,ACTRESS,True
+1953,Gloria Grahame,ACTRESS IN A SUPPORTING ROLE,True
+1953,Art Direction:  Cedric Gibbons,ART DIRECTION (Black-and-White),True
+1953,Edward Carfagno,ART DIRECTION (Black-and-White),True
+1953,Set Decoration:  Edwin B. Willis,ART DIRECTION (Black-and-White),True
+1953,Keogh Gleason,ART DIRECTION (Black-and-White),True
+1953,Art Direction:  Paul Sheriff,ART DIRECTION (Color),True
+1953,Set Decoration:  Marcel Vertes,ART DIRECTION (Color),True
+1953,Robert Surtees,CINEMATOGRAPHY (Black-and-White),True
+1953,Winton C. Hoch,CINEMATOGRAPHY (Color),True
+1953,Archie Stout,CINEMATOGRAPHY (Color),True
+1953,Helen Rose,COSTUME DESIGN (Black-and-White),True
+1953,Marcel Vertes,COSTUME DESIGN (Color),True
+1953,John Ford,DIRECTING,True
+1953,Irwin Allen,DOCUMENTARY (Feature),True
+1953,Norman McLaren,DOCUMENTARY (Short Subject),True
+1953,Elmo Williams,FILM EDITING,True
+1953,Harry Gerstad,FILM EDITING,True
+1953,Dimitri Tiomkin,MUSIC (Music Score of a Dramatic or Comedy Picture),True
+1953,Alfred Newman,MUSIC (Scoring of a Musical Picture),True
+1953,Music by Dimitri Tiomkin,MUSIC (Song),True
+1953,Lyrics by Ned Washington,MUSIC (Song),True
+1953,Cecil B. DeMille,BEST MOTION PICTURE,True
+1953,Producer,BEST MOTION PICTURE,True
+1953,Fred Quimby,SHORT SUBJECT (Cartoon),True
+1953,Producer,SHORT SUBJECT (Cartoon),True
+1953,Boris Vermont,SHORT SUBJECT (One-reel),True
+1953,Walt Disney,SHORT SUBJECT (Two-reel),True
+1953,London Film Sound Department,SOUND RECORDING,True
+1953,Metro-Goldwyn-Mayer,SPECIAL EFFECTS,True
+1953,Fredric M. Frank,WRITING (Motion Picture Story),True
+1953,Theodore St. John,WRITING (Motion Picture Story),True
+1953,Frank Cavett,WRITING (Motion Picture Story),True
+1953,Charles Schnee,WRITING (Screenplay),True
+1953,T. E. B. Clarke,WRITING (Story and Screenplay),True
+1953,Forbidden Games - Best Foreign Language Film first released in the United States during 1952.,HONORARY FOREIGN LANGUAGE FILM AWARD,True
+1953,George Alfred Mitchell for the design and development of the camera which bears his name and for his continued and dominant presence in the field of cinematography.,HONORARY AWARD,True
+1953,Joseph M. Schenck for long and distinguished service to the motion picture industry.,HONORARY AWARD,True
+1953,Merian C. Cooper for his many innovations and contributions to the art of motion pictures.,HONORARY AWARD,True
+1953,Harold Lloyd,HONORARY AWARD,True
+1953,Bob Hope for his contribution to the laughter of the world,HONORARY AWARD,True
+1953,Cecil B. DeMille,IRVING G. THALBERG MEMORIAL AWARD,True
+1954,William Holden,ACTOR,True
+1954,Frank Sinatra,ACTOR IN A SUPPORTING ROLE,True
+1954,Audrey Hepburn,ACTRESS,True
+1954,Donna Reed,ACTRESS IN A SUPPORTING ROLE,True
+1954,Art Direction:  Cedric Gibbons,ART DIRECTION (Black-and-White),True
+1954,Edward Carfagno,ART DIRECTION (Black-and-White),True
+1954,Set Decoration:  Edwin B. Willis,ART DIRECTION (Black-and-White),True
+1954,Hugh Hunt,ART DIRECTION (Black-and-White),True
+1954,Art Direction:  Lyle Wheeler,ART DIRECTION (Color),True
+1954,George W. Davis,ART DIRECTION (Color),True
+1954,Set Decoration:  Walter M. Scott,ART DIRECTION (Color),True
+1954,Paul S. Fox,ART DIRECTION (Color),True
+1954,Burnett Guffey,CINEMATOGRAPHY (Black-and-White),True
+1954,Loyal Griggs,CINEMATOGRAPHY (Color),True
+1954,Edith Head,COSTUME DESIGN (Black-and-White),True
+1954,Emile Santiago,COSTUME DESIGN (Color),True
+1954,Fred Zinnemann,DIRECTING,True
+1954,Walt Disney,DOCUMENTARY (Feature),True
+1954,Producer,DOCUMENTARY (Feature),True
+1954,Walt Disney,DOCUMENTARY (Short Subject),True
+1954,Producer,DOCUMENTARY (Short Subject),True
+1954,William Lyon,FILM EDITING,True
+1954,Bronislau Kaper,MUSIC (Music Score of a Dramatic or Comedy Picture),True
+1954,Alfred Newman,MUSIC (Scoring of a Musical Picture),True
+1954,Music by Sammy Fain,MUSIC (Song),True
+1954,Lyrics by Paul Francis Webster,MUSIC (Song),True
+1954,Buddy Adler,BEST MOTION PICTURE,True
+1954,Producer,BEST MOTION PICTURE,True
+1954,Johnny Green,SHORT SUBJECT (One-reel),True
+1954,Walt Disney,SHORT SUBJECT (Two-reel),True
+1954,Producer,SHORT SUBJECT (Two-reel),True
+1954,Columbia Studio Sound Department,SOUND RECORDING,True
+1954,John P. Livadary,SOUND RECORDING,True
+1954,Paramount Studio,SPECIAL EFFECTS,True
+1954,Dalton Trumbo,WRITING (Motion Picture Story),True
+1954,Daniel Taradash,WRITING (Screenplay),True
+1954,Charles Brackett,WRITING (Story and Screenplay),True
+1954,Walter Reisch,WRITING (Story and Screenplay),True
+1954,Richard Breen,WRITING (Story and Screenplay),True
+1954,"Pete Smith for his witty and pungent observations on the American scene in his series of ""Pete Smith Specialties.""",HONORARY AWARD,True
+1954,20th Century-Fox Film Corporation in recognition of their imagination,HONORARY AWARD,True
+1954,Joseph I. Breen for his conscientious,HONORARY AWARD,True
+1954,Bell and Howell Company for their pioneering and basic achievements in the advancement of the motion picture industry.,HONORARY AWARD,True
+1954,George Stevens,IRVING G. THALBERG MEMORIAL AWARD,True
+1955,Marlon Brando,ACTOR,True
+1955,Edmond O'Brien,ACTOR IN A SUPPORTING ROLE,True
+1955,Grace Kelly,ACTRESS,True
+1955,Eva Marie Saint,ACTRESS IN A SUPPORTING ROLE,True
+1955,Richard Day,ART DIRECTION (Black-and-White),True
+1955,Art Direction:  John Meehan,ART DIRECTION (Color),True
+1955,Set Decoration:  Emile Kuri,ART DIRECTION (Color),True
+1955,Boris Kaufman,CINEMATOGRAPHY (Black-and-White),True
+1955,Milton Krasner,CINEMATOGRAPHY (Color),True
+1955,Edith Head,COSTUME DESIGN (Black-and-White),True
+1955,Sanzo Wada,COSTUME DESIGN (Color),True
+1955,Elia Kazan,DIRECTING,True
+1955,Walt Disney,DOCUMENTARY (Feature),True
+1955,World Wide Pictures and Morse Films,DOCUMENTARY (Short Subject),True
+1955,Gene Milford,FILM EDITING,True
+1955,Dimitri Tiomkin,MUSIC (Music Score of a Dramatic or Comedy Picture),True
+1955,Adolph Deutsch,MUSIC (Scoring of a Musical Picture),True
+1955,Saul Chaplin,MUSIC (Scoring of a Musical Picture),True
+1955,Music by Jule Styne,MUSIC (Song),True
+1955,Lyrics by Sammy Cahn,MUSIC (Song),True
+1955,Sam Spiegel,BEST MOTION PICTURE,True
+1955,Stephen Bosustow,SHORT SUBJECT (Cartoon),True
+1955,Robert Youngson,SHORT SUBJECT (One-reel),True
+1955,Denis Sanders and Terry Sanders,SHORT SUBJECT (Two-reel),True
+1955,Producers,SHORT SUBJECT (Two-reel),True
+1955,Universal-International Studio Sound Department,SOUND RECORDING,True
+1955,Leslie I. Carey,SOUND RECORDING,True
+1955,Walt Disney Studios,SPECIAL EFFECTS,True
+1955,Philip Yordan,WRITING (Motion Picture Story),True
+1955,George Seaton,WRITING (Screenplay),True
+1955,Budd Schulberg,WRITING (Story and Screenplay),True
+1955,Gate of Hell - Best Foreign Language Film first released in the United States during 1954.,HONORARY FOREIGN LANGUAGE FILM AWARD,True
+1955,Bausch & Lomb Optical Company for their contributions to the advancement of the motion picture industry.,HONORARY AWARD,True
+1955,Kemp R. Niver for the development of the Renovare Process which has made possible the restoration of the Library of Congress Paper Film Collection.,HONORARY AWARD,True
+1955,Greta Garbo for her unforgettable screen performances.,HONORARY AWARD,True
+1955,Danny Kaye for his unique talents,HONORARY AWARD,True
+1955,Jon Whiteley for his outstanding juvenile performance in The Little Kidnappers.,HONORARY AWARD,True
+1955,Vincent Winter for his outstanding juvenile performance in The Little Kidnappers.,HONORARY AWARD,True
+1956,Ernest Borgnine,ACTOR,True
+1956,Jack Lemmon,ACTOR IN A SUPPORTING ROLE,True
+1956,Anna Magnani,ACTRESS,True
+1956,Jo Van Fleet,ACTRESS IN A SUPPORTING ROLE,True
+1956,Art Direction:  Hal Pereira,ART DIRECTION (Black-and-White),True
+1956,Tambi Larsen,ART DIRECTION (Black-and-White),True
+1956,Set Decoration:  Sam Comer,ART DIRECTION (Black-and-White),True
+1956,Arthur Krams,ART DIRECTION (Black-and-White),True
+1956,Art Direction:  William Flannery,ART DIRECTION (Color),True
+1956,Jo Mielziner,ART DIRECTION (Color),True
+1956,Set Decoration:  Robert Priestley,ART DIRECTION (Color),True
+1956,James Wong Howe,CINEMATOGRAPHY (Black-and-White),True
+1956,Robert Burks,CINEMATOGRAPHY (Color),True
+1956,Helen Rose,COSTUME DESIGN (Black-and-White),True
+1956,Charles LeMaire,COSTUME DESIGN (Color),True
+1956,Delbert Mann,DIRECTING,True
+1956,Nancy Hamilton,DOCUMENTARY (Feature),True
+1956,Walt Disney,DOCUMENTARY (Short Subject),True
+1956,Charles Nelson,FILM EDITING,True
+1956,William A. Lyon,FILM EDITING,True
+1956,Alfred Newman,MUSIC (Music Score of a Dramatic or Comedy Picture),True
+1956,Robert Russell Bennett,MUSIC (Scoring of a Musical Picture),True
+1956,Adolph Deutsch,MUSIC (Scoring of a Musical Picture),True
+1956,Music by Sammy Fain,MUSIC (Song),True
+1956,Lyrics by Paul Francis Webster,MUSIC (Song),True
+1956,Harold Hecht,BEST MOTION PICTURE,True
+1956,Edward Selzer,SHORT SUBJECT (Cartoon),True
+1956,Edmund Reek,SHORT SUBJECT (One-reel),True
+1956,Wilbur T. Blume,SHORT SUBJECT (Two-reel),True
+1956,Todd-AO Sound Department,SOUND RECORDING,True
+1956,Fred Hynes,SOUND RECORDING,True
+1956,Paramount Studio,SPECIAL EFFECTS,True
+1956,Daniel Fuchs,WRITING (Motion Picture Story),True
+1956,Paddy Chayefsky,WRITING (Screenplay),True
+1956,William Ludwig,WRITING (Story and Screenplay),True
+1956,Sonya Levien,WRITING (Story and Screenplay),True
+1956,Samurai,HONORARY FOREIGN LANGUAGE FILM AWARD,True
+1957,Yul Brynner,ACTOR,True
+1957,Anthony Quinn,ACTOR IN A SUPPORTING ROLE,True
+1957,Ingrid Bergman,ACTRESS,True
+1957,Dorothy Malone,ACTRESS IN A SUPPORTING ROLE,True
+1957,Art Direction:  Cedric Gibbons,ART DIRECTION (Black-and-White),True
+1957,Malcolm F. Brown,ART DIRECTION (Black-and-White),True
+1957,Set Decoration:  Edwin B. Willis,ART DIRECTION (Black-and-White),True
+1957,F. Keogh Gleason,ART DIRECTION (Black-and-White),True
+1957,Art Direction:  Lyle R. Wheeler,ART DIRECTION (Color),True
+1957,John DeCuir,ART DIRECTION (Color),True
+1957,Set Decoration:  Walter M. Scott,ART DIRECTION (Color),True
+1957,Paul S. Fox,ART DIRECTION (Color),True
+1957,Joseph Ruttenberg,CINEMATOGRAPHY (Black-and-White),True
+1957,Lionel Lindon,CINEMATOGRAPHY (Color),True
+1957,Jean Louis,COSTUME DESIGN (Black-and-White),True
+1957,Irene Sharaff,COSTUME DESIGN (Color),True
+1957,George Stevens,DIRECTING,True
+1957,Jacques-Yves Cousteau,DOCUMENTARY (Feature),True
+1957,Louis Clyde Stoumen,DOCUMENTARY (Short Subject),True
+1957,Gene Ruggiero,FILM EDITING,True
+1957,Paul Weatherwax,FILM EDITING,True
+1957,Italy,FOREIGN LANGUAGE FILM,True
+1957,Dino De Laurentiis and Carlo Ponti,FOREIGN LANGUAGE FILM,True
+1957,Victor Young,MUSIC (Music Score of a Dramatic or Comedy Picture),True
+1957,Alfred Newman,MUSIC (Scoring of a Musical Picture),True
+1957,Ken Darby,MUSIC (Scoring of a Musical Picture),True
+1957,Music and Lyrics by Jay Livingston and Ray Evans,MUSIC (Song),True
+1957,Michael Todd,BEST MOTION PICTURE,True
+1957,Producer,BEST MOTION PICTURE,True
+1957,Konstantin Kalser,SHORT SUBJECT (One-reel),True
+1957,Producer,SHORT SUBJECT (One-reel),True
+1957,Romulus Films,SHORT SUBJECT (Two-reel),True
+1957,20th Century-Fox Studio Sound Department,SOUND RECORDING,True
+1957,Carl Faulkner,SOUND RECORDING,True
+1957,John Fulton,SPECIAL EFFECTS,True
+1957,Dalton Trumbo,WRITING (Motion Picture Story),True
+1957,James Poe,WRITING (Screenplay--Adapted),True
+1957,John Farrow,WRITING (Screenplay--Adapted),True
+1957,S.J. Perelman,WRITING (Screenplay--Adapted),True
+1957,Albert Lamorisse,WRITING (Screenplay--Original),True
+1957,Y. Frank Freeman,JEAN HERSHOLT HUMANITARIAN AWARD,True
+1957,Eddie Cantor for distinguished service to the film industry.,HONORARY AWARD,True
+1957,Buddy Adler,IRVING G. THALBERG MEMORIAL AWARD,True
+1958,Alec Guinness,ACTOR,True
+1958,Red Buttons,ACTOR IN A SUPPORTING ROLE,True
+1958,Joanne Woodward,ACTRESS,True
+1958,Miyoshi Umeki,ACTRESS IN A SUPPORTING ROLE,True
+1958,Art Direction:  Ted Haworth,ART DIRECTION,True
+1958,Set Decoration:  Robert Priestley,ART DIRECTION,True
+1958,Jack Hildyard,CINEMATOGRAPHY,True
+1958,Orry-Kelly,COSTUME DESIGN,True
+1958,David Lean,DIRECTING,True
+1958,Jerome Hill,DOCUMENTARY (Feature),True
+1958,Producer,DOCUMENTARY (Feature),True
+1958,Peter Taylor,FILM EDITING,True
+1958,Italy,FOREIGN LANGUAGE FILM,True
+1958,Malcolm Arnold,MUSIC (Scoring),True
+1958,Music by James Van Heusen,MUSIC (Song),True
+1958,Lyrics by Sammy Cahn,MUSIC (Song),True
+1958,Sam Spiegel,BEST MOTION PICTURE,True
+1958,Producer,BEST MOTION PICTURE,True
+1958,Edward Selzer,SHORT SUBJECT (Cartoon),True
+1958,Producer,SHORT SUBJECT (Cartoon),True
+1958,Larry Lansburgh,SHORT SUBJECT (Live Action),True
+1958,Warner Bros. Studio Sound Department,SOUND RECORDING,True
+1958,George Groves,SOUND RECORDING,True
+1958,Audible Effects by Walter Rossi,SPECIAL EFFECTS,True
+1958,Michael Wilson,WRITING (Screenplay--based on material from another medium),True
+1958,Carl Foreman,WRITING (Screenplay--based on material from another medium),True
+1958,Pierre Boulle,WRITING (Screenplay--based on material from another medium),True
+1958,George Wells,WRITING (Story and Screenplay--written directly for the screen),True
+1958,Samuel Goldwyn,JEAN HERSHOLT HUMANITARIAN AWARD,True
+1958,Charles Brackett for outstanding service to the Academy.,HONORARY AWARD,True
+1958,B.B. Kahane for distinguished service to the motion picture industry.,HONORARY AWARD,True
+1958,"Gilbert M. (""Broncho Billy"") Anderson",HONORARY AWARD,True
+1958,The Society of Motion Picture and Television Engineers for their contributions to the advancement of the motion picture industry.,HONORARY AWARD,True
+1959,David Niven,ACTOR,True
+1959,Burl Ives,ACTOR IN A SUPPORTING ROLE,True
+1959,Susan Hayward,ACTRESS,True
+1959,Wendy Hiller,ACTRESS IN A SUPPORTING ROLE,True
+1959,Art Direction:  William A. Horning,ART DIRECTION,True
+1959,Preston Ames,ART DIRECTION,True
+1959,Set Decoration:  Henry Grace,ART DIRECTION,True
+1959,Keogh Gleason,ART DIRECTION,True
+1959,Sam Leavitt,CINEMATOGRAPHY (Black-and-White),True
+1959,Joseph Ruttenberg,CINEMATOGRAPHY (Color),True
+1959,Cecil Beaton,COSTUME DESIGN,True
+1959,Vincente Minnelli,DIRECTING,True
+1959,Ben Sharpsteen,DOCUMENTARY (Feature),True
+1959,Ben Sharpsteen,DOCUMENTARY (Short Subject),True
+1959,Producer,DOCUMENTARY (Short Subject),True
+1959,Adrienne Fazan,FILM EDITING,True
+1959,France,FOREIGN LANGUAGE FILM,True
+1959,Dimitri Tiomkin,MUSIC (Music Score of a Dramatic or Comedy Picture),True
+1959,Andre Previn,MUSIC (Scoring of a Musical Picture),True
+1959,Music by Frederick Loewe,MUSIC (Song),True
+1959,Lyrics by Alan Jay Lerner,MUSIC (Song),True
+1959,Arthur Freed,BEST MOTION PICTURE,True
+1959,John W. Burton,SHORT SUBJECT (Cartoon),True
+1959,Producer,SHORT SUBJECT (Cartoon),True
+1959,Walt Disney,SHORT SUBJECT (Live Action),True
+1959,Producer,SHORT SUBJECT (Live Action),True
+1959,Todd-AO Sound Department,SOUND,True
+1959,Fred Hynes,SOUND,True
+1959,Visual Effects by Tom Howard,SPECIAL EFFECTS,True
+1959,Alan Jay Lerner,WRITING (Screenplay--based on material from another medium),True
+1959,Nedrick Young,WRITING (Story and Screenplay--written directly for the screen),True
+1959,Harold Jacob Smith,WRITING (Story and Screenplay--written directly for the screen),True
+1959,Maurice Chevalier for his contributions to the world of entertainment for more than half a century.,HONORARY AWARD,True
+1959,Jack L. Warner,IRVING G. THALBERG MEMORIAL AWARD,True
+1960,Charlton Heston,ACTOR,True
+1960,Hugh Griffith,ACTOR IN A SUPPORTING ROLE,True
+1960,Simone Signoret,ACTRESS,True
+1960,Shelley Winters,ACTRESS IN A SUPPORTING ROLE,True
+1960,Art Direction:  Lyle R. Wheeler,ART DIRECTION (Black-and-White),True
+1960,George W. Davis,ART DIRECTION (Black-and-White),True
+1960,Set Decoration:  Walter M. Scott,ART DIRECTION (Black-and-White),True
+1960,Stuart A. Reiss,ART DIRECTION (Black-and-White),True
+1960,Art Direction:  William A. Horning,ART DIRECTION (Color),True
+1960,Edward Carfagno,ART DIRECTION (Color),True
+1960,Set Decoration:  Hugh Hunt,ART DIRECTION (Color),True
+1960,William C. Mellor,CINEMATOGRAPHY (Black-and-White),True
+1960,Robert L. Surtees,CINEMATOGRAPHY (Color),True
+1960,Orry-Kelly,COSTUME DESIGN (Black-and-White),True
+1960,Elizabeth Haffenden,COSTUME DESIGN (Color),True
+1960,William Wyler,DIRECTING,True
+1960,Bernhard Grzimek,DOCUMENTARY (Feature),True
+1960,Bert Haanstra,DOCUMENTARY (Short Subject),True
+1960,Ralph E. Winters,FILM EDITING,True
+1960,John D. Dunning,FILM EDITING,True
+1960,France,FOREIGN LANGUAGE FILM,True
+1960,Miklos Rozsa,MUSIC (Music Score of a Dramatic or Comedy Picture),True
+1960,Andre Previn,MUSIC (Scoring of a Musical Picture),True
+1960,Ken Darby,MUSIC (Scoring of a Musical Picture),True
+1960,Music by James Van Heusen,MUSIC (Song),True
+1960,Sam Zimbalist,BEST MOTION PICTURE,True
+1960,John Hubley,SHORT SUBJECT (Cartoon),True
+1960,Jacques-Yves Cousteau,SHORT SUBJECT (Live Action),True
+1960,Metro-Goldwyn-Mayer Studio Sound Department,SOUND,True
+1960,Franklin E. Milton,SOUND,True
+1960,Sound Director,SOUND,True
+1960,Visual Effects by A. Arnold Gillespie,SPECIAL EFFECTS,True
+1960,Robert MacDonald,SPECIAL EFFECTS,True
+1960,Audible Effects by Milo Lory,SPECIAL EFFECTS,True
+1960,Neil Paterson,WRITING (Screenplay--based on material from another medium),True
+1960,Story by Russell Rouse,WRITING (Story and Screenplay--written directly for the screen),True
+1960,Clarence Greene,WRITING (Story and Screenplay--written directly for the screen),True
+1960,Bob Hope,JEAN HERSHOLT HUMANITARIAN AWARD,True
+1960,Lee De Forest for his pioneering inventions which brought sound to the motion picture.,HONORARY AWARD,True
+1960,Buster Keaton for his unique talents which brought immortal comedies to the screen.,HONORARY AWARD,True
+1961,Burt Lancaster,ACTOR,True
+1961,Peter Ustinov,ACTOR IN A SUPPORTING ROLE,True
+1961,Elizabeth Taylor,ACTRESS,True
+1961,Shirley Jones,ACTRESS IN A SUPPORTING ROLE,True
+1961,Art Direction:  Alexander Trauner,ART DIRECTION (Black-and-White),True
+1961,Set Decoration:  Edward G. Boyle,ART DIRECTION (Black-and-White),True
+1961,Art Direction:  Alexander Golitzen,ART DIRECTION (Color),True
+1961,Eric Orbom,ART DIRECTION (Color),True
+1961,Set Decoration:  Russell A. Gausman,ART DIRECTION (Color),True
+1961,Julia Heron,ART DIRECTION (Color),True
+1961,Freddie Francis,CINEMATOGRAPHY (Black-and-White),True
+1961,Russell Metty,CINEMATOGRAPHY (Color),True
+1961,Edith Head,COSTUME DESIGN (Black-and-White),True
+1961,Edward Stevenson,COSTUME DESIGN (Black-and-White),True
+1961,Valles,COSTUME DESIGN (Color),True
+1961,Bill Thomas,COSTUME DESIGN (Color),True
+1961,Billy Wilder,DIRECTING,True
+1961,Larry Lansburgh,DOCUMENTARY (Feature),True
+1961,Producer,DOCUMENTARY (Feature),True
+1961,James Hill,DOCUMENTARY (Short Subject),True
+1961,Producer,DOCUMENTARY (Short Subject),True
+1961,Daniel Mandell,FILM EDITING,True
+1961,Sweden,FOREIGN LANGUAGE FILM,True
+1961,Ernest Gold,MUSIC (Music Score of a Dramatic or Comedy Picture),True
+1961,Morris Stoloff,MUSIC (Scoring of a Musical Picture),True
+1961,Harry Sukman,MUSIC (Scoring of a Musical Picture),True
+1961,Music and Lyrics by Manos Hadjidakis,MUSIC (Song),True
+1961,Billy Wilder,BEST MOTION PICTURE,True
+1961,William L. Snyder,SHORT SUBJECT (Cartoon),True
+1961,Ezra R. Baker,SHORT SUBJECT (Live Action),True
+1961,Producer,SHORT SUBJECT (Live Action),True
+1961,Samuel Goldwyn Studio Sound Department,SOUND,True
+1961,Gordon E. Sawyer,SOUND,True
+1961,Sound Director,SOUND,True
+1961,and Todd-AO Sound Department,SOUND,True
+1961,Fred Hynes,SOUND,True
+1961,Visual Effects by Gene Warren,SPECIAL EFFECTS,True
+1961,Tim Baar,SPECIAL EFFECTS,True
+1961,Richard Brooks,WRITING (Screenplay--based on material from another medium),True
+1961,Billy Wilder,WRITING (Story and Screenplay--written directly for the screen),True
+1961,I. A. L. Diamond,WRITING (Story and Screenplay--written directly for the screen),True
+1961,Sol Lesser,JEAN HERSHOLT HUMANITARIAN AWARD,True
+1961,Gary Cooper for his many memorable screen performances and the international recognition he,HONORARY AWARD,True
+1961,Stan Laurel for his creative pioneering in the field of cinema comedy.,HONORARY AWARD,True
+1961,Hayley Mills for Pollyanna,HONORARY AWARD,True
+1962,Maximilian Schell,ACTOR,True
+1962,George Chakiris,ACTOR IN A SUPPORTING ROLE,True
+1962,Sophia Loren,ACTRESS,True
+1962,Rita Moreno,ACTRESS IN A SUPPORTING ROLE,True
+1962,Art Direction:  Harry Horner,ART DIRECTION (Black-and-White),True
+1962,Set Decoration:  Gene Callahan,ART DIRECTION (Black-and-White),True
+1962,Art Direction:  Boris Leven,ART DIRECTION (Color),True
+1962,Set Decoration:  Victor A. Gangelin,ART DIRECTION (Color),True
+1962,Eugen Shuftan,CINEMATOGRAPHY (Black-and-White),True
+1962,Daniel L. Fapp,CINEMATOGRAPHY (Color),True
+1962,Piero Gherardi,COSTUME DESIGN (Black-and-White),True
+1962,Robert Wise,DIRECTING,True
+1962,Jerome Robbins,DIRECTING,True
+1962,Arthur Cohn and Rene Lafuite,DOCUMENTARY (Feature),True
+1962,Producers,DOCUMENTARY (Feature),True
+1962,Frank P. Bibas,DOCUMENTARY (Short Subject),True
+1962,Thomas Stanford,FILM EDITING,True
+1962,Sweden,FOREIGN LANGUAGE FILM,True
+1962,Henry Mancini,MUSIC (Music Score of a Dramatic or Comedy Picture),True
+1962,Saul Chaplin,MUSIC (Scoring of a Musical Picture),True
+1962,Johnny Green,MUSIC (Scoring of a Musical Picture),True
+1962,Sid Ramin,MUSIC (Scoring of a Musical Picture),True
+1962,Irwin Kostal,MUSIC (Scoring of a Musical Picture),True
+1962,Lyrics by Johnny Mercer,MUSIC (Song),True
+1962,Robert Wise,BEST MOTION PICTURE,True
+1962,Zagreb Film,SHORT SUBJECT (Cartoon),True
+1962,Templar Film Studios,SHORT SUBJECT (Live Action),True
+1962,Todd-AO Sound Department,SOUND,True
+1962,Fred Hynes,SOUND,True
+1962,and Samuel Goldwyn Studio Sound Department,SOUND,True
+1962,Visual Effects by Bill Warrington,SPECIAL EFFECTS,True
+1962,Audible Effects by Vivian C. Greenham,SPECIAL EFFECTS,True
+1962,Abby Mann,WRITING (Screenplay--based on material from another medium),True
+1962,William Inge,WRITING (Story and Screenplay--written directly for the screen),True
+1962,George Seaton,JEAN HERSHOLT HUMANITARIAN AWARD,True
+1962,William L. Hendricks for his outstanding patriotic service in the conception,HONORARY AWARD,True
+1962,Fred L. Metzler for his dedication and outstanding service to the Academy of Motion Picture Arts and Sciences.,HONORARY AWARD,True
+1962,Jerome Robbins for his brilliant achievements in the art of choreography on film.,HONORARY AWARD,True
+1962,Stanley Kramer,IRVING G. THALBERG MEMORIAL AWARD,True
+1963,Gregory Peck,ACTOR,True
+1963,Ed Begley,ACTOR IN A SUPPORTING ROLE,True
+1963,Anne Bancroft,ACTRESS,True
+1963,Patty Duke,ACTRESS IN A SUPPORTING ROLE,True
+1963,Art Direction:  Alexander Golitzen,ART DIRECTION (Black-and-White),True
+1963,Henry Bumstead,ART DIRECTION (Black-and-White),True
+1963,Set Decoration:  Oliver Emert,ART DIRECTION (Black-and-White),True
+1963,Art Direction:  John Box,ART DIRECTION (Color),True
+1963,John Stoll,ART DIRECTION (Color),True
+1963,Set Decoration:  Dario Simoni,ART DIRECTION (Color),True
+1963,Jean Bourgoin,CINEMATOGRAPHY (Black-and-White),True
+1963,Walter Wottitz,CINEMATOGRAPHY (Black-and-White),True
+1963,(Henri Persin),CINEMATOGRAPHY (Black-and-White),True
+1963,Fred A. Young,CINEMATOGRAPHY (Color),True
+1963,Norma Koch,COSTUME DESIGN (Black-and-White),True
+1963,Mary Wills,COSTUME DESIGN (Color),True
+1963,David Lean,DIRECTING,True
+1963,Louis Clyde Stoumen,DOCUMENTARY (Feature),True
+1963,Jack Howells,DOCUMENTARY (Short Subject),True
+1963,Producer,DOCUMENTARY (Short Subject),True
+1963,Anne Coates,FILM EDITING,True
+1963,France,FOREIGN LANGUAGE FILM,True
+1963,Maurice Jarre,MUSIC (Music Score--substantially original),True
+1963,Ray Heindorf,MUSIC (Scoring of Music--adaptation or treatment),True
+1963,Music by Henry Mancini,MUSIC (Song),True
+1963,Lyrics by Johnny Mercer,MUSIC (Song),True
+1963,Sam Spiegel,BEST PICTURE,True
+1963,Producer,BEST PICTURE,True
+1963,John Hubley and Faith Hubley,SHORT SUBJECT (Cartoon),True
+1963,Producers,SHORT SUBJECT (Cartoon),True
+1963,Pierre Etaix and J.C. Carrière,SHORT SUBJECT (Live Action),True
+1963,Shepperton Studio Sound Department,SOUND,True
+1963,John Cox,SOUND,True
+1963,Visual Effects by Robert MacDonald,SPECIAL EFFECTS,True
+1963,Audible Effects by Jacques Maumont,SPECIAL EFFECTS,True
+1963,Horton Foote,WRITING (Screenplay--based on material from another medium),True
+1963,Ennio de Concini,WRITING (Story and Screenplay--written directly for the screen),True
+1963,Alfredo Giannetti,WRITING (Story and Screenplay--written directly for the screen),True
+1963,Pietro Germi,WRITING (Story and Screenplay--written directly for the screen),True
+1963,Steve Broidy,JEAN HERSHOLT HUMANITARIAN AWARD,True
+1964,Sidney Poitier,ACTOR,True
+1964,Melvyn Douglas,ACTOR IN A SUPPORTING ROLE,True
+1964,Patricia Neal,ACTRESS,True
+1964,Margaret Rutherford,ACTRESS IN A SUPPORTING ROLE,True
+1964,Gene Callahan,ART DIRECTION (Black-and-White),True
+1964,Art Direction:  John DeCuir,ART DIRECTION (Color),True
+1964,Jack Martin Smith,ART DIRECTION (Color),True
+1964,Hilyard Brown,ART DIRECTION (Color),True
+1964,Herman Blumenthal,ART DIRECTION (Color),True
+1964,Elven Webb,ART DIRECTION (Color),True
+1964,Maurice Pelling,ART DIRECTION (Color),True
+1964,Boris Juraga,ART DIRECTION (Color),True
+1964,Set Decoration:  Walter M. Scott,ART DIRECTION (Color),True
+1964,Paul S. Fox,ART DIRECTION (Color),True
+1964,Ray Moyer,ART DIRECTION (Color),True
+1964,James Wong Howe,CINEMATOGRAPHY (Black-and-White),True
+1964,Piero Gherardi,COSTUME DESIGN (Black-and-White),True
+1964,Irene Sharaff,COSTUME DESIGN (Color),True
+1964,Vittorio Nino Novarese,COSTUME DESIGN (Color),True
+1964,Renie,COSTUME DESIGN (Color),True
+1964,Tony Richardson,DIRECTING,True
+1964,Robert Hughes,DOCUMENTARY (Feature),True
+1964,Simon Schiffrin,DOCUMENTARY (Short Subject),True
+1964,Producer,DOCUMENTARY (Short Subject),True
+1964,Harold F. Kress,FILM EDITING,True
+1964,Italy,FOREIGN LANGUAGE FILM,True
+1964,John Addison,MUSIC (Music Score--substantially original),True
+1964,Andre Previn,MUSIC (Scoring of Music--adaptation or treatment),True
+1964,Music by James Van Heusen,MUSIC (Song),True
+1964,Lyrics by Sammy Cahn,MUSIC (Song),True
+1964,Tony Richardson,BEST PICTURE,True
+1964,Ernest Pintoff,SHORT SUBJECT (Cartoon),True
+1964,Paul de Roubaix and Marcel Ichac,SHORT SUBJECT (Live Action),True
+1964,Producers,SHORT SUBJECT (Live Action),True
+1964,Metro-Goldwyn-Mayer Studio Sound Department,SOUND,True
+1964,Franklin E. Milton,SOUND,True
+1964,Walter G. Elliott,SOUND EFFECTS,True
+1964,Emil Kosa,SPECIAL EFFECTS,True
+1964,Jr.,SPECIAL EFFECTS,True
+1964,John Osborne,WRITING (Screenplay--based on material from another medium),True
+1964,James R. Webb,WRITING (Story and Screenplay--written directly for the screen),True
+1964,Sam Spiegel,IRVING G. THALBERG MEMORIAL AWARD,True
+1965,Rex Harrison,ACTOR,True
+1965,Peter Ustinov,ACTOR IN A SUPPORTING ROLE,True
+1965,Julie Andrews,ACTRESS,True
+1965,Lila Kedrova,ACTRESS IN A SUPPORTING ROLE,True
+1965,Vassilis Fotopoulos,ART DIRECTION (Black-and-White),True
+1965,Art Direction:  Gene Allen,ART DIRECTION (Color),True
+1965,Cecil Beaton,ART DIRECTION (Color),True
+1965,Set Decoration:  George James Hopkins,ART DIRECTION (Color),True
+1965,Walter Lassally,CINEMATOGRAPHY (Black-and-White),True
+1965,Harry Stradling,CINEMATOGRAPHY (Color),True
+1965,Dorothy Jeakins,COSTUME DESIGN (Black-and-White),True
+1965,Cecil Beaton,COSTUME DESIGN (Color),True
+1965,George Cukor,DIRECTING,True
+1965,Jacques-Yves Cousteau,DOCUMENTARY (Feature),True
+1965,Cotton Warburton,FILM EDITING,True
+1965,Italy,FOREIGN LANGUAGE FILM,True
+1965,Richard M. Sherman,MUSIC (Music Score--substantially original),True
+1965,Robert B. Sherman,MUSIC (Music Score--substantially original),True
+1965,Andre Previn,MUSIC (Scoring of Music--adaptation or treatment),True
+1965,Music and Lyrics by Richard M. Sherman and Robert B. Sherman,MUSIC (Song),True
+1965,Jack L. Warner,BEST PICTURE,True
+1965,David H. DePatie and Friz Freleng,SHORT SUBJECT (Cartoon),True
+1965,Producers,SHORT SUBJECT (Cartoon),True
+1965,Edward Schreiber,SHORT SUBJECT (Live Action),True
+1965,Producer,SHORT SUBJECT (Live Action),True
+1965,Warner Bros. Studio Sound Department,SOUND,True
+1965,George R. Groves,SOUND,True
+1965,Norman Wanstall,SOUND EFFECTS,True
+1965,Peter Ellenshaw,SPECIAL VISUAL EFFECTS,True
+1965,Eustace Lycett,SPECIAL VISUAL EFFECTS,True
+1965,Hamilton Luske,SPECIAL VISUAL EFFECTS,True
+1965,Edward Anhalt,WRITING (Screenplay--based on material from another medium),True
+1965,Story by S. H. Barnett,WRITING (Story and Screenplay--written directly for the screen),True
+1965,Screenplay by Peter Stone,WRITING (Story and Screenplay--written directly for the screen),True
+1965,Frank Tarloff,WRITING (Story and Screenplay--written directly for the screen),True
+1965,William Tuttle for his outstanding make-up achievement for 7 Faces of Dr. Lao.,HONORARY AWARD,True
+1966,Lee Marvin,ACTOR,True
+1966,Martin Balsam,ACTOR IN A SUPPORTING ROLE,True
+1966,Julie Christie,ACTRESS,True
+1966,Shelley Winters,ACTRESS IN A SUPPORTING ROLE,True
+1966,Art Direction:  Robert Clatworthy,ART DIRECTION (Black-and-White),True
+1966,Set Decoration:  Joseph Kish,ART DIRECTION (Black-and-White),True
+1966,Art Direction:  John Box,ART DIRECTION (Color),True
+1966,Terry Marsh,ART DIRECTION (Color),True
+1966,Ernest Laszlo,CINEMATOGRAPHY (Black-and-White),True
+1966,Freddie Young,CINEMATOGRAPHY (Color),True
+1966,Julie Harris,COSTUME DESIGN (Black-and-White),True
+1966,Phyllis Dalton,COSTUME DESIGN (Color),True
+1966,Robert Wise,DIRECTING,True
+1966,Sidney Glazier,DOCUMENTARY (Feature),True
+1966,Francis Thompson,DOCUMENTARY (Short Subject),True
+1966,William Reynolds,FILM EDITING,True
+1966,Czechoslovakia,FOREIGN LANGUAGE FILM,True
+1966,Maurice Jarre,MUSIC (Music Score--substantially original),True
+1966,Irwin Kostal,MUSIC (Scoring of Music--adaptation or treatment),True
+1966,Music by Johnny Mandel,MUSIC (Song),True
+1966,Lyrics by Paul Francis Webster,MUSIC (Song),True
+1966,Robert Wise,BEST PICTURE,True
+1966,Chuck Jones and Les Goldman,SHORT SUBJECT (Cartoon),True
+1966,Producers,SHORT SUBJECT (Cartoon),True
+1966,Claude Berri,SHORT SUBJECT (Live Action),True
+1966,Producer,SHORT SUBJECT (Live Action),True
+1966,and Todd-AO Sound Department,SOUND,True
+1966,Fred Hynes,SOUND,True
+1966,Tregoweth Brown,SOUND EFFECTS,True
+1966,John Stears,SPECIAL VISUAL EFFECTS,True
+1966,Robert Bolt,WRITING (Screenplay--based on material from another medium),True
+1966,Frederic Raphael,WRITING (Story and Screenplay--written directly for the screen),True
+1966,Edmond L. DePatie,JEAN HERSHOLT HUMANITARIAN AWARD,True
+1966,Bob Hope for unique and distinguished service to our industry and the Academy.,HONORARY AWARD,True
+1966,William Wyler,IRVING G. THALBERG MEMORIAL AWARD,True
+1967,Paul Scofield,ACTOR,True
+1967,Walter Matthau,ACTOR IN A SUPPORTING ROLE,True
+1967,Elizabeth Taylor,ACTRESS,True
+1967,Sandy Dennis,ACTRESS IN A SUPPORTING ROLE,True
+1967,Art Direction:  Richard Sylbert,ART DIRECTION (Black-and-White),True
+1967,Set Decoration:  George James Hopkins,ART DIRECTION (Black-and-White),True
+1967,Art Direction:  Jack Martin Smith,ART DIRECTION (Color),True
+1967,Dale Hennesy,ART DIRECTION (Color),True
+1967,Set Decoration:  Walter M. Scott,ART DIRECTION (Color),True
+1967,Stuart A. Reiss,ART DIRECTION (Color),True
+1967,Haskell Wexler,CINEMATOGRAPHY (Black-and-White),True
+1967,Ted Moore,CINEMATOGRAPHY (Color),True
+1967,Irene Sharaff,COSTUME DESIGN (Black-and-White),True
+1967,Elizabeth Haffenden,COSTUME DESIGN (Color),True
+1967,Joan Bridge,COSTUME DESIGN (Color),True
+1967,Fred Zinnemann,DIRECTING,True
+1967,Peter Watkins,DOCUMENTARY (Feature),True
+1967,Edmond A. Levy,DOCUMENTARY (Short Subject),True
+1967,Producer,DOCUMENTARY (Short Subject),True
+1967,Fredric Steinkamp,FILM EDITING,True
+1967,Henry Berman,FILM EDITING,True
+1967,Stewart Linder,FILM EDITING,True
+1967,Frank Santillo,FILM EDITING,True
+1967,France,FOREIGN LANGUAGE FILM,True
+1967,John Barry,MUSIC (Original Music Score),True
+1967,Ken Thorne,MUSIC (Scoring of Music--adaptation or treatment),True
+1967,Music by John Barry,MUSIC (Song),True
+1967,Lyrics by Don Black,MUSIC (Song),True
+1967,Fred Zinnemann,BEST PICTURE,True
+1967,John Hubley and Faith Hubley,SHORT SUBJECT (Cartoon),True
+1967,Edgar Anstey,SHORT SUBJECT (Live Action),True
+1967,Metro-Goldwyn-Mayer Studio Sound Department,SOUND,True
+1967,Franklin E. Milton,SOUND,True
+1967,Gordon Daniel,SOUND EFFECTS,True
+1967,Art Cruickshank,SPECIAL VISUAL EFFECTS,True
+1967,Robert Bolt,WRITING (Screenplay--based on material from another medium),True
+1967,Story by Claude Lelouch,WRITING (Story and Screenplay--written directly for the screen),True
+1967,Screenplay by Claude Lelouch,WRITING (Story and Screenplay--written directly for the screen),True
+1967,Pierre Uytterhoeven,WRITING (Story and Screenplay--written directly for the screen),True
+1967,George Bagnall,JEAN HERSHOLT HUMANITARIAN AWARD,True
+1967,Y. Frank Freeman for unusual and outstanding service to the Academy during his thirty years in Hollywood.,HONORARY AWARD,True
+1967,Yakima Canutt for achievements as a stunt man and for developing safety devices to protect stunt men everywhere.,HONORARY AWARD,True
+1967,Robert Wise,IRVING G. THALBERG MEMORIAL AWARD,True
+1968,Rod Steiger,ACTOR,True
+1968,George Kennedy,ACTOR IN A SUPPORTING ROLE,True
+1968,Katharine Hepburn,ACTRESS,True
+1968,Estelle Parsons,ACTRESS IN A SUPPORTING ROLE,True
+1968,Art Direction:  John Truscott,ART DIRECTION,True
+1968,Edward Carrere,ART DIRECTION,True
+1968,Set Decoration:  John W. Brown,ART DIRECTION,True
+1968,Burnett Guffey,CINEMATOGRAPHY,True
+1968,John Truscott,COSTUME DESIGN,True
+1968,Mike Nichols,DIRECTING,True
+1968,Pierre Schoendoerffer,DOCUMENTARY (Feature),True
+1968,Producer,DOCUMENTARY (Feature),True
+1968,Mark Harris and Trevor Greenwood,DOCUMENTARY (Short Subject),True
+1968,Producers,DOCUMENTARY (Short Subject),True
+1968,Hal Ashby,FILM EDITING,True
+1968,Czechoslovakia,FOREIGN LANGUAGE FILM,True
+1968,Elmer Bernstein,MUSIC (Original Music Score),True
+1968,Alfred Newman,MUSIC (Scoring of Music--adaptation or treatment),True
+1968,Ken Darby,MUSIC (Scoring of Music--adaptation or treatment),True
+1968,Music and Lyrics by Leslie Bricusse,MUSIC (Song),True
+1968,Walter Mirisch,BEST PICTURE,True
+1968,Fred Wolf,SHORT SUBJECT (Cartoon),True
+1968,Producer,SHORT SUBJECT (Cartoon),True
+1968,Christopher Chapman,SHORT SUBJECT (Live Action),True
+1968,Samuel Goldwyn Studio Sound Department,SOUND,True
+1968,John Poyner,SOUND EFFECTS,True
+1968,L. B. Abbott,SPECIAL VISUAL EFFECTS,True
+1968,Stirling Silliphant,WRITING (Screenplay--based on material from another medium),True
+1968,William Rose,WRITING (Story and Screenplay--written directly for the screen),True
+1968,Gregory Peck,JEAN HERSHOLT HUMANITARIAN AWARD,True
+1968,Arthur Freed for distinguished service to the Academy and the production of six top-rated Awards telecasts.,HONORARY AWARD,True
+1968,Alfred Hitchcock,IRVING G. THALBERG MEMORIAL AWARD,True
+1969,Cliff Robertson,ACTOR,True
+1969,Jack Albertson,ACTOR IN A SUPPORTING ROLE,True
+1969,Katharine Hepburn,ACTRESS,True
+1969,Barbra Streisand,ACTRESS,True
+1969,Ruth Gordon,ACTRESS IN A SUPPORTING ROLE,True
+1969,Art Direction:  John Box,ART DIRECTION,True
+1969,Terence Marsh,ART DIRECTION,True
+1969,Set Decoration:  Vernon Dixon,ART DIRECTION,True
+1969,Ken Muggleston,ART DIRECTION,True
+1969,Pasqualino De Santis,CINEMATOGRAPHY,True
+1969,Danilo Donati,COSTUME DESIGN,True
+1969,Carol Reed,DIRECTING,True
+1969,Bill McGaw,DOCUMENTARY (Feature),True
+1969,Saul Bass,DOCUMENTARY (Short Subject),True
+1969,Frank P. Keller,FILM EDITING,True
+1969,Union of Soviet Socialist Republics,FOREIGN LANGUAGE FILM,True
+1969,John Barry,MUSIC (Original Score--for a motion picture [not a musical]),True
+1969,Adaptation score by John Green,MUSIC (Score of a Musical Picture--original or adaptation),True
+1969,Music by Michel Legrand,MUSIC (Song--Original for the Picture),True
+1969,Lyrics by Alan Bergman and Marilyn Bergman,MUSIC (Song--Original for the Picture),True
+1969,John Woolf,BEST PICTURE,True
+1969,Walt Disney,SHORT SUBJECT (Cartoon),True
+1969,Charles Guggenheim,SHORT SUBJECT (Live Action),True
+1969,Shepperton Studio Sound Department,SOUND,True
+1969,Stanley Kubrick,SPECIAL VISUAL EFFECTS,True
+1969,James Goldman,WRITING (Screenplay--based on material from another medium),True
+1969,Mel Brooks,WRITING (Story and Screenplay--written directly for the screen),True
+1969,Martha Raye,JEAN HERSHOLT HUMANITARIAN AWARD,True
+1969,John Chambers for his outstanding makeup achievement for Planet of the Apes.,HONORARY AWARD,True
+1969,Onna White for her outstanding choreography achievement for Oliver!,HONORARY AWARD,True
+1970,John Wayne,ACTOR,True
+1970,Gig Young,ACTOR IN A SUPPORTING ROLE,True
+1970,Maggie Smith,ACTRESS,True
+1970,Goldie Hawn,ACTRESS IN A SUPPORTING ROLE,True
+1970,Art Direction:  John DeCuir,ART DIRECTION,True
+1970,Jack Martin Smith,ART DIRECTION,True
+1970,Herman Blumenthal,ART DIRECTION,True
+1970,Set Decoration:  Walter M. Scott,ART DIRECTION,True
+1970,George Hopkins,ART DIRECTION,True
+1970,Raphael Bretton,ART DIRECTION,True
+1970,Conrad Hall,CINEMATOGRAPHY,True
+1970,Margaret Furse,COSTUME DESIGN,True
+1970,John Schlesinger,DIRECTING,True
+1970,Bernard Chevry,DOCUMENTARY (Feature),True
+1970,Producer,DOCUMENTARY (Feature),True
+1970,Denis Sanders and Robert M. Fresco,DOCUMENTARY (Short Subject),True
+1970,Producers,DOCUMENTARY (Short Subject),True
+1970,Françoise Bonnot,FILM EDITING,True
+1970,Algeria,FOREIGN LANGUAGE FILM,True
+1970,Burt Bacharach,MUSIC (Original Score--for a motion picture [not a musical]),True
+1970,Adaptation score by Lennie Hayton and Lionel Newman,MUSIC (Score of a Musical Picture--original or adaptation),True
+1970,Music by Burt Bacharach,MUSIC (Song--Original for the Picture),True
+1970,Lyrics by Hal David,MUSIC (Song--Original for the Picture),True
+1970,Jerome Hellman,BEST PICTURE,True
+1970,Ward Kimball,SHORT SUBJECT (Cartoon),True
+1970,Producer,SHORT SUBJECT (Cartoon),True
+1970,Joan Keller Stern,SHORT SUBJECT (Live Action),True
+1970,Jack Solomon,SOUND,True
+1970,Murray Spivack,SOUND,True
+1970,Robbie Robertson,SPECIAL VISUAL EFFECTS,True
+1970,Waldo Salt,WRITING (Screenplay--based on material from another medium),True
+1970,William Goldman,WRITING (Story and Screenplay--based on material not previously published or produced),True
+1970,George Jessel,JEAN HERSHOLT HUMANITARIAN AWARD,True
+1970,Cary Grant for his unique mastery of the art of screen acting with the respect and affection of his colleagues.,HONORARY AWARD,True
+1971,George C. Scott,ACTOR,True
+1971,John Mills,ACTOR IN A SUPPORTING ROLE,True
+1971,Glenda Jackson,ACTRESS,True
+1971,Helen Hayes,ACTRESS IN A SUPPORTING ROLE,True
+1971,Art Direction:  Urie McCleary,ART DIRECTION,True
+1971,Gil Parrondo,ART DIRECTION,True
+1971,Set Decoration:  Antonio Mateos,ART DIRECTION,True
+1971,Pierre-Louis Thevenet,ART DIRECTION,True
+1971,Freddie Young,CINEMATOGRAPHY,True
+1971,Nino Novarese,COSTUME DESIGN,True
+1971,Franklin J. Schaffner,DIRECTING,True
+1971,Bob Maurice,DOCUMENTARY (Feature),True
+1971,Joseph Strick,DOCUMENTARY (Short Subject),True
+1971,Hugh S. Fowler,FILM EDITING,True
+1971,Italy,FOREIGN LANGUAGE FILM,True
+1971,Francis Lai,MUSIC (Original Score),True
+1971,Music and lyrics by The Beatles,MUSIC (Original Song Score),True
+1971,Music by Fred Karlin,MUSIC (Song--Original for the Picture),True
+1971,Lyrics by Robb Royer (aka Robb Wilson) and James Griffin (aka Arthur James),MUSIC (Song--Original for the Picture),True
+1971,Frank McCarthy,BEST PICTURE,True
+1971,Nick Bosustow,SHORT SUBJECT (Cartoon),True
+1971,Producer,SHORT SUBJECT (Cartoon),True
+1971,John Longenecker,SHORT SUBJECT (Live Action),True
+1971,Producer,SHORT SUBJECT (Live Action),True
+1971,Douglas Williams,SOUND,True
+1971,Don Bassman,SOUND,True
+1971,A. D. Flowers,SPECIAL VISUAL EFFECTS,True
+1971,L. B. Abbott,SPECIAL VISUAL EFFECTS,True
+1971,Ring Lardner,WRITING (Screenplay--based on material from another medium),True
+1971,Jr.,WRITING (Screenplay--based on material from another medium),True
+1971,Francis Ford Coppola,WRITING (Story and Screenplay--based on factual material or material not previously published or produced),True
+1971,Edmund H. North,WRITING (Story and Screenplay--based on factual material or material not previously published or produced),True
+1971,Frank Sinatra,JEAN HERSHOLT HUMANITARIAN AWARD,True
+1971,Lillian Gish for superlative artistry and for distinguished contribution to the progress of motion pictures.,HONORARY AWARD,True
+1971,Orson Welles for superlative artistry and versatility in the creation of motion pictures.,HONORARY AWARD,True
+1971,Ingmar Bergman,IRVING G. THALBERG MEMORIAL AWARD,True
+1972,Gene Hackman,ACTOR,True
+1972,Ben Johnson,ACTOR IN A SUPPORTING ROLE,True
+1972,Jane Fonda,ACTRESS,True
+1972,Cloris Leachman,ACTRESS IN A SUPPORTING ROLE,True
+1972,Art Direction:  John Box,ART DIRECTION,True
+1972,Ernest Archer,ART DIRECTION,True
+1972,Jack Maxsted,ART DIRECTION,True
+1972,Gil Parrondo,ART DIRECTION,True
+1972,Set Decoration:  Vernon Dixon,ART DIRECTION,True
+1972,Oswald Morris,CINEMATOGRAPHY,True
+1972,Yvonne Blake,COSTUME DESIGN,True
+1972,Antonio Castillo,COSTUME DESIGN,True
+1972,William Friedkin,DIRECTING,True
+1972,Walon Green,DOCUMENTARY (Feature),True
+1972,Manuel Arango and Robert Amram,DOCUMENTARY (Short Subject),True
+1972,Jerry Greenberg,FILM EDITING,True
+1972,Italy,FOREIGN LANGUAGE FILM,True
+1972,Michel Legrand,MUSIC (Original Dramatic Score),True
+1972,Adaptation Score by John Williams,MUSIC (Scoring: Adaptation and Original Song Score),True
+1972,Music and Lyrics by Isaac Hayes,MUSIC (Song--Original for the Picture),True
+1972,Philip D'Antoni,BEST PICTURE,True
+1972,Ted Petok,SHORT SUBJECT (Animated),True
+1972,Producer,SHORT SUBJECT (Animated),True
+1972,Manuel Arango and Robert Amram,SHORT SUBJECT (Live Action),True
+1972,David Hildyard,SOUND,True
+1972,Alan Maley,SPECIAL VISUAL EFFECTS,True
+1972,Eustace Lycett,SPECIAL VISUAL EFFECTS,True
+1972,Danny Lee,SPECIAL VISUAL EFFECTS,True
+1972,Ernest Tidyman,WRITING (Screenplay--based on material from another medium),True
+1972,Paddy Chayefsky,WRITING (Story and Screenplay--based on factual material or material not previously published or produced),True
+1972,Charles Chaplin for the incalculable effect he has had in making motion pictures the art form of this century.,HONORARY AWARD,True
+1973,Marlon Brando,ACTOR,True
+1973,Joel Grey,ACTOR IN A SUPPORTING ROLE,True
+1973,Liza Minnelli,ACTRESS,True
+1973,Eileen Heckart,ACTRESS IN A SUPPORTING ROLE,True
+1973,Art Direction:  Rolf Zehetbauer,ART DIRECTION,True
+1973,Jurgen Kiebach,ART DIRECTION,True
+1973,Set Decoration:  Herbert Strabel,ART DIRECTION,True
+1973,Geoffrey Unsworth,CINEMATOGRAPHY,True
+1973,Anthony Powell,COSTUME DESIGN,True
+1973,Bob Fosse,DIRECTING,True
+1973,Howard Smith and Sarah Kernochan,DOCUMENTARY (Feature),True
+1973,Charles Huguenot van der Linden and Martina Huguenot van der Linden,DOCUMENTARY (Short Subject),True
+1973,Producers,DOCUMENTARY (Short Subject),True
+1973,David Bretherton,FILM EDITING,True
+1973,France,FOREIGN LANGUAGE FILM,True
+1973,Charles Chaplin,MUSIC (Original Dramatic Score),True
+1973,Raymond Rasch,MUSIC (Original Dramatic Score),True
+1973,Larry Russell,MUSIC (Original Dramatic Score),True
+1973,Adaptation Score by Ralph Burns,MUSIC (Scoring: Adaptation and Original Song Score),True
+1973,Music and Lyrics by Al Kasha and Joel Hirschhorn,MUSIC (Song--Original for the Picture),True
+1973,Albert S. Ruddy,BEST PICTURE,True
+1973,Richard Williams,SHORT SUBJECT (Animated),True
+1973,Producer,SHORT SUBJECT (Animated),True
+1973,Richard Barclay,SHORT SUBJECT (Live Action),True
+1973,Producer,SHORT SUBJECT (Live Action),True
+1973,Robert Knudson,SOUND,True
+1973,David Hildyard,SOUND,True
+1973,Mario Puzo,WRITING (Screenplay--based on material from another medium),True
+1973,Francis Ford Coppola,WRITING (Screenplay--based on material from another medium),True
+1973,Jeremy Larner,WRITING (Story and Screenplay--based on factual material or material not previously published or produced),True
+1973,L. B. Abbott,SPECIAL ACHIEVEMENT AWARD (Visual Effects),True
+1973,A. D. Flowers,SPECIAL ACHIEVEMENT AWARD (Visual Effects),True
+1973,Rosalind Russell,JEAN HERSHOLT HUMANITARIAN AWARD,True
+1973,Charles S. Boren,HONORARY AWARD,True
+1973,Edward G. Robinson who achieved greatness as a player,HONORARY AWARD,True
+1974,Jack Lemmon,ACTOR,True
+1974,John Houseman,ACTOR IN A SUPPORTING ROLE,True
+1974,Glenda Jackson,ACTRESS,True
+1974,Tatum O'Neal,ACTRESS IN A SUPPORTING ROLE,True
+1974,Art Direction:  Henry Bumstead,ART DIRECTION,True
+1974,Set Decoration:  James Payne,ART DIRECTION,True
+1974,Sven Nykvist,CINEMATOGRAPHY,True
+1974,Edith Head,COSTUME DESIGN,True
+1974,George Roy Hill,DIRECTING,True
+1974,Kieth Merrill,DOCUMENTARY (Feature),True
+1974,Julian Krainin and DeWitt L. Sage,DOCUMENTARY (Short Subject),True
+1974,Jr.,DOCUMENTARY (Short Subject),True
+1974,William Reynolds,FILM EDITING,True
+1974,France,FOREIGN LANGUAGE FILM,True
+1974,Marvin Hamlisch,MUSIC (Original Dramatic Score),True
+1974,Adaptation Score by Marvin Hamlisch,MUSIC (Scoring: Original Song Score and Adaptation -or- Scoring: Adaptation),True
+1974,Music by Marvin Hamlisch,MUSIC (Song),True
+1974,Lyrics by Alan Bergman and Marilyn Bergman,MUSIC (Song),True
+1974,Tony Bill,BEST PICTURE,True
+1974,Michael Phillips and Julia Phillips,BEST PICTURE,True
+1974,Producers,BEST PICTURE,True
+1974,Frank Mouris,SHORT SUBJECT (Animated),True
+1974,Producer,SHORT SUBJECT (Animated),True
+1974,Allan Miller and William Fertik,SHORT SUBJECT (Live Action),True
+1974,Producers,SHORT SUBJECT (Live Action),True
+1974,Robert Knudson,SOUND,True
+1974,Chris Newman,SOUND,True
+1974,William Peter Blatty,WRITING (Screenplay--based on material from another medium),True
+1974,David S. Ward,WRITING (Story and Screenplay--based on factual material or material not previously published or produced),True
+1974,Lew Wasserman,JEAN HERSHOLT HUMANITARIAN AWARD,True
+1974,Henri Langlois for his devotion to the art of film,HONORARY AWARD,True
+1974,Groucho Marx in recognition of his brilliant creativity and for the unequalled achievements of the Marx Brothers in the art of motion picture comedy.,HONORARY AWARD,True
+1974,Lawrence Weingarten,IRVING G. THALBERG MEMORIAL AWARD,True
+1975,Art Carney,ACTOR,True
+1975,Robert De Niro,ACTOR IN A SUPPORTING ROLE,True
+1975,Ellen Burstyn,ACTRESS,True
+1975,Ingrid Bergman,ACTRESS IN A SUPPORTING ROLE,True
+1975,Art Direction:  Dean Tavoularis,ART DIRECTION,True
+1975,Angelo Graham,ART DIRECTION,True
+1975,Set Decoration:  George R. Nelson,ART DIRECTION,True
+1975,Fred Koenekamp,CINEMATOGRAPHY,True
+1975,Joseph Biroc,CINEMATOGRAPHY,True
+1975,Theoni V. Aldredge,COSTUME DESIGN,True
+1975,Francis Ford Coppola,DIRECTING,True
+1975,Peter Davis and Bert Schneider,DOCUMENTARY (Feature),True
+1975,Robin Lehman,DOCUMENTARY (Short Subject),True
+1975,Harold F. Kress,FILM EDITING,True
+1975,Carl Kress,FILM EDITING,True
+1975,Italy,FOREIGN LANGUAGE FILM,True
+1975,Nino Rota,MUSIC (Original Dramatic Score),True
+1975,Carmine Coppola,MUSIC (Original Dramatic Score),True
+1975,Adaptation Score by Nelson Riddle,MUSIC (Scoring: Original Song Score and Adaptation -or- Scoring: Adaptation),True
+1975,Music and Lyrics by Al Kasha and Joel Hirschhorn,MUSIC (Song),True
+1975,Gray Frederickson and Fred Roos,BEST PICTURE,True
+1975,Co-Producers,BEST PICTURE,True
+1975,Will Vinton and Bob Gardiner,SHORT FILM (Animated),True
+1975,Producers,SHORT FILM (Animated),True
+1975,Paul Claudon and Edmond Sechan,SHORT FILM (Live Action),True
+1975,Ronald Pierce,SOUND,True
+1975,Melvin Metcalfe,SOUND,True
+1975,Sr.,SOUND,True
+1975,Robert Towne,WRITING (Original Screenplay),True
+1975,Francis Ford Coppola,WRITING (Screenplay Adapted from Other Material),True
+1975,Mario Puzo,WRITING (Screenplay Adapted from Other Material),True
+1975,Frank Brendel,SPECIAL ACHIEVEMENT AWARD (Visual Effects),True
+1975,Glen Robinson,SPECIAL ACHIEVEMENT AWARD (Visual Effects),True
+1975,Albert Whitlock,SPECIAL ACHIEVEMENT AWARD (Visual Effects),True
+1975,Arthur B. Krim,JEAN HERSHOLT HUMANITARIAN AWARD,True
+1975,Howard Hawks - A master American filmmaker whose creative efforts hold a distinguished place in world cinema.,HONORARY AWARD,True
+1975,Jean Renoir - a genius who,HONORARY AWARD,True
+1976,Jack Nicholson,ACTOR,True
+1976,George Burns,ACTOR IN A SUPPORTING ROLE,True
+1976,Louise Fletcher,ACTRESS,True
+1976,Lee Grant,ACTRESS IN A SUPPORTING ROLE,True
+1976,Art Direction:  Ken Adam,ART DIRECTION,True
+1976,Roy Walker,ART DIRECTION,True
+1976,Set Decoration:  Vernon Dixon,ART DIRECTION,True
+1976,John Alcott,CINEMATOGRAPHY,True
+1976,Ulla-Britt Soderlund,COSTUME DESIGN,True
+1976,Milena Canonero,COSTUME DESIGN,True
+1976,Milos Forman,DIRECTING,True
+1976,F. R. Crawley,DOCUMENTARY (Feature),True
+1976,James Hager and Dale Hartleben,DOCUMENTARY (Feature),True
+1976,Claire Wilbur and Robin Lehman,DOCUMENTARY (Short Subject),True
+1976,Verna Fields,FILM EDITING,True
+1976,Union of Soviet Socialist Republics,FOREIGN LANGUAGE FILM,True
+1976,John Williams,MUSIC (Original Score),True
+1976,Adaptation Score by Leonard Rosenman,MUSIC (Scoring: Original Song Score and Adaptation -or- Scoring: Adaptation),True
+1976,Music and Lyrics by Keith Carradine,MUSIC (Original Song),True
+1976,Saul Zaentz and Michael Douglas,BEST PICTURE,True
+1976,Bob Godfrey,SHORT FILM (Animated),True
+1976,Producer,SHORT FILM (Animated),True
+1976,Bert Salzman,SHORT FILM (Live Action),True
+1976,Producer,SHORT FILM (Live Action),True
+1976,Robert L. Hoyt,SOUND,True
+1976,Roger Heman,SOUND,True
+1976,Earl Madery,SOUND,True
+1976,John Carter,SOUND,True
+1976,Frank Pierson,WRITING (Original Screenplay),True
+1976,Lawrence Hauben,WRITING (Screenplay Adapted from Other Material),True
+1976,Bo Goldman,WRITING (Screenplay Adapted from Other Material),True
+1976,Peter Berkos,SPECIAL ACHIEVEMENT AWARD (Sound Effects),True
+1976,Albert Whitlock,SPECIAL ACHIEVEMENT AWARD (Visual Effects),True
+1976,Glen Robinson,SPECIAL ACHIEVEMENT AWARD (Visual Effects),True
+1976,Dr. Jules C. Stein,JEAN HERSHOLT HUMANITARIAN AWARD,True
+1976,Mary Pickford in recognition of her unique contributions to the film industry and the development of film as an artistic medium.,HONORARY AWARD,True
+1976,Mervyn LeRoy,IRVING G. THALBERG MEMORIAL AWARD,True
+1977,Peter Finch,ACTOR IN A LEADING ROLE,True
+1977,Jason Robards,ACTOR IN A SUPPORTING ROLE,True
+1977,Faye Dunaway,ACTRESS IN A LEADING ROLE,True
+1977,Beatrice Straight,ACTRESS IN A SUPPORTING ROLE,True
+1977,Art Direction:  George Jenkins,ART DIRECTION,True
+1977,Set Decoration:  George Gaines,ART DIRECTION,True
+1977,Haskell Wexler,CINEMATOGRAPHY,True
+1977,Danilo Donati,COSTUME DESIGN,True
+1977,John G. Avildsen,DIRECTING,True
+1977,Barbara Kopple,DOCUMENTARY (Feature),True
+1977,Producer,DOCUMENTARY (Feature),True
+1977,Lynne Littman,DOCUMENTARY (Short Subject),True
+1977,Richard Halsey,FILM EDITING,True
+1977,Scott Conrad,FILM EDITING,True
+1977,Ivory Coast,FOREIGN LANGUAGE FILM,True
+1977,Jerry Goldsmith,MUSIC (Original Score),True
+1977,Adaptation Score by Leonard Rosenman,MUSIC (Original Song Score and Its Adaptation or Adaptation Score),True
+1977,Music by Barbra Streisand,MUSIC (Original Song),True
+1977,Lyrics by Paul Williams,MUSIC (Original Song),True
+1977,Irwin Winkler and Robert Chartoff,BEST PICTURE,True
+1977,Suzanne Baker,SHORT FILM (Animated),True
+1977,Andre Guttfreund and Peter Werner,SHORT FILM (Live Action),True
+1977,Producers,SHORT FILM (Live Action),True
+1977,Arthur Piantadosi,SOUND,True
+1977,Les Fresholtz,SOUND,True
+1977,Dick Alexander,SOUND,True
+1977,Jim Webb,SOUND,True
+1977,William Goldman,WRITING (Screenplay--based on material from another medium),True
+1977,Paddy Chayefsky,WRITING (Screenplay Written Directly for the Screen--based on factual material or on story material not previously published or produced),True
+1977,Carlo Rambaldi,SPECIAL ACHIEVEMENT AWARD (Visual Effects),True
+1977,Glen Robinson,SPECIAL ACHIEVEMENT AWARD (Visual Effects),True
+1977,Frank Van der Veer,SPECIAL ACHIEVEMENT AWARD (Visual Effects),True
+1977,L. B. Abbott,SPECIAL ACHIEVEMENT AWARD (Visual Effects),True
+1977,Matthew Yuricich,SPECIAL ACHIEVEMENT AWARD (Visual Effects),True
+1977,Pandro S. Berman,IRVING G. THALBERG MEMORIAL AWARD,True
+1978,Richard Dreyfuss,ACTOR IN A LEADING ROLE,True
+1978,Jason Robards,ACTOR IN A SUPPORTING ROLE,True
+1978,Diane Keaton,ACTRESS IN A LEADING ROLE,True
+1978,Vanessa Redgrave,ACTRESS IN A SUPPORTING ROLE,True
+1978,Art Direction:  John Barry,ART DIRECTION,True
+1978,Norman Reynolds,ART DIRECTION,True
+1978,Leslie Dilley,ART DIRECTION,True
+1978,Set Decoration:  Roger Christian,ART DIRECTION,True
+1978,Vilmos Zsigmond,CINEMATOGRAPHY,True
+1978,John Mollo,COSTUME DESIGN,True
+1978,Woody Allen,DIRECTING,True
+1978,John Korty,DOCUMENTARY (Feature),True
+1978,Dan McCann and Warren L. Lockhart,DOCUMENTARY (Feature),True
+1978,John Joseph and Jan Stussy,DOCUMENTARY (Short Subject),True
+1978,Paul Hirsch,FILM EDITING,True
+1978,Marcia Lucas,FILM EDITING,True
+1978,Richard Chew,FILM EDITING,True
+1978,France,FOREIGN LANGUAGE FILM,True
+1978,Adaptation Score by Jonathan Tunick,MUSIC (Original Song Score and Its Adaptation or Adaptation Score),True
+1978,Music and Lyrics by Joseph Brooks,MUSIC (Original Song),True
+1978,Charles H. Joffe,BEST PICTURE,True
+1978,Producer,BEST PICTURE,True
+1978,Co Hoedeman,SHORT FILM (Animated),True
+1978,Beverly Shaffer and Yuki Yoshida,SHORT FILM (Live Action),True
+1978,Producers,SHORT FILM (Live Action),True
+1978,Ray West,SOUND,True
+1978,Bob Minkler,SOUND,True
+1978,Derek Ball,SOUND,True
+1978,John Stears,VISUAL EFFECTS,True
+1978,John Dykstra,VISUAL EFFECTS,True
+1978,Richard Edlund,VISUAL EFFECTS,True
+1978,Grant McCune,VISUAL EFFECTS,True
+1978,Robert Blalack,VISUAL EFFECTS,True
+1978,Alvin Sargent,WRITING (Screenplay--based on material from another medium),True
+1978,Woody Allen,WRITING (Screenplay Written Directly for the Screen--based on factual material or on story material not previously published or produced),True
+1978,Marshall Brickman,WRITING (Screenplay Written Directly for the Screen--based on factual material or on story material not previously published or produced),True
+1978,Benjamin Burtt,SPECIAL ACHIEVEMENT AWARD,True
+1978,Frank E. Warner,SPECIAL ACHIEVEMENT AWARD (Sound Effects Editing),True
+1978,Charlton Heston,JEAN HERSHOLT HUMANITARIAN AWARD,True
+1978,Margaret Booth for her exceptional contribution to the art of film editing in the motion picture industry.,HONORARY AWARD,True
+1978,Walter Mirisch,IRVING G. THALBERG MEMORIAL AWARD,True
+1979,Jon Voight,ACTOR IN A LEADING ROLE,True
+1979,Christopher Walken,ACTOR IN A SUPPORTING ROLE,True
+1979,Jane Fonda,ACTRESS IN A LEADING ROLE,True
+1979,Maggie Smith,ACTRESS IN A SUPPORTING ROLE,True
+1979,Art Direction:  Paul Sylbert,ART DIRECTION,True
+1979,Edwin O'Donovan,ART DIRECTION,True
+1979,Set Decoration:  George Gaines,ART DIRECTION,True
+1979,Nestor Almendros,CINEMATOGRAPHY,True
+1979,Anthony Powell,COSTUME DESIGN,True
+1979,Michael Cimino,DIRECTING,True
+1979,Arnold Shapiro,DOCUMENTARY (Feature),True
+1979,Jacqueline Phillips Shedd and Ben Shedd,DOCUMENTARY (Short Subject),True
+1979,Producers,DOCUMENTARY (Short Subject),True
+1979,Peter Zinner,FILM EDITING,True
+1979,France,FOREIGN LANGUAGE FILM,True
+1979,Joe Renzetti,MUSIC (Adaptation Score),True
+1979,Giorgio Moroder,MUSIC (Original Score),True
+1979,Music and Lyrics by Paul Jabara,MUSIC (Original Song),True
+1979,Barry Spikings,BEST PICTURE,True
+1979,Michael Deeley,BEST PICTURE,True
+1979,Michael Cimino and John Peverall,BEST PICTURE,True
+1979,Producers,BEST PICTURE,True
+1979,Eunice Macaulay and John Weldon,SHORT FILM (Animated),True
+1979,Producers,SHORT FILM (Animated),True
+1979,Taylor Hackford,SHORT FILM (Live Action),True
+1979,Richard Portman,SOUND,True
+1979,William McCaughey,SOUND,True
+1979,Aaron Rochin,SOUND,True
+1979,Darin Knight,SOUND,True
+1979,Oliver Stone,WRITING (Screenplay Based on Material from Another Medium),True
+1979,Story by Nancy Dowd,WRITING (Screenplay Written Directly for the Screen),True
+1979,Screenplay by Waldo Salt,WRITING (Screenplay Written Directly for the Screen),True
+1979,Robert C. Jones,WRITING (Screenplay Written Directly for the Screen),True
+1979,Les Bowie,SPECIAL ACHIEVEMENT AWARD (Visual Effects),True
+1979,Colin Chilvers,SPECIAL ACHIEVEMENT AWARD (Visual Effects),True
+1979,Denys Coop,SPECIAL ACHIEVEMENT AWARD (Visual Effects),True
+1979,Roy Field,SPECIAL ACHIEVEMENT AWARD (Visual Effects),True
+1979,Derek Meddings,SPECIAL ACHIEVEMENT AWARD (Visual Effects),True
+1979,Zoran Perisic,SPECIAL ACHIEVEMENT AWARD (Visual Effects),True
+1979,Leo Jaffe,JEAN HERSHOLT HUMANITARIAN AWARD,True
+1979,Walter Lantz for bringing joy and laughter to every part of the world through his unique animated motion pictures.,HONORARY AWARD,True
+1979,The Museum of Modern Art Department of Film for the contribution it has made to the public's perception of movies as an art form.,HONORARY AWARD,True
+1979,Laurence Olivier for the full body of his work,HONORARY AWARD,True
+1979,King Vidor for his incomparable achievements as a cinematic creator and innovator.,HONORARY AWARD,True
+1980,Dustin Hoffman,ACTOR IN A LEADING ROLE,True
+1980,Melvyn Douglas,ACTOR IN A SUPPORTING ROLE,True
+1980,Sally Field,ACTRESS IN A LEADING ROLE,True
+1980,Meryl Streep,ACTRESS IN A SUPPORTING ROLE,True
+1980,Art Direction:  Philip Rosenberg,ART DIRECTION,True
+1980,Tony Walton,ART DIRECTION,True
+1980,Set Decoration:  Edward Stewart,ART DIRECTION,True
+1980,Gary Brink,ART DIRECTION,True
+1980,Vittorio Storaro,CINEMATOGRAPHY,True
+1980,Albert Wolsky,COSTUME DESIGN,True
+1980,Robert Benton,DIRECTING,True
+1980,Ira Wohl,DOCUMENTARY (Feature),True
+1980,Producer,DOCUMENTARY (Feature),True
+1980,Saul J. Turell,DOCUMENTARY (Short Subject),True
+1980,Alan Heim,FILM EDITING,True
+1980,Federal Republic of Germany,FOREIGN LANGUAGE FILM,True
+1980,Georges Delerue,MUSIC (Original Score),True
+1980,Adaptation Score by Ralph Burns,MUSIC (Original Song Score and Its Adaptation -or- Adaptation Score),True
+1980,Lyric by Norman Gimbel,MUSIC (Original Song),True
+1980,Stanley R. Jaffe,BEST PICTURE,True
+1980,Derek Lamb,SHORT FILM (Animated),True
+1980,Producer,SHORT FILM (Animated),True
+1980,Sarah Pillsbury and Ron Ellis,SHORT FILM (Live Action),True
+1980,Producers,SHORT FILM (Live Action),True
+1980,Walter Murch,SOUND,True
+1980,Mark Berger,SOUND,True
+1980,Richard Beggs,SOUND,True
+1980,Nat Boxer,SOUND,True
+1980,H.R. Giger,VISUAL EFFECTS,True
+1980,Carlo Rambaldi,VISUAL EFFECTS,True
+1980,Brian Johnson,VISUAL EFFECTS,True
+1980,Nick Allder,VISUAL EFFECTS,True
+1980,Denys Ayling,VISUAL EFFECTS,True
+1980,Robert Benton,WRITING (Screenplay Based on Material from Another Medium),True
+1980,Steve Tesich,WRITING (Screenplay Written Directly for the Screen),True
+1980,Alan Splet,SPECIAL ACHIEVEMENT AWARD (Sound Editing),True
+1980,Robert Benjamin,JEAN HERSHOLT HUMANITARIAN AWARD,True
+1980,Alec Guinness for advancing the art of screen acting through a host of memorable and distinguished performances.,HONORARY AWARD,True
+1980,Hal Elias for his dedication and distinguished service to the Academy of Motion Picture Arts and Sciences.,HONORARY AWARD,True
+1980,Ray Stark,IRVING G. THALBERG MEMORIAL AWARD,True
+1981,Robert De Niro,ACTOR IN A LEADING ROLE,True
+1981,Timothy Hutton,ACTOR IN A SUPPORTING ROLE,True
+1981,Sissy Spacek,ACTRESS IN A LEADING ROLE,True
+1981,Mary Steenburgen,ACTRESS IN A SUPPORTING ROLE,True
+1981,Art Direction:  Pierre Guffroy,ART DIRECTION,True
+1981,Jack Stephens,ART DIRECTION,True
+1981,Geoffrey Unsworth,CINEMATOGRAPHY,True
+1981,Ghislain Cloquet,CINEMATOGRAPHY,True
+1981,Anthony Powell,COSTUME DESIGN,True
+1981,Robert Redford,DIRECTING,True
+1981,Murray Lerner,DOCUMENTARY (Feature),True
+1981,Roland Hallé and Peter W. Ladue,DOCUMENTARY (Short Subject),True
+1981,Thelma Schoonmaker,FILM EDITING,True
+1981,Union of Soviet Socialist Republics,FOREIGN LANGUAGE FILM,True
+1981,Michael Gore,MUSIC (Original Score),True
+1981,Music by Michael Gore,MUSIC (Original Song),True
+1981,Lyric by Dean Pitchford,MUSIC (Original Song),True
+1981,Ronald L. Schwary,BEST PICTURE,True
+1981,Ferenc Rofusz,SHORT FILM (Animated),True
+1981,Lloyd Phillips,SHORT FILM (Dramatic Live Action),True
+1981,Producer,SHORT FILM (Dramatic Live Action),True
+1981,Bill Varney,SOUND,True
+1981,Steve Maslow,SOUND,True
+1981,Gregg Landaker,SOUND,True
+1981,Peter Sutton,SOUND,True
+1981,Alvin Sargent,WRITING (Screenplay Based on Material from Another Medium),True
+1981,Bo Goldman,WRITING (Screenplay Written Directly for the Screen),True
+1981,Brian Johnson,SPECIAL ACHIEVEMENT AWARD (Visual Effects),True
+1981,Richard Edlund,SPECIAL ACHIEVEMENT AWARD (Visual Effects),True
+1981,Dennis Muren,SPECIAL ACHIEVEMENT AWARD (Visual Effects),True
+1981,Bruce Nicholson,SPECIAL ACHIEVEMENT AWARD (Visual Effects),True
+1981,Henry Fonda,HONORARY AWARD,True
+1982,Henry Fonda,ACTOR IN A LEADING ROLE,True
+1982,John Gielgud,ACTOR IN A SUPPORTING ROLE,True
+1982,Katharine Hepburn,ACTRESS IN A LEADING ROLE,True
+1982,Maureen Stapleton,ACTRESS IN A SUPPORTING ROLE,True
+1982,Art Direction:  Norman Reynolds,ART DIRECTION,True
+1982,Leslie Dilley,ART DIRECTION,True
+1982,Set Decoration:  Michael Ford,ART DIRECTION,True
+1982,Vittorio Storaro,CINEMATOGRAPHY,True
+1982,Milena Canonero,COSTUME DESIGN,True
+1982,Warren Beatty,DIRECTING,True
+1982,Arnold Schwartzman and Rabbi Marvin Hier,DOCUMENTARY (Feature),True
+1982,Nigel Noble,DOCUMENTARY (Short Subject),True
+1982,Michael Kahn,FILM EDITING,True
+1982,Hungary,FOREIGN LANGUAGE FILM,True
+1982,Rick Baker,MAKEUP,True
+1982,Vangelis,MUSIC (Original Score),True
+1982,Music and Lyric by Burt Bacharach,MUSIC (Original Song),True
+1982,Carole Bayer Sager,MUSIC (Original Song),True
+1982,Christopher Cross and Peter Allen,MUSIC (Original Song),True
+1982,David Puttnam,BEST PICTURE,True
+1982,Producer,BEST PICTURE,True
+1982,Frédéric Back,SHORT FILM (Animated),True
+1982,Producer,SHORT FILM (Animated),True
+1982,Paul Kemp and Shelley Levinson,SHORT FILM (Live Action),True
+1982,Producers,SHORT FILM (Live Action),True
+1982,Bill Varney,SOUND,True
+1982,Steve Maslow,SOUND,True
+1982,Gregg Landaker,SOUND,True
+1982,Roy Charman,SOUND,True
+1982,Richard Edlund,VISUAL EFFECTS,True
+1982,Kit West,VISUAL EFFECTS,True
+1982,Bruce Nicholson,VISUAL EFFECTS,True
+1982,Joe Johnston,VISUAL EFFECTS,True
+1982,Ernest Thompson,WRITING (Screenplay Based on Material from Another Medium),True
+1982,Colin Welland,WRITING (Screenplay Written Directly for the Screen),True
+1982,Ben Burtt,SPECIAL ACHIEVEMENT AWARD (Sound Effects Editing),True
+1982,Richard L. Anderson,SPECIAL ACHIEVEMENT AWARD (Sound Effects Editing),True
+1982,Danny Kaye,JEAN HERSHOLT HUMANITARIAN AWARD,True
+1982,Barbara Stanwyck for superlative creativity and unique contribution to the art of screen acting.,HONORARY AWARD,True
+1982,Albert R. Broccoli,IRVING G. THALBERG MEMORIAL AWARD,True
+1983,Ben Kingsley,ACTOR IN A LEADING ROLE,True
+1983,Louis Gossett,ACTOR IN A SUPPORTING ROLE,True
+1983,Jr.,ACTOR IN A SUPPORTING ROLE,True
+1983,Meryl Streep,ACTRESS IN A LEADING ROLE,True
+1983,Jessica Lange,ACTRESS IN A SUPPORTING ROLE,True
+1983,Art Direction:  Stuart Craig,ART DIRECTION,True
+1983,Bob Laing,ART DIRECTION,True
+1983,Set Decoration:  Michael Seirton,ART DIRECTION,True
+1983,Billy Williams,CINEMATOGRAPHY,True
+1983,Ronnie Taylor,CINEMATOGRAPHY,True
+1983,John Mollo,COSTUME DESIGN,True
+1983,Bhanu Athaiya,COSTUME DESIGN,True
+1983,Richard Attenborough,DIRECTING,True
+1983,John Zaritsky,DOCUMENTARY (Feature),True
+1983,Edward Le Lorrain and Terri Nash,DOCUMENTARY (Short Subject),True
+1983,Producers,DOCUMENTARY (Short Subject),True
+1983,John Bloom,FILM EDITING,True
+1983,Spain,FOREIGN LANGUAGE FILM,True
+1983,Sarah Monzani,MAKEUP,True
+1983,Michèle Burke,MAKEUP,True
+1983,John Williams,MUSIC (Original Score),True
+1983,Song Score by Henry Mancini and Leslie Bricusse,MUSIC (Original Song Score and Its Adaptation -or- Adaptation Score),True
+1983,Adaptation Score by Henry Mancini,MUSIC (Original Song Score and Its Adaptation -or- Adaptation Score),True
+1983,Music by Jack Nitzsche and Buffy Sainte-Marie,MUSIC (Original Song),True
+1983,Lyric by Will Jennings,MUSIC (Original Song),True
+1983,Richard Attenborough,BEST PICTURE,True
+1983,Producer,BEST PICTURE,True
+1983,Zbigniew Rybczynski,SHORT FILM (Animated),True
+1983,Christine Oestreicher,SHORT FILM (Live Action),True
+1983,Robert Knudson,SOUND,True
+1983,Robert Glass,SOUND,True
+1983,Don Digirolamo,SOUND,True
+1983,Gene Cantamessa,SOUND,True
+1983,Charles L. Campbell,SOUND EFFECTS EDITING,True
+1983,Ben Burtt,SOUND EFFECTS EDITING,True
+1983,Carlo Rambaldi,VISUAL EFFECTS,True
+1983,Dennis Muren,VISUAL EFFECTS,True
+1983,Kenneth F. Smith,VISUAL EFFECTS,True
+1983,Costa-Gavras,WRITING (Screenplay Based on Material from Another Medium),True
+1983,Donald Stewart,WRITING (Screenplay Based on Material from Another Medium),True
+1983,John Briley,WRITING (Screenplay Written Directly for the Screen),True
+1983,Walter Mirisch,JEAN HERSHOLT HUMANITARIAN AWARD,True
+1983,Mickey Rooney,HONORARY AWARD,True
+1984,Robert Duvall,ACTOR IN A LEADING ROLE,True
+1984,Jack Nicholson,ACTOR IN A SUPPORTING ROLE,True
+1984,Shirley MacLaine,ACTRESS IN A LEADING ROLE,True
+1984,Linda Hunt,ACTRESS IN A SUPPORTING ROLE,True
+1984,Anna Asp,ART DIRECTION,True
+1984,Sven Nykvist,CINEMATOGRAPHY,True
+1984,Marik Vos,COSTUME DESIGN,True
+1984,James L. Brooks,DIRECTING,True
+1984,Emile Ardolino,DOCUMENTARY (Feature),True
+1984,Producer,DOCUMENTARY (Feature),True
+1984,Cynthia Scott and Adam Symansky,DOCUMENTARY (Short Subject),True
+1984,Producers,DOCUMENTARY (Short Subject),True
+1984,Glenn Farr,FILM EDITING,True
+1984,Lisa Fruchtman,FILM EDITING,True
+1984,Stephen A. Rotter,FILM EDITING,True
+1984,Douglas Stewart,FILM EDITING,True
+1984,Tom Rolf,FILM EDITING,True
+1984,Sweden,FOREIGN LANGUAGE FILM,True
+1984,Bill Conti,MUSIC (Original Score),True
+1984,Song Score by Michel Legrand,MUSIC (Original Song Score or Adaptation Score),True
+1984,Alan Bergman and Marilyn Bergman,MUSIC (Original Song Score or Adaptation Score),True
+1984,Music by Giorgio Moroder,MUSIC (Original Song),True
+1984,Lyric by Keith Forsey and Irene Cara,MUSIC (Original Song),True
+1984,James L. Brooks,BEST PICTURE,True
+1984,Jimmy Picker,SHORT FILM (Animated),True
+1984,Janice L. Platt,SHORT FILM (Live Action),True
+1984,Producer,SHORT FILM (Live Action),True
+1984,Mark Berger,SOUND,True
+1984,Tom Scott,SOUND,True
+1984,David MacMillan,SOUND,True
+1984,Jay Boekelheide,SOUND EFFECTS EDITING,True
+1984,James L. Brooks,WRITING (Screenplay Based on Material from Another Medium),True
+1984,Horton Foote,WRITING (Screenplay Written Directly for the Screen),True
+1984,Richard Edlund,SPECIAL ACHIEVEMENT AWARD (Visual Effects),True
+1984,Dennis Muren,SPECIAL ACHIEVEMENT AWARD (Visual Effects),True
+1984,Ken Ralston,SPECIAL ACHIEVEMENT AWARD (Visual Effects),True
+1984,Phil Tippett,SPECIAL ACHIEVEMENT AWARD (Visual Effects),True
+1984,M. J. Frankovich,JEAN HERSHOLT HUMANITARIAN AWARD,True
+1984,Hal Roach,HONORARY AWARD,True
+1985,F. Murray Abraham,ACTOR IN A LEADING ROLE,True
+1985,Haing S. Ngor,ACTOR IN A SUPPORTING ROLE,True
+1985,Sally Field,ACTRESS IN A LEADING ROLE,True
+1985,Peggy Ashcroft,ACTRESS IN A SUPPORTING ROLE,True
+1985,Art Direction:  Patrizia Von Brandenstein,ART DIRECTION,True
+1985,Set Decoration:  Karel Cerny,ART DIRECTION,True
+1985,Chris Menges,CINEMATOGRAPHY,True
+1985,Theodor Pistek,COSTUME DESIGN,True
+1985,Milos Forman,DIRECTING,True
+1985,Robert Epstein and Richard Schmiechen,DOCUMENTARY (Feature),True
+1985,Marjorie Hunt and Paul Wagner,DOCUMENTARY (Short Subject),True
+1985,Jim Clark,FILM EDITING,True
+1985,Switzerland,FOREIGN LANGUAGE FILM,True
+1985,Paul LeBlanc,MAKEUP,True
+1985,Dick Smith,MAKEUP,True
+1985,Maurice Jarre,MUSIC (Original Score),True
+1985,Prince,MUSIC (Original Song Score),True
+1985,Music and Lyric by Stevie Wonder,MUSIC (Original Song),True
+1985,Saul Zaentz,BEST PICTURE,True
+1985,Producer,BEST PICTURE,True
+1985,Jon Minnis,SHORT FILM (Animated),True
+1985,Producer,SHORT FILM (Animated),True
+1985,Mike Hoover,SHORT FILM (Live Action),True
+1985,Producer,SHORT FILM (Live Action),True
+1985,Mark Berger,SOUND,True
+1985,Tom Scott,SOUND,True
+1985,Todd Boekelheide,SOUND,True
+1985,Chris Newman,SOUND,True
+1985,Dennis Muren,VISUAL EFFECTS,True
+1985,Michael McAlister,VISUAL EFFECTS,True
+1985,Lorne Peterson,VISUAL EFFECTS,True
+1985,George Gibbs,VISUAL EFFECTS,True
+1985,Peter Shaffer,WRITING (Screenplay Based on Material from Another Medium),True
+1985,Robert Benton,WRITING (Screenplay Written Directly for the Screen),True
+1985,Kay Rose,SPECIAL ACHIEVEMENT AWARD (Sound Effects Editing),True
+1985,David L. Wolper,JEAN HERSHOLT HUMANITARIAN AWARD,True
+1985,James Stewart,HONORARY AWARD,True
+1985,the National Endowment for the Arts,HONORARY AWARD,True
+1986,William Hurt,ACTOR IN A LEADING ROLE,True
+1986,Don Ameche,ACTOR IN A SUPPORTING ROLE,True
+1986,Geraldine Page,ACTRESS IN A LEADING ROLE,True
+1986,Anjelica Huston,ACTRESS IN A SUPPORTING ROLE,True
+1986,Art Direction:  Stephen Grimes,ART DIRECTION,True
+1986,Set Decoration:  Josie MacAvin,ART DIRECTION,True
+1986,David Watkin,CINEMATOGRAPHY,True
+1986,Emi Wada,COSTUME DESIGN,True
+1986,Sydney Pollack,DIRECTING,True
+1986,Maria Florio and Victoria Mudd,DOCUMENTARY (Feature),True
+1986,Producers,DOCUMENTARY (Feature),True
+1986,David Goodman,DOCUMENTARY (Short Subject),True
+1986,Thom Noble,FILM EDITING,True
+1986,Argentina,FOREIGN LANGUAGE FILM,True
+1986,Michael Westmore,MAKEUP,True
+1986,Zoltan Elek,MAKEUP,True
+1986,John Barry,MUSIC (Original Score),True
+1986,Music and Lyric by Lionel Richie,MUSIC (Original Song),True
+1986,Sydney Pollack,BEST PICTURE,True
+1986,Cilia Van Dijk,SHORT FILM (Animated),True
+1986,Producer,SHORT FILM (Animated),True
+1986,Jeff Brown and Chris Pelzer,SHORT FILM (Live Action),True
+1986,Producers,SHORT FILM (Live Action),True
+1986,Chris Jenkins,SOUND,True
+1986,Gary Alexander,SOUND,True
+1986,Larry Stensvold,SOUND,True
+1986,Peter Handford,SOUND,True
+1986,Charles L. Campbell,SOUND EFFECTS EDITING,True
+1986,Robert Rutledge,SOUND EFFECTS EDITING,True
+1986,Ken Ralston,VISUAL EFFECTS,True
+1986,Ralph McQuarrie,VISUAL EFFECTS,True
+1986,Scott Farrar,VISUAL EFFECTS,True
+1986,David Berry,VISUAL EFFECTS,True
+1986,Kurt Luedtke,WRITING (Screenplay Based on Material from Another Medium),True
+1986,Screenplay by Earl W. Wallace,WRITING (Screenplay Written Directly for the Screen),True
+1986,William Kelley,WRITING (Screenplay Written Directly for the Screen),True
+1986,Story by William Kelley,WRITING (Screenplay Written Directly for the Screen),True
+1986,Pamela Wallace,WRITING (Screenplay Written Directly for the Screen),True
+1986,Earl W. Wallace,WRITING (Screenplay Written Directly for the Screen),True
+1986,Charles 'Buddy' Rogers,JEAN HERSHOLT HUMANITARIAN AWARD,True
+1986,Paul Newman,HONORARY AWARD,True
+1986,Alex North,HONORARY AWARD,True
+1987,Paul Newman,ACTOR IN A LEADING ROLE,True
+1987,Michael Caine,ACTOR IN A SUPPORTING ROLE,True
+1987,Marlee Matlin,ACTRESS IN A LEADING ROLE,True
+1987,Dianne Wiest,ACTRESS IN A SUPPORTING ROLE,True
+1987,Art Direction:  Gianni Quaranta,ART DIRECTION,True
+1987,Brian Ackland-Snow,ART DIRECTION,True
+1987,Set Decoration:  Brian Savegar,ART DIRECTION,True
+1987,Elio Altamura,ART DIRECTION,True
+1987,Chris Menges,CINEMATOGRAPHY,True
+1987,Jenny Beavan,COSTUME DESIGN,True
+1987,John Bright,COSTUME DESIGN,True
+1987,Oliver Stone,DIRECTING,True
+1987,Brigitte Berman,DOCUMENTARY (Feature),True
+1987,Producer,DOCUMENTARY (Feature),True
+1987,Joseph Feury and Milton Justice,DOCUMENTARY (Feature),True
+1987,Producers,DOCUMENTARY (Feature),True
+1987,Vivienne Verdon-Roe,DOCUMENTARY (Short Subject),True
+1987,Claire Simpson,FILM EDITING,True
+1987,The Netherlands,FOREIGN LANGUAGE FILM,True
+1987,Chris Walas,MAKEUP,True
+1987,Stephan Dupuis,MAKEUP,True
+1987,Herbie Hancock,MUSIC (Original Score),True
+1987,Music by Giorgio Moroder,MUSIC (Original Song),True
+1987,Lyric by Tom Whitlock,MUSIC (Original Song),True
+1987,Arnold Kopelson,BEST PICTURE,True
+1987,Linda Van Tulden and Willem Thijssen,SHORT FILM (Animated),True
+1987,Producers,SHORT FILM (Animated),True
+1987,Chuck Workman,SHORT FILM (Live Action),True
+1987,John K. Wilkinson,SOUND,True
+1987,Richard Rogers,SOUND,True
+1987,Charles 'Bud' Grenzbach,SOUND,True
+1987,Simon Kaye,SOUND,True
+1987,Don Sharpe,SOUND EFFECTS EDITING,True
+1987,Robert Skotak,VISUAL EFFECTS,True
+1987,Stan Winston,VISUAL EFFECTS,True
+1987,John Richardson,VISUAL EFFECTS,True
+1987,Suzanne Benson,VISUAL EFFECTS,True
+1987,Ruth Prawer Jhabvala,WRITING (Screenplay Based on Material from Another Medium),True
+1987,Woody Allen,WRITING (Screenplay Written Directly for the Screen),True
+1987,Ralph Bellamy for his unique artistry and his distinguished service to the profession of acting.,HONORARY AWARD,True
+1987,Steven Spielberg,IRVING G. THALBERG MEMORIAL AWARD,True
+1988,Michael Douglas,ACTOR IN A LEADING ROLE,True
+1988,Sean Connery,ACTOR IN A SUPPORTING ROLE,True
+1988,Cher,ACTRESS IN A LEADING ROLE,True
+1988,Olympia Dukakis,ACTRESS IN A SUPPORTING ROLE,True
+1988,Art Direction:  Ferdinando Scarfiotti,ART DIRECTION,True
+1988,Set Decoration:  Bruno Cesari,ART DIRECTION,True
+1988,Osvaldo Desideri,ART DIRECTION,True
+1988,Vittorio Storaro,CINEMATOGRAPHY,True
+1988,James Acheson,COSTUME DESIGN,True
+1988,Bernardo Bertolucci,DIRECTING,True
+1988,Aviva Slesin,DOCUMENTARY (Feature),True
+1988,Sue Marx and Pamela Conn,DOCUMENTARY (Short Subject),True
+1988,Gabriella Cristiani,FILM EDITING,True
+1988,Denmark,FOREIGN LANGUAGE FILM,True
+1988,Rick Baker,MAKEUP,True
+1988,Ryuichi Sakamoto,MUSIC (Original Score),True
+1988,David Byrne,MUSIC (Original Score),True
+1988,Cong Su,MUSIC (Original Score),True
+1988,Music by Franke Previte,MUSIC (Original Song),True
+1988,John DeNicola and Donald Markowitz,MUSIC (Original Song),True
+1988,Lyric by Franke Previte,MUSIC (Original Song),True
+1988,Jeremy Thomas,BEST PICTURE,True
+1988,Frédéric Back,SHORT FILM (Animated),True
+1988,Jonathan Sanger and Jana Sue Memel,SHORT FILM (Live Action),True
+1988,Producers,SHORT FILM (Live Action),True
+1988,Bill Rowe,SOUND,True
+1988,Ivan Sharrock,SOUND,True
+1988,Dennis Muren,VISUAL EFFECTS,True
+1988,William George,VISUAL EFFECTS,True
+1988,Harley Jessup,VISUAL EFFECTS,True
+1988,Kenneth Smith,VISUAL EFFECTS,True
+1988,Mark Peploe,WRITING (Screenplay Based on Material from Another Medium),True
+1988,Bernardo Bertolucci,WRITING (Screenplay Based on Material from Another Medium),True
+1988,John Patrick Shanley,WRITING (Screenplay Written Directly for the Screen),True
+1988,Stephen Flick,SPECIAL ACHIEVEMENT AWARD (Sound Effects Editing),True
+1988,John Pospisil,SPECIAL ACHIEVEMENT AWARD (Sound Effects Editing),True
+1988,Billy Wilder,IRVING G. THALBERG MEMORIAL AWARD,True
+1989,Dustin Hoffman,ACTOR IN A LEADING ROLE,True
+1989,Kevin Kline,ACTOR IN A SUPPORTING ROLE,True
+1989,Jodie Foster,ACTRESS IN A LEADING ROLE,True
+1989,Geena Davis,ACTRESS IN A SUPPORTING ROLE,True
+1989,Art Direction:  Stuart Craig,ART DIRECTION,True
+1989,Set Decoration:  Gerard James,ART DIRECTION,True
+1989,Peter Biziou,CINEMATOGRAPHY,True
+1989,James Acheson,COSTUME DESIGN,True
+1989,Barry Levinson,DIRECTING,True
+1989,Marcel Ophuls,DOCUMENTARY (Feature),True
+1989,Producer,DOCUMENTARY (Feature),True
+1989,William Guttentag and Malcolm Clarke,DOCUMENTARY (Short Subject),True
+1989,Arthur Schmidt,FILM EDITING,True
+1989,Denmark,FOREIGN LANGUAGE FILM,True
+1989,Ve Neill,MAKEUP,True
+1989,Steve La Porte,MAKEUP,True
+1989,Robert Short,MAKEUP,True
+1989,Dave Grusin,MUSIC (Original Score),True
+1989,Music and Lyric by Carly Simon,MUSIC (Original Song),True
+1989,Mark Johnson,BEST PICTURE,True
+1989,Producer,BEST PICTURE,True
+1989,John Lasseter,SHORT FILM (Animated),True
+1989,William Reeves,SHORT FILM (Animated),True
+1989,Dean Parisot,SHORT FILM (Live Action),True
+1989,Steven Wright,SHORT FILM (Live Action),True
+1989,Les Fresholtz,SOUND,True
+1989,Dick Alexander,SOUND,True
+1989,Vern Poore,SOUND,True
+1989,Willie D. Burton,SOUND,True
+1989,Charles L. Campbell,SOUND EFFECTS EDITING,True
+1989,Louis L. Edemann,SOUND EFFECTS EDITING,True
+1989,Ken Ralston,VISUAL EFFECTS,True
+1989,Richard Williams,VISUAL EFFECTS,True
+1989,Edward Jones,VISUAL EFFECTS,True
+1989,George Gibbs,VISUAL EFFECTS,True
+1989,Christopher Hampton,WRITING (Screenplay Based on Material from Another Medium),True
+1989,Screenplay by Ronald Bass,WRITING (Screenplay Written Directly for the Screen),True
+1989,Barry Morrow,WRITING (Screenplay Written Directly for the Screen),True
+1989,Story by Barry Morrow,WRITING (Screenplay Written Directly for the Screen),True
+1989,Richard Williams for the animation direction of Who Framed Roger Rabbit.,SPECIAL ACHIEVEMENT AWARD,True
+1989,the National Film Board of Canada in recognition of its 50th anniversary and its dedicated commitment to originate artistic,HONORARY AWARD,True
+1989,Eastman Kodak Company in recognition of the company's fundamental contributions to the art of motion pictures during the first century of film history.,HONORARY AWARD,True
+1990,Daniel Day Lewis,ACTOR IN A LEADING ROLE,True
+1990,Denzel Washington,ACTOR IN A SUPPORTING ROLE,True
+1990,Jessica Tandy,ACTRESS IN A LEADING ROLE,True
+1990,Brenda Fricker,ACTRESS IN A SUPPORTING ROLE,True
+1990,Art Direction:  Anton Furst,ART DIRECTION,True
+1990,Set Decoration:  Peter Young,ART DIRECTION,True
+1990,Freddie Francis,CINEMATOGRAPHY,True
+1990,Phyllis Dalton,COSTUME DESIGN,True
+1990,Oliver Stone,DIRECTING,True
+1990,Robert Epstein and Bill Couturié,DOCUMENTARY (Feature),True
+1990,Charles Guggenheim,DOCUMENTARY (Short Subject),True
+1990,David Brenner,FILM EDITING,True
+1990,Joe Hutshing,FILM EDITING,True
+1990,Italy,FOREIGN LANGUAGE FILM,True
+1990,Manlio Rocchetti,MAKEUP,True
+1990,Lynn Barber,MAKEUP,True
+1990,Kevin Haney,MAKEUP,True
+1990,Alan Menken,MUSIC (Original Score),True
+1990,Richard D. Zanuck and Lili Fini Zanuck,BEST PICTURE,True
+1990,Christoph Lauenstein,SHORT FILM (Animated),True
+1990,Wolfgang Lauenstein,SHORT FILM (Animated),True
+1990,James Hendrie,SHORT FILM (Live Action),True
+1990,Gregg C. Rudloff,SOUND,True
+1990,Elliot Tyson,SOUND,True
+1990,Russell Williams II,SOUND,True
+1990,Ben Burtt,SOUND EFFECTS EDITING,True
+1990,Richard Hymns,SOUND EFFECTS EDITING,True
+1990,John Bruno,VISUAL EFFECTS,True
+1990,Dennis Muren,VISUAL EFFECTS,True
+1990,Hoyt Yeatman,VISUAL EFFECTS,True
+1990,Dennis Skotak,VISUAL EFFECTS,True
+1990,Alfred Uhry,WRITING (Screenplay Based on Material from Another Medium),True
+1990,Tom Schulman,WRITING (Screenplay Written Directly for the Screen),True
+1990,Howard W. Koch,JEAN HERSHOLT HUMANITARIAN AWARD,True
+1990,Akira Kurosawa for accomplishments that have inspired,HONORARY AWARD,True
+1991,Jeremy Irons,ACTOR IN A LEADING ROLE,True
+1991,Joe Pesci,ACTOR IN A SUPPORTING ROLE,True
+1991,Kathy Bates,ACTRESS IN A LEADING ROLE,True
+1991,Whoopi Goldberg,ACTRESS IN A SUPPORTING ROLE,True
+1991,Art Direction:  Richard Sylbert,ART DIRECTION,True
+1991,Set Decoration:  Rick Simpson,ART DIRECTION,True
+1991,Dean Semler,CINEMATOGRAPHY,True
+1991,Franca Squarciapino,COSTUME DESIGN,True
+1991,Kevin Costner,DIRECTING,True
+1991,Barbara Kopple and Arthur Cohn,DOCUMENTARY (Feature),True
+1991,Producers,DOCUMENTARY (Feature),True
+1991,Steven Okazaki,DOCUMENTARY (Short Subject),True
+1991,Neil Travis,FILM EDITING,True
+1991,Switzerland,FOREIGN LANGUAGE FILM,True
+1991,John Caglione,MAKEUP,True
+1991,Jr.,MAKEUP,True
+1991,Doug Drexler,MAKEUP,True
+1991,John Barry,MUSIC (Original Score),True
+1991,Music and Lyric by Stephen Sondheim,MUSIC (Original Song),True
+1991,Jim Wilson and Kevin Costner,BEST PICTURE,True
+1991,Nick Park,SHORT FILM (Animated),True
+1991,Adam Davidson,SHORT FILM (Live Action),True
+1991,Jeffrey Perkins,SOUND,True
+1991,Bill W. Benton,SOUND,True
+1991,Greg Watkins,SOUND,True
+1991,Russell Williams II,SOUND,True
+1991,Cecelia Hall,SOUND EFFECTS EDITING,True
+1991,George Watters II,SOUND EFFECTS EDITING,True
+1991,Michael Blake,WRITING (Screenplay Based on Material from Another Medium),True
+1991,Bruce Joel Rubin,WRITING (Screenplay Written Directly for the Screen),True
+1991,Eric Brevig,SPECIAL ACHIEVEMENT AWARD (Visual Effects),True
+1991,Rob Bottin,SPECIAL ACHIEVEMENT AWARD (Visual Effects),True
+1991,Tim McGovern,SPECIAL ACHIEVEMENT AWARD (Visual Effects),True
+1991,Alex Funke,SPECIAL ACHIEVEMENT AWARD (Visual Effects),True
+1991,Sophia Loren,HONORARY AWARD,True
+1991,Myrna Loy,HONORARY AWARD,True
+1991,David Brown and Richard D. Zanuck,IRVING G. THALBERG MEMORIAL AWARD,True
+1992,Anthony Hopkins,ACTOR IN A LEADING ROLE,True
+1992,Jack Palance,ACTOR IN A SUPPORTING ROLE,True
+1992,Jodie Foster,ACTRESS IN A LEADING ROLE,True
+1992,Mercedes Ruehl,ACTRESS IN A SUPPORTING ROLE,True
+1992,Robert Richardson,CINEMATOGRAPHY,True
+1992,Albert Wolsky,COSTUME DESIGN,True
+1992,Jonathan Demme,DIRECTING,True
+1992,Allie Light and Irving Saraf,DOCUMENTARY (Feature),True
+1992,Debra Chasnoff,DOCUMENTARY (Short Subject),True
+1992,Producer,DOCUMENTARY (Short Subject),True
+1992,Joe Hutshing,FILM EDITING,True
+1992,Pietro Scalia,FILM EDITING,True
+1992,Italy,FOREIGN LANGUAGE FILM,True
+1992,Stan Winston,MAKEUP,True
+1992,Jeff Dawn,MAKEUP,True
+1992,Alan Menken,MUSIC (Original Score),True
+1992,Edward Saxon,BEST PICTURE,True
+1992,Kenneth Utt and Ron Bozman,BEST PICTURE,True
+1992,Daniel Greaves,SHORT FILM (Animated),True
+1992,Seth Winston,SHORT FILM (Live Action),True
+1992,Rob Fried,SHORT FILM (Live Action),True
+1992,Tom Johnson,SOUND,True
+1992,Lee Orloff,SOUND,True
+1992,Gloria S. Borders,SOUND EFFECTS EDITING,True
+1992,Dennis Muren,VISUAL EFFECTS,True
+1992,Stan Winston,VISUAL EFFECTS,True
+1992,Gene Warren,VISUAL EFFECTS,True
+1992,Jr.,VISUAL EFFECTS,True
+1992,Robert Skotak,VISUAL EFFECTS,True
+1992,Ted Tally,WRITING (Screenplay Based on Material Previously Produced or Published),True
+1992,Callie Khouri,WRITING (Screenplay Written Directly for the Screen),True
+1992,Satyajit Ray,HONORARY AWARD,True
+1992,George Lucas,IRVING G. THALBERG MEMORIAL AWARD,True
+1993,Al Pacino,ACTOR IN A LEADING ROLE,True
+1993,Gene Hackman,ACTOR IN A SUPPORTING ROLE,True
+1993,Emma Thompson,ACTRESS IN A LEADING ROLE,True
+1993,Marisa Tomei,ACTRESS IN A SUPPORTING ROLE,True
+1993,Art Direction:  Luciana Arrighi,ART DIRECTION,True
+1993,Set Decoration:  Ian Whittaker,ART DIRECTION,True
+1993,Philippe Rousselot,CINEMATOGRAPHY,True
+1993,Eiko Ishioka,COSTUME DESIGN,True
+1993,Clint Eastwood,DIRECTING,True
+1993,Barbara Trent and David Kasper,DOCUMENTARY (Feature),True
+1993,Thomas C. Goodwin and Gerardine Wurzburg,DOCUMENTARY (Short Subject),True
+1993,Joel Cox,FILM EDITING,True
+1993,France,FOREIGN LANGUAGE FILM,True
+1993,Greg Cannom,MAKEUP,True
+1993,Michèle Burke,MAKEUP,True
+1993,Matthew W. Mungle,MAKEUP,True
+1993,Alan Menken,MUSIC (Original Score),True
+1993,Lyric by Tim Rice,MUSIC (Original Song),True
+1993,Clint Eastwood,BEST PICTURE,True
+1993,Joan C. Gratz,SHORT FILM (Animated),True
+1993,Sam Karmann,SHORT FILM (Live Action),True
+1993,Chris Jenkins,SOUND,True
+1993,Doug Hemphill,SOUND,True
+1993,Mark Smith,SOUND,True
+1993,Simon Kaye,SOUND,True
+1993,Tom C. McCarthy,SOUND EFFECTS EDITING,True
+1993,David E. Stone,SOUND EFFECTS EDITING,True
+1993,Ken Ralston,VISUAL EFFECTS,True
+1993,Doug Chiang,VISUAL EFFECTS,True
+1993,Doug Smythe,VISUAL EFFECTS,True
+1993,Ruth Prawer Jhabvala,WRITING (Screenplay Based on Material Previously Produced or Published),True
+1993,Neil Jordan,WRITING (Screenplay Written Directly for the Screen),True
+1993,Audrey Hepburn,JEAN HERSHOLT HUMANITARIAN AWARD,True
+1993,Elizabeth Taylor,JEAN HERSHOLT HUMANITARIAN AWARD,True
+1993,Federico Fellini in recognition of his place as one of the screen's master storytellers.,HONORARY AWARD,True
+1994,Tom Hanks,ACTOR IN A LEADING ROLE,True
+1994,Tommy Lee Jones,ACTOR IN A SUPPORTING ROLE,True
+1994,Holly Hunter,ACTRESS IN A LEADING ROLE,True
+1994,Anna Paquin,ACTRESS IN A SUPPORTING ROLE,True
+1994,Art Direction:  Allan Starski,ART DIRECTION,True
+1994,Set Decoration:  Ewa Braun,ART DIRECTION,True
+1994,Janusz Kaminski,CINEMATOGRAPHY,True
+1994,Gabriella Pescucci,COSTUME DESIGN,True
+1994,Steven Spielberg,DIRECTING,True
+1994,Susan Raymond,DOCUMENTARY (Feature),True
+1994,Alan Raymond,DOCUMENTARY (Feature),True
+1994,Margaret Lazarus,DOCUMENTARY (Short Subject),True
+1994,Renner Wunderlich,DOCUMENTARY (Short Subject),True
+1994,Michael Kahn,FILM EDITING,True
+1994,Spain,FOREIGN LANGUAGE FILM,True
+1994,Greg Cannom,MAKEUP,True
+1994,Ve Neill,MAKEUP,True
+1994,Yolanda Toussieng,MAKEUP,True
+1994,John Williams,MUSIC (Original Score),True
+1994,Music and Lyric by Bruce Springsteen,MUSIC (Original Song),True
+1994,Steven Spielberg,BEST PICTURE,True
+1994,Gerald R. Molen and Branko Lustig,BEST PICTURE,True
+1994,Nick Park,SHORT FILM (Animated),True
+1994,Pepe Danquart,SHORT FILM (Live Action),True
+1994,Gary Summers,SOUND,True
+1994,Gary Rydstrom,SOUND,True
+1994,Shawn Murphy,SOUND,True
+1994,Ron Judkins,SOUND,True
+1994,Gary Rydstrom,SOUND EFFECTS EDITING,True
+1994,Richard Hymns,SOUND EFFECTS EDITING,True
+1994,Dennis Muren,VISUAL EFFECTS,True
+1994,Stan Winston,VISUAL EFFECTS,True
+1994,Phil Tippett,VISUAL EFFECTS,True
+1994,Michael Lantieri,VISUAL EFFECTS,True
+1994,Steven Zaillian,WRITING (Screenplay Based on Material Previously Produced or Published),True
+1994,Jane Campion,WRITING (Screenplay Written Directly for the Screen),True
+1994,Paul Newman,JEAN HERSHOLT HUMANITARIAN AWARD,True
+1994,Deborah Kerr,HONORARY AWARD,True
+1995,Tom Hanks,ACTOR IN A LEADING ROLE,True
+1995,Martin Landau,ACTOR IN A SUPPORTING ROLE,True
+1995,Jessica Lange,ACTRESS IN A LEADING ROLE,True
+1995,Dianne Wiest,ACTRESS IN A SUPPORTING ROLE,True
+1995,Art Direction:  Ken Adam,ART DIRECTION,True
+1995,Set Decoration:  Carolyn Scott,ART DIRECTION,True
+1995,John Toll,CINEMATOGRAPHY,True
+1995,Lizzy Gardiner,COSTUME DESIGN,True
+1995,Tim Chappel,COSTUME DESIGN,True
+1995,Robert Zemeckis,DIRECTING,True
+1995,Freida Lee Mock,DOCUMENTARY (Feature),True
+1995,Terry Sanders,DOCUMENTARY (Feature),True
+1995,Charles Guggenheim,DOCUMENTARY (Short Subject),True
+1995,Arthur Schmidt,FILM EDITING,True
+1995,Russia,FOREIGN LANGUAGE FILM,True
+1995,Rick Baker,MAKEUP,True
+1995,Ve Neill,MAKEUP,True
+1995,Yolanda Toussieng,MAKEUP,True
+1995,Hans Zimmer,MUSIC (Original Score),True
+1995,Music by Elton John,MUSIC (Original Song),True
+1995,Lyric by Tim Rice,MUSIC (Original Song),True
+1995,Wendy Finerman,BEST PICTURE,True
+1995,Steve Tisch and Steve Starkey,BEST PICTURE,True
+1995,Producers,BEST PICTURE,True
+1995,Alison Snowden,SHORT FILM (Animated),True
+1995,David Fine,SHORT FILM (Animated),True
+1995,Peter Capaldi,SHORT FILM (Live Action),True
+1995,Ruth Kenley-Letts,SHORT FILM (Live Action),True
+1995,Peggy Rajski,SHORT FILM (Live Action),True
+1995,Randy Stone,SHORT FILM (Live Action),True
+1995,Gregg Landaker,SOUND,True
+1995,Steve Maslow,SOUND,True
+1995,Bob Beemer,SOUND,True
+1995,David R. B. MacMillan,SOUND,True
+1995,Stephen Hunter Flick,SOUND EFFECTS EDITING,True
+1995,Ken Ralston,VISUAL EFFECTS,True
+1995,George Murphy,VISUAL EFFECTS,True
+1995,Stephen Rosenbaum,VISUAL EFFECTS,True
+1995,Allen Hall,VISUAL EFFECTS,True
+1995,Eric Roth,WRITING (Screenplay Based on Material Previously Produced or Published),True
+1995,Screenplay by Quentin Tarantino,WRITING (Screenplay Written Directly for the Screen),True
+1995,Stories by Quentin Tarantino & Roger Avary,WRITING (Screenplay Written Directly for the Screen),True
+1995,Quincy Jones,JEAN HERSHOLT HUMANITARIAN AWARD,True
+1995,Michelangelo Antonioni in recognition of his place as one of the cinema's master visual stylists.,HONORARY AWARD,True
+1995,Clint Eastwood,IRVING G. THALBERG MEMORIAL AWARD,True
+1996,Nicolas Cage,ACTOR IN A LEADING ROLE,True
+1996,Kevin Spacey,ACTOR IN A SUPPORTING ROLE,True
+1996,Susan Sarandon,ACTRESS IN A LEADING ROLE,True
+1996,Mira Sorvino,ACTRESS IN A SUPPORTING ROLE,True
+1996,Eugenio Zanetti,ART DIRECTION,True
+1996,John Toll,CINEMATOGRAPHY,True
+1996,James Acheson,COSTUME DESIGN,True
+1996,Mel Gibson,DIRECTING,True
+1996,Jon Blair,DOCUMENTARY (Feature),True
+1996,Kary Antholis,DOCUMENTARY (Short Subject),True
+1996,Mike Hill,FILM EDITING,True
+1996,Dan Hanley,FILM EDITING,True
+1996,The Netherlands,FOREIGN LANGUAGE FILM,True
+1996,Peter Frampton,MAKEUP,True
+1996,Paul Pattison,MAKEUP,True
+1996,Lois Burwell,MAKEUP,True
+1996,Luis Enrique Bacalov,MUSIC (Original Dramatic Score),True
+1996,Music by Alan Menken,MUSIC (Original Musical or Comedy Score),True
+1996,Lyrics by Stephen Schwartz,MUSIC (Original Musical or Comedy Score),True
+1996,Orchestral Score by Alan Menken,MUSIC (Original Musical or Comedy Score),True
+1996,Music by Alan Menken,MUSIC (Original Song),True
+1996,Lyric by Stephen Schwartz,MUSIC (Original Song),True
+1996,Mel Gibson,BEST PICTURE,True
+1996,Alan Ladd,BEST PICTURE,True
+1996,Jr. and Bruce Davey,BEST PICTURE,True
+1996,Nick Park,SHORT FILM (Animated),True
+1996,Christine Lahti,SHORT FILM (Live Action),True
+1996,Jana Sue Memel,SHORT FILM (Live Action),True
+1996,Rick Dior,SOUND,True
+1996,Steve Pederson,SOUND,True
+1996,Scott Millan,SOUND,True
+1996,David MacMillan,SOUND,True
+1996,Lon Bender,SOUND EFFECTS EDITING,True
+1996,Per Hallberg,SOUND EFFECTS EDITING,True
+1996,Scott E. Anderson,VISUAL EFFECTS,True
+1996,Charles Gibson,VISUAL EFFECTS,True
+1996,Neal Scanlan,VISUAL EFFECTS,True
+1996,John Cox,VISUAL EFFECTS,True
+1996,Emma Thompson,WRITING (Screenplay Based on Material Previously Produced or Published),True
+1996,Christopher McQuarrie,WRITING (Screenplay Written Directly for the Screen),True
+1996,John Lasseter,SPECIAL ACHIEVEMENT AWARD,True
+1996,Kirk Douglas,HONORARY AWARD,True
+1996,Chuck Jones,HONORARY AWARD,True
+1997,Geoffrey Rush,ACTOR IN A LEADING ROLE,True
+1997,Cuba Gooding,ACTOR IN A SUPPORTING ROLE,True
+1997,Jr.,ACTOR IN A SUPPORTING ROLE,True
+1997,Frances McDormand,ACTRESS IN A LEADING ROLE,True
+1997,Juliette Binoche,ACTRESS IN A SUPPORTING ROLE,True
+1997,Art Direction:  Stuart Craig,ART DIRECTION,True
+1997,Set Decoration:  Stephenie McMillan,ART DIRECTION,True
+1997,John Seale,CINEMATOGRAPHY,True
+1997,Ann Roth,COSTUME DESIGN,True
+1997,Anthony Minghella,DIRECTING,True
+1997,Leon Gast,DOCUMENTARY (Feature),True
+1997,David Sonenberg,DOCUMENTARY (Feature),True
+1997,Jessica Yu,DOCUMENTARY (Short Subject),True
+1997,Walter Murch,FILM EDITING,True
+1997,Czech Republic,FOREIGN LANGUAGE FILM,True
+1997,Rick Baker,MAKEUP,True
+1997,David LeRoy Anderson,MAKEUP,True
+1997,Gabriel Yared,MUSIC (Original Dramatic Score),True
+1997,Rachel Portman,MUSIC (Original Musical or Comedy Score),True
+1997,Music by Andrew Lloyd Webber,MUSIC (Original Song),True
+1997,Lyric by Tim Rice,MUSIC (Original Song),True
+1997,Saul Zaentz,BEST PICTURE,True
+1997,Producer,BEST PICTURE,True
+1997,Tyron Montgomery,SHORT FILM (Animated),True
+1997,Thomas Stellmach,SHORT FILM (Animated),True
+1997,David Frankel,SHORT FILM (Live Action),True
+1997,Barry Jossen,SHORT FILM (Live Action),True
+1997,Walter Murch,SOUND,True
+1997,Mark Berger,SOUND,True
+1997,David Parker,SOUND,True
+1997,Chris Newman,SOUND,True
+1997,Bruce Stambler,SOUND EFFECTS EDITING,True
+1997,Volker Engel,VISUAL EFFECTS,True
+1997,Douglas Smith,VISUAL EFFECTS,True
+1997,Clay Pinney,VISUAL EFFECTS,True
+1997,Joseph Viskocil,VISUAL EFFECTS,True
+1997,Billy Bob Thornton,WRITING (Screenplay Based on Material Previously Produced or Published),True
+1997,Ethan Coen,WRITING (Screenplay Written Directly for the Screen),True
+1997,Joel Coen,WRITING (Screenplay Written Directly for the Screen),True
+1997,Michael Kidd in recognition of his services to the art of the dance in the art of the screen.,HONORARY AWARD,True
+1997,Saul Zaentz,IRVING G. THALBERG MEMORIAL AWARD,True
+1998,Jack Nicholson,ACTOR IN A LEADING ROLE,True
+1998,Robin Williams,ACTOR IN A SUPPORTING ROLE,True
+1998,Helen Hunt,ACTRESS IN A LEADING ROLE,True
+1998,Kim Basinger,ACTRESS IN A SUPPORTING ROLE,True
+1998,Art Direction:  Peter Lamont,ART DIRECTION,True
+1998,Set Decoration:  Michael Ford,ART DIRECTION,True
+1998,Russell Carpenter,CINEMATOGRAPHY,True
+1998,Deborah L. Scott,COSTUME DESIGN,True
+1998,James Cameron,DIRECTING,True
+1998,Rabbi Marvin Hier,DOCUMENTARY (Feature),True
+1998,Richard Trank,DOCUMENTARY (Feature),True
+1998,Donna Dewey,DOCUMENTARY (Short Subject),True
+1998,Carol Pasternak,DOCUMENTARY (Short Subject),True
+1998,Conrad Buff,FILM EDITING,True
+1998,James Cameron,FILM EDITING,True
+1998,Richard A. Harris,FILM EDITING,True
+1998,The Netherlands,FOREIGN LANGUAGE FILM,True
+1998,Rick Baker,MAKEUP,True
+1998,David LeRoy Anderson,MAKEUP,True
+1998,James Horner,MUSIC (Original Dramatic Score),True
+1998,Anne Dudley,MUSIC (Original Musical or Comedy Score),True
+1998,Music by James Horner,MUSIC (Original Song),True
+1998,Lyric by Will Jennings,MUSIC (Original Song),True
+1998,James Cameron and Jon Landau,BEST PICTURE,True
+1998,Jan Pinkava,SHORT FILM (Animated),True
+1998,Chris Tashima,SHORT FILM (Live Action),True
+1998,Chris Donahue,SHORT FILM (Live Action),True
+1998,Gary Rydstrom,SOUND,True
+1998,Gary Summers,SOUND,True
+1998,Mark Ulano,SOUND,True
+1998,Tom Bellfort,SOUND EFFECTS EDITING,True
+1998,Christopher Boyes,SOUND EFFECTS EDITING,True
+1998,Robert Legato,VISUAL EFFECTS,True
+1998,Mark Lasoff,VISUAL EFFECTS,True
+1998,Thomas L. Fisher,VISUAL EFFECTS,True
+1998,Michael Kanfer,VISUAL EFFECTS,True
+1998,Brian Helgeland,WRITING (Screenplay Based on Material Previously Produced or Published),True
+1998,Curtis Hanson,WRITING (Screenplay Based on Material Previously Produced or Published),True
+1998,Ben Affleck,WRITING (Screenplay Written Directly for the Screen),True
+1998,Matt Damon,WRITING (Screenplay Written Directly for the Screen),True
+1998,Stanley Donen in appreciation of a body of work marked by grace,HONORARY AWARD,True
+1999,Roberto Benigni,ACTOR IN A LEADING ROLE,True
+1999,James Coburn,ACTOR IN A SUPPORTING ROLE,True
+1999,Gwyneth Paltrow,ACTRESS IN A LEADING ROLE,True
+1999,Judi Dench,ACTRESS IN A SUPPORTING ROLE,True
+1999,Art Direction:  Martin Childs,ART DIRECTION,True
+1999,Set Decoration:  Jill Quertier,ART DIRECTION,True
+1999,Janusz Kaminski,CINEMATOGRAPHY,True
+1999,Sandy Powell,COSTUME DESIGN,True
+1999,Steven Spielberg,DIRECTING,True
+1999,James Moll,DOCUMENTARY (Feature),True
+1999,Ken Lipper,DOCUMENTARY (Feature),True
+1999,Keiko Ibi,DOCUMENTARY (Short Subject),True
+1999,Michael Kahn,FILM EDITING,True
+1999,Italy,FOREIGN LANGUAGE FILM,True
+1999,Jenny Shircore,MAKEUP,True
+1999,Nicola Piovani,MUSIC (Original Dramatic Score),True
+1999,Stephen Warbeck,MUSIC (Original Musical or Comedy Score),True
+1999,Music and Lyric by Stephen Schwartz,MUSIC (Original Song),True
+1999,David Parfitt,BEST PICTURE,True
+1999,Donna Gigliotti,BEST PICTURE,True
+1999,Harvey Weinstein,BEST PICTURE,True
+1999,Edward Zwick and Marc Norman,BEST PICTURE,True
+1999,Chris Wedge,SHORT FILM (Animated),True
+1999,Kim Magnusson,SHORT FILM (Live Action),True
+1999,Anders Thomas Jensen,SHORT FILM (Live Action),True
+1999,Gary Rydstrom,SOUND,True
+1999,Gary Summers,SOUND,True
+1999,Andy Nelson,SOUND,True
+1999,Ronald Judkins,SOUND,True
+1999,Gary Rydstrom,SOUND EFFECTS EDITING,True
+1999,Richard Hymns,SOUND EFFECTS EDITING,True
+1999,Joel Hynek,VISUAL EFFECTS,True
+1999,Nicholas Brooks,VISUAL EFFECTS,True
+1999,Stuart Robertson,VISUAL EFFECTS,True
+1999,Kevin Mack,VISUAL EFFECTS,True
+1999,Bill Condon,WRITING (Screenplay Based on Material Previously Produced or Published),True
+1999,Marc Norman,WRITING (Screenplay Written Directly for the Screen),True
+1999,Tom Stoppard,WRITING (Screenplay Written Directly for the Screen),True
+1999,Elia Kazan in recognition of his indelible contributions to the art of motion picture direction.,HONORARY AWARD,True
+1999,Norman Jewison,IRVING G. THALBERG MEMORIAL AWARD,True
+2000,Kevin Spacey,ACTOR IN A LEADING ROLE,True
+2000,Michael Caine,ACTOR IN A SUPPORTING ROLE,True
+2000,Hilary Swank,ACTRESS IN A LEADING ROLE,True
+2000,Angelina Jolie,ACTRESS IN A SUPPORTING ROLE,True
+2000,Art Direction:  Rick Heinrichs,ART DIRECTION,True
+2000,Set Decoration:  Peter Young,ART DIRECTION,True
+2000,Conrad L. Hall,CINEMATOGRAPHY,True
+2000,Lindy Hemming,COSTUME DESIGN,True
+2000,Sam Mendes,DIRECTING,True
+2000,Arthur Cohn,DOCUMENTARY (Feature),True
+2000,Kevin Macdonald,DOCUMENTARY (Feature),True
+2000,Susan Hannah Hadary,DOCUMENTARY (Short Subject),True
+2000,William A. Whiteford,DOCUMENTARY (Short Subject),True
+2000,Zach Staenberg,FILM EDITING,True
+2000,Spain,FOREIGN LANGUAGE FILM,True
+2000,Christine Blundell,MAKEUP,True
+2000,Trefor Proud,MAKEUP,True
+2000,John Corigliano,MUSIC (Original Score),True
+2000,Music and Lyric by Phil Collins,MUSIC (Original Song),True
+2000,Bruce Cohen and Dan Jinks,BEST PICTURE,True
+2000,Producers,BEST PICTURE,True
+2000,Alexander Petrov,SHORT FILM (Animated),True
+2000,Barbara Schock,SHORT FILM (Live Action),True
+2000,Tammy Tiehel,SHORT FILM (Live Action),True
+2000,John Reitz,SOUND,True
+2000,Gregg Rudloff,SOUND,True
+2000,David Campbell,SOUND,True
+2000,David Lee,SOUND,True
+2000,Dane A. Davis,SOUND EFFECTS EDITING,True
+2000,John Gaeta,VISUAL EFFECTS,True
+2000,Janek Sirrs,VISUAL EFFECTS,True
+2000,Steve Courtley,VISUAL EFFECTS,True
+2000,Jon Thum,VISUAL EFFECTS,True
+2000,John Irving,WRITING (Screenplay Based on Material Previously Produced or Published),True
+2000,Alan Ball,WRITING (Screenplay Written Directly for the Screen),True
+2000,Andrzej Wajda in recognition of five decades of extraordinary film direction.,HONORARY AWARD,True
+2000,Warren Beatty,IRVING G. THALBERG MEMORIAL AWARD,True
+2001,Russell Crowe,ACTOR IN A LEADING ROLE,True
+2001,Benicio Del Toro,ACTOR IN A SUPPORTING ROLE,True
+2001,Julia Roberts,ACTRESS IN A LEADING ROLE,True
+2001,Marcia Gay Harden,ACTRESS IN A SUPPORTING ROLE,True
+2001,Tim Yip,ART DIRECTION,True
+2001,Peter Pau,CINEMATOGRAPHY,True
+2001,Janty Yates,COSTUME DESIGN,True
+2001,Mark Jonathan Harris,DOCUMENTARY (Feature),True
+2001,Deborah Oppenheimer,DOCUMENTARY (Feature),True
+2001,Tracy Seretean,DOCUMENTARY (Short Subject),True
+2001,Stephen Mirrione,FILM EDITING,True
+2001,Taiwan,FOREIGN LANGUAGE FILM,True
+2001,Rick Baker,MAKEUP,True
+2001,Gail Ryan,MAKEUP,True
+2001,Tan Dun,MUSIC (Original Score),True
+2001,Music and Lyric by Bob Dylan,MUSIC (Original Song),True
+2001,Douglas Wick,BEST PICTURE,True
+2001,David Franzoni and Branko Lustig,BEST PICTURE,True
+2001,Michael Dudok de Wit,SHORT FILM (Animated),True
+2001,Florian Gallenberger,SHORT FILM (Live Action),True
+2001,Scott Millan,SOUND,True
+2001,Bob Beemer,SOUND,True
+2001,Ken Weston,SOUND,True
+2001,Jon Johnson,SOUND EDITING,True
+2001,John Nelson,VISUAL EFFECTS,True
+2001,Neil Corbould,VISUAL EFFECTS,True
+2001,Tim Burke,VISUAL EFFECTS,True
+2001,Rob Harvey,VISUAL EFFECTS,True
+2001,Screenplay by Stephen Gaghan,WRITING (Screenplay Based on Material Previously Produced or Published),True
+2001,Written by Cameron Crowe,WRITING (Screenplay Written Directly for the Screen),True
+2001,Jack Cardiff,HONORARY AWARD,True
+2001,Ernest Lehman,HONORARY AWARD,True
+2001,Dino De Laurentiis,IRVING G. THALBERG MEMORIAL AWARD,True
+2002,Denzel Washington,ACTOR IN A LEADING ROLE,True
+2002,Jim Broadbent,ACTOR IN A SUPPORTING ROLE,True
+2002,Halle Berry,ACTRESS IN A LEADING ROLE,True
+2002,Jennifer Connelly,ACTRESS IN A SUPPORTING ROLE,True
+2002,Aron Warner,ANIMATED FEATURE FILM,True
+2002,Art Direction:  Catherine Martin,ART DIRECTION,True
+2002,Set Decoration:  Brigitte Broch,ART DIRECTION,True
+2002,Andrew Lesnie,CINEMATOGRAPHY,True
+2002,Catherine Martin,COSTUME DESIGN,True
+2002,Angus Strathie,COSTUME DESIGN,True
+2002,Ron Howard,DIRECTING,True
+2002,Jean-Xavier de Lestrade,DOCUMENTARY (Feature),True
+2002,Denis Poncet,DOCUMENTARY (Feature),True
+2002,Sarah Kernochan,DOCUMENTARY (Short Subject),True
+2002,Lynn Appelle,DOCUMENTARY (Short Subject),True
+2002,Pietro Scalia,FILM EDITING,True
+2002,Bosnia & Herzegovina,FOREIGN LANGUAGE FILM,True
+2002,Peter Owen,MAKEUP,True
+2002,Richard Taylor,MAKEUP,True
+2002,Howard Shore,MUSIC (Original Score),True
+2002,Music and Lyric by Randy Newman,MUSIC (Original Song),True
+2002,Brian Grazer and Ron Howard,BEST PICTURE,True
+2002,Producers,BEST PICTURE,True
+2002,Ralph Eggleston,SHORT FILM (Animated),True
+2002,Ray McKinnon,SHORT FILM (Live Action),True
+2002,Lisa Blount,SHORT FILM (Live Action),True
+2002,Michael Minkler,SOUND,True
+2002,Myron Nettinga,SOUND,True
+2002,Chris Munro,SOUND,True
+2002,George Watters II,SOUND EDITING,True
+2002,Christopher Boyes,SOUND EDITING,True
+2002,Jim Rygiel,VISUAL EFFECTS,True
+2002,Randall William Cook,VISUAL EFFECTS,True
+2002,Richard Taylor,VISUAL EFFECTS,True
+2002,Mark Stetson,VISUAL EFFECTS,True
+2002,Written by Akiva Goldsman,WRITING (Screenplay Based on Material Previously Produced or Published),True
+2002,Written by Julian Fellowes,WRITING (Screenplay Written Directly for the Screen),True
+2002,Arthur Hiller,JEAN HERSHOLT HUMANITARIAN AWARD,True
+2002,Sidney Poitier in recognition of his remarkable accomplishments as an artist and as a human being.,HONORARY AWARD,True
+2002,Robert Redford:  Actor,HONORARY AWARD,True
+2003,Adrien Brody,ACTOR IN A LEADING ROLE,True
+2003,Chris Cooper,ACTOR IN A SUPPORTING ROLE,True
+2003,Nicole Kidman,ACTRESS IN A LEADING ROLE,True
+2003,Catherine Zeta-Jones,ACTRESS IN A SUPPORTING ROLE,True
+2003,Hayao Miyazaki,ANIMATED FEATURE FILM,True
+2003,Art Direction:  John Myhre,ART DIRECTION,True
+2003,Set Decoration:  Gordon Sim,ART DIRECTION,True
+2003,Conrad L. Hall,CINEMATOGRAPHY,True
+2003,Colleen Atwood,COSTUME DESIGN,True
+2003,Roman Polanski,DIRECTING,True
+2003,Michael Moore,DOCUMENTARY (Feature),True
+2003,Michael Donovan,DOCUMENTARY (Feature),True
+2003,Bill Guttentag,DOCUMENTARY (Short Subject),True
+2003,Robert David Port,DOCUMENTARY (Short Subject),True
+2003,Martin Walsh,FILM EDITING,True
+2003,Germany,FOREIGN LANGUAGE FILM,True
+2003,John Jackson,MAKEUP,True
+2003,Beatrice De Alba,MAKEUP,True
+2003,Elliot Goldenthal,MUSIC (Original Score),True
+2003,Music by Eminem,MUSIC (Original Song),True
+2003,Jeff Bass and Luis Resto,MUSIC (Original Song),True
+2003,Lyric by Eminem,MUSIC (Original Song),True
+2003,Martin Richards,BEST PICTURE,True
+2003,Producer,BEST PICTURE,True
+2003,Eric Armstrong,SHORT FILM (Animated),True
+2003,Martin Strange-Hansen,SHORT FILM (Live Action),True
+2003,Mie Andreasen,SHORT FILM (Live Action),True
+2003,Michael Minkler,SOUND,True
+2003,Dominick Tavella,SOUND,True
+2003,David Lee,SOUND,True
+2003,Ethan Van der Ryn,SOUND EDITING,True
+2003,Michael Hopkins,SOUND EDITING,True
+2003,Jim Rygiel,VISUAL EFFECTS,True
+2003,Joe Letteri,VISUAL EFFECTS,True
+2003,Randall William Cook,VISUAL EFFECTS,True
+2003,Alex Funke,VISUAL EFFECTS,True
+2003,Screenplay by Ronald Harwood,WRITING (Adapted Screenplay),True
+2003,Written by Pedro Almodóvar,WRITING (Original Screenplay),True
+2003,Peter O'ole,HONORARY AWARD,True
+2004,Sean Penn,ACTOR IN A LEADING ROLE,True
+2004,Tim Robbins,ACTOR IN A SUPPORTING ROLE,True
+2004,Charlize Theron,ACTRESS IN A LEADING ROLE,True
+2004,Renée Zellweger,ACTRESS IN A SUPPORTING ROLE,True
+2004,Andrew Stanton,ANIMATED FEATURE FILM,True
+2004,Art Direction: Grant Major,ART DIRECTION,True
+2004,Set Decoration: Dan Hennah and Alan Lee,ART DIRECTION,True
+2004,Russell Boyd,CINEMATOGRAPHY,True
+2004,Ngila Dickson and Richard Taylor,COSTUME DESIGN,True
+2004,Peter Jackson,DIRECTING,True
+2004,Errol Morris and Michael Williams,DOCUMENTARY (Feature),True
+2004,Maryann DeLeo,DOCUMENTARY (Short Subject),True
+2004,Jamie Selkirk,FILM EDITING,True
+2004,Canada,FOREIGN LANGUAGE FILM,True
+2004,Richard Taylor and Peter King,MAKEUP,True
+2004,Howard Shore,MUSIC (Original Score),True
+2004,Music and Lyric by Fran Walsh and Howard Shore and Annie Lennox,MUSIC (Original Song),True
+2004,Barrie M. Osborne,BEST PICTURE,True
+2004,Peter Jackson and Fran Walsh,BEST PICTURE,True
+2004,Producers,BEST PICTURE,True
+2004,Adam Elliot,SHORT FILM (Animated),True
+2004,Aaron Schneider and Andrew J. Sacks,SHORT FILM (Live Action),True
+2004,Richard King,SOUND EDITING,True
+2004,Christopher Boyes,SOUND MIXING,True
+2004,Michael Semanick,SOUND MIXING,True
+2004,Michael Hedges and Hammond Peek,SOUND MIXING,True
+2004,Jim Rygiel,VISUAL EFFECTS,True
+2004,Joe Letteri,VISUAL EFFECTS,True
+2004,Randall William Cook and Alex Funke,VISUAL EFFECTS,True
+2004,Screenplay by Fran Walsh,WRITING (Adapted Screenplay),True
+2004,Philippa Boyens & Peter Jackson,WRITING (Adapted Screenplay),True
+2004,Written by Sofia Coppola,WRITING (Original Screenplay),True
+2004,Blake Edwards in recognition of his writing,HONORARY AWARD,True
+2005,Jamie Foxx,ACTOR IN A LEADING ROLE,True
+2005,Morgan Freeman,ACTOR IN A SUPPORTING ROLE,True
+2005,Hilary Swank,ACTRESS IN A LEADING ROLE,True
+2005,Cate Blanchett,ACTRESS IN A SUPPORTING ROLE,True
+2005,Brad Bird,ANIMATED FEATURE FILM,True
+2005,Art Direction: Dante Ferretti,ART DIRECTION,True
+2005,Set Decoration: Francesca Lo Schiavo,ART DIRECTION,True
+2005,Robert Richardson,CINEMATOGRAPHY,True
+2005,Sandy Powell,COSTUME DESIGN,True
+2005,Clint Eastwood,DIRECTING,True
+2005,Ross Kauffman and Zana Briski,DOCUMENTARY (Feature),True
+2005,Robert Hudson and Bobby Houston,DOCUMENTARY (Short Subject),True
+2005,Thelma Schoonmaker,FILM EDITING,True
+2005,Spain,FOREIGN LANGUAGE FILM,True
+2005,Valli O'Reilly and Bill Corso,MAKEUP,True
+2005,Jan A.P. Kaczmarek,MUSIC (Original Score),True
+2005,Music and Lyric by Jorge Drexler,MUSIC (Original Song),True
+2005,Clint Eastwood,BEST PICTURE,True
+2005,Albert S. Ruddy and Tom Rosenberg,BEST PICTURE,True
+2005,Chris Landreth,SHORT FILM (Animated),True
+2005,Andrea Arnold,SHORT FILM (Live Action),True
+2005,Michael Silvers and Randy Thom,SOUND EDITING,True
+2005,Scott Millan,SOUND MIXING,True
+2005,Greg Orloff,SOUND MIXING,True
+2005,Bob Beemer and Steve Cantamessa,SOUND MIXING,True
+2005,John Dykstra,VISUAL EFFECTS,True
+2005,Scott Stokdyk,VISUAL EFFECTS,True
+2005,Anthony LaMolinara and John Frazier,VISUAL EFFECTS,True
+2005,Screenplay by Alexander Payne & Jim Taylor,WRITING (Adapted Screenplay),True
+2005,Screenplay by Charlie Kaufman,WRITING (Original Screenplay),True
+2005,Story by Charlie Kaufman & Michel Gondry & Pierre Bismuth,WRITING (Original Screenplay),True
+2005,Roger Mayer,JEAN HERSHOLT HUMANITARIAN AWARD,True
+2005,Sidney Lumet in recognition of his brilliant services to screenwriters,HONORARY AWARD,True
+2006,Philip Seymour Hoffman,ACTOR IN A LEADING ROLE,True
+2006,George Clooney,ACTOR IN A SUPPORTING ROLE,True
+2006,Reese Witherspoon,ACTRESS IN A LEADING ROLE,True
+2006,Rachel Weisz,ACTRESS IN A SUPPORTING ROLE,True
+2006,Nick Park and Steve Box,ANIMATED FEATURE FILM,True
+2006,Art Direction:  John Myhre,ART DIRECTION,True
+2006,Set Decoration:  Gretchen Rau,ART DIRECTION,True
+2006,Dion Beebe,CINEMATOGRAPHY,True
+2006,Colleen Atwood,COSTUME DESIGN,True
+2006,Ang Lee,DIRECTING,True
+2006,Luc Jacquet and Yves Darondeau,DOCUMENTARY (Feature),True
+2006,Corinne Marrinan and Eric Simonson,DOCUMENTARY (Short Subject),True
+2006,Hughes Winborne,FILM EDITING,True
+2006,South Africa,FOREIGN LANGUAGE FILM,True
+2006,Howard Berger and Tami Lane,MAKEUP,True
+2006,Gustavo Santaolalla,MUSIC (Original Score),True
+2006,Music and Lyric by Jordan Houston,MUSIC (Original Song),True
+2006,Cedric Coleman and Paul Beauregard,MUSIC (Original Song),True
+2006,Paul Haggis and Cathy Schulman,BEST PICTURE,True
+2006,John Canemaker and Peggy Stern,SHORT FILM (Animated),True
+2006,Martin McDonagh,SHORT FILM (Live Action),True
+2006,Mike Hopkins and Ethan Van der Ryn,SOUND EDITING,True
+2006,Christopher Boyes,SOUND MIXING,True
+2006,Michael Semanick,SOUND MIXING,True
+2006,Michael Hedges and Hammond Peek,SOUND MIXING,True
+2006,Joe Letteri,VISUAL EFFECTS,True
+2006,Brian Van't Hul,VISUAL EFFECTS,True
+2006,Christian Rivers and Richard Taylor,VISUAL EFFECTS,True
+2006,Screenplay by Larry McMurtry & Diana Ossana,WRITING (Adapted Screenplay),True
+2006,Screenplay by Paul Haggis & Bobby Moresco,WRITING (Original Screenplay),True
+2006,Story by Paul Haggis,WRITING (Original Screenplay),True
+2006,Robert Altman in recognition of a career that has repeatedly reinvented the art form and inspired filmmakers and audiences alike.,HONORARY AWARD,True
+2007,Forest Whitaker,ACTOR IN A LEADING ROLE,True
+2007,Alan Arkin,ACTOR IN A SUPPORTING ROLE,True
+2007,Helen Mirren,ACTRESS IN A LEADING ROLE,True
+2007,Jennifer Hudson,ACTRESS IN A SUPPORTING ROLE,True
+2007,George Miller,ANIMATED FEATURE FILM,True
+2007,Art Direction:  Eugenio Caballero,ART DIRECTION,True
+2007,Set Decoration:  Pilar Revuelta,ART DIRECTION,True
+2007,Guillermo Navarro,CINEMATOGRAPHY,True
+2007,Milena Canonero,COSTUME DESIGN,True
+2007,Martin Scorsese,DIRECTING,True
+2007,Davis Guggenheim,DOCUMENTARY (Feature),True
+2007,Ruby Yang and Thomas Lennon,DOCUMENTARY (Short Subject),True
+2007,Thelma Schoonmaker,FILM EDITING,True
+2007,Germany,FOREIGN LANGUAGE FILM,True
+2007,David Martí and Montse Ribé,MAKEUP,True
+2007,Gustavo Santaolalla,MUSIC (Original Score),True
+2007,Music and Lyric by Melissa Etheridge,MUSIC (Original Song),True
+2007,Graham King,BEST PICTURE,True
+2007,Producer,BEST PICTURE,True
+2007,Torill Kove,SHORT FILM (Animated),True
+2007,Ari Sandel,SHORT FILM (Live Action),True
+2007,Michael Minkler,SOUND MIXING,True
+2007,Bob Beemer and Willie Burton,SOUND MIXING,True
+2007,John Knoll,VISUAL EFFECTS,True
+2007,Hal Hickel,VISUAL EFFECTS,True
+2007,Charles Gibson and Allen Hall,VISUAL EFFECTS,True
+2007,Screenplay by William Monahan,WRITING (Adapted Screenplay),True
+2007,Written by Michael Arndt,WRITING (Original Screenplay),True
+2007,Sherry Lansing,JEAN HERSHOLT HUMANITARIAN AWARD,True
+2007,Ennio Morricone in recognition of his magnificent and multifaceted contributions to the art of film music.,HONORARY AWARD,True
+2008,Daniel Day-Lewis,ACTOR IN A LEADING ROLE,True
+2008,Javier Bardem,ACTOR IN A SUPPORTING ROLE,True
+2008,Marion Cotillard,ACTRESS IN A LEADING ROLE,True
+2008,Tilda Swinton,ACTRESS IN A SUPPORTING ROLE,True
+2008,Brad Bird,ANIMATED FEATURE FILM,True
+2008,Art Direction: Dante Ferretti,ART DIRECTION,True
+2008,Set Decoration: Francesca Lo Schiavo,ART DIRECTION,True
+2008,Robert Elswit,CINEMATOGRAPHY,True
+2008,Alexandra Byrne,COSTUME DESIGN,True
+2008,Joel Coen and Ethan Coen,DIRECTING,True
+2008,Alex Gibney and Eva Orner,DOCUMENTARY (Feature),True
+2008,Cynthia Wade and Vanessa Roth,DOCUMENTARY (Short Subject),True
+2008,Christopher Rouse,FILM EDITING,True
+2008,Austria,FOREIGN LANGUAGE FILM,True
+2008,Didier Lavergne and Jan Archibald,MAKEUP,True
+2008,Dario Marianelli,MUSIC (Original Score),True
+2008,Music and Lyric by Glen Hansard and Marketa Irglova,MUSIC (Original Song),True
+2008,Scott Rudin,BEST PICTURE,True
+2008,Ethan Coen and Joel Coen,BEST PICTURE,True
+2008,Suzie Templeton and Hugh Welchman,SHORT FILM (Animated),True
+2008,Philippe Pollet-Villard,SHORT FILM (Live Action),True
+2008,Karen Baker Landers and Per Hallberg,SOUND EDITING,True
+2008,Scott Millan,SOUND MIXING,True
+2008,David Parker and Kirk Francis,SOUND MIXING,True
+2008,Michael Fink,VISUAL EFFECTS,True
+2008,Bill Westenhofer,VISUAL EFFECTS,True
+2008,Ben Morris and Trevor Wood,VISUAL EFFECTS,True
+2008,Written for the screen by Joel Coen & Ethan Coen,WRITING (Adapted Screenplay),True
+2008,Written by Diablo Cody,WRITING (Original Screenplay),True
+2008,Robert Boyle in recognition of one of cinema's great careers in art direction.,HONORARY AWARD,True
+2009,Sean Penn,ACTOR IN A LEADING ROLE,True
+2009,Heath Ledger,ACTOR IN A SUPPORTING ROLE,True
+2009,Kate Winslet,ACTRESS IN A LEADING ROLE,True
+2009,Penélope Cruz,ACTRESS IN A SUPPORTING ROLE,True
+2009,Andrew Stanton,ANIMATED FEATURE FILM,True
+2009,Art Direction: Donald Graham Burt,ART DIRECTION,True
+2009,Set Decoration: Victor J. Zolfo,ART DIRECTION,True
+2009,Anthony Dod Mantle,CINEMATOGRAPHY,True
+2009,Michael O'Connor,COSTUME DESIGN,True
+2009,Danny Boyle,DIRECTING,True
+2009,James Marsh and Simon Chinn,DOCUMENTARY (Feature),True
+2009,Megan Mylan,DOCUMENTARY (Short Subject),True
+2009,Chris Dickens,FILM EDITING,True
+2009,Japan,FOREIGN LANGUAGE FILM,True
+2009,Greg Cannom,MAKEUP,True
+2009,A.R. Rahman,MUSIC (Original Score),True
+2009,Music by A.R. Rahman,MUSIC (Original Song),True
+2009,Lyric by Gulzar,MUSIC (Original Song),True
+2009,Christian Colson,BEST PICTURE,True
+2009,Producer,BEST PICTURE,True
+2009,Kunio Kato,SHORT FILM (Animated),True
+2009,Jochen Alexander Freydank,SHORT FILM (Live Action),True
+2009,Richard King,SOUND EDITING,True
+2009,Ian Tapp,SOUND MIXING,True
+2009,Richard Pryke and Resul Pookutty,SOUND MIXING,True
+2009,Eric Barba,VISUAL EFFECTS,True
+2009,Steve Preeg,VISUAL EFFECTS,True
+2009,Burt Dalton and Craig Barron,VISUAL EFFECTS,True
+2009,Screenplay by Simon Beaufoy,WRITING (Adapted Screenplay),True
+2009,Written by Dustin Lance Black,WRITING (Original Screenplay),True
+2009,Jerry Lewis,JEAN HERSHOLT HUMANITARIAN AWARD,True
+2010,Jeff Bridges,ACTOR IN A LEADING ROLE,True
+2010,Christoph Waltz,ACTOR IN A SUPPORTING ROLE,True
+2010,Sandra Bullock,ACTRESS IN A LEADING ROLE,True
+2010,Mo'Nique,ACTRESS IN A SUPPORTING ROLE,True
+2010,Pete Docter,ANIMATED FEATURE FILM,True
+2010,Production Design: Rick Carter and Robert Stromberg,ART DIRECTION,True
+2010,Set Decoration: Kim Sinclair,ART DIRECTION,True
+2010,Mauro Fiore,CINEMATOGRAPHY,True
+2010,Sandy Powell,COSTUME DESIGN,True
+2010,Kathryn Bigelow,DIRECTING,True
+2010,Louie Psihoyos and Fisher Stevens,DOCUMENTARY (Feature),True
+2010,Roger Ross Williams and Elinor Burkett,DOCUMENTARY (Short Subject),True
+2010,Bob Murawski and Chris Innis,FILM EDITING,True
+2010,Argentina,FOREIGN LANGUAGE FILM,True
+2010,Barney Burman,MAKEUP,True
+2010,Mindy Hall and Joel Harlow,MAKEUP,True
+2010,Michael Giacchino,MUSIC (Original Score),True
+2010,Music and Lyric by Ryan Bingham and T Bone Burnett,MUSIC (Original Song),True
+2010,Kathryn Bigelow,BEST PICTURE,True
+2010,Mark Boal,BEST PICTURE,True
+2010,Nicolas Chartier and Greg Shapiro,BEST PICTURE,True
+2010,Nicolas Schmerkin,SHORT FILM (Animated),True
+2010,Joachim Back and Tivi Magnusson,SHORT FILM (Live Action),True
+2010,Paul N.J. Ottosson,SOUND EDITING,True
+2010,Paul N.J. Ottosson and Ray Beckett,SOUND MIXING,True
+2010,Joe Letteri,VISUAL EFFECTS,True
+2010,Stephen Rosenbaum,VISUAL EFFECTS,True
+2010,Richard Baneham and Andrew R. Jones,VISUAL EFFECTS,True
+2010,Screenplay by Geoffrey Fletcher,WRITING (Adapted Screenplay),True
+2010,Written by Mark Boal,WRITING (Original Screenplay),True
+2010,Lauren Bacall in recognition of her central place in the golden age of motion pictures.,HONORARY AWARD,True
+2010,Roger Corman for his rich engendering of films and filmmakers.,HONORARY AWARD,True
+2010,Gordon Willis for unsurpassed mastery of light,HONORARY AWARD,True
+2010,John Calley,IRVING G. THALBERG MEMORIAL AWARD,True
+2011,Colin Firth,ACTOR IN A LEADING ROLE,True
+2011,Christian Bale,ACTOR IN A SUPPORTING ROLE,True
+2011,Natalie Portman,ACTRESS IN A LEADING ROLE,True
+2011,Melissa Leo,ACTRESS IN A SUPPORTING ROLE,True
+2011,Lee Unkrich,ANIMATED FEATURE FILM,True
+2011,Production Design: Robert Stromberg,ART DIRECTION,True
+2011,Set Decoration: Karen O'Hara,ART DIRECTION,True
+2011,Wally Pfister,CINEMATOGRAPHY,True
+2011,Colleen Atwood,COSTUME DESIGN,True
+2011,Tom Hooper,DIRECTING,True
+2011,Charles Ferguson and Audrey Marrs,DOCUMENTARY (Feature),True
+2011,Karen Goodman and Kirk Simon,DOCUMENTARY (Short Subject),True
+2011,Angus Wall and Kirk Baxter,FILM EDITING,True
+2011,Denmark,FOREIGN LANGUAGE FILM,True
+2011,Rick Baker and Dave Elsey,MAKEUP,True
+2011,Trent Reznor and Atticus Ross,MUSIC (Original Score),True
+2011,Music and Lyric by Randy Newman,MUSIC (Original Song),True
+2011,Iain Canning,BEST PICTURE,True
+2011,Emile Sherman and Gareth Unwin,BEST PICTURE,True
+2011,Shaun Tan and Andrew Ruhemann,SHORT FILM (Animated),True
+2011,Luke Matheny,SHORT FILM (Live Action),True
+2011,Richard King,SOUND EDITING,True
+2011,Lora Hirschberg,SOUND MIXING,True
+2011,Gary A. Rizzo and Ed Novick,SOUND MIXING,True
+2011,Paul Franklin,VISUAL EFFECTS,True
+2011,Chris Corbould,VISUAL EFFECTS,True
+2011,Andrew Lockley and Peter Bebb,VISUAL EFFECTS,True
+2011,Screenplay by Aaron Sorkin,WRITING (Adapted Screenplay),True
+2011,Screenplay by David Seidler,WRITING (Original Screenplay),True
+2011,Kevin Brownlow for the wise and devoted chronicling of the cinematic parade.,HONORARY AWARD,True
+2011,Jean-Luc Godard for passion. For confrontation. For a new kind of cinema.,HONORARY AWARD,True
+2011,Eli Wallach for a lifetime's worth of indelible screen characters.,HONORARY AWARD,True
+2011,Francis Ford Coppola,IRVING G. THALBERG MEMORIAL AWARD,True
+2012,Jean Dujardin,ACTOR IN A LEADING ROLE,True
+2012,Christopher Plummer,ACTOR IN A SUPPORTING ROLE,True
+2012,Meryl Streep,ACTRESS IN A LEADING ROLE,True
+2012,Octavia Spencer,ACTRESS IN A SUPPORTING ROLE,True
+2012,Gore Verbinski,ANIMATED FEATURE FILM,True
+2012,Production Design: Dante Ferretti,ART DIRECTION,True
+2012,Set Decoration: Francesca Lo Schiavo,ART DIRECTION,True
+2012,Robert Richardson,CINEMATOGRAPHY,True
+2012,Mark Bridges,COSTUME DESIGN,True
+2012,Michel Hazanavicius,DIRECTING,True
+2012,TJ Martin,DOCUMENTARY (Feature),True
+2012,Dan Lindsay and Rich Middlemas,DOCUMENTARY (Feature),True
+2012,Daniel Junge and Sharmeen Obaid-Chinoy,DOCUMENTARY (Short Subject),True
+2012,Kirk Baxter and Angus Wall,FILM EDITING,True
+2012,Iran,FOREIGN LANGUAGE FILM,True
+2012,Mark Coulier and J. Roy Helland,MAKEUP,True
+2012,Ludovic Bource,MUSIC (Original Score),True
+2012,Music and Lyric by Bret McKenzie,MUSIC (Original Song),True
+2012,Thomas Langmann,BEST PICTURE,True
+2012,Producer,BEST PICTURE,True
+2012,William Joyce and Brandon Oldenburg,SHORT FILM (Animated),True
+2012,Terry George and Oorlagh George,SHORT FILM (Live Action),True
+2012,Philip Stockton and Eugene Gearty,SOUND EDITING,True
+2012,Tom Fleischman and John Midgley,SOUND MIXING,True
+2012,Rob Legato,VISUAL EFFECTS,True
+2012,Joss Williams,VISUAL EFFECTS,True
+2012,Ben Grossmann and Alex Henning,VISUAL EFFECTS,True
+2012,Screenplay by Alexander Payne and Nat Faxon & Jim Rash,WRITING (Adapted Screenplay),True
+2012,Written by Woody Allen,WRITING (Original Screenplay),True
+2012,Oprah Winfrey,JEAN HERSHOLT HUMANITARIAN AWARD,True
+2012,James Earl Jones for his legacy of consistent excellence and uncommon versatility.,HONORARY AWARD,True
+2012,Dick Smith for his unparalleled mastery of texture,HONORARY AWARD,True
+2013,Daniel Day-Lewis,ACTOR IN A LEADING ROLE,True
+2013,Christoph Waltz,ACTOR IN A SUPPORTING ROLE,True
+2013,Jennifer Lawrence,ACTRESS IN A LEADING ROLE,True
+2013,Anne Hathaway,ACTRESS IN A SUPPORTING ROLE,True
+2013,Mark Andrews and Brenda Chapman,ANIMATED FEATURE FILM,True
+2013,Claudio Miranda,CINEMATOGRAPHY,True
+2013,Jacqueline Durran,COSTUME DESIGN,True
+2013,Ang Lee,DIRECTING,True
+2013,Malik Bendjelloul and Simon Chinn,DOCUMENTARY (Feature),True
+2013,Sean Fine and Andrea Nix Fine,DOCUMENTARY (Short Subject),True
+2013,William Goldenberg,FILM EDITING,True
+2013,Austria,FOREIGN LANGUAGE FILM,True
+2013,Lisa Westcott and Julie Dartnell,MAKEUP AND HAIRSTYLING,True
+2013,Mychael Danna,MUSIC (Original Score),True
+2013,Music and Lyric by Adele Adkins and Paul Epworth,MUSIC (Original Song),True
+2013,Grant Heslov,BEST PICTURE,True
+2013,Ben Affleck and George Clooney,BEST PICTURE,True
+2013,Production Design: Rick Carter,PRODUCTION DESIGN,True
+2013,Set Decoration: Jim Erickson,PRODUCTION DESIGN,True
+2013,John Kahrs,SHORT FILM (Animated),True
+2013,Shawn Christensen,SHORT FILM (Live Action),True
+2013,Per Hallberg and Karen Baker Landers,SOUND EDITING,True
+2013,Paul N.J. Ottosson,SOUND EDITING,True
+2013,Andy Nelson,SOUND MIXING,True
+2013,Mark Paterson and Simon Hayes,SOUND MIXING,True
+2013,Bill Westenhofer,VISUAL EFFECTS,True
+2013,Guillaume Rocheron,VISUAL EFFECTS,True
+2013,Erik-Jan De Boer and Donald R. Elliott,VISUAL EFFECTS,True
+2013,Screenplay by Chris Terrio,WRITING (Adapted Screenplay),True
+2013,Written by Quentin Tarantino,WRITING (Original Screenplay),True
+2013,Jeffrey Katzenberg,JEAN HERSHOLT HUMANITARIAN AWARD,True
+2013,Hal Needham,HONORARY AWARD,True
+2013,D.A. Pennebaker,HONORARY AWARD,True
+2013,George Stevens,HONORARY AWARD,True
+2014,Matthew McConaughey,ACTOR IN A LEADING ROLE,True
+2014,Jared Leto,ACTOR IN A SUPPORTING ROLE,True
+2014,Cate Blanchett,ACTRESS IN A LEADING ROLE,True
+2014,Lupita Nyong'o,ACTRESS IN A SUPPORTING ROLE,True
+2014,Chris Buck,ANIMATED FEATURE FILM,True
+2014,Jennifer Lee and Peter Del Vecho,ANIMATED FEATURE FILM,True
+2014,Emmanuel Lubezki,CINEMATOGRAPHY,True
+2014,Catherine Martin,COSTUME DESIGN,True
+2014,Alfonso Cuarón,DIRECTING,True
+2014,Morgan Neville,DOCUMENTARY (Feature),True
+2014,Gil Friesen and Caitrin Rogers,DOCUMENTARY (Feature),True
+2014,Malcolm Clarke and Nicholas Reed,DOCUMENTARY (Short Subject),True
+2014,Alfonso Cuarón and Mark Sanger,FILM EDITING,True
+2014,Italy,FOREIGN LANGUAGE FILM,True
+2014,Adruitha Lee and Robin Mathews,MAKEUP AND HAIRSTYLING,True
+2014,Steven Price,MUSIC (Original Score),True
+2014,Music and Lyric by Kristen Anderson-Lopez and Robert Lopez,MUSIC (Original Song),True
+2014,Brad Pitt,BEST PICTURE,True
+2014,Dede Gardner,BEST PICTURE,True
+2014,Jeremy Kleiner,BEST PICTURE,True
+2014,Steve McQueen and Anthony Katagas,BEST PICTURE,True
+2014,Production Design: Catherine Martin,PRODUCTION DESIGN,True
+2014,Set Decoration: Beverley Dunn,PRODUCTION DESIGN,True
+2014,Laurent Witz and Alexandre Espigares,SHORT FILM (Animated),True
+2014,Anders Walter and Kim Magnusson,SHORT FILM (Live Action),True
+2014,Glenn Freemantle,SOUND EDITING,True
+2014,Skip Lievsay,SOUND MIXING,True
+2014,Niv Adiri,SOUND MIXING,True
+2014,Christopher Benstead and Chris Munro,SOUND MIXING,True
+2014,Tim Webber,VISUAL EFFECTS,True
+2014,Chris Lawrence,VISUAL EFFECTS,True
+2014,David Shirk and Neil Corbould,VISUAL EFFECTS,True
+2014,Screenplay by John Ridley,WRITING (Adapted Screenplay),True
+2014,Written by Spike Jonze,WRITING (Original Screenplay),True
+2014,Angelina Jolie,JEAN HERSHOLT HUMANITARIAN AWARD,True
+2014,Angela Lansbury,HONORARY AWARD,True
+2014,Steve Martin in recognition of his extraordinary talents and the unique inspiration he has brought to the art of motion pictures.,HONORARY AWARD,True
+2014,Piero si,HONORARY AWARD,True
+2015,Eddie Redmayne,ACTOR IN A LEADING ROLE,True
+2015,J.K. Simmons,ACTOR IN A SUPPORTING ROLE,True
+2015,Julianne Moore,ACTRESS IN A LEADING ROLE,True
+2015,Patricia Arquette,ACTRESS IN A SUPPORTING ROLE,True
+2015,Don Hall,ANIMATED FEATURE FILM,True
+2015,Chris Williams and Roy Conli,ANIMATED FEATURE FILM,True
+2015,Emmanuel Lubezki,CINEMATOGRAPHY,True
+2015,Milena Canonero,COSTUME DESIGN,True
+2015,Alejandro G. Iñárritu,DIRECTING,True
+2015,Laura Poitras,DOCUMENTARY (Feature),True
+2015,Mathilde Bonnefoy and Dirk Wilutzky,DOCUMENTARY (Feature),True
+2015,Ellen Goosenberg Kent and Dana Perry,DOCUMENTARY (Short Subject),True
+2015,Tom Cross,FILM EDITING,True
+2015,Poland,FOREIGN LANGUAGE FILM,True
+2015,Frances Hannon and Mark Coulier,MAKEUP AND HAIRSTYLING,True
+2015,Alexandre Desplat,MUSIC (Original Score),True
+2015,Music and Lyric by John Stephens and Lonnie Lynn,MUSIC (Original Song),True
+2015,Alejandro G. Iñárritu,BEST PICTURE,True
+2015,John Lesher and James W. Skotchdopole,BEST PICTURE,True
+2015,Production Design: Adam Stockhausen,PRODUCTION DESIGN,True
+2015,Set Decoration: Anna Pinnock,PRODUCTION DESIGN,True
+2015,Patrick Osborne and Kristina Reed,SHORT FILM (Animated),True
+2015,Mat Kirkby and James Lucas,SHORT FILM (Live Action),True
+2015,Alan Robert Murray and Bub Asman,SOUND EDITING,True
+2015,Craig Mann,SOUND MIXING,True
+2015,Ben Wilkins and Thomas Curley,SOUND MIXING,True
+2015,Paul Franklin,VISUAL EFFECTS,True
+2015,Andrew Lockley,VISUAL EFFECTS,True
+2015,Ian Hunter and Scott Fisher,VISUAL EFFECTS,True
+2015,Written by Graham Moore,WRITING (Adapted Screenplay),True
+2015,Written by Alejandro G. Iñárritu,WRITING (Original Screenplay),True
+2015,Nicolás Giacobone,WRITING (Original Screenplay),True
+2015,Alexander Dinelaris,WRITING (Original Screenplay),True
+2015,Jr. & Armando Bo,WRITING (Original Screenplay),True
+2015,Harry Belafonte,JEAN HERSHOLT HUMANITARIAN AWARD,True
+2015,Jean-Claude Carrière,HONORARY AWARD,True
+2015,Hayao Miyazaki,HONORARY AWARD,True
+2015,Maureen O'Hara,HONORARY AWARD,True
+2016,Leonardo DiCaprio,ACTOR IN A LEADING ROLE,True
+2016,Mark Rylance,ACTOR IN A SUPPORTING ROLE,True
+2016,Brie Larson,ACTRESS IN A LEADING ROLE,True
+2016,Alicia Vikander,ACTRESS IN A SUPPORTING ROLE,True
+2016,Pete Docter and Jonas Rivera,ANIMATED FEATURE FILM,True
+2016,Emmanuel Lubezki,CINEMATOGRAPHY,True
+2016,Jenny Beavan,COSTUME DESIGN,True
+2016,Alejandro G. Iñárritu,DIRECTING,True
+2016,Asif Kapadia and James Gay-Rees,DOCUMENTARY (Feature),True
+2016,Sharmeen Obaid-Chinoy,DOCUMENTARY (Short Subject),True
+2016,Margaret Sixel,FILM EDITING,True
+2016,Hungary,FOREIGN LANGUAGE FILM,True
+2016,Lesley Vanderwalt,MAKEUP AND HAIRSTYLING,True
+2016,Elka Wardega and Damian Martin,MAKEUP AND HAIRSTYLING,True
+2016,Ennio Morricone,MUSIC (Original Score),True
+2016,Music and Lyric by Jimmy Napes and Sam Smith,MUSIC (Original Song),True
+2016,Michael Sugar,BEST PICTURE,True
+2016,Nicole Rocklin and Blye Pagon Faust,BEST PICTURE,True
+2016,Production Design: Colin Gibson,PRODUCTION DESIGN,True
+2016,Set Decoration: Lisa Thompson,PRODUCTION DESIGN,True
+2016,Gabriel Osorio and Pato Escala,SHORT FILM (Animated),True
+2016,Benjamin Cleary and Serena Armitage,SHORT FILM (Live Action),True
+2016,Mark Mangini and David White,SOUND EDITING,True
+2016,Chris Jenkins,SOUND MIXING,True
+2016,Gregg Rudloff and Ben Osmo,SOUND MIXING,True
+2016,Andrew Whitehurst,VISUAL EFFECTS,True
+2016,Paul Norris,VISUAL EFFECTS,True
+2016,Mark Ardington and Sara Bennett,VISUAL EFFECTS,True
+2016,Screenplay by Charles Randolph and Adam McKay,WRITING (Adapted Screenplay),True
+2016,Written by Josh Singer & Tom McCarthy,WRITING (Original Screenplay),True
+2016,Debbie Reynolds,JEAN HERSHOLT HUMANITARIAN AWARD,True
+2016,Spike Lee,HONORARY AWARD,True
+2016,Gena Rowlands,HONORARY AWARD,True
+2017,Casey Affleck,ACTOR IN A LEADING ROLE,True
+2017,Mahershala Ali,ACTOR IN A SUPPORTING ROLE,True
+2017,Emma Stone,ACTRESS IN A LEADING ROLE,True
+2017,Viola Davis,ACTRESS IN A SUPPORTING ROLE,True
+2017,Byron Howard,ANIMATED FEATURE FILM,True
+2017,Rich Moore and Clark Spencer,ANIMATED FEATURE FILM,True
+2017,Linus Sandgren,CINEMATOGRAPHY,True
+2017,Colleen Atwood,COSTUME DESIGN,True
+2017,Damien Chazelle,DIRECTING,True
+2017,Ezra Edelman and Caroline Waterlow,DOCUMENTARY (Feature),True
+2017,Orlando von Einsiedel and Joanna Natasegara,DOCUMENTARY (Short Subject),True
+2017,John Gilbert,FILM EDITING,True
+2017,Iran,FOREIGN LANGUAGE FILM,True
+2017,Alessandro Bertolazzi,MAKEUP AND HAIRSTYLING,True
+2017,Giorgio Gregorini and Christopher Nelson,MAKEUP AND HAIRSTYLING,True
+2017,Justin Hurwitz,MUSIC (Original Score),True
+2017,Adele Romanski,BEST PICTURE,True
+2017,Dede Gardner and Jeremy Kleiner,BEST PICTURE,True
+2017,Production Design: David Wasco,PRODUCTION DESIGN,True
+2017,Set Decoration: Sandy Reynolds-Wasco,PRODUCTION DESIGN,True
+2017,Alan Barillaro and Marc Sondheimer,SHORT FILM (Animated),True
+2017,Kristof Deák and Anna Udvardy,SHORT FILM (Live Action),True
+2017,Sylvain Bellemare,SOUND EDITING,True
+2017,Kevin O'Connell,SOUND MIXING,True
+2017,Andy Wright,SOUND MIXING,True
+2017,Robert Mackenzie and Peter Grace,SOUND MIXING,True
+2017,Robert Legato,VISUAL EFFECTS,True
+2017,Adam Valdez,VISUAL EFFECTS,True
+2017,Andrew R. Jones and Dan Lemmon,VISUAL EFFECTS,True
+2017,Screenplay by Barry Jenkins,WRITING (Adapted Screenplay),True
+2017,Story by Tarell Alvin McCraney,WRITING (Adapted Screenplay),True
+2017,Written by Kenneth Lonergan,WRITING (Original Screenplay),True
+2017,Jackie Chan,HONORARY AWARD,True
+2017,Anne V. Coates,HONORARY AWARD,True
+2017,Lynn Stalmaster,HONORARY AWARD,True
+2017,Frederick Wiseman,HONORARY AWARD,True
+2018,Gary Oldman,ACTOR IN A LEADING ROLE,True
+2018,Sam Rockwell,ACTOR IN A SUPPORTING ROLE,True
+2018,Frances McDormand,ACTRESS IN A LEADING ROLE,True
+2018,Allison Janney,ACTRESS IN A SUPPORTING ROLE,True
+2018,Lee Unkrich and Darla K. Anderson,ANIMATED FEATURE FILM,True
+2018,Roger A. Deakins,CINEMATOGRAPHY,True
+2018,Mark Bridges,COSTUME DESIGN,True
+2018,Guillermo del Toro,DIRECTING,True
+2018,Bryan Fogel and Dan Cogan,DOCUMENTARY (Feature),True
+2018,Frank Stiefel,DOCUMENTARY (Short Subject),True
+2018,Lee Smith,FILM EDITING,True
+2018,Chile,FOREIGN LANGUAGE FILM,True
+2018,Kazuhiro Tsuji,MAKEUP AND HAIRSTYLING,True
+2018,David Malinowski and Lucy Sibbick,MAKEUP AND HAIRSTYLING,True
+2018,Alexandre Desplat,MUSIC (Original Score),True
+2018,Music and Lyric by Kristen Anderson-Lopez and Robert Lopez,MUSIC (Original Song),True
+2018,Guillermo del Toro and J. Miles Dale,BEST PICTURE,True
+2018,Production Design: Paul Denham Austerberry,PRODUCTION DESIGN,True
+2018,Set Decoration: Shane Vieau and Jeffrey A. Melvin,PRODUCTION DESIGN,True
+2018,Glen Keane and Kobe Bryant,SHORT FILM (Animated),True
+2018,Chris Overton and Rachel Shenton,SHORT FILM (Live Action),True
+2018,Richard King and Alex Gibson,SOUND EDITING,True
+2018,Gregg Landaker,SOUND MIXING,True
+2018,Gary A. Rizzo and Mark Weingarten,SOUND MIXING,True
+2018,John Nelson,VISUAL EFFECTS,True
+2018,Gerd Nefzer,VISUAL EFFECTS,True
+2018,Paul Lambert and Richard R. Hoover,VISUAL EFFECTS,True
+2018,Screenplay by James Ivory,WRITING (Adapted Screenplay),True
+2018,Written by Jordan Peele,WRITING (Original Screenplay),True
+2018,Alejandro G. Iñárritu's CARNE y ARENA virtual reality installation,SPECIAL AWARD,True
+2018,Charles Burnett,HONORARY AWARD,True
+2018,Owen Roizman,HONORARY AWARD,True
+2018,Donald Sutherland for a lifetime of indelible characters,HONORARY AWARD,True
+2018,Agnès Varda,HONORARY AWARD,True
+2019,Rami Malek,ACTOR IN A LEADING ROLE,True
+2019,Mahershala Ali,ACTOR IN A SUPPORTING ROLE,True
+2019,Olivia Colman,ACTRESS IN A LEADING ROLE,True
+2019,Regina King,ACTRESS IN A SUPPORTING ROLE,True
+2019,Bob Persichetti,ANIMATED FEATURE FILM,True
+2019,Peter Ramsey,ANIMATED FEATURE FILM,True
+2019,Rodney Rothman,ANIMATED FEATURE FILM,True
+2019,Phil Lord and Christopher Miller,ANIMATED FEATURE FILM,True
+2019,Alfonso Cuarón,CINEMATOGRAPHY,True
+2019,Ruth Carter,COSTUME DESIGN,True
+2019,Alfonso Cuarón,DIRECTING,True
+2019,Elizabeth Chai Vasarhelyi,DOCUMENTARY (Feature),True
+2019,Jimmy Chin,DOCUMENTARY (Feature),True
+2019,Evan Hayes and Shannon Dill,DOCUMENTARY (Feature),True
+2019,Rayka Zehtabchi and Melissa Berton,DOCUMENTARY (Short Subject),True
+2019,John Ottman,FILM EDITING,True
+2019,Mexico,FOREIGN LANGUAGE FILM,True
+2019,Greg Cannom,MAKEUP AND HAIRSTYLING,True
+2019,Kate Biscoe and Patricia Dehaney,MAKEUP AND HAIRSTYLING,True
+2019,Ludwig Goransson,MUSIC (Original Score),True
+2019,Music and Lyric by Lady Gaga,MUSIC (Original Song),True
+2019,Mark Ronson,MUSIC (Original Song),True
+2019,Anthony Rossomando and Andrew Wyatt,MUSIC (Original Song),True
+2019,Jim Burke,BEST PICTURE,True
+2019,Charles B. Wessler,BEST PICTURE,True
+2019,Brian Currie,BEST PICTURE,True
+2019,Peter Farrelly and Nick Vallelonga,BEST PICTURE,True
+2019,Production Design: Hannah Beachler,PRODUCTION DESIGN,True
+2019,Set Decoration: Jay Hart,PRODUCTION DESIGN,True
+2019,Domee Shi and Becky Neiman-Cobb,SHORT FILM (Animated),True
+2019,Guy Nattiv and Jaime Ray Newman,SHORT FILM (Live Action),True
+2019,John Warhurst and Nina Hartstone,SOUND EDITING,True
+2019,Paul Massey,SOUND MIXING,True
+2019,Tim Cavagin and John Casali,SOUND MIXING,True
+2019,Paul Lambert,VISUAL EFFECTS,True
+2019,Ian Hunter,VISUAL EFFECTS,True
+2019,Tristan Myles and J.D. Schwalm,VISUAL EFFECTS,True
+2019,Written by Charlie Wachtel & David Rabinowitz and Kevin Willmott & Spike Lee,WRITING (Adapted Screenplay),True
+2019,Written by Nick Vallelonga,WRITING (Original Screenplay),True
+2019,Brian Currie,WRITING (Original Screenplay),True
+2019,Peter Farrelly,WRITING (Original Screenplay),True
+2019,Marvin Levy,HONORARY AWARD,True
+2019,Lalo Schifrin,HONORARY AWARD,True
+2019,Cicely Tyson,HONORARY AWARD,True
+2019,Kathleen Kennedy and Frank Marshall,IRVING G. THALBERG MEMORIAL AWARD,True
+2020,Joaquin Phoenix,ACTOR IN A LEADING ROLE,True
+2020,Brad Pitt,ACTOR IN A SUPPORTING ROLE,True
+2020,Renée Zellweger,ACTRESS IN A LEADING ROLE,True
+2020,Laura Dern,ACTRESS IN A SUPPORTING ROLE,True
+2020,Josh Cooley,ANIMATED FEATURE FILM,True
+2020,Mark Nielsen and Jonas Rivera,ANIMATED FEATURE FILM,True
+2020,Roger Deakins,CINEMATOGRAPHY,True
+2020,Jacqueline Durran,COSTUME DESIGN,True
+2020,Bong Joon Ho,DIRECTING,True
+2020,Steven Bognar,DOCUMENTARY (Feature),True
+2020,Julia Reichert and Jeff Reichert,DOCUMENTARY (Feature),True
+2020,Carol Dysinger and Elena Andreicheva,DOCUMENTARY (Short Subject),True
+2020,Michael McCusker and Andrew Buckland,FILM EDITING,True
+2020,South Korea,INTERNATIONAL FEATURE FILM,True
+2020,Kazu Hiro,MAKEUP AND HAIRSTYLING,True
+2020,Anne Morgan and Vivian Baker,MAKEUP AND HAIRSTYLING,True
+2020,Hildur Guðnadóttir,MUSIC (Original Score),True
+2020,Music by Elton John,MUSIC (Original Song),True
+2020,Lyric by Bernie Taupin,MUSIC (Original Song),True
+2020,Kwak Sin Ae and Bong Joon Ho,BEST PICTURE,True
+2020,Production Design: Barbara Ling,PRODUCTION DESIGN,True
+2020,Set Decoration: Nancy Haigh,PRODUCTION DESIGN,True
+2020,Matthew A. Cherry and Karen Rupert Toliver,SHORT FILM (Animated),True
+2020,Marshall Curry,SHORT FILM (Live Action),True
+2020,Donald Sylvester,SOUND EDITING,True
+2020,Mark Taylor and Stuart Wilson,SOUND MIXING,True
+2020,Guillaume Rocheron,VISUAL EFFECTS,True
+2020,Greg Butler and Dominic Tuohy,VISUAL EFFECTS,True
+2020,Screenplay by Taika Waititi,WRITING (Adapted Screenplay),True
+2020,Screenplay by Bong Joon Ho,WRITING (Original Screenplay),True
+2020,Han Jin Won,WRITING (Original Screenplay),True
+2020,Story by Bong Joon Ho,WRITING (Original Screenplay),True
+2020,Geena Davis,JEAN HERSHOLT HUMANITARIAN AWARD,True
+2020,David Lynch,HONORARY AWARD,True
+2020,Wes Studi,HONORARY AWARD,True
+2020,Lina Wertmüller,HONORARY AWARD,True
+2021,Anthony Hopkins,ACTOR IN A LEADING ROLE,True
+2021,Daniel Kaluuya,ACTOR IN A SUPPORTING ROLE,True
+2021,Frances McDormand,ACTRESS IN A LEADING ROLE,True
+2021,Yuh-Jung Youn,ACTRESS IN A SUPPORTING ROLE,True
+2021,Pete Docter and Dana Murray,ANIMATED FEATURE FILM,True
+2021,Erik Messerschmidt,CINEMATOGRAPHY,True
+2021,Ann Roth,COSTUME DESIGN,True
+2021,Chloé Zhao,DIRECTING,True
+2021,Pippa Ehrlich,DOCUMENTARY (Feature),True
+2021,James Reed and Craig Foster,DOCUMENTARY (Feature),True
+2021,Anthony Giacchino and Alice Doyard,DOCUMENTARY (Short Subject),True
+2021,Mikkel E. G. Nielsen,FILM EDITING,True
+2021,Denmark,INTERNATIONAL FEATURE FILM,True
+2021,Sergio Lopez-Rivera,MAKEUP AND HAIRSTYLING,True
+2021,Mia Neal and Jamika Wilson,MAKEUP AND HAIRSTYLING,True
+2021,Trent Reznor,MUSIC (Original Score),True
+2021,Atticus Ross and Jon Batiste,MUSIC (Original Score),True
+2021,Music by H.E.R. and Dernst Emile II,MUSIC (Original Song),True
+2021,Lyric by H.E.R. and Tiara Thomas,MUSIC (Original Song),True
+2021,Frances McDormand,BEST PICTURE,True
+2021,Peter Spears,BEST PICTURE,True
+2021,Mollye Asher,BEST PICTURE,True
+2021,Dan Janvey and Chloé Zhao,BEST PICTURE,True
+2021,Production Design: Donald Graham Burt,PRODUCTION DESIGN,True
+2021,Set Decoration: Jan Pascale,PRODUCTION DESIGN,True
+2021,Will McCormack and Michael Govier,SHORT FILM (Animated),True
+2021,Travon Free and Martin Desmond Roe,SHORT FILM (Live Action),True
+2021,Nicolas Becker,SOUND,True
+2021,Jaime Baksht,SOUND,True
+2021,Michellee Couttolenc,SOUND,True
+2021,Carlos Cortés and Phillip Bladh,SOUND,True
+2021,Andrew Jackson,VISUAL EFFECTS,True
+2021,David Lee,VISUAL EFFECTS,True
+2021,Andrew Lockley and Scott Fisher,VISUAL EFFECTS,True
+2021,Screenplay by Christopher Hampton and Florian Zeller,WRITING (Adapted Screenplay),True
+2021,Written by Emerald Fennell,WRITING (Original Screenplay),True
+2022,Will Smith,ACTOR IN A LEADING ROLE,True
+2022,Troy Kotsur,ACTOR IN A SUPPORTING ROLE,True
+2022,Jessica Chastain,ACTRESS IN A LEADING ROLE,True
+2022,Ariana DeBose,ACTRESS IN A SUPPORTING ROLE,True
+2022,Jared Bush,ANIMATED FEATURE FILM,True
+2022,Byron Howard,ANIMATED FEATURE FILM,True
+2022,Yvett Merino and Clark Spencer,ANIMATED FEATURE FILM,True
+2022,Greig Fraser,CINEMATOGRAPHY,True
+2022,Jenny Beavan,COSTUME DESIGN,True
+2022,Jane Campion,DIRECTING,True
+2022,"Ahmir ""Questlove"" Thompson",DOCUMENTARY (Feature),True
+2022,Joseph Patel,DOCUMENTARY (Feature),True
+2022,Robert Fyvolent and David Dinerstein,DOCUMENTARY (Feature),True
+2022,Ben Proudfoot,DOCUMENTARY (Short Subject),True
+2022,Joe Walker,FILM EDITING,True
+2022,Japan,INTERNATIONAL FEATURE FILM,True
+2022,Linda Dowds,MAKEUP AND HAIRSTYLING,True
+2022,Stephanie Ingram and Justin Raleigh,MAKEUP AND HAIRSTYLING,True
+2022,Hans Zimmer,MUSIC (Original Score),True
+2022,Music and Lyric by Billie Eilish and Finneas O'Connell,MUSIC (Original Song),True
+2022,Philippe Rousselet,BEST PICTURE,True
+2022,Fabrice Gianfermi and Patrick Wachsberger,BEST PICTURE,True
+2022,Production Design: Patrice Vermette,PRODUCTION DESIGN,True
+2022,Set Decoration: Zsuzsanna Sipos,PRODUCTION DESIGN,True
+2022,Alberto Mielgo and Leo Sanchez,SHORT FILM (Animated),True
+2022,Aneil Karia and Riz Ahmed,SHORT FILM (Live Action),True
+2022,Mac Ruth,SOUND,True
+2022,Mark Mangini,SOUND,True
+2022,Theo Green,SOUND,True
+2022,Doug Hemphill and Ron Bartlett,SOUND,True
+2022,Paul Lambert,VISUAL EFFECTS,True
+2022,Tristan Myles,VISUAL EFFECTS,True
+2022,Brian Connor and Gerd Nefzer,VISUAL EFFECTS,True
+2022,Screenplay by Siân Heder,WRITING (Adapted Screenplay),True
+2022,Written by Kenneth Branagh,WRITING (Original Screenplay),True
+2022,To Samuel L. Jackson,HONORARY AWARD,True
+2022,whose dynamic performances resonate across genres and generations of audiences worldwide.,HONORARY AWARD,True
+2022,To Elaine May,HONORARY AWARD,True
+2022,writer,HONORARY AWARD,True
+2022,director,HONORARY AWARD,True
+2022,performer,HONORARY AWARD,True
+2022,pioneer whose bracing comedic spark illuminates us all.,HONORARY AWARD,True
+2022,To Liv Ullmann,HONORARY AWARD,True
+2022,for her deeply affecting screen portrayals and lifelong commitment to exploring the human condition.,HONORARY AWARD,True
+2023,Brendan Fraser,ACTOR IN A LEADING ROLE,True
+2023,Ke Huy Quan,ACTOR IN A SUPPORTING ROLE,True
+2023,Michelle Yeoh,ACTRESS IN A LEADING ROLE,True
+2023,Jamie Lee Curtis,ACTRESS IN A SUPPORTING ROLE,True
+2023,Guillermo del Toro,ANIMATED FEATURE FILM,True
+2023,Mark Gustafson,ANIMATED FEATURE FILM,True
+2023,Gary Ungar and Alex Bulkley,ANIMATED FEATURE FILM,True
+2023,James Friend,CINEMATOGRAPHY,True
+2023,Ruth Carter,COSTUME DESIGN,True
+2023,Daniel Kwan and Daniel Scheinert,DIRECTING,True
+2023,Daniel Roher,DOCUMENTARY FEATURE FILM,True
+2023,Odessa Rae,DOCUMENTARY FEATURE FILM,True
+2023,Diane Becker,DOCUMENTARY FEATURE FILM,True
+2023,Melanie Miller and Shane Boris,DOCUMENTARY FEATURE FILM,True
+2023,Kartiki Gonsalves and Guneet Monga,DOCUMENTARY SHORT FILM,True
+2023,Paul Rogers,FILM EDITING,True
+2023,Germany,INTERNATIONAL FEATURE FILM,True
+2023,Adrien Morot,MAKEUP AND HAIRSTYLING,True
+2023,Judy Chin and Annemarie Bradley,MAKEUP AND HAIRSTYLING,True
+2023,Volker Bertelmann,MUSIC (Original Score),True
+2023,Music by M.M. Keeravaani,MUSIC (Original Song),True
+2023,Lyric by Chandrabose,MUSIC (Original Song),True
+2023,Daniel Kwan,BEST PICTURE,True
+2023,Daniel Scheinert and Jonathan Wang,BEST PICTURE,True
+2023,Production Design: Christian M. Goldbeck,PRODUCTION DESIGN,True
+2023,Set Decoration: Ernestine Hipper,PRODUCTION DESIGN,True
+2023,Charlie Mackesy and Matthew Freud,SHORT FILM (Animated),True
+2023,Tom Berkeley and Ross White,SHORT FILM (Live Action),True
+2023,Mark Weingarten,SOUND,True
+2023,James H. Mather,SOUND,True
+2023,Al Nelson,SOUND,True
+2023,Chris Burdon and Mark Taylor,SOUND,True
+2023,Joe Letteri,VISUAL EFFECTS,True
+2023,Richard Baneham,VISUAL EFFECTS,True
+2023,Eric Saindon and Daniel Barrett,VISUAL EFFECTS,True
+2023,Screenplay by Sarah Polley,WRITING (Adapted Screenplay),True
+2023,Written by Daniel Kwan & Daniel Scheinert,WRITING (Original Screenplay),True
+2023,To Euzhan Palcy,HONORARY AWARD,True
+2023,a masterful filmmaker who broke ground for Black women directors and inspired storytellers of all kinds across the globe.,HONORARY AWARD,True
+2023,To Diane Warren,HONORARY AWARD,True
+2023,for her genius,HONORARY AWARD,True
+2023,generosity and passionate commitment to the power of song in film.,HONORARY AWARD,True
+2023,To Peter Weir,HONORARY AWARD,True
+2023,a fearless and consummate filmmaker who has illuminated the human experience with his unique and expansive body of work.,HONORARY AWARD,True
+2023,Iain Neil,GORDON E. SAWYER AWARD,True
+2023,To Ryan Laney for his innovative adaptation and deployment of AI-driven facial veiling technology used to protect the identities while preserving the visual relatability of subjects in documentary filmmaking as exemplified in Welcome to Chechnya (2020).,AWARD OF COMMENDATION,True
