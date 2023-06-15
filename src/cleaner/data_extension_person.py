@@ -94,7 +94,7 @@ person_df = pd.DataFrame(person_data)
 column_names = ['birth_date', 'death_date', 'start_activity', 'end_activity']
 for column_name in column_names:
     for i in range(len(person_df)):
-        person_df[column_name][i] = int(person_df[column_name][i].split(0,3))
+        person_df[column_name][i] = str(person_df[column_name][i])[:4]
 
 # Save the dataframe to a CSV file
 person_df.to_csv('data/cleaned_data/Person_extended.csv', index=False)
