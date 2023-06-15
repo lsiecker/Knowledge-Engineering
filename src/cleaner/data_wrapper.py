@@ -4,6 +4,7 @@ import numpy as np
 import pandas as pd
 from tqdm import tqdm
 from fuzzywuzzy import fuzz
+from dateutil import parser
 
 
 class DataWrapper():
@@ -185,61 +186,54 @@ class DataWrapper():
         
         return formatted_headers
 
-    def make_date(self, column_name):
+    def make_date(self, column_name, target_format='%Y'):
         """
-        A function that makes a date from the years and from the specific dates in the data.
+        A function that infers the date format in a column and converts it to the target format.
 
         Parameters
         ----------
         column_name : str
             The name of the column to be converted to a date.
-        
+        target_format : str, optional
+            The desired format to convert the column to. Default is '%Y'.
+
         Returns
         -------
         None
         """
+        # If the values are lists, extract the strings from the lists
+        self.data[column_name] = self.data[column_name].apply(lambda x: x[0] if isinstance(x, list) else x)
         
-        # If the column is a year, make it a date
-        if self.data[column_name].dtype == 'int64':
-            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%Y')
-        # If the column is a date, make it a date
-        elif self.data[column_name].dtype == 'object':
-            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%Y-%m-%d', errors='coerce')
-        else:
-            raise ValueError(f'The column {column_name} is neither an integer nor a string.')
+        # # Replace everything that's not a digit, slash, dash, or space
+        # self.data[column_name] = self.data[column_name].replace(r"[^0-9\-/ ]", "", regex=True)
+        
+        # Apply the date parsing and formatting
+        self.data[column_name] = self.data[column_name].apply(lambda x: parser.parse(str(x)).strftime(target_format) if pd.notnull(x) else x)
         
         return
     
-    def birthday(self, column_name):
+    def make_boolean(self, column_name, true_value, false_value):
         """
-        A function that makes a birthday from the years and from the specific dates in the data.
+        A function that converts the values in a column to boolean values.
 
         Parameters
         ----------
         column_name : str
-            The name of the column to be converted to a date.
-        
+            The name of the column to be converted to boolean values.
+        true_value : str
+            The value to be converted to True.
+        false_value : str
+            The value to be converted to False.
+
         Returns
         -------
         None
         """
+        # Convert the data in the column to boolean values
         
-        # convert the column such that all different formats are converted to datetime
-        # convert the following formats: 23-Feb-1883 01/Jul/02 24-Dec-1886 11/Oct/18 22/Jun/06 07/Sep/09 18-Aug-1936 [1] 1972
+        self.data[column_name] = self.data[column_name].apply(lambda x: True if x == true_value else False if x == false_value else x)
 
-        # check which format the data is currently in as a string
-        if self.data[column_name].dtype == 'object':
-            # convert the column to datetime
-            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%d-%b-%Y', errors='coerce')
-            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%d/%b/%y', errors='coerce')
-            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%d/%b/%Y', errors='coerce')
-            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%d/%b/%y', errors='coerce')
-            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%d/%b/%Y', errors='coerce')
-            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%d/%b/%Y', errors='coerce')
-            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%d-%b-%Y [1]', errors='coerce')
-            self.data[column_name] = pd.to_datetime(self.data[column_name], format='%Y', errors='coerce')
         return
-
     
     def drop_nan(self, column_name):
         """
@@ -299,7 +293,7 @@ class DataSet():
         self.name = name
         self.data = None
         self.headers = None
-        self.header_order = ['movie_name', 'movie_date', 'movie_rating', 'movie_genre', 'director', 'writer', 'actor', 'award_year']
+        self.header_order = ['movie_name', 'movie_date', 'movie_rating', 'movie_genre', 'director', 'writer', 'actor', 'award_year', 'person_name', 'person_dateofbirth']
 
     def __call__(self):
         return self.data
@@ -398,6 +392,42 @@ class DataSet():
         self.data.dropna(how='any', subset=columns, inplace=True)
 
         return
+    
+    def drop_winner(self, column_name, inverse = False):
+        # Function that drops the row if the value in the column_name is True
+        if inverse:
+            self.data = self.data[self.data[column_name] == False]
+        else:
+            self.data = self.data[self.data[column_name] == True]
+    
+    def melt_data(self, *columns):
+        # Melt the columns into a single column
+        # Create a new DataFrame with the 'writer', 'director', and 'actor' columns melted into separate rows
+        melted_data = self.data.melt(id_vars=['person_dateofbirth', 'person_name'], value_vars=['person_name', 'actor', 'director', 'writer'], value_name="person_names")
+
+        # Remove rows with missing names
+        melted_data.dropna(subset=["person_names"], inplace=True)
+
+        # Drop the 'variable' column
+        melted_data.drop("variable", axis=1, inplace=True)
+
+        # Drop the 'person_name' column and rename person_names to person_name
+        melted_data.drop("person_name", axis=1, inplace=True)
+        
+        # Set the header names
+        melted_data.columns = ['person_dateofbirth', 'person_name']
+
+        # reorder the columns following preferred order
+        melted_data = melted_data[self.order_headers(melted_data.columns)]
+
+        # Sort the DataFrame by 'person_name'
+        melted_data.sort_values(by="person_name", inplace=True)
+
+        # Reset the index
+        melted_data.reset_index(drop=True, inplace=True)
+        
+        self.data = melted_data
+        self.headers = self.data.columns
 
 
 class DataMatcher():
@@ -417,6 +447,12 @@ class DataMatcher():
             The dataframe to be aggregated.
         *columns : list
             The columns to be matched on.
+        automatic : bool
+            Whether to automatically aggregate the rows or not.
+        drop_nan_keys : bool
+            Whether to drop the rows with nan values in the columns that are matched on.
+        dif_timestamps : bool
+            Whether to check if the timestamps are different.
 
         Returns
         -------
