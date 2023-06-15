@@ -14,10 +14,10 @@ class Neo4jClient:
         if Neo4jClient._instance != None:
             raise Exception("This class is a singleton!")
         else:
-            uri =config('NEO4J_URI')
-            port = config('NEO4J_PORT')
-            user = config('NEO4J_USER')
-            password = config('NEO4J_PASSWORD')
+            uri = '34.90.237.2'
+            port = '7687'
+            user = 'neo4j'
+            password = '^ZC!Ft&:-:::bg5'
             self.driver = GraphDatabase.driver(f"bolt://{uri}:{port}", auth=(user, password))
             Neo4jClient._instance = self
 
