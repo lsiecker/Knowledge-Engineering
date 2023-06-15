@@ -1,4 +1,28 @@
-award_year,award_person,award_category,award_winner
+award_year,person_name,award_category,award_winner
+1949,John Huston,Best Director,True
+1961,Billy Wilder,Best Director,True
+1979,Michael Cimino,Best Director,True
+2009,Danny Boyle,Best Director,True
+1953,Gary Cooper,Best Actor,True
+1994,Tom Hanks,Best Actor,True
+1943,Van Heflin,Best Supporting Actor,True
+1969,Jack Albertson,Best Supporting Actor,True
+1977,Jason Robards,Best Supporting Actor,True
+1999,James Coburn,Best Supporting Actor,True
+1941,Ginger Rogers,Best Actress,True
+1958,Joanne Woodward,Best Actress,True
+1967,Elizabeth Taylor,Best Actress,True
+1970,Maggie Smith,Best Actress,True
+1977,Faye Dunaway,Best Actress,True
+1999,Gwyneth Paltrow,Best Actress,True
+2005,Hilary Swank,Best Actress,True
+1942,Mary Astor,Best Supporting Actress,True
+1946,Anne Revere,Best Supporting Actress,True
+1976,Lee Grant,Best Supporting Actress,True
+2000,Angelina Jolie,Best Supporting Actress,True
+2001,Marcia Gay Harden,Best Supporting Actress,True
+2006,Rachel Weisz,Best Supporting Actress,True
+2010,Mo'Nique,Best Supporting Actress,True
 1928,Emil Jannings,ACTOR,True
 1928,Janet Gaynor,ACTRESS,True
 1928,William Cameron Menzies,ART DIRECTION,True

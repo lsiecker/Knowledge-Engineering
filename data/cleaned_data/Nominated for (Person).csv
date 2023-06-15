@@ -1,4 +1,422 @@
-award_year,award_person,award_category,award_winner
+award_year,person_name,award_category,award_winner
+1927,Lewis Milestone,Best Director,False
+1930,Frank Lloyd,Best Director,False
+1931,Lewis Milestone,Best Director,False
+1932,Norman Taurog,Best Director,False
+1933,Frank Borzage,Best Director,False
+1934,Frank Lloyd,Best Director,False
+1935,Frank Capra,Best Director,False
+1936,John Ford,Best Director,False
+1937,Frank Capra,Best Director,False
+1938,Leo McCarey,Best Director,False
+1939,Frank Capra,Best Director,False
+1940,Victor Fleming,Best Director,False
+1941,John Ford,Best Director,False
+1942,John Ford,Best Director,False
+1943,William Wyler,Best Director,False
+1944,Michael Curtiz,Best Director,False
+1945,Leo McCarey,Best Director,False
+1962,Jerome Robbins,Best Director,False
+1946,Billy Wilder,Best Director,False
+1947,William Wyler,Best Director,False
+1948,Elia Kazan,Best Director,False
+1949,John Huston,Best Director,True
+1950,Joseph L. Mankiewicz,Best Director,False
+1951,Joseph L. Mankiewicz,Best Director,False
+1952,George Stevens,Best Director,False
+1953,John Ford,Best Director,False
+1954,Fred Zinnemann,Best Director,False
+1955,Elia Kazan,Best Director,False
+1956,Delbert Mann,Best Director,False
+1957,George Stevens,Best Director,False
+1958,David Lean,Best Director,False
+1959,Vincente Minnelli,Best Director,False
+1960,William Wyler,Best Director,False
+1961,Billy Wilder,Best Director,True
+1961,Robert Wise,Best Director,False
+1963,David Lean,Best Director,False
+1964,Tony Richardson,Best Director,False
+1965,George Cukor,Best Director,False
+1966,Robert Wise,Best Director,False
+1967,Fred Zinnemann,Best Director,False
+1968,Mike Nichols,Best Director,False
+2008,Joel Coen,Best Director,False
+1969,Carol Reed,Best Director,False
+1969,John Schlesinger,Best Director,False
+1970,Franklin J. Schaffner,Best Director,False
+1972,William Friedkin,Best Director,False
+1973,Bob Fosse,Best Director,False
+1973,George Roy Hill,Best Director,False
+1975,Francis Ford Coppola,Best Director,False
+1976,Milos Forman,Best Director,False
+1976,John G. Avildsen,Best Director,False
+1978,Woody Allen,Best Director,False
+1979,Michael Cimino,Best Director,True
+1980,Robert Benton,Best Director,False
+1980,Robert Redford,Best Director,False
+1981,Warren Beatty,Best Director,False
+1982,Richard Attenborough,Best Director,False
+1983,James L. Brooks,Best Director,False
+1985,Milos Forman,Best Director,False
+1986,Sydney Pollack,Best Director,False
+1990,Oliver Stone,Best Director,False
+1988,Bernardo Bertolucci,Best Director,False
+1989,Barry Levinson,Best Director,False
+1991,Kevin Costner,Best Director,False
+1992,Jonathan Demme,Best Director,False
+1993,Clint Eastwood,Best Director,False
+1994,Steven Spielberg,Best Director,False
+1995,Robert Zemeckis,Best Director,False
+1996,Mel Gibson,Best Director,False
+1997,Anthony Minghella,Best Director,False
+1998,James Cameron,Best Director,False
+1999,Steven Spielberg,Best Director,False
+2000,Sam Mendes,Best Director,False
+2001,Steven Soderbergh,Best Director,False
+2002,Ron Howard,Best Director,False
+2003,Roman Polanski,Best Director,False
+2004,Peter Jackson,Best Director,False
+2005,Clint Eastwood,Best Director,False
+2006,Ang Lee,Best Director,False
+2007,Martin Scorsese,Best Director,False
+2008,Ethan Coen,Best Director,False
+2009,Danny Boyle,Best Director,True
+2009,Kathryn Bigelow,Best Director,False
+2011,Tom Hooper,Best Director,False
+2012,Michel Hazanavicius,Best Director,False
+2013,Ang Lee,Best Director,False
+1929,Emil Jannings,Best Actor,False
+1930,Warner Baxter,Best Actor,False
+1930,George Arliss,Best Actor,False
+1931,Lionel Barrymore,Best Actor,False
+1932,Wallace Beery,Best Actor,False
+1934,Charles Laughton,Best Actor,False
+1935,Clark Gable,Best Actor,False
+1936,Victor McLaglen,Best Actor,False
+1937,Paul Muni,Best Actor,False
+1938,Spencer Tracy,Best Actor,False
+1939,Spencer Tracy,Best Actor,False
+1940,Robert Donat,Best Actor,False
+1941,Jimmy Stewart,Best Actor,False
+1942,Gary Cooper,Best Actor,False
+1943,James Cagney,Best Actor,False
+1944,Paul Lukas,Best Actor,False
+1945,Bing Crosby,Best Actor,False
+1946,Ray Milland,Best Actor,False
+1947,Fredric March,Best Actor,False
+1948,Ronald Colman,Best Actor,False
+1949,Laurence Olivier,Best Actor,False
+1950,Broderick Crawford,Best Actor,False
+1951,Jose Ferrer,Best Actor,False
+1952,Humphrey Bogart,Best Actor,False
+1953,Gary Cooper,Best Actor,True
+1954,William Holden,Best Actor,False
+1955,Marlon Brando,Best Actor,False
+1956,Ernest Borgnine,Best Actor,False
+1957,Yul Brynner,Best Actor,False
+1958,Alec Guinness,Best Actor,False
+1959,David Niven,Best Actor,False
+1960,Charlton Heston,Best Actor,False
+1961,Burt Lancaster,Best Actor,False
+1962,Maximilian Schell,Best Actor,False
+1963,Gregory Peck,Best Actor,False
+1964,Sidney Poitier,Best Actor,False
+1965,Rex Harrison,Best Actor,False
+1966,Lee Marvin,Best Actor,False
+1967,Paul Scofield,Best Actor,False
+1968,Rod Steiger,Best Actor,False
+1969,Cliff Robertson,Best Actor,False
+1970,John Wayne,Best Actor,False
+1971,George C. Scott,Best Actor,False
+1972,Gene Hackman,Best Actor,False
+1973,Marlon Brando,Best Actor,False
+1974,Jack Lemmon,Best Actor,False
+1975,Art Carney,Best Actor,False
+1976,Jack Nicholson,Best Actor,False
+1977,Peter Finch,Best Actor,False
+1978,Richard Dreyfuss,Best Actor,False
+1979,Jon Voight,Best Actor,False
+1980,Dustin Hoffman,Best Actor,False
+1981,Robert De Niro,Best Actor,False
+1982,Henry Fonda,Best Actor,False
+1983,Ben Kingsley,Best Actor,False
+1984,Robert Duvall,Best Actor,False
+1985,F. Murray Abraham,Best Actor,False
+1986,William Hurt,Best Actor,False
+1987,Paul Newman,Best Actor,False
+1988,Michael Douglas,Best Actor,False
+1989,Dustin Hoffman,Best Actor,False
+1990,Daniel Day-Lewis,Best Actor,False
+1991,Jeremy Irons,Best Actor,False
+1992,Anthony Hopkins,Best Actor,False
+1993,Al Pacino,Best Actor,False
+1994,Tom Hanks,Best Actor,True
+1995,Tom Hanks,Best Actor,False
+1996,Nicolas Cage,Best Actor,False
+1997,Geoffrey Rush,Best Actor,False
+1997,Jack Nicholson,Best Actor,False
+1999,Roberto Benigni,Best Actor,False
+2000,Kevin Spacey,Best Actor,False
+2001,Russell Crowe,Best Actor,False
+2002,Denzel Washington,Best Actor,False
+2003,Adrien Brody,Best Actor,False
+2003,Sean Penn,Best Actor,False
+2005,Jamie Foxx,Best Actor,False
+2006,Philip Seymour Hoffman,Best Actor,False
+2007,Forest Whitaker,Best Actor,False
+2008,Daniel Day-Lewis,Best Actor,False
+2009,Sean Penn,Best Actor,False
+2010,Jeff Bridges,Best Actor,False
+2011,Colin Firth,Best Actor,False
+2012,Jean Dujardin,Best Actor,False
+2013,Daniel Day-Lewis,Best Actor,False
+2014,Matthew McConaughey,Best Actor,False
+1938,Walter Brennan,Best Supporting Actor,False
+1938,Joseph Schildkraut,Best Supporting Actor,False
+1939,Walter Brennan,Best Supporting Actor,False
+1940,Thomas Mitchell,Best Supporting Actor,False
+1941,Walter Brennan,Best Supporting Actor,False
+1942,Donald Crisp,Best Supporting Actor,False
+1943,Van Heflin,Best Supporting Actor,True
+1944,Charles Coburn,Best Supporting Actor,False
+1945,Barry Fitzgerald,Best Supporting Actor,False
+1946,James Dunn,Best Supporting Actor,False
+1947,Harold Russell,Best Supporting Actor,False
+1948,Edmund Gwenn,Best Supporting Actor,False
+1949,Walter Huston,Best Supporting Actor,False
+1950,Dean Jagger,Best Supporting Actor,False
+1951,George Sanders,Best Supporting Actor,False
+1952,Karl Malden,Best Supporting Actor,False
+1953,Anthony Quinn,Best Supporting Actor,False
+1954,Frank Sinatra,Best Supporting Actor,False
+1955,Edmond O'Brien,Best Supporting Actor,False
+1956,Jack Lemmon,Best Supporting Actor,False
+1957,Anthony Quinn,Best Supporting Actor,False
+1958,Red Buttons,Best Supporting Actor,False
+1959,Burl Ives,Best Supporting Actor,False
+1960,Hugh Griffith,Best Supporting Actor,False
+1961,Peter Ustinov,Best Supporting Actor,False
+1962,George Chakiris,Best Supporting Actor,False
+1963,Ed Begley,Best Supporting Actor,False
+1963,Sr.,Best Supporting Actor,False
+1964,Melvyn Douglas,Best Supporting Actor,False
+1965,Peter Ustinov,Best Supporting Actor,False
+1966,Martin Balsam,Best Supporting Actor,False
+1967,Walter Matthau,Best Supporting Actor,False
+1968,George Kennedy,Best Supporting Actor,False
+1969,Jack Albertson,Best Supporting Actor,True
+1970,Gig Young,Best Supporting Actor,False
+1971,John Mills,Best Supporting Actor,False
+1972,Ben Johnson,Best Supporting Actor,False
+1973,Joel Grey,Best Supporting Actor,False
+1974,John Houseman,Best Supporting Actor,False
+1975,Robert De Niro,Best Supporting Actor,False
+1976,George Burns,Best Supporting Actor,False
+1977,Jason Robards,Best Supporting Actor,True
+1978,Jason Robards,Best Supporting Actor,False
+1979,Christopher Walken,Best Supporting Actor,False
+1980,Melvyn Douglas,Best Supporting Actor,False
+1981,Timothy Hutton,Best Supporting Actor,False
+1982,John Gielgud,Best Supporting Actor,False
+1983,Lou Gossett,Best Supporting Actor,False
+1983,Jr.,Best Supporting Actor,False
+1984,Jack Nicholson,Best Supporting Actor,False
+1985,Haing S. Ngor,Best Supporting Actor,False
+1986,Don Ameche,Best Supporting Actor,False
+1987,Michael Caine,Best Supporting Actor,False
+1988,Sean Connery,Best Supporting Actor,False
+1989,Kevin Kline,Best Supporting Actor,False
+1990,Denzel Washington,Best Supporting Actor,False
+1991,Joe Pesci,Best Supporting Actor,False
+1992,Jack Palance,Best Supporting Actor,False
+1993,Gene Hackman,Best Supporting Actor,False
+1994,Tommy Lee Jones,Best Supporting Actor,False
+1995,Martin Landau,Best Supporting Actor,False
+1996,Kevin Spacey,Best Supporting Actor,False
+1997,Cuba Gooding,Best Supporting Actor,False
+1997,Jr.,Best Supporting Actor,False
+1998,Robin Williams,Best Supporting Actor,False
+1999,James Coburn,Best Supporting Actor,True
+2000,Michael Caine,Best Supporting Actor,False
+2001,Benicio Del Toro,Best Supporting Actor,False
+2002,Jim Broadbent,Best Supporting Actor,False
+2003,Chris Cooper,Best Supporting Actor,False
+2004,Tim Robbins,Best Supporting Actor,False
+2005,Morgan Freeman,Best Supporting Actor,False
+2006,George Clooney,Best Supporting Actor,False
+2007,Alan Arkin,Best Supporting Actor,False
+2008,Javier Bardem,Best Supporting Actor,False
+2009,Heath Ledger,Best Supporting Actor,False
+2010,Christoph Waltz,Best Supporting Actor,False
+2011,Christian Bale,Best Supporting Actor,False
+2012,Christopher Plummer,Best Supporting Actor,False
+2013,Christoph Waltz,Best Supporting Actor,False
+2014,Jared Leto,Best Supporting Actor,False
+1929,Janet Gaynor,Best Actress,False
+1930,Mary Pickford,Best Actress,False
+1930,Norma Shearer,Best Actress,False
+1931,Marie Dressler,Best Actress,False
+1932,Helen Hayes,Best Actress,False
+1934,Katharine Hepburn,Best Actress,False
+1935,Claudette Colbert,Best Actress,False
+1936,Bette Davis,Best Actress,False
+1937,Luise Rainer,Best Actress,False
+1938,Luise Rainer,Best Actress,False
+1939,Bette Davis,Best Actress,False
+1940,Vivien Leigh,Best Actress,False
+1941,Ginger Rogers,Best Actress,True
+1940,Joan Fontaine,Best Actress,False
+1942,Greer Garson,Best Actress,False
+1944,Jennifer Jones,Best Actress,False
+1945,Ingrid Bergman,Best Actress,False
+1946,Joan Crawford,Best Actress,False
+1947,Olivia de Havilland,Best Actress,False
+1948,Loretta Young,Best Actress,False
+1949,Jane Wyman,Best Actress,False
+1950,Olivia de Havilland,Best Actress,False
+1951,Judy Holliday,Best Actress,False
+1952,Vivien Leigh,Best Actress,False
+1953,Shirley Booth,Best Actress,False
+1954,Audrey Hepburn,Best Actress,False
+1955,Grace Kelly,Best Actress,False
+1956,Anna Magnani,Best Actress,False
+1957,Ingrid Bergman,Best Actress,False
+1958,Joanne Woodward,Best Actress,True
+1959,Susan Hayward,Best Actress,False
+1960,Simone Signoret,Best Actress,False
+1961,Elizabeth Taylor,Best Actress,False
+1962,Sophia Loren,Best Actress,False
+1963,Anne Bancroft,Best Actress,False
+1964,Patricia Neal,Best Actress,False
+1965,Julie Andrews,Best Actress,False
+1966,Julie Christie,Best Actress,False
+1967,Elizabeth Taylor,Best Actress,True
+1968,Katharine Hepburn,Best Actress,False
+1969,Barbra Streisand,Best Actress,False
+1969,Katharine Hepburn,Best Actress,False
+1970,Maggie Smith,Best Actress,True
+1971,Glenda Jackson,Best Actress,False
+1972,Jane Fonda,Best Actress,False
+1973,Liza Minnelli,Best Actress,False
+1974,Glenda Jackson,Best Actress,False
+1975,Ellen Burstyn,Best Actress,False
+1976,Louise Fletcher,Best Actress,False
+1977,Faye Dunaway,Best Actress,True
+1978,Diane Keaton,Best Actress,False
+1979,Jane Fonda,Best Actress,False
+1980,Sally Field,Best Actress,False
+1981,Sissy Spacek,Best Actress,False
+1982,Katharine Hepburn,Best Actress,False
+1983,Meryl Streep,Best Actress,False
+1984,Shirley MacLaine,Best Actress,False
+1985,Sally Field,Best Actress,False
+1986,Geraldine Page,Best Actress,False
+1987,Marlee Matlin,Best Actress,False
+1988,Cher,Best Actress,False
+1989,Jodie Foster,Best Actress,False
+1990,Jessica Tandy,Best Actress,False
+1991,Kathy Bates,Best Actress,False
+1992,Jodie Foster,Best Actress,False
+1993,Emma Thompson,Best Actress,False
+1994,Holly Hunter,Best Actress,False
+1995,Jessica Lange,Best Actress,False
+1996,Susan Sarandon,Best Actress,False
+1997,Frances McDormand,Best Actress,False
+1998,Helen Hunt,Best Actress,False
+1999,Gwyneth Paltrow,Best Actress,True
+2000,Hilary Swank,Best Actress,False
+2001,Julia Roberts,Best Actress,False
+2002,Halle Berry,Best Actress,False
+2003,Nicole Kidman,Best Actress,False
+2004,Charlize Theron,Best Actress,False
+2005,Hilary Swank,Best Actress,True
+2006,Reese Witherspoon,Best Actress,False
+2007,Helen Mirren,Best Actress,False
+2008,Marion Cotillard,Best Actress,False
+2009,Kate Winslet,Best Actress,False
+2010,Sandra Bullock,Best Actress,False
+2011,Natalie Portman,Best Actress,False
+2012,Meryl Streep,Best Actress,False
+2013,Jennifer Lawrence,Best Actress,False
+2014,Cate Blanchett,Best Actress,False
+1937,Gale Sondergaard,Best Supporting Actress,False
+1938,Alice Brady,Best Supporting Actress,False
+1939,Fay Bainter,Best Supporting Actress,False
+1940,Hattie McDaniel,Best Supporting Actress,False
+1941,Jane Darwell,Best Supporting Actress,False
+1942,Mary Astor,Best Supporting Actress,True
+1943,Teresa Wright,Best Supporting Actress,False
+1944,Katina Paxinou,Best Supporting Actress,False
+1945,Ethel Barrymore,Best Supporting Actress,False
+1946,Anne Revere,Best Supporting Actress,True
+1947,Anne Baxter,Best Supporting Actress,False
+1948,Celeste Holm,Best Supporting Actress,False
+1949,Claire Trevor,Best Supporting Actress,False
+1950,Mercedes McCambridge,Best Supporting Actress,False
+1951,Josephine Hull,Best Supporting Actress,False
+1952,Kim Hunter,Best Supporting Actress,False
+1953,Gloria Grahame,Best Supporting Actress,False
+1954,Donna Reed,Best Supporting Actress,False
+1955,Eva Marie Saint,Best Supporting Actress,False
+1956,Jo Van Fleet,Best Supporting Actress,False
+1957,Dorothy Malone,Best Supporting Actress,False
+1958,Miyoshi Umeki,Best Supporting Actress,False
+1959,Wendy Hiller,Best Supporting Actress,False
+1960,Shelley Winters,Best Supporting Actress,False
+1961,Shirley Jones,Best Supporting Actress,False
+1962,Rita Moreno,Best Supporting Actress,False
+1963,Patty Duke,Best Supporting Actress,False
+1964,Margaret Rutherford,Best Supporting Actress,False
+1965,Lila Kedrova,Best Supporting Actress,False
+1966,Shelley Winters,Best Supporting Actress,False
+1967,Sandy Dennis,Best Supporting Actress,False
+1968,Estelle Parsons,Best Supporting Actress,False
+1969,Ruth Gordon,Best Supporting Actress,False
+1970,Goldie Hawn,Best Supporting Actress,False
+1971,Helen Hayes,Best Supporting Actress,False
+1972,Cloris Leachman,Best Supporting Actress,False
+1973,Eileen Heckart,Best Supporting Actress,False
+1974,Tatum O'Neal,Best Supporting Actress,False
+1975,Ingrid Bergman,Best Supporting Actress,False
+1976,Lee Grant,Best Supporting Actress,True
+1977,Beatrice Straight,Best Supporting Actress,False
+1978,Vanessa Redgrave,Best Supporting Actress,False
+1979,Maggie Smith,Best Supporting Actress,False
+1980,Meryl Streep,Best Supporting Actress,False
+1981,Mary Steenburgen,Best Supporting Actress,False
+1982,Maureen Stapleton,Best Supporting Actress,False
+1983,Jessica Lange,Best Supporting Actress,False
+1984,Linda Hunt,Best Supporting Actress,False
+1985,Peggy Ashcroft,Best Supporting Actress,False
+1986,Anjelica Huston,Best Supporting Actress,False
+1987,Dianne Wiest,Best Supporting Actress,False
+1988,Olympia Dukakis,Best Supporting Actress,False
+1989,Geena Davis,Best Supporting Actress,False
+1990,Brenda Fricker,Best Supporting Actress,False
+1991,Whoopi Goldberg,Best Supporting Actress,False
+1992,Mercedes Ruehl,Best Supporting Actress,False
+1993,Marisa Tomei,Best Supporting Actress,False
+1994,Anna Paquin,Best Supporting Actress,False
+1995,Dianne Wiest,Best Supporting Actress,False
+1996,Mira Sorvino,Best Supporting Actress,False
+1997,Juliette Binoche,Best Supporting Actress,False
+1998,Kim Basinger,Best Supporting Actress,False
+1999,Judi Dench,Best Supporting Actress,False
+2000,Angelina Jolie,Best Supporting Actress,True
+2001,Marcia Gay Harden,Best Supporting Actress,True
+2002,Jennifer Connelly,Best Supporting Actress,False
+2003,Catherine Zeta-Jones,Best Supporting Actress,False
+2004,Ren̩e Zellweger,Best Supporting Actress,False
+2005,Cate Blanchett,Best Supporting Actress,False
+2006,Rachel Weisz,Best Supporting Actress,True
+2007,Jennifer Hudson,Best Supporting Actress,False
+2007,Tilda Swinton,Best Supporting Actress,False
+2009,Penelope Cruz,Best Supporting Actress,False
+2010,Mo'Nique,Best Supporting Actress,True
+2011,Melissa Leo,Best Supporting Actress,False
+2012,Octavia Spencer,Best Supporting Actress,False
+2013,Anne Hathaway,Best Supporting Actress,False
+2014,Lupita Nyong'o,Best Supporting Actress,False
 1928,Richard Barthelmess,ACTOR,False
 1928,Emil Jannings,ACTOR,True
 1928,Louise Dresser,ACTRESS,False
