@@ -10,7 +10,7 @@ class Oscar(Node):
         self.id = None
         self.label = 'Oscar'
         self.category = category
-        self.year: year
+        self.year = year
         super().__init__()
 
     def natural_keys(self) -> dict:

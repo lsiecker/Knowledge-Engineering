@@ -8,7 +8,7 @@ class Genre(Node):
     def __init__(self, genre: str):
         self.id = None
         self.label = 'Genre'
-        self.name = genre
+        self.genre = genre
         super().__init__()
 
     def natural_keys(self) -> dict:
