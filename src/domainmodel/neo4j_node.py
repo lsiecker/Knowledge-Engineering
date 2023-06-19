@@ -1,6 +1,7 @@
 from dataclasses import dataclass, asdict
 from src.domainmodel.neo4j_object import Neo4jObject
 import math
+from datetime import datetime
 
 @dataclass
 class Node(Neo4jObject):
