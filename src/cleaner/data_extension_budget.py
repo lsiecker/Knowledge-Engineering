@@ -1,8 +1,3 @@
-# requirements
-# pip install wikidataintegrator
-# pip install fuzzywuzzy
-# pip install IMDbPY
-
 import pandas as pd
 from wikidataintegrator import wdi_core
 from fuzzywuzzy import fuzz, process
