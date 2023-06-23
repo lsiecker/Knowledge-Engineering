@@ -8,16 +8,9 @@ from wikidataintegrator import wdi_core
 from fuzzywuzzy import fuzz, process
 from tqdm import tqdm
 
-#TODO: some actors are not found - fuzzywuzzy and P31 added - imdbpy used
-#TODO: add movie_name, so we make sure we have the right actor
-#TODO: what if wikidata finds actors with similar names?
-#TODO: add the datetime thing from Luc
 
 # Read the CSV file using pandas
 df = pd.read_csv('data/cleaned_data/Movie.csv')
-
-# Test on subset data (REMOVE THIS LINE FOR FULL DATA)
-#df = df[0:10]
 
 # Define the properties to query MORE PROPS
 properties = {
@@ -80,28 +73,6 @@ print('We did not find budget for ', no_nobudget, ' movies. The movie names we d
 for movie in names_nobudget:
     print(movie)
 
-
-# EXAMPLE: Schindler's List -> [("Schindler's List", 100, 5), ('Shine', 80, 1820), ('Lisa', 75, 6823), ('Wind', 75, 7262), ('Eros', 75, 8499)]
-    # # DOES NOT WORK
-    # # # If budget is not found, perform another search for matched movie names
-    # if not movie_info['budget']:
-    #     matched_movie_names = []
-    #     # Search for matched movie names in Wikidata using fuzzy name matching
-    #     matched_names = process.extract(movie_name, df['movie_name'], scorer=fuzz.partial_ratio)
-    #     print(movie_name)
-    #     print(matched_names)
-    #     for matched_movie_name in matched_names:
-    #         if matched_movie_name != movie_name:
-    #             matched_results = query_movie_info(matched_movie_name)
-    #             if matched_results and 'budget' in matched_results[0]:
-    #                 movie_info['budget'] = matched_results[0]['budget']['value']
-    #                 break
-    #             else:
-    #                 matched_movie_names.append(matched_movie_name)
-    #     print(f"Budget for {movie_name} was not found.")
-    #     print("Matched movie names are:", matched_movie_names)
-    #     if matched_movie_names:
-    #         print("Budget was not found for these matched movie names.")
 
 
 

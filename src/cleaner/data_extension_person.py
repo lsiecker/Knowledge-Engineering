@@ -9,16 +9,8 @@ from fuzzywuzzy import fuzz, process
 from datetime import datetime
 from tqdm import tqdm
 
-#TODO: some actors are not found - fuzzywuzzy and P31 added - imdbpy used
-#TODO: add movie_name, so we make sure we have the right actor
-#TODO: what if wikidata finds actors with similar names?
-#TODO: add the datetime thing from Luc
-
 # Read the CSV file using pandas
 df = pd.read_csv('data/cleaned_data/person.csv')
-
-# Test on subset data (REMOVE THIS LINE FOR FULL DATA)
-# df = df[0:50]
 
 # Define the properties to query
 properties = {
@@ -29,9 +21,6 @@ properties = {
     'end_activity': 'P2032',
     'instance_of': 'P31'  # Fuzzy name matching addition
 }
-
-# # Create an IMDb access object
-# ia = imdb.IMDb()
 
 # Define a function to query Wikidata for a person's information using fuzzy name matching
 def query_person_info_WIKI(person_name):
@@ -68,9 +57,6 @@ for index, row in tqdm(df.iterrows(), total=len(df), desc='Processing'):
     # Query the person information from Wikidata
     results_wiki = query_person_info_WIKI(person_name)
 
-    # # Query the person information from IMDb
-    # person_info_imdb = query_person_info_IMDb(person_name)
-
     # Extract the relevant information from Wikidata and store it in a dictionary
     person_info_wiki = {
         'person_name': person_name,
@@ -79,10 +65,6 @@ for index, row in tqdm(df.iterrows(), total=len(df), desc='Processing'):
         'start_activity': results_wiki[0]['start_activity']['value'] if results_wiki else '',
         'end_activity': results_wiki[0]['end_activity']['value'] if results_wiki and 'end_activity' in results_wiki[0] else ''
     }
-
-    # Merge the information from Wikidata and IMDb
-    # if person_info_imdb:
-    #     person_info_wiki.update(person_info_imdb)
 
     # Append the person information to the list
     person_data.append(person_info_wiki)
